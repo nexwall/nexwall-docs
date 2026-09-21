@@ -17,7 +17,7 @@ const config: Config = {
   markdown: {
     hooks: { onBrokenMarkdownLinks: 'throw' }
   },
-  future: { faster: true },
+  future: { v4: true, faster: true },
 
   i18n: {
     defaultLocale: 'en',
