@@ -74,7 +74,7 @@ const config: Config = {
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Nexwall. Documentation licensed under CC BY 4.0.`
+      copyright: `Copyright © ${new Date().getFullYear()} Nexwall. Documentation licensed under CC BY-NC 4.0.`
     },
     prism: {
       theme: prismThemes.github,

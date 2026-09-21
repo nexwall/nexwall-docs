@@ -1,0 +1,32 @@
+{
+  "sidebar.manual.category.Getting started": {
+    "message": "Primeros pasos"
+  },
+  "sidebar.manual.category.Installation": {
+    "message": "Instalación"
+  },
+  "sidebar.manual.category.Operation & Analytics": {
+    "message": "Operación y Analítica"
+  },
+  "sidebar.manual.category.Policy": {
+    "message": "Políticas"
+  },
+  "sidebar.manual.category.Security Services": {
+    "message": "Servicios de Seguridad"
+  },
+  "sidebar.manual.category.Network": {
+    "message": "Red"
+  },
+  "sidebar.manual.category.VPN": {
+    "message": "VPN"
+  },
+  "sidebar.manual.category.Access & Identity": {
+    "message": "Acceso e Identidad"
+  },
+  "sidebar.manual.category.Infrastructure": {
+    "message": "Infraestructura"
+  },
+  "sidebar.manual.category.Administration": {
+    "message": "Administración"
+  }
+}

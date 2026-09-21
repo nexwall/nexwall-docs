@@ -9,4 +9,5 @@ Every change merged to `main` is built and published automatically. Pull request
 
 ## License
 
-The documentation is licensed under Creative Commons Attribution 4.0 International, see `LICENSE`.
+The documentation is licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0), see
+`LICENSE`. You may share and adapt it for non-commercial purposes with attribution.
