@@ -1,0 +1,26 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentación"
+  },
+  "link.title.Nexwall": {
+    "message": "Nexwall"
+  },
+  "link.item.label.Getting started": {
+    "message": "Primeros pasos"
+  },
+  "link.item.label.Installation": {
+    "message": "Instalación"
+  },
+  "link.item.label.Troubleshooting": {
+    "message": "Solución de problemas"
+  },
+  "link.item.label.Website": {
+    "message": "Sitio web"
+  },
+  "link.item.label.Support": {
+    "message": "Soporte"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Nexwall. Documentación bajo licencia CC BY 4.0."
+  }
+}

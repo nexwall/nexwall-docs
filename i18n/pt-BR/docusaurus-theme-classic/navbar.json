@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "NEXWALL"
+  },
+  "item.label.Administration guide": {
+    "message": "Guia de administração"
+  },
+  "item.label.Help": {
+    "message": "Ajuda"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  }
+}

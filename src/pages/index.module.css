@@ -1,0 +1,60 @@
+.hero {
+  padding: 4.5rem 1rem 3rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.heroTitle {
+  font-size: 2.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.heroSubtitle {
+  max-width: 42rem;
+  margin: 0 auto 1.75rem;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1.1rem;
+  padding: 2.5rem 0 3.5rem;
+}
+
+.card {
+  display: block;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 0.6rem;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 14px rgba(71, 83, 189, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}

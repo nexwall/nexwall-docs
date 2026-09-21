@@ -1,0 +1,80 @@
+{
+  "home.title": {
+    "message": "Documentación de Nexwall Firewall"
+  },
+  "home.subtitle": {
+    "message": "Todo lo que necesita para instalar, configurar y operar Nexwall Firewall, desde el primer arranque hasta la gestión de varias sedes."
+  },
+  "home.start": {
+    "message": "Primeros pasos"
+  },
+  "home.install": {
+    "message": "Instalar"
+  },
+  "home.card.start.title": {
+    "message": "Primeros pasos"
+  },
+  "home.card.start.text": {
+    "message": "Qué es Nexwall Firewall, cómo está organizada la interfaz web y cómo hacer la primera configuración."
+  },
+  "home.card.install.title": {
+    "message": "Instalación"
+  },
+  "home.card.install.text": {
+    "message": "Requisitos, la imagen de disco y cómo ejecutarla en hardware o en una máquina virtual."
+  },
+  "home.card.operation.title": {
+    "message": "Operación y Analítica"
+  },
+  "home.card.operation.text": {
+    "message": "Panel, tráfico en tiempo real, conexiones, gráficos de rendimiento y registros."
+  },
+  "home.card.policy.title": {
+    "message": "Políticas"
+  },
+  "home.card.policy.text": {
+    "message": "Reglas de firewall, NAT, redirección de puertos, zonas y objetos reutilizables."
+  },
+  "home.card.security.title": {
+    "message": "Servicios de Seguridad"
+  },
+  "home.card.security.text": {
+    "message": "Control de aplicaciones, prevención de intrusiones, filtrado de DNS y bloqueo por IP o país."
+  },
+  "home.card.network.title": {
+    "message": "Red"
+  },
+  "home.card.network.text": {
+    "message": "Interfaces, enrutamiento, SD-WAN, DNS y DHCP, QoS y el proxy inverso."
+  },
+  "home.card.vpn.title": {
+    "message": "VPN"
+  },
+  "home.card.vpn.text": {
+    "message": "Acceso remoto, túneles sitio a sitio con OpenVPN e IPsec, y WireGuard."
+  },
+  "home.card.identity.title": {
+    "message": "Acceso e Identidad"
+  },
+  "home.card.identity.text": {
+    "message": "Bases de datos de usuarios y el portal cautivo para redes de invitados."
+  },
+  "home.card.infrastructure.title": {
+    "message": "Infraestructura"
+  },
+  "home.card.infrastructure.text": {
+    "message": "Copia de seguridad y recuperación, ajustes del sistema y actualizaciones, certificados y alta disponibilidad."
+  },
+  "home.card.administration.title": {
+    "message": "Administración"
+  },
+  "home.card.administration.text": {
+    "message": "Gestión central de varios firewalls, licencias y su cuenta."
+  },
+  "home.card.help.title": {
+    "message": "Ayuda"
+  },
+  "home.card.help.text": {
+    "message": "Solución de problemas por síntoma, referencia de línea de comandos y preguntas frecuentes."
+  }
+}
