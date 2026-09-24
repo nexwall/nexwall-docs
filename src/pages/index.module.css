@@ -72,9 +72,9 @@
   aspect-ratio: 16 / 9.2;
   border-radius: 0.6rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(20, 20, 43, 0.1);
   box-shadow: 0 24px 48px -12px rgba(20, 20, 43, 0.45);
-  background: #1c1b33;
+  background: #f4f5fb;
   display: flex;
   align-items: center;
   justify-content: center;
