@@ -52,6 +52,10 @@ catalog installed on the unit, see [Application control](../security-services/ap
 mechanism that lets the firewall follow the state of every connection, and it is what makes stateful rules and NAT
 possible.
 
+![The connections table](/img/screenshots/operation-connections-content.png)
+
+*The connection tracking table.*
+
 For each entry you see the source, the destination, the protocol and the state. You can search the table, and you can
 delete an entry. Deleting an entry drops that connection: the two hosts must establish it again. This is useful to make
 a changed rule take effect for a connection that is already established.

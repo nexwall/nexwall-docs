@@ -9,12 +9,12 @@ const t = (id: string, message: string) => translate({ id, message })
 const cards = [
   { key: 'start', to: '/docs/getting-started/overview', title: 'Getting started', text: 'What Nexwall Firewall is, how the web interface is organized and how to do the first configuration.' },
   { key: 'install', to: '/docs/installation/requirements-and-images', title: 'Installation', text: 'Requirements, the disk image, and how to run it on hardware or on a virtual machine.' },
-  { key: 'operation', to: '/docs/operation-analytics/dashboard', title: 'Operation & Analytics', text: 'Dashboard, live traffic, connections, performance charts and logs.' },
-  { key: 'policy', to: '/docs/policy/firewall-rules', title: 'Policy', text: 'Firewall rules, NAT, port forwarding, zones and reusable objects.' },
+  { key: 'operation', to: '/docs/operation-analytics/dashboard', title: 'Operation & Analytics', text: 'Dashboard, live traffic, connections, performance charts and logs.', image: '/img/screenshots/dashboard-overview-content.png' },
+  { key: 'policy', to: '/docs/policy/firewall-rules', title: 'Policy', text: 'Firewall rules, NAT, port forwarding, zones and reusable objects.', image: '/img/screenshots/policy-zones.png' },
   { key: 'security', to: '/docs/security-services/application-control', title: 'Security Services', text: 'Application control, intrusion prevention, DNS filtering and IP or country blocking.' },
   { key: 'network', to: '/docs/network/interfaces-routing', title: 'Network', text: 'Interfaces, routing, SD-WAN, DNS and DHCP, QoS and the reverse proxy.' },
-  { key: 'vpn', to: '/docs/vpn/remote-access-openvpn', title: 'VPN', text: 'Remote access, site-to-site tunnels with OpenVPN and IPsec, and WireGuard.' },
-  { key: 'identity', to: '/docs/access-identity/users-groups', title: 'Access & Identity', text: 'User databases and the captive portal for guest networks.' },
+  { key: 'vpn', to: '/docs/vpn/remote-access-openvpn', title: 'VPN', text: 'Remote access, site-to-site tunnels with OpenVPN and IPsec, and WireGuard.', image: '/img/screenshots/vpn-ipsec-site-to-site-content.png' },
+  { key: 'identity', to: '/docs/access-identity/users-groups', title: 'Access & Identity', text: 'User databases and the captive portal for guest networks.', image: '/img/screenshots/access-users-ad.png' },
   { key: 'infrastructure', to: '/docs/infrastructure/backup-recovery', title: 'Infrastructure', text: 'Backup and recovery, system settings and updates, certificates and high availability.' },
   { key: 'administration', to: '/docs/administration/central-management', title: 'Administration', text: 'Central management of many firewalls, licensing and your account.' },
   { key: 'help', to: '/docs/help/troubleshooting', title: 'Help', text: 'Troubleshooting by symptom, command line reference and frequently asked questions.' }
@@ -39,11 +39,23 @@ export default function Home(): ReactNode {
             {t('home.install', 'Install')}
           </Link>
         </div>
+        <div className={styles.heroImageWrap}>
+          <img
+            className={styles.heroImage}
+            src="/img/screenshots/dashboard-overview.png"
+            alt="The Nexwall Firewall dashboard"
+          />
+        </div>
       </header>
       <main className="container">
         <div className={styles.grid}>
           {cards.map((card) => (
             <Link key={card.key} className={styles.card} to={card.to}>
+              {card.image && (
+                <div className={styles.cardImageWrap}>
+                  <img className={styles.cardImage} src={card.image} alt="" />
+                </div>
+              )}
               <h2 className={styles.cardTitle}>{t(`home.card.${card.key}.title`, card.title)}</h2>
               <p className={styles.cardText}>{t(`home.card.${card.key}.text`, card.text)}</p>
             </Link>

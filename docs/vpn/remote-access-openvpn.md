@@ -9,6 +9,10 @@ description: Let users connect securely from anywhere with an OpenVPN road warri
 **VPN > Remote Access (OpenVPN)** configures an OpenVPN **road warrior** server. Remote users, on laptops or phones,
 connect to it from anywhere on the internet and get secure access to your private networks.
 
+![The Remote Access (OpenVPN) server](/img/screenshots/vpn-remote-access-content.png)
+
+*The Remote Access (OpenVPN) server.*
+
 ## Before you start
 
 - Create a **user database** with the people who may connect, see [Users and groups](../access-identity/users-groups.md).

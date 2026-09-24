@@ -35,6 +35,10 @@ Check that the tunnel is up in the list, and in the [Monitor](../operation-analy
 
 IPsec is the best choice when the other side is not a Nexwall unit.
 
+![A configured IPsec site-to-site tunnel](/img/screenshots/vpn-ipsec-site-to-site-content.png)
+
+*A configured IPsec site-to-site tunnel.*
+
 1. Open **VPN > IPsec Site-to-Site** and add a tunnel.
 2. Enter the **remote address**. If the other side has a dynamic address, enter `any`.
 3. Set the **identifiers**. The local identifier is a string that starts with `@` and identifies this unit; on the other

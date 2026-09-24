@@ -36,6 +36,10 @@ Enter how to reach the directory:
 | Bind DN and password | The account the unit uses to search the directory |
 | Security | Whether to use TLS and whether to verify the server certificate |
 
+![A connected Active Directory database](/img/screenshots/access-users-ad.png)
+
+*A connected Active Directory database and its user list.*
+
 Save and use the connection test to confirm that the unit can reach the directory and read users. Prefer an encrypted
 connection.
 

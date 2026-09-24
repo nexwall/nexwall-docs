@@ -9,6 +9,10 @@ description: Group interfaces into zones and set what is allowed between them by
 Zones are the foundation of the rule set. **Policy > Zones & Policies** shows every zone, the interfaces it contains
 and its default behavior.
 
+![Zones and their policies](/img/screenshots/policy-zones.png)
+
+*The default zones and their policies.*
+
 ## Default zones
 
 | Zone | Role |

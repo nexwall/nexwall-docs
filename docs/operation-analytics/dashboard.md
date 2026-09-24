@@ -9,6 +9,10 @@ description: The overview page of the unit.
 **Operation & Analytics > Dashboard** is the first page you see after logging in. It summarizes the state of the unit
 and points out things that need attention.
 
+![Nexwall Firewall dashboard](/img/screenshots/dashboard-overview-content.png)
+
+*The dashboard on a freshly installed unit.*
+
 ## What the cards show
 
 | Card | Content |
