@@ -112,7 +112,6 @@ export default function Home(): ReactNode {
       description="Administration guide for Nexwall Firewall"
     >
       <header className={styles.hero}>
-        <HeroSlider />
         <h1 className={styles.heroTitle}>{t('home.title', 'Nexwall Firewall Documentation')}</h1>
         <p className={styles.heroSubtitle}>
           {t('home.subtitle', 'Everything you need to install, configure and operate Nexwall Firewall, from the first boot to managing many sites.')}
@@ -125,6 +124,7 @@ export default function Home(): ReactNode {
             {t('home.install', 'Install')}
           </Link>
         </div>
+        <HeroSlider />
       </header>
       <main className="container">
         <div className={styles.grid}>
