@@ -158,3 +158,4 @@ the controller, not in the controller's own logic.
 - [Central management](../administration/central-management.md)
 - [Logs](../operation-analytics/logs.md)
 - [Command line and FAQ](command-line-and-faq.md)
+- [Service and log command reference](service-and-log-reference.md)

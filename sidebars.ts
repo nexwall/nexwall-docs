@@ -59,7 +59,12 @@ const sidebars: SidebarsConfig = {
     ]),
     category('Administration', ['administration/central-management', 'administration/licensing-account'])
   ],
-  help: ['help/troubleshooting', 'help/command-line-and-faq', 'help/controller-registration-troubleshooting']
+  help: [
+    'help/troubleshooting',
+    'help/command-line-and-faq',
+    'help/controller-registration-troubleshooting',
+    'help/service-and-log-reference'
+  ]
 }
 
 export default sidebars

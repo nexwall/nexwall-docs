@@ -43,6 +43,10 @@ The web interface writes to the same files. Changes you make from the command li
 | Version | `cat /etc/os-release` |
 | Free disk and memory | `df -h`, `free -m` |
 
+Restarting "a service" means the right one for what you are working on, not always the same thing. See
+[Service and log command reference](service-and-log-reference.md) for which service backs each feature in the web
+interface, and what to search its log for.
+
 ## Where things are
 
 | What | Where |
