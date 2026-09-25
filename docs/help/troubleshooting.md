@@ -72,6 +72,9 @@ Use the [Logs](../operation-analytics/logs.md) and search for the name of the VP
 3. Check the token or join code: it must be recent and unused.
 4. Search the [Logs](../operation-analytics/logs.md) for the registration service.
 
+For the exact commands to run on the unit and on the controller, and what each error message means, see
+[Controller registration troubleshooting](controller-registration-troubleshooting.md).
+
 ## Updates fail
 
 - The message tells the reason: the update server is under maintenance, the subscription is not valid, or the repository

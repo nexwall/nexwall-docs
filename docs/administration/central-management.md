@@ -50,3 +50,4 @@ Disconnect the unit from the page. It stops being reachable from the controller.
 
 - [Licensing and account](licensing-account.md)
 - [Performance](../operation-analytics/performance.md)
+- [Controller registration troubleshooting](../help/controller-registration-troubleshooting.md)
