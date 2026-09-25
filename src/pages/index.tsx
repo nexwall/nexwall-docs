@@ -124,7 +124,6 @@ export default function Home(): ReactNode {
             {t('home.install', 'Install')}
           </Link>
         </div>
-        <HeroSlider />
       </header>
       <main className="container">
         <div className={styles.grid}>
@@ -135,6 +134,7 @@ export default function Home(): ReactNode {
             </Link>
           ))}
         </div>
+        <HeroSlider />
       </main>
     </Layout>
   )
