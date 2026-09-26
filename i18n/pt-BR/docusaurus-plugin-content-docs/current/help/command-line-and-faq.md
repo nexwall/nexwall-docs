@@ -45,7 +45,9 @@ com `uci commit <configuração>`, e o serviço afetado deve ser recarregado.
 
 Reiniciar "um serviço" significa o certo para o que você está resolvendo, nem sempre o mesmo. Veja a
 [Referência de comandos de serviço e log](service-and-log-reference.md) para saber qual serviço sustenta cada
-funcionalidade da interface web, e o que procurar no log dele.
+funcionalidade da interface web, e o que procurar no log dele. Quase tudo que você pode mudar também vive num arquivo de configuração UCI, o que é o que faz a
+interface web, a API e a linha de comando sempre concordarem — veja
+[O que é o UCI, e por que ele importa](understanding-uci.md).
 
 ## Onde ficam as coisas
 

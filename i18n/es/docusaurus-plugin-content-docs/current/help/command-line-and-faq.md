@@ -46,7 +46,9 @@ guardarse con `uci commit <configuración>`, y el servicio afectado debe recarga
 
 Reiniciar "un servicio" significa el correcto para lo que está resolviendo, no siempre el mismo. Vea la
 [Referencia de comandos de servicios y registros](service-and-log-reference.md) para saber qué servicio sostiene
-cada función de la interfaz web, y qué buscar en su registro.
+cada función de la interfaz web, y qué buscar en su registro. Casi todo lo que puede cambiar también vive en un archivo de configuración UCI, que es lo que hace
+que la interfaz web, la API y la línea de comandos siempre coincidan — vea
+[Qué es UCI, y por qué importa](understanding-uci.md).
 
 ## Dónde está cada cosa
 

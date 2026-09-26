@@ -63,7 +63,8 @@ const sidebars: SidebarsConfig = {
     'help/troubleshooting',
     'help/command-line-and-faq',
     'help/controller-registration-troubleshooting',
-    'help/service-and-log-reference'
+    'help/service-and-log-reference',
+    'help/understanding-uci'
   ]
 }
 

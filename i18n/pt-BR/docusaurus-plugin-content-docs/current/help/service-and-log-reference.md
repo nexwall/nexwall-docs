@@ -73,11 +73,13 @@ conjunto de regras e reescreve a configuração que o `snort` lê na próxima ve
 
 Todo serviço acima é configurado por `/etc/config/<nome>`, geralmente com o mesmo nome do pacote UCI (por exemplo
 `uci show dpi`, `uci show mwan3`, `uci show snort`). Nem todo nome de serviço bate exatamente com o nome do pacote
-UCI — `ns-flashstart` e `banip` batem — verifique `ls /etc/config/` se um nome desta tabela não retornar nada.
+UCI — `ns-flashstart` e `banip` batem — verifique `ls /etc/config/` se um nome desta tabela não retornar nada. Para entender o que é o UCI e como usá-lo além de só consultar, veja
+[O que é o UCI, e por que ele importa](understanding-uci.md).
 
 ## Páginas relacionadas
 
 - [Linha de comando e perguntas frequentes](command-line-and-faq.md)
 - [Solução de problemas de registro no controlador](controller-registration-troubleshooting.md)
+- [O que é o UCI, e por que ele importa](understanding-uci.md)
 - [Logs](../operation-analytics/logs.md)
 - [Alta disponibilidade](../infrastructure/high-availability.md)

@@ -73,11 +73,13 @@ rewrites the configuration `snort` reads on its next start.
 
 Every service above is configured through `/etc/config/<name>`, usually with the same name as the UCI package (for
 example `uci show dpi`, `uci show mwan3`, `uci show snort`). Not all service and UCI package names match exactly —
-`ns-flashstart` and `banip` do — check `ls /etc/config/` if a name from this table returns nothing.
+`ns-flashstart` and `banip` do — check `ls /etc/config/` if a name from this table returns nothing. For what UCI is
+and how to use it beyond just reading it, see [What is UCI, and why it matters](understanding-uci.md).
 
 ## Related pages
 
 - [Command line and FAQ](command-line-and-faq.md)
 - [Controller registration troubleshooting](controller-registration-troubleshooting.md)
+- [What is UCI, and why it matters](understanding-uci.md)
 - [Logs](../operation-analytics/logs.md)
 - [High availability](../infrastructure/high-availability.md)

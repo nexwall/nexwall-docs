@@ -74,11 +74,13 @@ conjunto de reglas y reescribe la configuración que `snort` lee la próxima vez
 Cada servicio anterior se configura mediante `/etc/config/<nombre>`, generalmente con el mismo nombre que el
 paquete UCI (por ejemplo `uci show dpi`, `uci show mwan3`, `uci show snort`). No todos los nombres de servicio
 coinciden exactamente con el nombre del paquete UCI — `ns-flashstart` y `banip` sí coinciden — compruebe
-`ls /etc/config/` si un nombre de esta tabla no devuelve nada.
+`ls /etc/config/` si un nombre de esta tabla no devuelve nada. Para entender qué es UCI y cómo usarlo más allá de solo consultarlo, vea
+[Qué es UCI, y por qué importa](understanding-uci.md).
 
 ## Páginas relacionadas
 
 - [Línea de comandos y preguntas frecuentes](command-line-and-faq.md)
 - [Solución de problemas de registro en el controlador](controller-registration-troubleshooting.md)
+- [Qué es UCI, y por qué importa](understanding-uci.md)
 - [Registros](../operation-analytics/logs.md)
 - [Alta disponibilidad](../infrastructure/high-availability.md)
