@@ -51,3 +51,4 @@ Desconecte la unidad desde la página. Deja de ser accesible desde el controlado
 
 - [Licencias y cuenta](licensing-account.md)
 - [Rendimiento](../operation-analytics/performance.md)
+- [Solución de problemas de registro en el controlador](../help/controller-registration-troubleshooting.md)

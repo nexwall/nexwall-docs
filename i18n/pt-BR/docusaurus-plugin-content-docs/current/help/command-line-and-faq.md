@@ -43,6 +43,10 @@ com `uci commit <configuração>`, e o serviço afetado deve ser recarregado.
 | Versão | `cat /etc/os-release` |
 | Disco e memória livres | `df -h`, `free -m` |
 
+Reiniciar "um serviço" significa o certo para o que você está resolvendo, nem sempre o mesmo. Veja a
+[Referência de comandos de serviço e log](service-and-log-reference.md) para saber qual serviço sustenta cada
+funcionalidade da interface web, e o que procurar no log dele.
+
 ## Onde ficam as coisas
 
 | O quê | Onde |

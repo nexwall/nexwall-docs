@@ -76,6 +76,9 @@ Use los [Registros](../operation-analytics/logs.md) y busque el nombre del servi
 3. Compruebe el token o el código de unión: debe ser reciente y no usado.
 4. Busque en los [Registros](../operation-analytics/logs.md) el servicio de registro.
 
+Para los comandos exactos que ejecutar en la unidad y en el controlador, y qué significa cada mensaje de error, vea
+[Solución de problemas de registro en el controlador](controller-registration-troubleshooting.md).
+
 ## Las actualizaciones fallan
 
 - El mensaje indica el motivo: el servidor de actualizaciones está en mantenimiento, la suscripción no es válida o la

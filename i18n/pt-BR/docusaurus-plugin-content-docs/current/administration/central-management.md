@@ -50,3 +50,4 @@ Desconecte a unidade pela página. Ela deixa de ser alcançável pelo controlado
 
 - [Licenciamento e conta](licensing-account.md)
 - [Desempenho](../operation-analytics/performance.md)
+- [Solução de problemas de registro no controlador](../help/controller-registration-troubleshooting.md)
