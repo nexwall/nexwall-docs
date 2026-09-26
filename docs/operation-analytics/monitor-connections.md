@@ -64,3 +64,5 @@ a changed rule take effect for a connection that is already established.
 
 - [Traffic Analytics](traffic-analytics.md)
 - [Firewall rules](../policy/firewall-rules.md)
+- [Network troubleshooting tools](../help/network-troubleshooting-tools.md) for the same connection tracking table
+  from the command line, with `conntrack`

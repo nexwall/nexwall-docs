@@ -29,6 +29,9 @@ interface; the few that need the command line refer to [Command line and FAQ](co
    down.
 6. Use [Connections](../operation-analytics/monitor-connections.md) to see whether connections are being created.
 
+For routing, NAT and firewall checks from the command line — `ip route`, `conntrack -L`, `nft list ruleset` and more
+— see [Network troubleshooting tools](network-troubleshooting-tools.md).
+
 ## Names do not resolve
 
 - Confirm the clients use the unit as their DNS server, or a server that works.
@@ -36,6 +39,8 @@ interface; the few that need the command line refer to [Command line and FAQ](co
 - If DNS filtering is on, check whether the name is on a blocklist, and add it to the allowed domains if it should not
   be blocked.
 - Check that a device with its own encrypted DNS is not bypassing the unit.
+- To rule out this unit's resolver entirely, query a public one directly: see [Network troubleshooting
+  tools](network-troubleshooting-tools.md#dns).
 
 ## A service is blocked or not reachable
 

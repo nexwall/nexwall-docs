@@ -81,5 +81,6 @@ and how to use it beyond just reading it, see [What is UCI, and why it matters](
 - [Command line and FAQ](command-line-and-faq.md)
 - [Controller registration troubleshooting](controller-registration-troubleshooting.md)
 - [What is UCI, and why it matters](understanding-uci.md)
+- [Network troubleshooting tools](network-troubleshooting-tools.md)
 - [Logs](../operation-analytics/logs.md)
 - [High availability](../infrastructure/high-availability.md)

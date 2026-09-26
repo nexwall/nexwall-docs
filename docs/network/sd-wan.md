@@ -46,3 +46,5 @@ The default values fit most connections. Change them only if links flap or take 
 
 - [Interfaces and routing](interfaces-routing.md)
 - [Performance](../operation-analytics/performance.md) for latency history
+- [Network troubleshooting tools](../help/network-troubleshooting-tools.md) for policy routing and connectivity
+  checks from the command line
