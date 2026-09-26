@@ -72,8 +72,8 @@
   aspect-ratio: 16 / 9.2;
   border-radius: 0.6rem;
   overflow: hidden;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  box-shadow: 0 10px 30px -12px rgba(20, 20, 43, 0.18);
+  border: none;
+  box-shadow: none;
   background: var(--ifm-background-color);
   display: flex;
   align-items: center;

@@ -22,13 +22,13 @@ const cards = [
 ]
 
 const slides = [
-  { key: 'dashboard', src: '/img/screenshots/dashboard-overview.png', captionId: 'home.slide.dashboard', caption: 'Dashboard' },
-  { key: 'monitoring', src: '/img/screenshots/dashboard-overview-content.png', captionId: 'home.slide.monitoring', caption: 'Live system status' },
-  { key: 'connections', src: '/img/screenshots/operation-connections-content.png', captionId: 'home.slide.connections', caption: 'Connections table' },
-  { key: 'policy', src: '/img/screenshots/policy-zones.png', captionId: 'home.slide.policy', caption: 'Zones and policies' },
-  { key: 'ipsec', src: '/img/screenshots/vpn-ipsec-site-to-site-content.png', captionId: 'home.slide.ipsec', caption: 'IPsec site-to-site tunnels' },
-  { key: 'openvpn', src: '/img/screenshots/vpn-remote-access-content.png', captionId: 'home.slide.openvpn', caption: 'Remote access with OpenVPN' },
-  { key: 'identity', src: '/img/screenshots/access-users-ad.png', captionId: 'home.slide.identity', caption: 'Active Directory users' }
+  { key: 'app', src: '/img/screenshots/complete-app.png', captionId: 'home.slide.app', caption: 'Every feature, one clean interface' },
+  { key: 'analytics', src: '/img/screenshots/analytics-collage.png', captionId: 'home.slide.analytics', caption: 'Deep traffic visibility, in real time' },
+  { key: 'rules', src: '/img/screenshots/firewall-rules.png', captionId: 'home.slide.rules', caption: 'Firewall rules that read like plain language' },
+  { key: 'policy', src: '/img/screenshots/zones-policies.png', captionId: 'home.slide.policy', caption: 'Zone-based policy, by default' },
+  { key: 'vpn', src: '/img/screenshots/vpn-composite.png', captionId: 'home.slide.vpn', caption: 'Site-to-site and remote access VPN, built in' },
+  { key: 'identity', src: '/img/screenshots/access-users-ad.png', captionId: 'home.slide.identity', caption: 'Centralized identity, LDAP/AD-ready' },
+  { key: 'connections', src: '/img/screenshots/operation-connections-content.png', captionId: 'home.slide.connections', caption: 'Live connection tracking' }
 ]
 
 const AUTO_ADVANCE_MS = 5000
