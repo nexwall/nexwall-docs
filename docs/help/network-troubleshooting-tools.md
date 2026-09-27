@@ -149,6 +149,7 @@ symptom that is actually a cable:
 
 - [Service and log command reference](service-and-log-reference.md)
 - [What is UCI, and why it matters](understanding-uci.md)
+- [Logs and debugging from the command line](cli-logs-and-debugging.md)
 - [SD-WAN](pathname:///docs/network/sd-wan)
 - [Monitor and connections](../operation-analytics/monitor-connections.md)
 - [Command line and FAQ](command-line-and-faq.md)

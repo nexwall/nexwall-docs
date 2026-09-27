@@ -71,3 +71,5 @@ relocation or decommissioning. Both warn you when there are pending changes, whi
 
 - [Backup and recovery](backup-recovery.md)
 - [Certificates](certificates.md)
+- [Logs and debugging from the command line](../help/cli-logs-and-debugging.md) for how the Storage tab's log copy
+  is actually written and rotated

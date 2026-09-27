@@ -48,7 +48,8 @@ Restarting "a service" means the right one for what you are working on, not alwa
 interface, and what to search its log for. Almost everything you can change also lives in a UCI configuration file, which is what makes the
 web interface, the API and the command line always agree — see [What is UCI, and why it
 matters](understanding-uci.md). For connectivity, routing, NAT and DNS problems specifically, see [Network troubleshooting
-tools](network-troubleshooting-tools.md).
+tools](network-troubleshooting-tools.md). For where log copies actually live and how to search them, see [Logs and debugging from the command
+line](cli-logs-and-debugging.md).
 
 ## Where things are
 
