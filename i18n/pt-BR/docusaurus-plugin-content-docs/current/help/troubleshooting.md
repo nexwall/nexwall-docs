@@ -31,6 +31,9 @@ verificações usa a interface web; as poucas que precisam da linha de comando r
    considerado fora do ar.
 6. Use [Conexões](../operation-analytics/monitor-connections.md) para ver se as conexões estão sendo criadas.
 
+Para verificações de roteamento, NAT e firewall pela linha de comando — `ip route`, `conntrack -L`, `nft list
+ruleset` e mais — veja [Ferramentas de solução de problemas de rede](network-troubleshooting-tools.md).
+
 ## Os nomes não resolvem
 
 - Confirme que os clientes usam a unidade como servidor DNS, ou um servidor que funcione.
@@ -38,6 +41,8 @@ verificações usa a interface web; as poucas que precisam da linha de comando r
 - Se a filtragem de DNS estiver ativa, verifique se o nome está em uma lista de bloqueio e adicione-o aos domínios
   permitidos se ele não deveria ser bloqueado.
 - Verifique se um dispositivo com DNS criptografado próprio não está contornando a unidade.
+- Para descartar totalmente o resolvedor desta unidade, consulte um público diretamente: veja [Ferramentas de
+  solução de problemas de rede](network-troubleshooting-tools.md#dns).
 
 ## Um serviço está bloqueado ou inacessível
 

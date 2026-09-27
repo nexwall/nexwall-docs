@@ -32,6 +32,9 @@ las comprobaciones usan la interfaz web; las pocas que necesitan la línea de co
    considera caído.
 6. Use [Conexiones](../operation-analytics/monitor-connections.md) para ver si se están creando conexiones.
 
+Para comprobaciones de enrutamiento, NAT y firewall desde la línea de comandos — `ip route`, `conntrack -L`, `nft
+list ruleset` y más — vea [Herramientas de solución de problemas de red](network-troubleshooting-tools.md).
+
 ## Los nombres no se resuelven
 
 - Confirme que los clientes usan la unidad como servidor DNS, o un servidor que funcione.
@@ -39,6 +42,8 @@ las comprobaciones usan la interfaz web; las pocas que necesitan la línea de co
 - Si el filtrado de DNS está activo, compruebe si el nombre está en una lista de bloqueo y añádalo a los dominios permitidos
   si no debería estar bloqueado.
 - Compruebe que un dispositivo con DNS cifrado propio no está eludiendo la unidad.
+- Para descartar por completo el resolvedor de esta unidad, consulte uno público directamente: vea [Herramientas de
+  solución de problemas de red](network-troubleshooting-tools.md#dns).
 
 ## Un servicio está bloqueado o no es accesible
 

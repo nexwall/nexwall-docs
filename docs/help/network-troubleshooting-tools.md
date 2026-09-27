@@ -43,7 +43,7 @@ since it asks at the ARP level and gets a response even from hosts that block IC
 | Policy routing rules (used heavily when SD-WAN is configured) | `ip rule` |
 | A specific routing table by number | `ip route show table <id>` |
 
-When [SD-WAN](../network/sd-wan.md) is active, `mwan3` maintains its own routing tables and rules per WAN — `ip rule`
+When [SD-WAN](pathname:///docs/network/sd-wan) is active, `mwan3` maintains its own routing tables and rules per WAN — `ip rule`
 shows which traffic gets steered into which table, and `ip route get <destination>` is the fastest way to confirm
 which WAN a given destination will actually go out. For the state `mwan3` itself thinks each link is in, see
 [Service and log command reference](service-and-log-reference.md#diagnostic-commands-beyond-restart-and-logread).
@@ -149,6 +149,6 @@ symptom that is actually a cable:
 
 - [Service and log command reference](service-and-log-reference.md)
 - [What is UCI, and why it matters](understanding-uci.md)
-- [SD-WAN](../network/sd-wan.md)
+- [SD-WAN](pathname:///docs/network/sd-wan)
 - [Monitor and connections](../operation-analytics/monitor-connections.md)
 - [Command line and FAQ](command-line-and-faq.md)
