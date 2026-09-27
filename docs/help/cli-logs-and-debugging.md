@@ -1,16 +1,14 @@
 ---
 title: Logs and debugging from the command line
 sidebar_position: 7
-description: Where log copies actually live, how to search and follow them, how to query VictoriaLogs, and how to make a specific service log more.
+description: Where log copies actually live, how to search and follow them, how to make a specific service log more, and what VictoriaLogs is — and is not — used for on this unit.
 ---
 
 # Logs and debugging from the command line
 
-This unit does not use BusyBox's `logread` — there is no such command here. Logging runs through `rsyslogd`,
-which by default keeps `/var/log/messages` in memory and, on a unit with persistent storage configured, also
-writes a copy that survives a reboot and feeds [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/), a
-small log database. This page covers where those copies live, how to search them, and how to make a specific
-service log more. For which service backs which feature and its one-line restart command, see
+This unit does not use BusyBox's `logread` — there is no such command here. Logging runs through `rsyslogd`
+instead. This page covers where log copies actually live, how to search them from the command line, and how to
+make a specific service log more. For which service backs which feature and its one-line restart command, see
 [Service and log command reference](service-and-log-reference.md); for the basics of the command line itself, see
 [Command line and FAQ](command-line-and-faq.md).
 
@@ -18,14 +16,16 @@ All commands run as `root` over SSH or the console.
 
 ## Where logs actually live
 
-By default `/var/log` is in memory: this protects the storage device from wearing out or filling up, but it also
-means `/var/log/messages` does not survive a reboot on its own.
+By default, `/var/log` is a volatile, in-memory directory — this protects the root filesystem from wearing out or
+filling up, but it also means `/var/log/messages` does not survive a reboot on its own.
 
-| Copy | Path | When it exists |
+| Copy | Path | Rotation |
 |---|---|---|
-| Default, in-memory | `/var/log/messages` | Always. Rotated by `/usr/sbin/rotate-messages` once it passes roughly 98 MB; only the previous rotation is kept, as `messages.1.gz`. |
-| Persistent | `/mnt/data/log/messages` | Once persistent storage is configured on the [System](../infrastructure/system.md#storage) page's Storage tab. The same stream is written there too, without the 98 MB cutoff. |
-| VictoriaLogs | queried over HTTP, not a plain file — see below | Alongside the persistent copy: `rsyslogd` forwards every message to it over UDP as soon as persistent storage is configured, and it keeps a 30-day index on the same storage device. |
+| Default, in-memory | `/var/log/messages` | Rotated by `/usr/sbin/rotate-messages` once it passes 50 MB, or 10% of `/tmp`'s size if that is larger. Only the previous rotation is kept, as `messages.1.gz`. |
+| Persistent, optional | `/mnt/data/log/messages` | Only written if a persistent storage device has been configured on the [System](../infrastructure/system.md#storage) page's Storage tab — it is not automatic. When present, `logrotate` rotates it weekly and keeps 52 compressed rotations, roughly a year. |
+
+A separate daily cron job (`5 1 * * * /usr/sbin/logrotate /etc/logrotate.conf`) handles `logrotate.conf`-managed
+logs generally, independent of the size-triggered rotation above.
 
 A handful of services keep their own state alongside this, outside the log stream entirely — for example
 `/mnt/data/dnsmasq/dhcp.leases`, and, per VPN instance, a connection-tracking database under
@@ -45,35 +45,7 @@ If persistent storage is configured, `/mnt/data/log/messages` holds the same str
 For the log prefix each service actually writes under, see the table in
 [Service and log command reference](service-and-log-reference.md#services-by-feature).
 
-## Querying VictoriaLogs
-
-Where it is running, VictoriaLogs answers queries on port 9428 using its own query language, LogsQL. A plain
-keyword searches the message text:
-
-```bash
-curl -s 'http://127.0.0.1:9428/select/logsql/query' \
-  --data-urlencode 'query=openvpn' \
-  --data-urlencode 'limit=20'
-```
-
-Each result is a JSON object with fields including `_msg`, `_time`, `app_name`, `hostname`, `level` and
-`severity`, which makes it easy to filter more precisely than a plain grep would allow:
-
-```bash
-# only this service
-curl -s 'http://127.0.0.1:9428/select/logsql/query' --data-urlencode 'query=app_name:nethsecurity-api' --data-urlencode 'limit=20'
-
-# only errors, across every service
-curl -s 'http://127.0.0.1:9428/select/logsql/query' --data-urlencode 'query=level:error' --data-urlencode 'limit=20'
-
-# only the last five minutes
-curl -s 'http://127.0.0.1:9428/select/logsql/query' --data-urlencode 'query=_time:5m' --data-urlencode 'limit=50'
-```
-
-If that `curl` returns nothing or connection refused, VictoriaLogs is not running on this unit — check
-`/etc/init.d/victoria-logs status`, and confirm persistent storage is configured, since that is what enables it.
-
-## What the Logs page in the web interface calls
+## What the Logs page in the web interface actually does
 
 The web interface's **Logs** page is a thin layer over one `ubus` call, which you can use directly — useful in a
 script, or when you want the page's exact search behavior without opening a browser:
@@ -81,6 +53,35 @@ script, or when you want the page's exact search behavior without opening a brow
 ```bash
 ubus call ns.log get-log '{"search":"openvpn","limit":20}'
 ```
+
+This searches `/var/log/messages` directly (effectively `grep <search> /var/log/messages | tail -n <limit>`) — it
+is not backed by a separate log database.
+
+## VictoriaLogs: what it is, and is not, used for here
+
+[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) is an optional package (`opkg install
+victoria-logs`), not part of the default image. Installing it sets up everything needed in one step: the package
+also registers an `rsyslogd` forwarding rule, so once it's installed, every log message is sent on to it at
+`127.0.0.1:5514` over TCP (octet-counted framing) as `rsyslogd` processes it. What VictoriaLogs is **not**,
+currently, is wired into anything else: neither the web interface's Logs page nor the API queries it — the Logs
+page still works the way described above, straight off the plain-text file. If you install VictoriaLogs, you get
+everything `rsyslogd` sees from that point on, queryable yourself with its own query language, LogsQL, over HTTP on
+port 9428:
+
+```bash
+opkg update && opkg install victoria-logs
+/etc/init.d/victoria-logs start
+
+curl -s 'http://127.0.0.1:9428/select/logsql/query' \
+  --data-urlencode 'query=openvpn' \
+  --data-urlencode 'limit=20'
+```
+
+This is worth doing if you want LogsQL's filtering (by time range, by field, combined conditions) rather than a
+plain `grep` — the exact field names available depend on the syslog template `rsyslogd` forwards with, so check a
+raw result first (drop `--data-urlencode 'limit=20'` down to `'limit=1'` to see one) before building a filtered
+query around a specific field. Either way, it is a tool you query yourself — not a second copy the GUI already
+shows.
 
 ## Turning up verbosity for a specific service
 
