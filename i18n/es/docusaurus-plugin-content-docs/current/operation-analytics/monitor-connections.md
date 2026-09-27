@@ -61,3 +61,5 @@ regla modificada surta efecto en una conexión que ya estaba establecida.
 
 - [Analítica de Tráfico](traffic-analytics.md)
 - [Reglas de firewall](../policy/firewall-rules.md)
+- [Herramientas de solución de problemas de red](../help/network-troubleshooting-tools.md) para la misma tabla de
+  seguimiento de conexiones desde la línea de comandos, con `conntrack`

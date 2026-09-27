@@ -48,3 +48,5 @@ demasiado en recuperarse.
 
 - [Interfaces y enrutamiento](interfaces-routing.md)
 - [Rendimiento](../operation-analytics/performance.md) para el historial de latencia
+- [Herramientas de solución de problemas de red](../help/network-troubleshooting-tools.md) para enrutamiento por
+  políticas y comprobaciones de conectividad desde la línea de comandos

@@ -62,3 +62,5 @@ fazer uma regra alterada valer para uma conexão que já estava estabelecida.
 
 - [Análise de Tráfego](traffic-analytics.md)
 - [Regras de firewall](../policy/firewall-rules.md)
+- [Ferramentas de solução de problemas de rede](../help/network-troubleshooting-tools.md) para a mesma tabela de
+  rastreamento de conexões pela linha de comando, com o `conntrack`

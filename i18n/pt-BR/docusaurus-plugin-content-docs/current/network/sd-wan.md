@@ -46,3 +46,5 @@ Os valores padrão atendem à maioria das conexões. Altere-os somente se os lin
 
 - [Interfaces e roteamento](interfaces-routing.md)
 - [Desempenho](../operation-analytics/performance.md) para o histórico de latência
+- [Ferramentas de solução de problemas de rede](../help/network-troubleshooting-tools.md) para roteamento por
+  política e verificações de conectividade pela linha de comando
