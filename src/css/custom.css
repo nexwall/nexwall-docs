@@ -41,3 +41,28 @@ table {
   display: table;
   width: 100%;
 }
+
+/* the Nexwall logo in the navbar */
+.nx-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-right: 1.2rem;
+}
+.nx-brand:hover {
+  text-decoration: none;
+}
+.nx-brand__mark {
+  flex: none;
+  display: block;
+}
+.nx-brand__word {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  color: var(--ifm-font-color-base);
+}
+.nx-brand__word span {
+  color: hsl(216, 92%, 58%);
+}
