@@ -9,6 +9,13 @@ description: Reading and searching the system logs.
 **Operation & Analytics > Logs** shows the system log of the unit: messages from the firewall, the services, the
 network and the kernel.
 
+## Log Viewer: traffic and applications
+
+The **Log Viewer** (button on this page) has a **Traffic and applications** tab. It lists the connections with the
+application, the website name, the source and destination, the bytes in each direction and the duration. It records only
+while the Log Viewer is open and starts with the connections that are open at that moment; nothing is written to the system
+log for it. The traffic reports of **Operation & Analytics** keep the hourly totals for 35 days.
+
 ## Reading the log
 
 - Choose how many lines to load.

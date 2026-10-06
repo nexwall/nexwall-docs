@@ -64,6 +64,12 @@ persistente, como una unidad USB o un segundo disco, donde la unidad también es
 problemas y conserva un historial de la actividad entre reinicios. También puede dejar que la unidad copie datos adicionales
 al dispositivo una vez al día. Quitar el almacenamiento detiene la escritura de registros en él.
 
+En un disco de 16 GB o más, la unidad crea el almacenamiento por sí sola en el primer arranque, después de un espacio que se deja libre para una segunda copia del sistema (prevista para una versión posterior). El almacenamiento guarda los registros, el historial del visor de registros, los informes de tráfico (35 días), las firmas del antivirus y, si el disco es lo bastante grande, un archivo de intercambio.
+
+**Quitar el almacenamiento** solo lo *desconecta*: la unidad deja de usarlo y conserva la partición y sus datos, de modo que se puede volver a conectar. Para borrar la partición y recuperar el espacio marque **Borrar también la partición y todos sus datos**; no se puede deshacer. El cuadro de diálogo enumera lo que usa el almacenamiento. El antivirus se desactiva cuando su almacenamiento desaparece, los informes de tráfico y los registros vuelven a la memoria y el firewall sigue reenviando tráfico.
+
+**Swap.** La unidad usa memoria comprimida (zram) como swap y, en un disco de 16 GB o más, un archivo de intercambio en el almacenamiento, de modo que el antivirus, el proxy web y la prevención de intrusiones puedan funcionar juntos con 4 GB. El archivo de intercambio se elimina junto con el almacenamiento.
+
 ## Reiniciar y apagar
 
 **Reiniciar** reinicia la unidad, que no está disponible durante un breve período. **Apagar** la apaga, para

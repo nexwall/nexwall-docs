@@ -36,7 +36,8 @@ const sidebars: SidebarsConfig = {
       'security-services/application-control',
       'security-services/ips',
       'security-services/dns-filtering',
-      'security-services/ip-geo-blocking'
+      'security-services/ip-geo-blocking',
+      'security-services/web-protection'
     ]),
     category('Network', [
       'network/interfaces-routing',

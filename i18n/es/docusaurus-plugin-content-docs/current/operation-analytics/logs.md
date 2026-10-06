@@ -9,6 +9,10 @@ description: Lectura y búsqueda en los registros del sistema.
 **Operación y Analítica > Registros** muestra el registro del sistema de la unidad: mensajes del firewall, de los
 servicios, de la red y del kernel.
 
+## Visor de registros: tráfico y aplicaciones
+
+El **Visor de registros** (botón de esta página) tiene una pestaña **Tráfico y aplicaciones**. Lista las conexiones con la aplicación, el nombre del sitio, el origen y el destino, los bytes en cada sentido y la duración. Solo registra mientras el visor está abierto y empieza con las conexiones abiertas en ese momento; no se escribe nada en el registro del sistema. Los informes de tráfico de **Operación y análisis** conservan los totales por hora durante 35 días.
+
 ## Lectura del registro
 
 - Elija cuántas líneas cargar.

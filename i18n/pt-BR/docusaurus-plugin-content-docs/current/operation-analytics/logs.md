@@ -9,6 +9,10 @@ description: Leitura e pesquisa dos logs do sistema.
 **Operação e Análises > Logs** mostra o log do sistema da unidade: mensagens do firewall, dos serviços, da rede e do
 kernel.
 
+## Visualizador de logs: tráfego e aplicações
+
+O **Visualizador de logs** (botão desta página) tem uma aba **Tráfego e aplicações**. Ela lista as conexões com a aplicação, o nome do site, a origem e o destino, os bytes em cada sentido e a duração. Só registra enquanto o visualizador está aberto e começa com as conexões abertas naquele momento; nada é escrito no log do sistema. Os relatórios de tráfego de **Operação e análise** guardam os totais por hora por 35 dias.
+
 ## Lendo o log
 
 - Escolha quantas linhas carregar.

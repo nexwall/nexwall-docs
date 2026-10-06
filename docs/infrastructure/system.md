@@ -62,6 +62,18 @@ second disk, where the unit also writes the logs. This helps troubleshooting and
 reboots. You can also let the unit copy extra data to the device once a day. Removing the storage stops writing logs
 to it.
 
+On a disk of 16 GB or more the unit creates the storage by itself at the first start, after a gap that is kept free for a second
+system copy (planned for a later release). The storage holds the logs, the Log Viewer history, the traffic reports (kept 35
+days), the antivirus signatures and, when the disk is large enough, a swap file.
+
+**Removing the storage** only *detaches* it: the unit stops using it and keeps the partition and its data, so it can be
+attached again. To delete the partition and get the space back tick **Also erase the partition and all its data**; this cannot
+be undone. The dialog lists what uses the storage. The antivirus is switched off when its storage goes away, the traffic reports
+and logs return to memory, and the firewall keeps forwarding traffic.
+
+**Swap.** The unit uses compressed memory (zram) as swap and, on a disk of 16 GB or more, a swap file on the storage, so the
+antivirus, the web proxy and the intrusion prevention can run together on 4 GB. The swap file is removed with the storage.
+
 ## Reboot and shutdown
 
 **Reboot** restarts the unit, which is unavailable for a short time. **Shutdown** powers it off, for maintenance,
