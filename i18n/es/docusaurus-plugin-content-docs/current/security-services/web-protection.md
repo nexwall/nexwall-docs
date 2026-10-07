@@ -68,6 +68,7 @@ cada dispositivo cuyo tráfico se inspecciona; de lo contrario el navegador mues
 
 Conviene saber:
 
+- Al restaurar una copia de configuración en un firewall nuevo o reinstalado, vuelven las reglas y los perfiles, pero el firewall crea una CA de inspección **nueva**: instale el nuevo certificado en los dispositivos otra vez. Las listas de categorías, las firmas del antivirus y las reglas YARA se descargan de nuevo después de la primera comprobación de licencia (unos minutos).
 - La clave privada de la CA permanece en el firewall y no se incluye en copias de seguridad ni imágenes. **Rote** la CA desde la
   misma página si sospecha que quedó expuesta; los dispositivos deberán confiar en el certificado nuevo.
 - Los sitios que nunca deben abrirse (bancos, gobierno, salud, educación) no están en las categorías inspeccionadas de los

@@ -67,6 +67,7 @@ cada dispositivo cujo tráfego é inspecionado; caso contrário o navegador most
 
 O que vale saber:
 
+- Ao restaurar um backup de configuração em um firewall novo ou reinstalado, as regras e os perfis voltam, mas o firewall cria uma CA de inspeção **nova**: instale o novo certificado nos dispositivos novamente. As listas de categorias, as assinaturas do antivírus e as regras YARA são baixadas de novo depois da primeira verificação de licença (alguns minutos).
 - A chave privada da CA fica no firewall e não entra em backups nem em imagens. **Renove** a CA na mesma página se suspeitar que ela
   foi exposta; os dispositivos precisarão confiar no novo certificado.
 - Sites que nunca devem ser abertos (bancos, governo, saúde, educação) não estão nas categorias inspecionadas dos perfis.

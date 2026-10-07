@@ -67,6 +67,7 @@ device whose traffic is inspected, otherwise the browser shows a warning:
 
 Things worth knowing:
 
+- After you restore a configuration backup on a new or reinstalled firewall, the rules and profiles come back but the firewall creates a **new** inspection CA: install the new certificate on the devices again. The category lists, the antivirus signatures and the YARA rules are downloaded again after the first license check (a few minutes).
 - The private key of the CA stays on the firewall and is not included in backups or images. **Rotate** the CA from the same
   page if you suspect it was exposed; the devices must then trust the new certificate.
 - Sites that must never be opened (banking, government, health, education) are not in the inspected categories of the
