@@ -7,7 +7,7 @@ import Link from '@docusaurus/Link';
  */
 export default function NavbarLogo(): ReactNode {
   return (
-    <Link href="https://nexwall.com.br" className="navbar__brand nx-brand" aria-label="Nexwall">
+    <Link href="https://nexwall.com.br" target="_self" className="navbar__brand nx-brand" aria-label="Nexwall">
       <svg className="nx-brand__mark" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
         <defs>
           <linearGradient id="nx-brand-mark" x1="0" y1="0" x2="1" y2="1">
