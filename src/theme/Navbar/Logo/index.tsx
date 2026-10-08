@@ -1,15 +1,13 @@
 import React, {type ReactNode} from 'react';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 /**
  * The Nexwall lockup (N monogram and wordmark), the same as on nexwall.com.br, the release notes and the firewall login.
- * Drawn inline so it follows the theme; the link keeps the language of the page.
+ * Drawn inline so it follows the theme. The logo leads to the main site (the documentation home is the "Administration guide" link).
  */
 export default function NavbarLogo(): ReactNode {
-  const home = useBaseUrl('/');
   return (
-    <Link to={home} className="navbar__brand nx-brand" aria-label="Nexwall">
+    <Link href="https://nexwall.com.br" className="navbar__brand nx-brand" aria-label="Nexwall">
       <svg className="nx-brand__mark" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
         <defs>
           <linearGradient id="nx-brand-mark" x1="0" y1="0" x2="1" y2="1">
