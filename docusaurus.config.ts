@@ -6,6 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 const baseUrl = process.env.BASE_URL || '/'
 
 const config: Config = {
+  clientModules: [require.resolve('./src/clientModules/downloadLang.ts')],
   title: 'Nexwall Firewall Documentation',
   tagline: 'Administration guide for Nexwall Firewall',
   favicon: 'img/favicon.svg',
@@ -52,6 +53,7 @@ const config: Config = {
         { type: 'docSidebar', sidebarId: 'manual', position: 'left', label: 'Administration guide' },
         { type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help' },
         { type: 'localeDropdown', position: 'right' },
+        { href: 'https://releasenotes.nexwall.com.br/download/', label: 'Download', position: 'right', className: 'navbar-download', 'aria-label': 'Download Nexwall Firewall' },
         { href: 'https://github.com/nexwall/nexwall-docs', label: 'GitHub', position: 'right' }
       ]
     },

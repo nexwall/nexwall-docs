@@ -10,5 +10,8 @@
   },
   "item.label.GitHub": {
     "message": "GitHub"
+  },
+  "item.label.Download": {
+    "message": "Baixar"
   }
 }

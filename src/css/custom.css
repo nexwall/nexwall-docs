@@ -66,3 +66,19 @@ table {
 .nx-brand__word span {
   color: hsl(216, 92%, 58%);
 }
+
+/* Download button in the top bar */
+.navbar__item.navbar-download {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 0.9rem;
+  margin: 0 0.3rem;
+  font-weight: 600;
+}
+.navbar__item.navbar-download:hover {
+  background: var(--ifm-color-primary-dark);
+  color: #fff;
+  text-decoration: none;
+}
+.navbar__item.navbar-download::after { display: none; }
