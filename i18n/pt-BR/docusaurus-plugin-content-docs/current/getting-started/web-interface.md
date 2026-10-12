@@ -25,6 +25,18 @@ Configurações relacionadas são agrupadas como abas de uma mesma página. **Si
 hora, SSH, Atualizações e Armazenamento, e **Backup e Recuperação** tem Backup, Restauração, Migração e Restauração de
 fábrica. Favoritos antigos continuam funcionando: eles redirecionam para a aba correta.
 
+## A barra superior
+
+- **Nome da unidade:** o nome do firewall com um ponto de saúde (verde, âmbar ou vermelho). Clique para ver o nome, a série, a versão, o tempo ligado e a licença.
+- **Buscar (Ctrl K):** digite algumas letras do nome de uma página para ir até ela. `/` também a abre quando você não está digitando em um campo.
+- **Visualizador de logs:** abre o Visualizador de logs em uma nova aba.
+- **Idioma:** o idioma atual como código curto (EN, ES, PT); a escolha é lembrada para o seu usuário.
+- **Ajuda:** a página do manual da tela em que você está, a documentação, as notas da versão, a versão e a série (clique na série para copiar) e **Copiar resumo de diagnóstico**,
+  um texto curto para uma solicitação de suporte (versão, série, tempo ligado, licença e alertas ativos: sem configuração, endereços ou senhas).
+- **Estado e alertas (o sino):** o que precisa de atenção agora, agrupado por gravidade, com um link para a página de alertas, e o que aconteceu nas últimas 24 horas. A lista de 24 horas
+  é guardada no seu navegador: o firewall não mantém um histórico de alertas.
+- **Menu do usuário:** configurações da conta, tema claro ou escuro e sair.
+
 ## Abas
 
 Muitas páginas têm abas no topo; por exemplo, **Regras de Firewall** tem regras de Encaminhamento, de Entrada e de

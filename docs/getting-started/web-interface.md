@@ -24,6 +24,18 @@ Every section stays open, so every page is one click away. Related settings are 
 and **Backup & Recovery** has Backup, Restore, Migration and Factory reset. Old bookmarks still work: they redirect to
 the right tab.
 
+## The top bar
+
+- **Unit name:** the name of the firewall with a health dot (green, amber or red). Click it for the name, serial, version, uptime and license.
+- **Search (Ctrl K):** type a few letters of a page name to jump to it. `/` opens it too when you are not typing in a field.
+- **Log Viewer:** opens the Log Viewer in a new tab.
+- **Language:** the current language as a short code (EN, ES, PT); the choice is remembered for your user.
+- **Help:** the manual page of the screen you are on, the documentation, the release notes, the version and serial (click the serial to copy it) and **Copy diagnostics summary**,
+  a short text for a support request (version, serial, uptime, license and active alerts: no configuration, no addresses, no passwords).
+- **Status and alerts (the bell):** what needs attention now, grouped by severity, with a link to the alerts page, and what happened in the last 24 hours. The 24-hour list
+  is kept in your browser: the firewall does not keep an alert history.
+- **User menu:** account settings, light or dark theme and sign out.
+
 ## Tabs
 
 Many pages have tabs at the top, for example **Firewall Rules** has Forward, Input and Output rules. The selected tab

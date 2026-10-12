@@ -26,6 +26,18 @@ Sincronización de hora, SSH, Actualizaciones y Almacenamiento, y **Copia de Seg
 seguridad, Restauración, Migración y Restablecimiento de fábrica. Los marcadores antiguos siguen funcionando: redirigen a
 la pestaña correcta.
 
+## La barra superior
+
+- **Nombre de la unidad:** el nombre del firewall con un punto de salud (verde, ámbar o rojo). Haga clic para ver el nombre, la serie, la versión, el tiempo en línea y la licencia.
+- **Buscar (Ctrl K):** escriba unas letras del nombre de una página para ir a ella. `/` también la abre cuando no está escribiendo en un campo.
+- **Visor de registros:** abre el Visor de registros en una pestaña nueva.
+- **Idioma:** el idioma actual como código corto (EN, ES, PT); la elección se recuerda para su usuario.
+- **Ayuda:** la página del manual de la pantalla en que está, la documentación, las notas de la versión, la versión y la serie (haga clic en la serie para copiarla) y **Copiar resumen de diagnóstico**,
+  un texto corto para una solicitud de soporte (versión, serie, tiempo en línea, licencia y alertas activas: sin configuración, direcciones ni contraseñas).
+- **Estado y alertas (la campana):** lo que requiere atención ahora, agrupado por gravedad, con un enlace a la página de alertas, y lo ocurrido en las últimas 24 horas. La lista de 24 horas
+  se guarda en su navegador: el firewall no conserva un historial de alertas.
+- **Menú de usuario:** ajustes de la cuenta, tema claro u oscuro y cerrar sesión.
+
 ## Pestañas
 
 Muchas páginas tienen pestañas en la parte superior; por ejemplo, **Reglas de Firewall** tiene reglas de Reenvío, de
