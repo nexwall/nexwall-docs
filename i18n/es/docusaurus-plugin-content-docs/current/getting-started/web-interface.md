@@ -21,7 +21,7 @@ página está a un clic de distancia.
 | Acceso e Identidad | Usuarios y Grupos, Portal Cautivo |
 | Administración | Gestión Central, Licencias, Copia de Seguridad y Recuperación, Sistema, Certificados, Reiniciar y Apagar |
 
-Las secciones se abren y cierran con un clic en su nombre; la sección de la página en que está siempre queda abierta y su elección se recuerda en este navegador. Los ajustes relacionados se agrupan como pestañas de una misma página. **Sistema** tiene las pestañas General,
+Todas las secciones permanecen abiertas, así cada página queda a un clic. Los ajustes relacionados se agrupan como pestañas de una misma página. **Sistema** tiene las pestañas General,
 Sincronización de hora, SSH, Actualizaciones y Almacenamiento, y **Copia de Seguridad y Recuperación** tiene Copia de
 seguridad, Restauración, Migración y Restablecimiento de fábrica. Los marcadores antiguos siguen funcionando: redirigen a
 la pestaña correcta.

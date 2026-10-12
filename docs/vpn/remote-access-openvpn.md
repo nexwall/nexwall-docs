@@ -66,6 +66,11 @@ Deleting the server deletes all accounts associated with it, and it cannot be un
 Use any OpenVPN compatible client. The downloaded configuration contains what the client needs. Have users install a
 client, import the file, and connect.
 
+The Remote Access page also lists the **Nexwall VPN clients** for Windows and Android (macOS when it is published). Your browser reads the files of the
+latest build (the "nightly" release on GitHub), so the link is always the newest build; if GitHub cannot be reached, the link to the release page is still
+there. On Windows most PCs need the 64-bit Intel / AMD package (ARM64 and 32-bit packages are listed too). On Linux use the OpenVPN client of your
+distribution with the same file.
+
 ## Related pages
 
 - [Users and groups](../access-identity/users-groups.md)

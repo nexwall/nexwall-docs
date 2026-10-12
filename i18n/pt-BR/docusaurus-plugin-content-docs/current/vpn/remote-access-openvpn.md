@@ -60,6 +60,8 @@ Excluir o servidor exclui todas as contas associadas a ele, e não pode ser desf
 
 ## Software cliente
 
+A página de Acesso remoto também lista os **clientes VPN da Nexwall** para Windows e Android (macOS quando for publicado). O seu navegador lê os arquivos da última compilação (a versão «nightly» no GitHub), então o link é sempre a compilação mais recente; se o GitHub não puder ser alcançado, o link da página da versão continua lá. No Windows a maioria dos PCs precisa do pacote de 64 bits Intel / AMD (os de ARM64 e 32 bits também aparecem). No Linux use o cliente OpenVPN da sua distribuição com o mesmo arquivo.
+
 Use qualquer cliente compatível com OpenVPN. A configuração baixada contém o que o cliente precisa. Peça aos usuários que
 instalem um cliente, importem o arquivo e se conectem.
 
