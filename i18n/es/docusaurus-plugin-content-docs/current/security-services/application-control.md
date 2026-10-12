@@ -40,6 +40,17 @@ SafeSearch y restricciones de YouTube, y un perfil de filtro de contenido). Una 
 Las reglas que crea un perfil se marcan **Desde un perfil**; elegir otro perfil reemplaza solo esas reglas, nunca las suyas. Las nuevas
 conexiones también se bloquean mientras el motor de inspección no da abasto, de modo que nada pasa sin inspección.
 
+## El interruptor del motor y la sobrecarga
+
+En **Ajustes** el interruptor **Control de aplicaciones** enciende o apaga el motor de inspección por completo. Apagado, el tráfico se reenvía
+sin inspeccionar y no se aplica ninguna regla de aplicaciones, categorías ni de la primera capa de Web Protection; las reglas siguen guardadas.
+También es la forma rápida de recuperar la red si el motor falla. Activar la [Protección web](web-protection.md) vuelve a encender el interruptor,
+porque su primera capa reconoce los sitios con este motor.
+
+Cuando el motor no da abasto (su cola está llena) o no está en ejecución, el ajuste **Sobrecarga del motor de inspección** decide qué pasa con las
+conexiones nuevas: **Permitir el tráfico** (el valor por defecto y la recomendación: las conexiones siguen funcionando, sin inspección mientras tanto) o
+**Bloquear conexiones nuevas** (nada pasa sin inspección, pero las conexiones fallan hasta que el motor vuelva).
+
 ## Reglas
 
 Abra la pestaña **Reglas**. Una regla se aplica a **una interfaz**: solo el tráfico que pasa por ella está sujeto a la

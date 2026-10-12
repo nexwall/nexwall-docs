@@ -61,10 +61,12 @@ Abra la pestaña **Reglas**.
 - **Dónde se aplica**: una o más zonas (por ejemplo LAN) y, si quiere, solo algunos dispositivos o redes (objetos).
 - **Bloquear estas categorías**: las categorías a bloquear. Use **Permitir solo estas categorías** para una lista de permitidos; las
   categorías de infraestructura (redes de distribución de contenido, actualizaciones de software) quedan abiertas para que la red siga funcionando.
-- **Mostrar una página de bloqueo**: vea más abajo.
+- **Inspeccionar**: bloquear e inspeccionar son dos elecciones separadas. Bloquear nunca necesita el proxy: se decide por el nombre del
+  servidor y casi no cuesta nada. Inspeccionar es lo que abre una categoría en el proxy (la descifra). En la columna **PERMITIDAS**,
+  inspeccionar deja que el antivirus, el filtro de contenido y la política TLS miren dentro del tráfico; en la columna **BLOQUEADAS**,
+  deja que el proxy muestre una página de bloqueo en lugar de un error de conexión. Cada columna tiene un interruptor **Inspeccionar todo**
+  en la parte superior y cada categoría su propio botón **Inspeccionar**, así abre solo lo necesario y el resto queda fuera del proxy.
 - **Filtro de contenido**: el perfil de contenido de la regla, o ninguno.
-- **Inspeccionar tráfico cifrado**: en una regla con esta opción las categorías que indica no se bloquean, se **inspeccionan**
-  (se descifran, comprueban y analizan). Use una segunda regla para bloquear otras categorías para los mismos dispositivos.
 - **Forzar SafeSearch** y **Modo restringido de YouTube**: vea más abajo.
 
 Para eliminar una regla abra el **menú de tres puntos** de la regla y elija **Eliminar**. No hay botón de eliminar en la fila a propósito,
@@ -80,7 +82,7 @@ Los sitios que no están en ninguna categoría se permiten. Para permitir siempr
 
 ## La página de bloqueo
 
-Con **Mostrar una página de bloqueo** activada, un sitio bloqueado muestra al usuario una página que dice por qué (en portugués, español o inglés, con la
+Cuando **inspecciona** categorías bloqueadas, un sitio bloqueado muestra al usuario una página que dice por qué (en portugués, español o inglés, con la
 categoría, la regla y un código de referencia) en lugar de un error de conexión. El tráfico web de los clientes de la regla pasa entonces por
 el proxy del firewall.
 
@@ -122,7 +124,7 @@ Límites, con honestidad:
 
 ## Inspección del tráfico cifrado
 
-Cada firewall crea su propia autoridad certificadora (CA) la primera vez que se necesita la inspección. Instale este certificado en cada
+Solo pasan por el proxy las categorías que marque como **Inspeccionar**. Cada firewall crea su propia autoridad certificadora (CA) la primera vez que se necesita la inspección. Instale este certificado en cada
 dispositivo cuyo tráfico se inspecciona; de lo contrario el navegador muestra una advertencia:
 
 1. Abra **Servicios de seguridad > Web Protection > Ajustes**, sección **Inspección SSL**, y descargue el certificado de la CA.

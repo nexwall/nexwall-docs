@@ -61,10 +61,12 @@ Open the **Rules** tab.
 - **Where it applies**: one or more zones (for example LAN) and, if you want, only some devices or networks (objects).
 - **Block these categories**: the categories to block. Use **Allow only these categories** instead for an allow-list; the
   infrastructure categories (content delivery networks, software updates) stay open so the network keeps working.
-- **Show a block page**: see below.
+- **Inspect**: block and inspect are two separate choices. Blocking never needs the proxy: it is decided from the server name
+  and costs almost nothing. Inspecting is what opens a category in the proxy (decrypts it). In the **ALLOWED** column inspecting lets
+  the antivirus, the content filter and the TLS policy look inside the traffic; in the **BLOCKED** column it lets the proxy show a
+  block page instead of a connection error. Each column has an **Inspect all** switch at its top, and each category has its own
+  **Inspect** button, so you open only what you need and the rest stays outside the proxy.
 - **Content filter**: the content profile of the rule, or none.
-- **Inspect encrypted traffic**: for a rule with this option the categories you list are not blocked, they are **inspected**
-  (decrypted, checked, scanned). Use a second rule to block other categories for the same devices.
 - **Enforce SafeSearch** and **YouTube Restricted Mode**: see below.
 
 To delete a rule open the **three-dots menu** of the rule and choose **Delete**. There is no delete button on the row on purpose,
@@ -80,7 +82,7 @@ Websites that are not in any category are allowed. To always allow or never insp
 
 ## The block page
 
-With **Show a block page** on, a blocked website shows the user a page that says why (in Portuguese, Spanish or English, with the
+When you **inspect** blocked categories, a blocked website shows the user a page that says why (in Portuguese, Spanish or English, with the
 category, the rule and a reference code) instead of a connection error. The web traffic of the rule's clients then goes through
 the firewall's proxy.
 
@@ -122,7 +124,7 @@ Limits, honestly:
 
 ## Inspecting encrypted traffic
 
-Each firewall creates its own certificate authority (CA) the first time inspection is needed. Install this certificate on every
+Only the categories you mark **Inspect** go through the proxy. Each firewall creates its own certificate authority (CA) the first time inspection is needed. Install this certificate on every
 device whose traffic is inspected, otherwise the browser shows a warning:
 
 1. Open **Security Services > Web Protection > Settings**, section **SSL inspection**, and download the CA certificate.

@@ -40,6 +40,17 @@ SafeSearch e restrições do YouTube, e um perfil de filtro de conteúdo). Uma u
 As regras que um perfil cria são marcadas **De um perfil**; escolher outro perfil substitui só essas regras, nunca as suas. Novas
 conexões também são bloqueadas enquanto o mecanismo de inspeção não dá conta, de modo que nada passa sem inspeção.
 
+## A chave do motor e a sobrecarga
+
+Em **Configurações** a chave **Controle de aplicações** liga ou desliga o motor de inspeção por completo. Desligado, o tráfego é encaminhado
+sem inspeção e nenhuma regra de aplicações, categorias ou da primeira camada do Web Protection é aplicada; as regras continuam salvas.
+É também o jeito rápido de recuperar a rede se o motor falhar. Ativar a [Proteção web](web-protection.md) liga a chave de novo, porque a
+primeira camada dela reconhece os sites com este motor.
+
+Quando o motor não dá conta (a fila está cheia) ou não está em execução, a configuração **Sobrecarga do motor de inspeção** decide o que acontece
+com as novas conexões: **Permitir o tráfego** (o padrão e a recomendação: as conexões continuam funcionando, sem inspeção nesse meio tempo) ou
+**Bloquear novas conexões** (nada passa sem inspeção, mas as conexões falham até o motor voltar).
+
 ## Regras
 
 Abra a aba **Regras**. Uma regra vale para **uma interface**: apenas o tráfego que passa por ela está sujeito à regra.

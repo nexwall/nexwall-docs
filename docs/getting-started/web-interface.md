@@ -20,7 +20,7 @@ The menu on the left is organized in sections. Every section is always expanded,
 | Access & Identity | Users & Groups, Captive Portal |
 | Administration | Central Management, Licensing, Backup & Recovery, System, Certificates, Reboot & Shutdown |
 
-Related settings are grouped as tabs of one page. **System** has the tabs General, Time sync, SSH, Updates and Storage,
+The sections can be opened and closed with a click on their name; the section of the page you are on is always open and your choice is remembered in this browser. Related settings are grouped as tabs of one page. **System** has the tabs General, Time sync, SSH, Updates and Storage,
 and **Backup & Recovery** has Backup, Restore, Migration and Factory reset. Old bookmarks still work: they redirect to
 the right tab.
 

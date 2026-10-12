@@ -39,6 +39,17 @@ SafeSearch and YouTube restrictions, and a content filter profile). A new unit s
 The rules a profile creates are marked **From a profile**; choosing another profile replaces only those rules, never your own. New
 connections are also blocked while the inspection engine cannot keep up, so nothing goes through uninspected.
 
+## The engine switch and overload
+
+In **Settings** the **Application Control** switch turns the inspection engine on or off as a whole. When it is off, traffic is forwarded
+without being inspected and no application, category or Web Protection first-layer rule is enforced; the rules stay saved. It is also the
+quick way back to a working network if the engine ever misbehaves. Enabling [Web Protection](web-protection.md) turns the switch back on,
+because its first layer recognizes websites with this engine.
+
+When the engine cannot keep up (its queue is full) or is not running, the **Inspection engine overload** setting decides what happens to
+new connections: **Allow the traffic** (the default and the recommendation: connections keep working, uninspected meanwhile) or **Block new
+connections** (nothing passes without inspection, but connections fail until the engine is back).
+
 ## Rules
 
 Open the **Rules** tab. A rule applies to **one interface**: only the traffic that passes through it is subject to the
