@@ -39,7 +39,7 @@ hosts que lhe interessam. Adicionar o endereço da outra ponta de um túnel VPN 
 
 As medições aparecem como dois gráficos por host: **latência** (tempo de ida e volta, com mínimo, máximo e
 média) e **perda de pacotes** (a parte dos pings que não receberam resposta; zero é um link saudável). Os mesmos gráficos estão na
-aba **Links WAN** do [Monitoramento](monitor-connections.md).
+aba **Uplinks WAN** do [Monitoramento](monitor-connections.md).
 
 ## Páginas relacionadas
 

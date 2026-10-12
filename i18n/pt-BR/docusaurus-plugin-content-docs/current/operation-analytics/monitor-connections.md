@@ -13,8 +13,8 @@ description: Fluxos ao vivo, maiores consumidores, links WAN, VPN e a tabela de 
 | Aba | O que responde |
 |---|---|
 | Fluxos ao vivo | Quais conexões estão ativas agora, com suas velocidades de transferência |
-| Maiores consumidores | Quais equipamentos locais, aplicações, equipamentos remotos e protocolos usam mais tráfego neste momento |
-| Links WAN | O estado de cada link WAN, seu tráfego, e a latência e a perda de pacotes para os hosts que monitora |
+| Principais consumidores | Quais equipamentos locais, aplicações e protocolos usam mais tráfego neste momento: o total, o dispositivo, a aplicação e o protocolo mais ativos, e um cartão ordenado para cada um com a velocidade de cada linha |
+| Uplinks WAN | O estado de cada link WAN, seu tráfego, e a latência e a perda de pacotes para os hosts que monitora |
 | VPN | As sessões de acesso remoto e o estado dos túneis |
 
 O tráfego do dia, por hora, dispositivo e aplicação, agora está em [Análise de Tráfego](traffic-analytics.md), e o que foi
@@ -48,7 +48,7 @@ Se a lista está vazia, o motivo é mostrado:
 O tráfego que o motor não consegue classificar aparece como **Desconhecido**. O conjunto de aplicações reconhecidas depende do
 catálogo instalado na unidade, veja [Controle de aplicações](../security-services/application-control.md).
 
-### Links WAN
+### Uplinks WAN
 
 Para cada link WAN a aba mostra seu estado e endereço público, os eventos do link (ativo e inativo), seu tráfego e,
 para cada host que monitora, a **latência** e a **perda de pacotes**. Escolha os hosts na aba Configurações de

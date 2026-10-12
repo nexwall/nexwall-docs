@@ -13,7 +13,7 @@ description: Flujos en vivo, principales consumidores, los enlaces WAN, VPN y la
 | Pestaña | Qué responde |
 |---|---|
 | Flujos en vivo | Qué conexiones están activas ahora, con sus velocidades de transferencia |
-| Principales consumidores | Qué equipos locales, aplicaciones, equipos remotos y protocolos usan más tráfico en este momento |
+| Principales consumidores | Qué equipos locales, aplicaciones y protocolos usan más tráfico en este momento: el total, el dispositivo, la aplicación y el protocolo más activos, y una tarjeta ordenada para cada uno con la velocidad de cada fila |
 | Enlaces WAN | El estado de cada enlace WAN, su tráfico, y la latencia y la pérdida de paquetes hacia los equipos que monitoriza |
 | VPN | Las sesiones de acceso remoto y el estado de los túneles |
 

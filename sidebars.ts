@@ -53,13 +53,14 @@ const sidebars: SidebarsConfig = {
       'vpn/wireguard'
     ]),
     category('Access & Identity', ['access-identity/users-groups', 'access-identity/captive-portal']),
-    category('Infrastructure', [
+    category('Administration', [
+      'administration/central-management',
+      'administration/licensing-account',
       'infrastructure/backup-recovery',
       'infrastructure/system',
       'infrastructure/certificates',
       'infrastructure/high-availability'
-    ]),
-    category('Administration', ['administration/central-management', 'administration/licensing-account'])
+    ])
   ],
   help: [
     'help/troubleshooting',

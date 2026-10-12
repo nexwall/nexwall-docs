@@ -13,7 +13,7 @@ description: Live flows, top talkers, the WAN uplinks, VPN, and the connection t
 | Tab | What it answers |
 |---|---|
 | Live flows | Which connections are active right now, with their transfer rates |
-| Top talkers | Which local hosts, applications, remote hosts and protocols use the most traffic at this moment |
+| Top Talkers | Which local hosts, applications and protocols use the most traffic at this moment: the total, the busiest device, application and protocol, and a ranked card for each with the speed of every row |
 | WAN uplinks | The state of each WAN link, its traffic, and the latency and packet loss to the hosts you monitor |
 | VPN | Remote access sessions and the state of the tunnels |
 
