@@ -43,6 +43,12 @@ rede de /20 ou menor.
 Você pode restringir uma interface para que somente os dispositivos com uma concessão estática recebam serviço. Combinada
 com uma política rígida, isso mantém dispositivos desconhecidos fora da rede.
 
+## Padrões de fábrica
+
+Uma unidade nova já atende a sua LAN: o DHCP entrega os endereços `192.168.1.100` a `192.168.1.249` e diz aos clientes para usarem o
+firewall (`192.168.1.1`) como **gateway** e como **servidor DNS**. Mantenha o firewall como servidor DNS dos clientes: o filtro DNS,
+o SafeSearch e as opções familiares da [Proteção web](../security-services/web-protection.md) funcionam por meio dele.
+
 ## DNS
 
 A unidade atua como resolvedor para as suas redes.

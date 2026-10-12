@@ -6,7 +6,7 @@ description: Certificates for the web interface and the reverse proxy.
 
 # Certificates
 
-**Infrastructure > Certificates** manages the X.509 certificates that the web server of the unit uses. This covers the
+**Administration > Certificates** manages the X.509 certificates that the web server of the unit uses. This covers the
 web interface and the [reverse proxy](../network/reverse-proxy.md).
 
 ## The default certificate

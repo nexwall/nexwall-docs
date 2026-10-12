@@ -18,7 +18,7 @@ El firewall funciona sin suscripción. Una suscripción añade funciones que dep
   cuando el plan incluye uno;
 - las listas avanzadas de [Threat Shield](../security-services/dns-filtering.md);
 - copias de seguridad remotas (en la nube), cifradas, vea [Copia de seguridad y recuperación](../infrastructure/backup-recovery.md);
-- la [Analítica de Tráfico](../operation-analytics/traffic-analytics.md);
+- el sandbox [Intelligent Threat Block](../security-services/web-protection.md) y el antivirus de [Protección web](../security-services/web-protection.md), donde el plan los incluye;
 - la gestión de un número ilimitado de unidades desde un controlador;
 - bases de datos remotas de usuarios de VPN;
 - sesiones de soporte remoto, en los planes que las incluyen.

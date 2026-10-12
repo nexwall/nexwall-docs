@@ -1,38 +1,44 @@
 ---
 title: Traffic Analytics
 sidebar_position: 3
-description: The optional cloud analytics service fed with traffic metadata.
+description: "Where the traffic of the firewall goes: how much, when, and which devices, applications, websites and protocols."
 ---
 
 # Traffic Analytics
 
-**Operation & Analytics > Traffic Analytics** connects the unit to a cloud analytics service. The service turns the
-metadata about your traffic, which the local classification engine produces, into higher level reports about your
-network.
+**Operation & Analytics > Traffic Analytics** shows where the traffic goes. It is built from the hourly traffic reports of the
+local classification engine and runs on the firewall: nothing leaves the unit. The content of connections is never
+recorded, only which applications and protocols were seen and how many bytes they carried.
 
-## What is sent
+Choose **Today**, **7 days** or **30 days** at the top right. The reports are kept for 35 days.
 
-Only metadata is sent: which applications and protocols were seen, and summary information about flows. The content of
-connections is not sent. The service is optional and it is **off by default**.
+## What the page shows
 
-:::caution Decide before enabling
-Enabling the service means metadata about your network leaves the unit. Review your privacy obligations first.
-:::
+- **Four figures**: the total traffic, the busiest hour, the top application and the top device.
+- **Traffic by hour**: a bar per hour of the day. For 7 or 30 days the hours of all the days are added together. Today is
+  updated every minute.
+- **Ranked lists** of the local hosts (devices), the applications, the remote hosts and the protocols, each row with its
+  volume and its share of the total.
+- **Web categories**: the traffic by website category.
 
-## How to enable it
+The firewall itself is not counted as a device or as a remote host. With the web proxy on, everything the proxy fetches
+for your devices leaves from the firewall address, and counting it would show the firewall as the busiest device and count
+the traffic twice.
 
-1. Open the page and turn on **metadata sending**. This must be done before the unit is provisioned.
-2. Apply the changes.
-3. The page shows the **agent identifier** of the unit. Use it, from the analytics portal, to add the unit to your
-   account.
-4. Open the portal from the link on the page and sign in. The service is provided through the Nexwall services
-   platform and requires a subscription.
+## Following a row
+
+Click a row of a list to filter the whole page by it, for example by one device. The filter appears at the top as a chip;
+click the **x** of a chip, or **Clear**, to remove it. Filters combine: a device, then one of its applications, then one
+remote host. The filters are in the address of the page, so you can bookmark or share a link to a view.
 
 ## When there is nothing to see
 
-If the traffic classification engine is not running, the page tells you so. The engine is also what feeds the live flows
-of the [Monitor](monitor-connections.md), so check there first.
+If the traffic classification engine is not running, the page has no data. The engine is also what feeds the live flows of the
+[Monitor](monitor-connections.md), so check there first. Approximations to keep in mind: for 7 and 30 days each day brings its own
+top list, so something that is small every day can be missing from the totals of the lists.
 
-## Turning it off
+## Related pages
 
-Turn off metadata sending and apply the changes. The unit stops sending immediately.
+- [Threat Analytics](threat-analytics.md)
+- [Monitor and connections](monitor-connections.md)
+- [Application control](../security-services/application-control.md)

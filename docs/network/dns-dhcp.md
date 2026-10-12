@@ -41,6 +41,12 @@ or smaller.
 You can restrict an interface so that only devices with a static lease receive service. Combined with a strict policy,
 this keeps unknown devices off the network.
 
+## Factory defaults
+
+A new unit already serves its LAN: DHCP hands out the addresses `192.168.1.100` to `192.168.1.249`, and tells the clients to use the
+firewall (`192.168.1.1`) as their **gateway** and as their **DNS server**. Keep the firewall as the DNS server of the clients: the DNS
+filter, SafeSearch and the family options of [Web Protection](../security-services/web-protection.md) work through it.
+
 ## DNS
 
 The unit acts as a resolver for its networks.

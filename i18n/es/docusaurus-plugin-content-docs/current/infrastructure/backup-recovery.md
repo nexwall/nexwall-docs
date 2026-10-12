@@ -6,7 +6,7 @@ description: Haga copias de seguridad, restaure, migre y restablezca de fábrica
 
 # Copia de seguridad y recuperación
 
-**Infraestructura > Copia de Seguridad y Recuperación** protege su configuración. Tiene cuatro pestañas: Copia de
+**Administración > Copia de Seguridad y Recuperación** protege su configuración. Tiene cuatro pestañas: Copia de
 seguridad, Restauración, Migración y Restablecimiento de fábrica.
 
 ## Copia de seguridad

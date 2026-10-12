@@ -9,7 +9,7 @@ description: Comandos úteis por SSH, onde ficam as coisas e perguntas frequente
 ## Acessando a linha de comando
 
 Use SSH com o usuário `root`, ou o console da máquina virtual ou do hardware. As configurações de SSH ficam em
-**Infraestrutura > Sistema**, na aba SSH. Entre com uma chave se você desativou o login com senha.
+**Administração > Sistema**, na aba SSH. Entre com uma chave se você desativou o login com senha.
 
 O sistema é baseado em OpenWrt, então suas ferramentas são as desse ecossistema.
 
@@ -56,14 +56,14 @@ interface web, a API e a linha de comando sempre concordarem — veja
 |---|---|
 | Configuração | `/etc/config/` |
 | Scripts de inicialização | `/etc/init.d/` |
-| Certificados do servidor web | gerenciados em **Infraestrutura > Certificados** |
+| Certificados do servidor web | gerenciados em **Administração > Certificados** |
 | Dados de classificação de tráfego | `/etc/netifyd/` |
 | Log do sistema | na memória, lido com `logread` |
 
 ## Perguntas frequentes
 
 **Qual é o endereço e a senha padrão?**
-A LAN responde em `192.168.1.1`. O usuário é `root` e a senha é `Nexwall,1234`. Altere-a no primeiro login.
+A LAN responde em `192.168.1.1`. O usuário é `root` e a senha é `nexwall`. Altere-a no primeiro login.
 
 **Posso executá-lo em uma máquina virtual?**
 Sim. Use firmware UEFI, dê a ele pelo menos dois adaptadores de rede e 4 GB de memória. Veja
@@ -83,8 +83,7 @@ aplicações funcionam sem uma. Uma assinatura adiciona os recursos listados em
 [Licenciamento e conta](../administration/licensing-account.md).
 
 **Para onde os meus dados são enviados?**
-Para lugar nenhum, a menos que você ative um recurso que precise disso. A Análise de Tráfego envia metadados de tráfego
-quando você a ativa, e uma unidade conectada a um controlador envia seus logs e métricas a esse controlador.
+Para lugar nenhum, a menos que você ative um recurso que precise disso. Os relatórios de tráfego são gerados e guardados no firewall (35 dias) e nada deles sai dele, e uma unidade conectada a um controlador envia seus logs e métricas a esse controlador.
 
 **Como movo uma configuração para outra unidade?**
 Faça um backup e restaure-o na nova unidade. Veja [Backup e recuperação](../infrastructure/backup-recovery.md).

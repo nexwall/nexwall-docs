@@ -35,6 +35,8 @@ Datos clave sobre la imagen:
 
 - Es un disco completo, con particiones para el cargador de arranque, el sistema y sus datos. **No** es un instalador y
   no es una ISO. Se escribe en un disco, o se conecta a una máquina virtual como disco.
+- Un **instalador ISO** está previsto para una versión futura, para instalar desde una memoria USB o un CD virtual sin escribir una imagen de disco
+  a mano. Hasta que se publique, la imagen de disco descrita aquí es la forma de instalar, y esta guía se actualizará cuando exista el instalador.
 - Arranca solo con UEFI. En máquinas virtuales, elija el firmware UEFI y desactive Secure Boot, porque la imagen no está
   firmada para él.
 - El sistema se ejecuta desde una base de solo lectura con su configuración superpuesta. Esto permite que un

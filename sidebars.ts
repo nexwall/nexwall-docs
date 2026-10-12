@@ -21,8 +21,9 @@ const sidebars: SidebarsConfig = {
     ]),
     category('Operation & Analytics', [
       'operation-analytics/dashboard',
-      'operation-analytics/monitor-connections',
+      'operation-analytics/threat-analytics',
       'operation-analytics/traffic-analytics',
+      'operation-analytics/monitor-connections',
       'operation-analytics/performance',
       'operation-analytics/logs'
     ]),

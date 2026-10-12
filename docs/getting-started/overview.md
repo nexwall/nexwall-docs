@@ -28,11 +28,11 @@ The administration guide follows the menu of the web interface, so you can find 
 you are using:
 
 - **Getting started** and **Installation** explain what you need to bring a unit into service.
-- **Operation & Analytics** covers the dashboard, live traffic, performance and logs.
+- **Operation & Analytics** covers the dashboard, threat and traffic analytics, live traffic, performance and logs.
 - **Policy** covers rules, NAT, zones and objects.
-- **Security Services** covers application control, the intrusion prevention system, DNS filtering and IP or country
-  blocking.
-- **Network**, **VPN**, **Access & Identity**, **Infrastructure** and **Administration** cover the rest of the menu.
+- **Security Services** covers application control, Web Protection (website categories, content filter, antivirus, sandbox),
+  the intrusion prevention system, DNS filtering and IP or country blocking.
+- **Network**, **VPN**, **Access & Identity**, and **Administration** cover the rest of the menu.
 - **Help** collects troubleshooting steps organized by symptom, and a command line reference.
 
 :::tip Start here

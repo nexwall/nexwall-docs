@@ -6,8 +6,8 @@ description: Nome de host, hora, SSH, atualizações, armazenamento e reiniciali
 
 # Sistema
 
-**Infraestrutura > Sistema** agrupa as configurações da própria unidade em cinco abas: Geral, Sincronização de hora, SSH,
-Atualizações e Armazenamento. As ações de energia ficam em **Infraestrutura > Reiniciar e Desligar**.
+**Administração > Sistema** agrupa as configurações da própria unidade em cinco abas: Geral, Sincronização de hora, SSH,
+Atualizações e Armazenamento. As ações de energia ficam em **Administração > Reiniciar e Desligar**.
 
 ## Geral
 
@@ -61,11 +61,11 @@ hora e o estado da sua assinatura, veja [Solução de problemas](../help/trouble
 Por padrão os logs ficam na memória. Na aba Armazenamento você configura um dispositivo persistente, como uma unidade USB
 ou um segundo disco, onde a unidade também grava os logs. Isso ajuda na solução de problemas e guarda um registro da
 atividade entre reinicializações. Você também pode deixar a unidade copiar dados extras para o dispositivo uma vez por
-dia. Remover o armazenamento interrompe a gravação de logs nele.
+dia.
 
 Em um disco de 16 GB ou mais, a unidade cria o armazenamento sozinha na primeira inicialização, depois de um espaço que fica livre para uma segunda cópia do sistema (prevista para uma versão futura). O armazenamento guarda os logs, o histórico do visualizador de logs, os relatórios de tráfego (35 dias), as assinaturas do antivírus e, se o disco for grande o bastante, um arquivo de swap.
 
-**Remover o armazenamento** apenas o *desconecta*: a unidade deixa de usá-lo e mantém a partição e os dados, e ele pode ser conectado de novo. Para apagar a partição e recuperar o espaço marque **Apagar também a partição e todos os seus dados**; isso não pode ser desfeito. A janela lista o que usa o armazenamento. O antivírus é desligado quando o seu armazenamento sai, os relatórios de tráfego e os logs voltam para a memória e o firewall continua encaminhando tráfego.
+O armazenamento faz parte do funcionamento da unidade (assinaturas do antivírus, logs, relatórios de tráfego, swap), por isso a interface web **não** oferece um botão para removê-lo. Se realmente precisar desconectá-lo, faça pela linha de comando; o antivírus então se desliga, os relatórios de tráfego e os logs voltam para a memória e o firewall continua encaminhando tráfego.
 
 **Swap.** A unidade usa memória comprimida (zram) como swap e, em um disco de 16 GB ou mais, um arquivo de swap no armazenamento, para que o antivírus, o proxy web e a prevenção de intrusão funcionem juntos com 4 GB. O arquivo de swap é removido junto com o armazenamento.
 

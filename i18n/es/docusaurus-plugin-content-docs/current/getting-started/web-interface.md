@@ -13,14 +13,13 @@ página está a un clic de distancia.
 
 | Sección | Contiene |
 |---|---|
-| Operación y Analítica | Panel, Monitorización, Analítica de Tráfico, Conexiones, Rendimiento, Registros |
+| Operación y Analítica | Panel, Análisis de amenazas, Analítica de Tráfico, Monitorización, Conexiones, Rendimiento, Registros |
 | Políticas | Reglas de Firewall, NAT, Redirección de Puertos, Zonas y Políticas, Objetos |
-| Servicios de Seguridad | DPI, IPS / IDS, Filtrado de DNS, Bloqueo de IP y Geolocalización |
+| Servicios de Seguridad | Control de aplicaciones (DPI), Protección web, Protección de red (IPS), Filtrado de DNS, Bloqueo de IP y Geolocalización |
 | Red | Interfaces, Enrutamiento, SD-WAN, DNS y DHCP, QoS, Proxy Inverso |
 | VPN | Acceso Remoto (OpenVPN), OpenVPN Sitio a Sitio, IPsec Sitio a Sitio, WireGuard |
 | Acceso e Identidad | Usuarios y Grupos, Portal Cautivo |
-| Infraestructura | Copia de Seguridad y Recuperación, Sistema, Certificados, Reiniciar y Apagar |
-| Administración | Gestión Central, Licencias |
+| Administración | Gestión Central, Licencias, Copia de Seguridad y Recuperación, Sistema, Certificados, Reiniciar y Apagar |
 
 Los ajustes relacionados se agrupan como pestañas de una misma página. **Sistema** tiene las pestañas General,
 Sincronización de hora, SSH, Actualizaciones y Almacenamiento, y **Copia de Seguridad y Recuperación** tiene Copia de

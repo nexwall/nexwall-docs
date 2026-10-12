@@ -1,39 +1,44 @@
 ---
 title: Análise de Tráfego
 sidebar_position: 3
-description: O serviço opcional de análise na nuvem, alimentado com metadados de tráfego.
+description: "Para onde vai o tráfego do firewall: quanto, quando e quais dispositivos, aplicações, sites e protocolos."
 ---
 
 # Análise de Tráfego
 
-**Operação e Análises > Análise de Tráfego** conecta a unidade a um serviço de análise na nuvem. O serviço transforma os
-metadados sobre o seu tráfego, produzidos pelo mecanismo local de classificação, em relatórios de mais alto nível sobre a
-sua rede.
+**Operação e Análises > Análise de Tráfego** mostra para onde vai o tráfego. É construída a partir dos relatórios horários de tráfego do
+motor de classificação local e funciona no firewall: nada sai da unidade. O conteúdo das conexões nunca é
+registrado, apenas quais aplicações e protocolos foram vistos e quantos bytes transportaram.
 
-## O que é enviado
+Escolha **Hoje**, **7 dias** ou **30 dias** no canto superior direito. Os relatórios são mantidos por 35 dias.
 
-São enviados apenas metadados: quais aplicações e protocolos foram vistos e informações resumidas sobre os fluxos. O
-conteúdo das conexões não é enviado. O serviço é opcional e vem **desativado por padrão**.
+## O que a página mostra
 
-:::caution Decida antes de ativar
-Ativar o serviço significa que metadados sobre a sua rede saem da unidade. Revise antes as suas obrigações de
-privacidade.
-:::
+- **Quatro números**: o tráfego total, a hora de maior tráfego, a aplicação principal e o dispositivo principal.
+- **Tráfego por hora**: uma barra por hora do dia. Para 7 ou 30 dias as horas de todos os dias são somadas. Hoje é
+  atualizado a cada minuto.
+- **Listas ordenadas** dos equipamentos locais (dispositivos), das aplicações, dos equipamentos remotos e dos protocolos, cada linha com seu
+  volume e sua parte do total.
+- **Categorias web**: o tráfego por categoria de site.
 
-## Como ativar
+O próprio firewall não é contado como dispositivo nem como equipamento remoto. Com o proxy web ativado, tudo o que o proxy baixa
+para seus dispositivos sai do endereço do firewall, e contá-lo mostraria o firewall como o dispositivo com mais tráfego e contaria
+o tráfego duas vezes.
 
-1. Abra a página e ative o **envio de metadados**. Isso deve ser feito antes de a unidade ser provisionada.
-2. Aplique as alterações.
-3. A página mostra o **identificador do agente** da unidade. Use-o, a partir do portal de análise, para adicionar a
-   unidade à sua conta.
-4. Abra o portal pelo link da página e entre. O serviço é fornecido pela plataforma de serviços Nexwall e exige uma
-   assinatura.
+## Seguir uma linha
+
+Clique em uma linha de uma lista para filtrar toda a página por ela, por exemplo por um dispositivo. O filtro aparece no alto como uma etiqueta;
+clique no **x** da etiqueta, ou em **Remover**, para retirá-lo. Os filtros se combinam: um dispositivo, depois uma de suas aplicações, depois um
+equipamento remoto. Os filtros ficam no endereço da página, então você pode salvar ou compartilhar um link para uma visão.
 
 ## Quando não há nada para ver
 
-Se o mecanismo de classificação de tráfego não estiver em execução, a página informa. O mecanismo também alimenta os
-fluxos em tempo real do [Monitoramento](monitor-connections.md), então verifique lá primeiro.
+Se o motor de classificação de tráfego não está funcionando, a página não tem dados. O motor também alimenta os fluxos ao vivo do
+[Monitor](monitor-connections.md), então verifique lá primeiro. Aproximação que vale lembrar: para 7 e 30 dias cada dia contribui com sua própria
+lista de principais, então algo que é pequeno todos os dias pode faltar nos totais das listas.
 
-## Desativando
+## Páginas relacionadas
 
-Desative o envio de metadados e aplique as alterações. A unidade para de enviar imediatamente.
+- [Análise de ameaças](threat-analytics.md)
+- [Monitoramento e conexões](monitor-connections.md)
+- [Controle de aplicações](../security-services/application-control.md)

@@ -29,11 +29,11 @@ La guía de administración sigue el menú de la interfaz web, de modo que puede
 menú que está usando:
 
 - **Primeros pasos** e **Instalación** explican lo que necesita para poner una unidad en servicio.
-- **Operación y Analítica** cubre el panel, el tráfico en tiempo real, el rendimiento y los registros.
+- **Operación y Analítica** cubre el panel, el análisis de amenazas y de tráfico, el tráfico en tiempo real, el rendimiento y los registros.
 - **Políticas** cubre reglas, NAT, zonas y objetos.
-- **Servicios de Seguridad** cubre el control de aplicaciones, el sistema de prevención de intrusiones, el filtrado de DNS
-  y el bloqueo de IP o de países.
-- **Red**, **VPN**, **Acceso e Identidad**, **Infraestructura** y **Administración** cubren el resto del menú.
+- **Servicios de Seguridad** cubre el control de aplicaciones, la Protección web (categorías de sitios, filtro de contenido, antivirus, sandbox),
+  el sistema de prevención de intrusiones, el filtrado de DNS y el bloqueo de IP o de países.
+- **Red**, **VPN**, **Acceso e Identidad** y **Administración** cubren el resto del menú.
 - **Ayuda** reúne pasos de solución de problemas organizados por síntoma y una referencia de la línea de comandos.
 
 :::tip Empiece aquí

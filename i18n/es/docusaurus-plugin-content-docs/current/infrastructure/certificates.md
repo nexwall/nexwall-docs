@@ -6,7 +6,7 @@ description: Certificados para la interfaz web y el proxy inverso.
 
 # Certificados
 
-**Infraestructura > Certificados** gestiona los certificados X.509 que usa el servidor web de la unidad. Esto abarca la
+**Administración > Certificados** gestiona los certificados X.509 que usa el servidor web de la unidad. Esto abarca la
 interfaz web y el [proxy inverso](../network/reverse-proxy.md).
 
 ## El certificado predeterminado

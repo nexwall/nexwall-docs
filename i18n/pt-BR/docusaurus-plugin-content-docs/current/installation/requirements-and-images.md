@@ -35,6 +35,8 @@ Fatos importantes sobre a imagem:
 
 - Ela é um disco completo, com partições para o gerenciador de boot, o sistema e os seus dados. **Não** é um instalador
   e não é uma ISO. Você a grava em um disco ou a anexa a uma máquina virtual como disco.
+- Um **instalador ISO** está previsto para uma versão futura, para instalar a partir de um pendrive USB ou de um CD virtual sem gravar uma imagem de disco
+  manualmente. Até ser publicado, a imagem de disco descrita aqui é a forma de instalar, e este guia será atualizado quando o instalador existir.
 - Ela inicia somente com UEFI. Em máquinas virtuais, escolha o firmware UEFI e desative o Secure Boot, pois a imagem não
   é assinada para ele.
 - O sistema roda a partir de uma base somente leitura com a sua configuração aplicada por cima. É isso que permite que

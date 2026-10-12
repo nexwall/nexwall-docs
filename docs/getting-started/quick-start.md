@@ -12,15 +12,25 @@ written the image to a disk or created a virtual machine; if not, start with
 
 ## Before you begin
 
-- A computer connected to the **LAN** network interface of the unit. Give it an address in `192.168.1.0/24` (for
-  example `192.168.1.10`) if it does not get one automatically.
-- The **WAN** interface connected to your internet connection.
-- The default credentials: user `root`, password `Nexwall,1234`.
+- A computer connected to the **LAN** network interface of the unit. The unit gives addresses to its LAN
+  clients by default (DHCP), so the computer normally gets one by itself. If it does not, give it an address in
+  `192.168.1.0/24` (for example `192.168.1.10`).
+- The **WAN** interface connected to your internet connection. On a new unit the second network port (`eth1`) is the WAN and asks
+  your provider for an address (DHCP) by itself, even before you run the wizard.
+- The default credentials: user `root`, password `nexwall`.
 
 :::warning Change the default password immediately
 The default password is public. The setup wizard asks you to replace it, and you should do so before connecting the
 unit to an untrusted network.
 :::
+
+## What the unit already does by itself
+
+Even if you never run the wizard, the first boot applies the **secure defaults** once: the Network Protection (IPS), the DNS
+filter, IP and country protection, and the Application Control **Standard** profile with its Web Protection rules (and the
+antivirus, when your license includes it and the unit has data storage). The LAN serves DHCP (addresses `192.168.1.100` to
+`192.168.1.249`) and DNS, with the firewall itself (`192.168.1.1`) as gateway and DNS server for the clients. The wizard
+lets you change these choices.
 
 ## 1. Open the web interface
 
@@ -32,19 +42,26 @@ Log in as `root`.
 
 ## 2. Run the setup wizard
 
-On first login a wizard guides you through a secure baseline. It is recommended to do this while the unit is not yet
-connected to the internet.
+On first login a wizard guides you through a secure baseline. Keep the unit connected to the internet during the setup, because the
+protection lists are downloaded then.
 
-1. Choose **Secure by default** to apply the recommended settings, or the customized path to decide each step
+1. Choose **Secure by default** to apply the recommended settings, or the tailored path to decide each step
    yourself.
 2. **Change the root password.** Use at least 8 characters with upper and lower case letters, a number and a
    special character. Fourteen or more characters are recommended.
-3. **Configure SSH access.** You can allow SSH from the LAN and from the WAN, choose the TCP port, and disable
+3. **Network.** Choose the name of the firewall (`FIREWALL` is the default and a good name when you have one unit) and how it connects
+   to the internet: automatic (DHCP), a fixed IP address or PPPoE.
+4. **SSH access.** You can allow SSH from the LAN and from the WAN, choose the TCP port, and disable
    password login for the root user. If you disable password login you must upload an SSH public key, otherwise you
    lock yourself out of SSH.
-4. **Configure web interface access.** Choose from which networks the web interface may be reached, and whether the WAN
+5. **Web interface access** on TCP ports 9090 and 443. Choose from which networks the web interface may be reached, and whether the WAN
    may reach it.
-5. Review the summary and finish. The wizard applies everything and reloads the interface.
+6. **Security services.** Network Protection (IPS), DNS Filtering and IP & Geo Blocking are on by default; switch off what you do not
+   want and choose the countries to block.
+7. **Application Control profile.** Choose **Standard**, **School** or **Restricted**. The choice creates the application rules and the
+   Web Protection rules (website categories, antivirus, SafeSearch and the content filter profile). See
+   [Web Protection](../security-services/web-protection.md).
+8. Review the summary and finish. The wizard applies everything and reloads the interface.
 
 ## 3. Check the network
 
@@ -58,14 +75,14 @@ See [Interfaces and routing](../network/interfaces-routing.md) for the options.
 
 ## 4. Check DNS and DHCP
 
-Open **Network > DNS & DHCP**. The LAN interface serves addresses to your clients by default. If your WAN uses a
+Open **Network > DNS & DHCP**. The LAN interface serves addresses and DNS to your clients by default. If your WAN uses a
 static address, make sure at least one DNS forwarder is configured, otherwise name resolution fails. The dashboard
 warns you about this.
 
 ## 5. Give the unit its own name
 
-The default hostname is `Nexwall`. Set a meaningful one in **Infrastructure > System**, in the General tab. The
-dashboard reminds you until you do.
+The default hostname is `FIREWALL`. If you run several units, set a distinct name in **Administration > System**, in the General tab.
+The dashboard reminds you while the unit keeps its factory name.
 
 ## 6. Apply and verify
 
@@ -77,5 +94,5 @@ From a LAN client, verify that you can browse the internet and that
 
 - Understand how rules and zones work: [Zones and policies](../policy/zones-policies.md) and
   [Firewall rules](../policy/firewall-rules.md).
-- Turn on protection: [Security Services](../security-services/ips.md).
+- Turn on protection: [Security Services](../security-services/ips.md) and [Web Protection](../security-services/web-protection.md).
 - Take a first backup: [Backup and recovery](../infrastructure/backup-recovery.md).

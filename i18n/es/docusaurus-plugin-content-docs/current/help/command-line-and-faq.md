@@ -9,7 +9,7 @@ description: Comandos útiles por SSH, dónde está cada cosa y preguntas frecue
 ## Acceder a la línea de comandos
 
 Use SSH con el usuario `root`, o la consola de la máquina virtual o del hardware. Los ajustes de SSH están en
-**Infraestructura > Sistema**, en la pestaña SSH. Inicie sesión con una clave si desactivó el inicio de sesión con
+**Administración > Sistema**, en la pestaña SSH. Inicie sesión con una clave si desactivó el inicio de sesión con
 contraseña.
 
 El sistema está basado en OpenWrt, así que sus herramientas son las de ese ecosistema.
@@ -57,14 +57,14 @@ que la interfaz web, la API y la línea de comandos siempre coincidan — vea
 |---|---|
 | Configuración | `/etc/config/` |
 | Scripts de arranque | `/etc/init.d/` |
-| Certificados del servidor web | se gestionan en **Infraestructura > Certificados** |
+| Certificados del servidor web | se gestionan en **Administración > Certificados** |
 | Datos de clasificación de tráfico | `/etc/netifyd/` |
 | Registro del sistema | en memoria, se lee con `logread` |
 
 ## Preguntas frecuentes
 
 **¿Cuál es la dirección y la contraseña predeterminadas?**
-La LAN responde en `192.168.1.1`. El usuario es `root` y la contraseña es `Nexwall,1234`. Cámbiela en el primer inicio de
+La LAN responde en `192.168.1.1`. El usuario es `root` y la contraseña es `nexwall`. Cámbiela en el primer inicio de
 sesión.
 
 **¿Puedo ejecutarlo en una máquina virtual?**
@@ -84,8 +84,7 @@ de aplicaciones funcionan sin ella. Una suscripción añade las funciones enumer
 [Licencias y cuenta](../administration/licensing-account.md).
 
 **¿Adónde se envían mis datos?**
-A ninguna parte, salvo que active una función que lo necesite. La Analítica de Tráfico envía metadatos de tráfico cuando la
-activa, y una unidad conectada a un controlador envía sus registros y métricas a ese controlador.
+A ninguna parte, salvo que active una función que lo necesite. Los informes de tráfico se generan y guardan en el firewall (35 días) y nada de ellos sale de él, y una unidad conectada a un controlador envía sus registros y métricas a ese controlador.
 
 **¿Cómo traslado una configuración a otra unidad?**
 Haga una copia de seguridad y restáurela en la unidad nueva. Vea

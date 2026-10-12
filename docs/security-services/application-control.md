@@ -6,7 +6,7 @@ description: Recognize applications and protocols and block them per interface.
 
 # Application control (DPI)
 
-**Security Services > DPI** blocks traffic by what it is, not only by the port it uses. The unit inspects connections
+**Security Services > Application Control (DPI)** blocks traffic by what it is, not only by the port it uses. The unit inspects connections
 with deep packet inspection (DPI). An engine recognizes the protocol of each flow and, when it can, the application that
 produced it, for example a streaming service or a messaging app. You then write rules that block the ones you do not
 want on a network.
@@ -30,6 +30,14 @@ applications is limited by the lack of a subscription.
 :::note
 Traffic the engine cannot classify is shown as *Unknown* in the live flows. It is never blocked by an application rule.
 :::
+
+## Profiles
+
+Instead of choosing applications one by one you can apply a **profile**: **Standard**, **School** or **Restricted**. A profile creates the
+application rules for you and, together with them, the [Web Protection](web-protection.md) rules (website categories, antivirus,
+SafeSearch and YouTube restrictions, and a content filter profile). A new unit starts with the **Standard** profile already applied.
+The rules a profile creates are marked **From a profile**; choosing another profile replaces only those rules, never your own. New
+connections are also blocked while the inspection engine cannot keep up, so nothing goes through uninspected.
 
 ## Rules
 
@@ -58,5 +66,6 @@ infrastructure. Traffic from or to an exempted address is never blocked by these
 
 ## Related pages
 
+- [Web Protection](web-protection.md)
 - [Traffic Analytics](../operation-analytics/traffic-analytics.md)
 - [Licensing and account](../administration/licensing-account.md)

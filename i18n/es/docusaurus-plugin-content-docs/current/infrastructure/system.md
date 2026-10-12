@@ -6,8 +6,8 @@ description: Nombre de host, hora, SSH, actualizaciones, almacenamiento y reinic
 
 # Sistema
 
-**Infraestructura > Sistema** agrupa los ajustes de la propia unidad en cinco pestañas: General, Sincronización de hora,
-SSH, Actualizaciones y Almacenamiento. Las acciones de energía están en **Infraestructura > Reiniciar y Apagar**.
+**Administración > Sistema** agrupa los ajustes de la propia unidad en cinco pestañas: General, Sincronización de hora,
+SSH, Actualizaciones y Almacenamiento. Las acciones de energía están en **Administración > Reiniciar y Apagar**.
 
 ## General
 
@@ -62,11 +62,11 @@ internet, la hora y el estado de su suscripción, vea [Solución de problemas](.
 De forma predeterminada los registros se guardan en memoria. En la pestaña Almacenamiento configura un dispositivo
 persistente, como una unidad USB o un segundo disco, donde la unidad también escribe los registros. Ayuda a resolver
 problemas y conserva un historial de la actividad entre reinicios. También puede dejar que la unidad copie datos adicionales
-al dispositivo una vez al día. Quitar el almacenamiento detiene la escritura de registros en él.
+al dispositivo una vez al día.
 
 En un disco de 16 GB o más, la unidad crea el almacenamiento por sí sola en el primer arranque, después de un espacio que se deja libre para una segunda copia del sistema (prevista para una versión posterior). El almacenamiento guarda los registros, el historial del visor de registros, los informes de tráfico (35 días), las firmas del antivirus y, si el disco es lo bastante grande, un archivo de intercambio.
 
-**Quitar el almacenamiento** solo lo *desconecta*: la unidad deja de usarlo y conserva la partición y sus datos, de modo que se puede volver a conectar. Para borrar la partición y recuperar el espacio marque **Borrar también la partición y todos sus datos**; no se puede deshacer. El cuadro de diálogo enumera lo que usa el almacenamiento. El antivirus se desactiva cuando su almacenamiento desaparece, los informes de tráfico y los registros vuelven a la memoria y el firewall sigue reenviando tráfico.
+El almacenamiento es parte del funcionamiento de la unidad (firmas del antivirus, registros, informes de tráfico, swap), por eso la interfaz web **no** ofrece un botón para quitarlo. Si de verdad debe desconectarlo, hágalo desde la línea de comandos; el antivirus se apaga entonces, los informes de tráfico y los registros vuelven a la memoria y el firewall sigue reenviando tráfico.
 
 **Swap.** La unidad usa memoria comprimida (zram) como swap y, en un disco de 16 GB o más, un archivo de intercambio en el almacenamiento, de modo que el antivirus, el proxy web y la prevención de intrusiones puedan funcionar juntos con 4 GB. El archivo de intercambio se elimina junto con el almacenamiento.
 

@@ -28,11 +28,11 @@ O guia de administração segue o menu da interface web, para que você encontre
 que está usando:
 
 - **Primeiros passos** e **Instalação** explicam o que você precisa para colocar uma unidade em operação.
-- **Operação e Análises** cobre o painel, o tráfego em tempo real, o desempenho e os logs.
+- **Operação e Análises** cobre o painel, a análise de ameaças e de tráfego, o tráfego em tempo real, o desempenho e os logs.
 - **Políticas** cobre regras, NAT, zonas e objetos.
-- **Serviços de Segurança** cobre o controle de aplicações, o sistema de prevenção de intrusões, a filtragem de DNS e o
-  bloqueio de IP ou de países.
-- **Rede**, **VPN**, **Acesso e Identidade**, **Infraestrutura** e **Administração** cobrem o restante do menu.
+- **Serviços de Segurança** cobre o controle de aplicações, a Proteção web (categorias de sites, filtro de conteúdo, antivírus, sandbox),
+  o sistema de prevenção de intrusões, a filtragem de DNS e o bloqueio de IP ou de países.
+- **Rede**, **VPN**, **Acesso e Identidade** e **Administração** cobrem o restante do menu.
 - **Ajuda** reúne passos de solução de problemas organizados por sintoma e uma referência de linha de comando.
 
 :::tip Comece por aqui

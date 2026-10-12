@@ -35,6 +35,8 @@ Key facts about the image:
 
 - It is a complete disk, with partitions for the boot loader, the system and your data. It is **not** an installer and
   it is not an ISO. You write it to a disk, or attach it to a virtual machine as a disk.
+- An **ISO installer** is planned for a future release, so that you can install from a USB stick or a virtual CD without writing a disk
+  image by hand. Until it is published, the disk image described here is the way to install, and this guide will be updated when the installer exists.
 - It boots with UEFI only. In virtual machines, choose UEFI firmware and turn Secure Boot off, because the image is not
   signed for it.
 - The system runs from a read-only base with your configuration layered on top. This is what allows a factory reset to

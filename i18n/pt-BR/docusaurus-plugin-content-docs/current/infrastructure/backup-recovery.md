@@ -6,7 +6,7 @@ description: Faça backup, restaure, migre e restaure de fábrica uma unidade.
 
 # Backup e recuperação
 
-**Infraestrutura > Backup e Recuperação** protege a sua configuração. Ele tem quatro abas: Backup, Restauração, Migração
+**Administração > Backup e Recuperação** protege a sua configuração. Ele tem quatro abas: Backup, Restauração, Migração
 e Restauração de fábrica.
 
 ## Backup

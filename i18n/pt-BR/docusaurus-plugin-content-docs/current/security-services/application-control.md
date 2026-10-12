@@ -6,7 +6,7 @@ description: Reconheça aplicações e protocolos e bloqueie-os por interface.
 
 # Controle de aplicações (DPI)
 
-**Serviços de Segurança > DPI** bloqueia o tráfego pelo que ele é, e não apenas pela porta que usa. A unidade inspeciona
+**Serviços de Segurança > Controle de aplicações (DPI)** bloqueia o tráfego pelo que ele é, e não apenas pela porta que usa. A unidade inspeciona
 as conexões com inspeção profunda de pacotes (DPI). Um mecanismo reconhece o protocolo de cada fluxo e, quando consegue,
 a aplicação que o produziu, por exemplo um serviço de streaming ou um aplicativo de mensagens. Você então escreve regras
 que bloqueiam as que não deseja em uma rede.
@@ -31,6 +31,14 @@ aplicações. A página informa quando o número de aplicações é limitado pel
 O tráfego que o mecanismo não consegue classificar aparece como *Desconhecido* nos fluxos em tempo real. Ele nunca é
 bloqueado por uma regra de aplicação.
 :::
+
+## Perfis
+
+Em vez de escolher as aplicações uma a uma você pode aplicar um **perfil**: **Padrão**, **Escola** ou **Restrito**. Um perfil cria as
+regras de aplicações e, junto com elas, as regras da [Proteção web](web-protection.md) (categorias de sites, antivírus,
+SafeSearch e restrições do YouTube, e um perfil de filtro de conteúdo). Uma unidade nova começa com o perfil **Padrão** já aplicado.
+As regras que um perfil cria são marcadas **De um perfil**; escolher outro perfil substitui só essas regras, nunca as suas. Novas
+conexões também são bloqueadas enquanto o mecanismo de inspeção não dá conta, de modo que nada passa sem inspeção.
 
 ## Regras
 
@@ -59,5 +67,6 @@ importante. O tráfego de ou para um endereço isento nunca é bloqueado por ess
 
 ## Páginas relacionadas
 
+- [Proteção web](web-protection.md)
 - [Análise de Tráfego](../operation-analytics/traffic-analytics.md)
 - [Licenciamento e conta](../administration/licensing-account.md)

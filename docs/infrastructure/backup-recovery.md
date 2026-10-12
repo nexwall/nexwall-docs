@@ -6,7 +6,7 @@ description: Back up, restore, migrate and reset a unit.
 
 # Backup and recovery
 
-**Infrastructure > Backup & Recovery** protects your configuration. It has four tabs: Backup, Restore, Migration and
+**Administration > Backup & Recovery** protects your configuration. It has four tabs: Backup, Restore, Migration and
 Factory reset.
 
 ## Backup

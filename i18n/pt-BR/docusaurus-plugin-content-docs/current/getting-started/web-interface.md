@@ -13,14 +13,13 @@ de distância.
 
 | Seção | Contém |
 |---|---|
-| Operação e Análises | Painel, Monitoramento, Análise de Tráfego, Conexões, Desempenho, Logs |
+| Operação e Análises | Painel, Análise de ameaças, Análise de Tráfego, Monitoramento, Conexões, Desempenho, Logs |
 | Políticas | Regras de Firewall, NAT, Redirecionamento de Portas, Zonas e Políticas, Objetos |
-| Serviços de Segurança | DPI, IPS / IDS, Filtragem de DNS, Bloqueio de IP e Geolocalização |
+| Serviços de Segurança | Controle de aplicações (DPI), Proteção web, Proteção de rede (IPS), Filtragem de DNS, Bloqueio de IP e Geolocalização |
 | Rede | Interfaces, Roteamento, SD-WAN, DNS e DHCP, QoS, Proxy Reverso |
 | VPN | Acesso Remoto (OpenVPN), OpenVPN Site a Site, IPsec Site a Site, WireGuard |
 | Acesso e Identidade | Usuários e Grupos, Portal Cativo |
-| Infraestrutura | Backup e Recuperação, Sistema, Certificados, Reiniciar e Desligar |
-| Administração | Gerenciamento Central, Licenciamento |
+| Administração | Gerenciamento Central, Licenciamento, Backup e Recuperação, Sistema, Certificados, Reiniciar e Desligar |
 
 Configurações relacionadas são agrupadas como abas de uma mesma página. **Sistema** tem as abas Geral, Sincronização de
 hora, SSH, Atualizações e Armazenamento, e **Backup e Recuperação** tem Backup, Restauração, Migração e Restauração de

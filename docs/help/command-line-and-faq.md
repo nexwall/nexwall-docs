@@ -9,7 +9,7 @@ description: Useful commands over SSH, where things live, and frequent questions
 ## Reaching the command line
 
 Use SSH with the `root` user, or the console of the virtual machine or the hardware. SSH settings are in
-**Infrastructure > System**, in the SSH tab. Log in with a key if you disabled password login.
+**Administration > System**, in the SSH tab. Log in with a key if you disabled password login.
 
 The system is OpenWrt based, so its tools are the ones of that ecosystem.
 
@@ -57,14 +57,14 @@ line](cli-logs-and-debugging.md).
 |---|---|
 | Configuration | `/etc/config/` |
 | Startup scripts | `/etc/init.d/` |
-| Certificates for the web server | managed from **Infrastructure > Certificates** |
+| Certificates for the web server | managed from **Administration > Certificates** |
 | Traffic classification data | `/etc/netifyd/` |
 | System log | in memory, read with `logread` |
 
 ## Frequently asked questions
 
 **What is the default address and password?**
-The LAN answers on `192.168.1.1`. The user is `root` and the password is `Nexwall,1234`. Change it on the first login.
+The LAN answers on `192.168.1.1`. The user is `root` and the password is `nexwall`. Change it on the first login.
 
 **Can I run it on a virtual machine?**
 Yes. Use UEFI firmware, give it at least two network adapters and 4 GB of memory. See
@@ -83,7 +83,7 @@ catalog work without one. A subscription adds the features listed in
 [Licensing and account](../administration/licensing-account.md).
 
 **Where is my data sent?**
-Nowhere unless you turn on a feature that needs it. Traffic Analytics sends traffic metadata when you enable it, and a
+Nowhere unless you turn on a feature that needs it. Traffic reports are built and kept on the firewall (35 days) and nothing about them leaves it, and a
 unit connected to a controller sends its logs and metrics to that controller.
 
 **How do I move a configuration to another unit?**

@@ -6,8 +6,8 @@ description: Hostname, time, SSH, updates, storage, and rebooting the unit.
 
 # System
 
-**Infrastructure > System** groups the settings of the unit itself in five tabs: General, Time sync, SSH, Updates and
-Storage. Power actions are on **Infrastructure > Reboot & Shutdown**.
+**Administration > System** groups the settings of the unit itself in five tabs: General, Time sync, SSH, Updates and
+Storage. Power actions are on **Administration > Reboot & Shutdown**.
 
 ## General
 
@@ -59,17 +59,13 @@ time, and the state of your subscription, see [Troubleshooting](../help/troubles
 
 By default logs are kept in memory. In the Storage tab you configure a persistent device, such as a USB drive or a
 second disk, where the unit also writes the logs. This helps troubleshooting and keeps a record of activity across
-reboots. You can also let the unit copy extra data to the device once a day. Removing the storage stops writing logs
-to it.
+reboots. You can also let the unit copy extra data to the device once a day.
 
 On a disk of 16 GB or more the unit creates the storage by itself at the first start, after a gap that is kept free for a second
 system copy (planned for a later release). The storage holds the logs, the Log Viewer history, the traffic reports (kept 35
 days), the antivirus signatures and, when the disk is large enough, a swap file.
 
-**Removing the storage** only *detaches* it: the unit stops using it and keeps the partition and its data, so it can be
-attached again. To delete the partition and get the space back tick **Also erase the partition and all its data**; this cannot
-be undone. The dialog lists what uses the storage. The antivirus is switched off when its storage goes away, the traffic reports
-and logs return to memory, and the firewall keeps forwarding traffic.
+The storage is part of how the unit works (antivirus signatures, logs, traffic reports, swap), so the web interface does **not** offer a button to remove it. If you really must detach it, do it from the command line; the antivirus then switches off, the traffic reports and logs return to memory, and the firewall keeps forwarding traffic.
 
 **Swap.** The unit uses compressed memory (zram) as swap and, on a disk of 16 GB or more, a swap file on the storage, so the
 antivirus, the web proxy and the intrusion prevention can run together on 4 GB. The swap file is removed with the storage.

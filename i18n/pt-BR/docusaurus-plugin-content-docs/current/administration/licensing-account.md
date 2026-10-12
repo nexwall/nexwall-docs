@@ -18,7 +18,7 @@ O firewall funciona sem assinatura. Uma assinatura adiciona recursos que depende
   o plano inclui um;
 - as listas avançadas do [Threat Shield](../security-services/dns-filtering.md);
 - backups remotos (na nuvem), criptografados, veja [Backup e recuperação](../infrastructure/backup-recovery.md);
-- a [Análise de Tráfego](../operation-analytics/traffic-analytics.md);
+- o sandbox [Intelligent Threat Block](../security-services/web-protection.md) e o antivírus da [Proteção web](../security-services/web-protection.md), onde o plano os inclui;
 - o gerenciamento de um número ilimitado de unidades a partir de um controlador;
 - bancos de dados remotos de usuários de VPN;
 - sessões de suporte remoto, nos planos que as incluem.

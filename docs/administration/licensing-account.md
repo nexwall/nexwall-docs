@@ -18,7 +18,7 @@ The firewall works without a subscription. A subscription adds features that dep
   plan includes one;
 - the advanced lists of [Threat Shield](../security-services/dns-filtering.md);
 - remote (cloud) backups, encrypted, see [Backup and recovery](../infrastructure/backup-recovery.md);
-- [Traffic Analytics](../operation-analytics/traffic-analytics.md);
+- the [Intelligent Threat Block](../security-services/web-protection.md) sandbox and the antivirus of [Web Protection](../security-services/web-protection.md), where the plan includes them;
 - management of an unlimited number of units from a controller;
 - remote VPN user databases;
 - remote support sessions, on plans that include them.

@@ -43,6 +43,12 @@ La herramienta **Escanear red** descubre dispositivos en una interfaz. Solo est�
 Puede restringir una interfaz para que solo reciban servicio los dispositivos con una concesión estática. Combinada con una
 política estricta, esto mantiene fuera de la red a los dispositivos desconocidos.
 
+## Valores de fábrica
+
+Una unidad nueva ya atiende su LAN: el DHCP entrega las direcciones `192.168.1.100` a `192.168.1.249` y le dice a los clientes que usen el
+firewall (`192.168.1.1`) como **puerta de enlace** y como **servidor DNS**. Mantenga el firewall como servidor DNS de los clientes: el filtro DNS,
+SafeSearch y las opciones familiares de [Protección web](../security-services/web-protection.md) funcionan a través de él.
+
 ## DNS
 
 La unidad actúa como resolvedor para sus redes.
