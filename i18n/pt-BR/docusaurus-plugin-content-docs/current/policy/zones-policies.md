@@ -9,6 +9,10 @@ description: Agrupe interfaces em zonas e defina o que é permitido entre elas p
 As zonas são a base do conjunto de regras. **Políticas > Zonas e Políticas** mostra todas as zonas, as interfaces que
 elas contêm e seu comportamento padrão.
 
+![As zonas e suas políticas](/img/screenshots/policy-zones.png)
+
+*As zonas padrão e suas políticas.*
+
 ## Zonas padrão
 
 | Zona | Função |

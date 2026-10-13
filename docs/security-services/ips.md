@@ -22,6 +22,8 @@ is blocked, or it generates an alert, according to the rule.
 
 Rules are updated automatically once a day during the night.
 
+The number of rules on the Dashboard and on the **Settings** tab is the number of rules loaded for the policy you chose. Each policy contains the rules of the policies before it (Connectivity, then Balanced, then Security), so a stricter policy loads more rules. The signature catalog also holds rules that only raise an alert; they are loaded only when the option to record alerts of rules that do not block is on.
+
 ## Events
 
 The **Events** tab lists what the IPS has seen: traffic that it blocked and alerts it raised. Each event shows the time,

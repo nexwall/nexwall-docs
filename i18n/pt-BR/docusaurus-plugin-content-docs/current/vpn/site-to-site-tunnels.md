@@ -35,6 +35,10 @@ Verifique se o túnel está ativo na lista e no [Monitoramento](../operation-ana
 
 O IPsec é a melhor escolha quando o outro lado não é uma unidade Nexwall.
 
+![Um túnel IPsec site a site configurado](/img/screenshots/vpn-ipsec-site-to-site-content.png)
+
+*Um túnel IPsec site a site configurado.*
+
 1. Abra **VPN > IPsec Site a Site** e adicione um túnel.
 2. Informe o **endereço remoto**. Se o outro lado tiver endereço dinâmico, informe `any`.
 3. Defina os **identificadores**. O identificador local é uma string que começa com `@` e identifica esta unidade; na

@@ -36,6 +36,10 @@ Informe como alcançar o diretório:
 | Bind DN e senha | A conta que a unidade usa para pesquisar o diretório |
 | Segurança | Se deve usar TLS e se deve verificar o certificado do servidor |
 
+![Um banco de dados do Active Directory conectado](/img/screenshots/access-users-ad.png)
+
+*Um banco de dados do Active Directory conectado e sua lista de usuários.*
+
 Salve e use o teste de conexão para confirmar que a unidade alcança o diretório e lê os usuários. Prefira uma conexão
 criptografada.
 

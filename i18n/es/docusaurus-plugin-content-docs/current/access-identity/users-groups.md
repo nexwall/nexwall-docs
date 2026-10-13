@@ -36,6 +36,10 @@ Indique cómo llegar al directorio:
 | Bind DN y contraseña | La cuenta que usa la unidad para consultar el directorio |
 | Seguridad | Si se usa TLS y si se verifica el certificado del servidor |
 
+![Una base de datos de Active Directory conectada](/img/screenshots/access-users-ad.png)
+
+*Una base de datos de Active Directory conectada y su lista de usuarios.*
+
 Guarde y use la prueba de conexión para confirmar que la unidad llega al directorio y lee los usuarios. Prefiera una
 conexión cifrada.
 

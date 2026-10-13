@@ -82,5 +82,6 @@ UCI — `ns-flashstart` e `banip` batem — verifique `ls /etc/config/` se um no
 - [Solução de problemas de registro no controlador](controller-registration-troubleshooting.md)
 - [O que é o UCI, e por que ele importa](understanding-uci.md)
 - [Ferramentas de solução de problemas de rede](network-troubleshooting-tools.md)
+- [Logs e depuração pela linha de comando](cli-logs-and-debugging.md)
 - [Logs](../operation-analytics/logs.md)
 - [Alta disponibilidade](../infrastructure/high-availability.md)

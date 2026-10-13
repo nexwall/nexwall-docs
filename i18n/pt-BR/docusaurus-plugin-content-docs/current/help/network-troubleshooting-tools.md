@@ -152,6 +152,7 @@ aplicação que na verdade é um cabo:
 
 - [Referência de comandos de serviço e log](service-and-log-reference.md)
 - [O que é o UCI, e por que ele importa](understanding-uci.md)
+- [Logs e depuração pela linha de comando](cli-logs-and-debugging.md)
 - [SD-WAN](pathname:///pt-BR/docs/network/sd-wan)
 - [Monitoramento e conexões](../operation-analytics/monitor-connections.md)
 - [Linha de comando e perguntas frequentes](command-line-and-faq.md)

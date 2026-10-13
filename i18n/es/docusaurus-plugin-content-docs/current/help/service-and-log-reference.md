@@ -83,5 +83,6 @@ coinciden exactamente con el nombre del paquete UCI — `ns-flashstart` y `banip
 - [Solución de problemas de registro en el controlador](controller-registration-troubleshooting.md)
 - [Qué es UCI, y por qué importa](understanding-uci.md)
 - [Herramientas de solución de problemas de red](network-troubleshooting-tools.md)
+- [Registros y depuración desde la línea de comandos](cli-logs-and-debugging.md)
 - [Registros](../operation-analytics/logs.md)
 - [Alta disponibilidad](../infrastructure/high-availability.md)

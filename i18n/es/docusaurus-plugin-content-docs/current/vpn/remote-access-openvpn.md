@@ -9,6 +9,10 @@ description: Permita que los usuarios se conecten de forma segura desde cualquie
 **VPN > Acceso Remoto (OpenVPN)** configura un servidor OpenVPN **road warrior**. Los usuarios remotos, en portátiles o
 teléfonos, se conectan a él desde cualquier lugar de internet y obtienen acceso seguro a sus redes privadas.
 
+![El servidor de Acceso Remoto (OpenVPN)](/img/screenshots/vpn-remote-access-content.png)
+
+*El servidor de Acceso Remoto (OpenVPN).*
+
 ## Antes de empezar
 
 - Cree una **base de datos de usuarios** con las personas que pueden conectarse, vea
@@ -61,7 +65,7 @@ Eliminar el servidor elimina todas las cuentas asociadas a él y no se puede des
 
 ## Software cliente
 
-La página de Acceso remoto también lista los **clientes VPN de Nexwall** para Windows y Android (macOS cuando se publique). Su navegador lee los archivos de la última compilación (la versión «nightly» en GitHub), así que el enlace es siempre la compilación más reciente; si no se puede llegar a GitHub, el enlace a la página de la versión sigue ahí. En Windows la mayoría de los PC necesitan el paquete de 64 bits Intel / AMD (también se listan los de ARM64 y 32 bits). En Linux use el cliente OpenVPN de su distribución con el mismo archivo.
+La página de Acceso remoto también lista los **clientes VPN de Nexwall** para Windows, Android y Linux (macOS cuando se publique). Su navegador lee los archivos de la última compilación (la versión «nightly» en GitHub), así que el enlace es siempre la compilación más reciente; si no se puede llegar a GitHub, el enlace a la página de la versión sigue ahí. En Windows la mayoría de los PC necesitan el paquete de 64 bits Intel / AMD (también se listan los de ARM64 y 32 bits). Para Linux hay paquetes para Debian (12 y 13) y Ubuntu (22.04, 24.04 y posteriores), para Intel / AMD de 64 bits y ARM64; instale el de su distribución con `apt install ./archivo.deb` y use el mismo archivo de configuración. Los clientes son compilaciones de prueba y no están firmados.
 
 Use cualquier cliente compatible con OpenVPN. La configuración descargada contiene lo que el cliente necesita. Pida a los
 usuarios que instalen un cliente, importen el archivo y se conecten.

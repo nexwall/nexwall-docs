@@ -23,6 +23,8 @@ coincide con una regla activa se bloquea, o genera una alerta, según la regla.
 
 Las reglas se actualizan automáticamente una vez al día, durante la noche.
 
+El número de reglas del Panel y de la pestaña **Ajustes** es el número de reglas cargadas para la política elegida. Cada política contiene las reglas de las anteriores (Conectividad, luego Equilibrada, luego Seguridad), así que una política más estricta carga más reglas. El catálogo de firmas también tiene reglas que solo generan una alerta; se cargan únicamente cuando está activa la opción de registrar las alertas de las reglas que no bloquean.
+
 ## Eventos
 
 La pestaña **Eventos** lista lo que ha visto el IPS: el tráfico que bloqueó y las alertas que generó. Cada evento muestra

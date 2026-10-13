@@ -23,6 +23,8 @@ corresponde a uma regra ativa é bloqueado, ou gera um alerta, conforme a regra.
 
 As regras são atualizadas automaticamente uma vez por dia, durante a madrugada.
 
+O número de regras no Painel e na aba **Ajustes** é o número de regras carregadas para a política escolhida. Cada política contém as regras das anteriores (Conectividade, depois Equilibrada, depois Segurança), então uma política mais rígida carrega mais regras. O catálogo de assinaturas também tem regras que apenas geram um alerta; elas só são carregadas quando a opção de registrar os alertas das regras que não bloqueiam está ativa.
+
 ## Eventos
 
 A aba **Eventos** lista o que o IPS viu: o tráfego que ele bloqueou e os alertas que gerou. Cada evento mostra a hora, a

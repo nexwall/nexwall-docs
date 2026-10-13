@@ -35,6 +35,10 @@ Compruebe que el túnel está activo en la lista y en la [Monitorización](../op
 
 IPsec es la mejor opción cuando el otro lado no es una unidad Nexwall.
 
+![Un túnel IPsec sitio a sitio configurado](/img/screenshots/vpn-ipsec-site-to-site-content.png)
+
+*Un túnel IPsec sitio a sitio configurado.*
+
 1. Abra **VPN > IPsec Sitio a Sitio** y añada un túnel.
 2. Introduzca la **dirección remota**. Si el otro lado tiene una dirección dinámica, introduzca `any`.
 3. Establezca los **identificadores**. El identificador local es una cadena que empieza por `@` e identifica esta unidad; en

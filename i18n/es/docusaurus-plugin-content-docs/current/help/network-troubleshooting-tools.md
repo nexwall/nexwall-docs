@@ -154,6 +154,7 @@ aplicación que en realidad es un cable:
 
 - [Referencia de comandos de servicios y registros](service-and-log-reference.md)
 - [Qué es UCI, y por qué importa](understanding-uci.md)
+- [Registros y depuración desde la línea de comandos](cli-logs-and-debugging.md)
 - [SD-WAN](pathname:///es/docs/network/sd-wan)
 - [Monitorización y conexiones](../operation-analytics/monitor-connections.md)
 - [Línea de comandos y preguntas frecuentes](command-line-and-faq.md)
