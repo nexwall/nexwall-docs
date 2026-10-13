@@ -146,6 +146,10 @@ Things worth knowing:
 - Applications that pin their certificates (some banking and update clients) fail when inspected: add them as exceptions.
 - Inspection uses CPU in proportion to the traffic it opens. Start with the categories you really need.
 
+## QUIC (HTTP/3)
+
+QUIC carries web traffic over UDP port 443, where a proxy cannot read it: the block pages, SafeSearch, the antivirus and the content filter would not see it. In the **Settings** tab the switch **Block QUIC (HTTP/3)** (on by default) refuses UDP 443 for the clients of the rules that filter the web. The refusal reaches the client at once, so the browser changes to HTTPS over TCP in a few milliseconds and the web protection applies to everything. Turn it off only if a service you need does not work without QUIC.
+
 ## Antivirus
 
 In **Settings**, section **Antivirus**.

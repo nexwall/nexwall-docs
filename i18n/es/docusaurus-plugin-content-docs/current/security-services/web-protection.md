@@ -146,6 +146,10 @@ Conviene saber:
 - Las aplicaciones que fijan sus certificados (algunos clientes bancarios y de actualización) fallan al inspeccionarse: añádalas como excepciones.
 - La inspección usa procesador en proporción al tráfico que abre. Empiece con las categorías que realmente necesita.
 
+## QUIC (HTTP/3)
+
+QUIC lleva el tráfico web sobre el puerto UDP 443, donde un proxy no puede leerlo: las páginas de bloqueo, SafeSearch, el antivirus y el filtro de contenido no lo verían. En la pestaña **Ajustes** el interruptor **Bloquear QUIC (HTTP/3)** (activado por defecto) rechaza el UDP 443 de los clientes de las reglas que filtran la web. El rechazo llega al cliente al instante, de modo que el navegador cambia a HTTPS sobre TCP en unos milisegundos y la protección web se aplica a todo. Desactívelo solo si un servicio que necesita no funciona sin QUIC.
+
 ## Antivirus
 
 En **Ajustes**, sección **Antivirus**.
