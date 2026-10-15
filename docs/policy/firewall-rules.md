@@ -9,6 +9,8 @@ description: Forward, input and output rules, and how to write them.
 **Policy > Firewall Rules** is where you decide which traffic is allowed. Rules are evaluated from the top of the list
 and **the first rule that matches wins**, so order matters.
 
+![The forward rules](/img/docs/fwrules-en.png)
+
 ## The three lists
 
 | Tab | Applies to | Typical use |

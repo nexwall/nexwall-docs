@@ -6,6 +6,9 @@ description: Configure dispositivos de rede, endereços, interfaces lógicas e r
 
 # Interfaces e roteamento
 
+
+![A página Interfaces](/img/docs/interfaces-en.png)
+
 ## Interfaces e dispositivos
 
 **Rede > Interfaces** lista os **dispositivos** de rede da unidade e as **interfaces** configuradas neles. Um dispositivo

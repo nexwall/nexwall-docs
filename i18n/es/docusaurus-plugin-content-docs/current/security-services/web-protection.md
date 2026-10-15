@@ -9,6 +9,8 @@ description: Bloquee sitios web por categoría, lea las páginas con un filtro d
 **Servicios de seguridad > Web Protection** controla qué sitios web pueden visitar sus usuarios y qué pueden descargar. Funciona en
 capas que puede usar por separado o juntas:
 
+![Reglas de Protección web](/img/docs/webprotection-en.png)
+
 1. **Categorías de sitios web** (bloqueo). Los sitios se clasifican en categorías como contenido adulto, apuestas, drogas, redes
    sociales, streaming, juegos, malware y phishing. Una regla bloquea las categorías que elija para sus redes o dispositivos.
    La primera capa no necesita certificado en los dispositivos.

@@ -11,6 +11,8 @@ as conexões com inspeção profunda de pacotes (DPI). Um mecanismo reconhece o 
 a aplicação que o produziu, por exemplo um serviço de streaming ou um aplicativo de mensagens. Você então escreve regras
 que bloqueiam as que não deseja em uma rede.
 
+![Regras do Controle de aplicações](/img/docs/appcontrol-en.png)
+
 ## Como funciona
 
 1. O mecanismo observa o tráfego e classifica cada conexão usando o protocolo e os nomes que ela carrega, como o nome do

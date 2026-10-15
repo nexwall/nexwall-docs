@@ -9,6 +9,8 @@ description: Hostname, time, SSH, updates, storage, and rebooting the unit.
 **Administration > System** groups the settings of the unit itself in five tabs: General, Time sync, SSH, Updates and
 Storage. Power actions are on **Administration > Reboot & Shutdown**.
 
+![The Updates tab of the System page](/img/docs/updates-en.png)
+
 ## General
 
 Set the **hostname** and a description. Using the default hostname `Nexwall` is not recommended, because in a network

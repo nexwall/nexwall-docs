@@ -6,6 +6,9 @@ description: Configure dispositivos de red, direcciones, interfaces lógicas y r
 
 # Interfaces y enrutamiento
 
+
+![La página Interfaces](/img/docs/interfaces-en.png)
+
 ## Interfaces y dispositivos
 
 **Red > Interfaces** lista los **dispositivos** de red de la unidad y las **interfaces** configuradas en ellos. Un

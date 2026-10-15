@@ -11,6 +11,8 @@ with deep packet inspection (DPI). An engine recognizes the protocol of each flo
 produced it, for example a streaming service or a messaging app. You then write rules that block the ones you do not
 want on a network.
 
+![Application Control rules](/img/docs/appcontrol-en.png)
+
 ## How it works
 
 1. The engine watches the traffic and classifies each connection using the protocol and the names it carries, such as

@@ -10,6 +10,8 @@ description: Detect and block attacks with Snort.
 firewall. Snort compares traffic with a set of **rules** that describe known attacks. Traffic that matches an active rule
 is blocked, or it generates an alert, according to the rule.
 
+![The Network Protection (IPS) page](/img/docs/ips-en.png)
+
 ## Enabling the IPS
 
 1. Open the **Settings** tab and turn the IPS on.

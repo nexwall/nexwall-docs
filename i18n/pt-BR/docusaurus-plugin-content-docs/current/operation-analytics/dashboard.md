@@ -9,6 +9,8 @@ description: "A página de resumo da unidade: proteção, tráfego e estado do f
 **Operação e Análises > Painel** é a primeira página que você vê depois de entrar. Mostra o estado do firewall
 à esquerda e o que o firewall protege e transporta à direita. Os dados são atualizados a cada 20 segundos.
 
+![O Painel](/img/docs/dashboard-en.png)
+
 ## A coluna esquerda: o firewall
 
 | Cartão | Conteúdo |

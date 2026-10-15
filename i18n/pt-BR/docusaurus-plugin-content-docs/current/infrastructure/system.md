@@ -9,6 +9,8 @@ description: Nome de host, hora, SSH, atualizações, armazenamento e reiniciali
 **Administração > Sistema** agrupa as configurações da própria unidade em cinco abas: Geral, Sincronização de hora, SSH,
 Atualizações e Armazenamento. As ações de energia ficam em **Administração > Reiniciar e Desligar**.
 
+![A aba Atualizações da página Sistema](/img/docs/updates-en.png)
+
 ## Geral
 
 Defina o **nome de host** e uma descrição. Usar o nome de host padrão `Nexwall` não é recomendado, pois em uma rede com

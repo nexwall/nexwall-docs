@@ -10,6 +10,8 @@ Esta página leva uma unidade recém-instalada a um firewall protegido que encam
 em um disco ou criou uma máquina virtual; se não, comece por
 [Instalação](../installation/requirements-and-images.md).
 
+![O assistente de configuração](/img/docs/wizard-en.png)
+
 ## Antes de começar
 
 - Um computador conectado à interface de rede **LAN** da unidade. A unidade entrega endereços aos seus clientes da LAN por padrão

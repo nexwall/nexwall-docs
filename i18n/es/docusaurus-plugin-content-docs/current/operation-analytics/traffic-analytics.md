@@ -10,6 +10,8 @@ description: "A dónde va el tráfico del firewall: cuánto, cuándo y qué disp
 motor de clasificación local y funciona en el firewall: nada sale de la unidad. El contenido de las conexiones nunca se
 registra, solo qué aplicaciones y protocolos se vieron y cuántos bytes transportaron.
 
+![Analítica de tráfico](/img/docs/traffic-es.png)
+
 Elija **Hoy**, **7 días** o **30 días** arriba a la derecha. Los informes se conservan 35 días.
 
 ## Qué muestra la página

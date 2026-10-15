@@ -9,6 +9,8 @@ description: "La página de resumen de la unidad: protección, tráfico y estado
 **Operación y Analítica > Panel** es la primera página que ve después de iniciar sesión. Muestra el estado del firewall
 a la izquierda y lo que el firewall protege y transporta a la derecha. Los datos se actualizan cada 20 segundos.
 
+![El Panel](/img/docs/dashboard-es.png)
+
 ## La columna izquierda: el firewall
 
 | Tarjeta | Contenido |

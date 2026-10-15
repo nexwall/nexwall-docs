@@ -1,60 +1,78 @@
 ---
-title: Requisitos e imágenes
+title: Requisitos y medio de instalación
 sidebar_position: 1
-description: Lo que necesita para ejecutar una unidad y qué es la imagen de disco.
+description: Qué necesita para ejecutar una unidad y qué es la ISO del instalador.
 ---
 
-# Requisitos e imágenes
+# Requisitos y medio de instalación
 
 ## Requisitos de hardware y de máquina virtual
 
 | Elemento | Requisito |
 |---|---|
 | Arquitectura | x86 de 64 bits (x86_64) |
-| Firmware | **UEFI**. La imagen no arranca en BIOS heredado |
+| Firmware | **UEFI**. El sistema instalado no arranca en BIOS heredado |
 | Memoria | Se recomiendan 4 GB. Los sistemas más pequeños pueden ejecutar el firewall básico, pero funciones como el sistema de prevención de intrusiones, el control de aplicaciones y la base de datos de métricas necesitan memoria |
-| Disco | 16 GB o más. 32 GB es un buen comienzo; añada más si quiere conservar registros y copias de seguridad localmente |
+| Disco | 16 GB o más. 32 GB es un buen punto de partida; agregue más si quiere guardar registros y copias de seguridad localmente |
 | Red | Al menos dos interfaces de red, una para la WAN y otra para la LAN |
 | CPU | Dos núcleos o más. Más núcleos ayudan al inspeccionar tráfico a mayores velocidades |
 
-## La imagen de disco
+## La ISO del instalador
 
-La unidad se distribuye como una imagen de disco sin formato comprimida:
+Nexwall se instala desde un solo archivo, la ISO del instalador:
 
 ```
-nexwall-<versión>-x86-64-generic-squashfs-combined-efi.img.gz
+NEXWALL-Installer-<versión>.iso
 ```
 
-Junto a ella encuentra un archivo `sha256sums`. Verifique siempre la descarga antes de usarla:
+Junto a ella encontrará un archivo `.sha256` con su suma de comprobación. La misma ISO sirve en todas partes:
+
+- en una **máquina virtual**, conéctela como unidad de CD/DVD;
+- en un **servidor o un equipo dedicado**, escríbala en una memoria USB;
+- en un servidor de rack con **consola remota** (iDRAC, iLO, IPMI), móntela como medio virtual.
+
+La ISO contiene el sistema Nexwall y un pequeño instalador. El instalador comprueba la imagen del sistema antes de tocar
+ningún disco, nunca ofrece como destino la memoria USB desde la que arrancó, le pide escribir `INSTALL` antes de borrar el
+disco elegido y verifica lo que escribió. Habla inglés, español y portugués.
+
+### Dónde descargarla
+
+Cada versión tiene una página en las notas de la versión, [releasenotes.nexwall.com.br](https://releasenotes.nexwall.com.br/).
+La sección **Downloads** al final de la página lista los archivos de esa versión con su tamaño y su suma SHA-256. La página de
+descargas del sitio, [releasenotes.nexwall.com.br/download](https://releasenotes.nexwall.com.br/download/), lista todas las
+versiones.
+
+### Verifique la descarga
+
+Compare siempre la suma del archivo con la de la tabla **Downloads** (o con la del archivo `.sha256`):
 
 ```bash
-sha256sum -c sha256sums
+sha256sum -c NEXWALL-Installer-<versión>.iso.sha256
 ```
 
-Datos clave sobre la imagen:
+En Windows, en PowerShell: `Get-FileHash .\NEXWALL-Installer-<versión>.iso -Algorithm SHA256`. En macOS:
+`shasum -a 256 NEXWALL-Installer-<versión>.iso`.
 
-- Es un disco completo, con particiones para el cargador de arranque, el sistema y sus datos. **No** es un instalador y
-  no es una ISO. Se escribe en un disco, o se conecta a una máquina virtual como disco.
-- Un **instalador ISO** está previsto para una versión futura, para instalar desde una memoria USB o un CD virtual sin escribir una imagen de disco
-  a mano. Hasta que se publique, la imagen de disco descrita aquí es la forma de instalar, y esta guía se actualizará cuando exista el instalador.
-- Arranca solo con UEFI. En máquinas virtuales, elija el firmware UEFI y desactive Secure Boot, porque la imagen no está
-  firmada para él.
-- El sistema se ejecuta desde una base de solo lectura con su configuración superpuesta. Esto permite que un
-  restablecimiento de fábrica vuelva al estado instalado.
-- Si da al disco más espacio del que necesita la imagen, la partición de datos usa el espacio adicional.
+:::info La imagen de disco
+La versión también publica la imagen de disco sin procesar (`.img.gz`) que lleva la ISO. Normalmente no la necesita. Si debe
+escribir la imagen usted mismo, por ejemplo para clonar un disco en una fábrica o para importarla en una plataforma que no
+puede arrancar una ISO, siga [Instalar desde la imagen de disco](../help/install-from-image.md).
+:::
 
 ## Versiones y canales
 
-Las imágenes siguen el patrón `AA.M.P`, opcionalmente con un sufijo de release candidate como `26.0.0-rc1`. Las
-actualizaciones se publican en canales; el canal predeterminado es `stable`. Vea [Sistema](../infrastructure/system.md)
-para saber cómo se comprueban, programan e instalan las actualizaciones.
+Las versiones siguen el patrón `AA.M.P`, opcionalmente con un sufijo de candidata como `26.0.0-rc1`. Las actualizaciones se
+publican en canales; el canal por defecto es `stable`. Consulte [Sistema](../infrastructure/system.md) para saber cómo se
+comprueban, programan e instalan las actualizaciones.
 
 ## Antes de instalar
 
-- Decida el plan de direcciones de su LAN. La LAN predeterminada es `192.168.1.0/24`; si choca con una red existente,
-  puede cambiarla después del primer inicio de sesión.
-- Reúna lo que le dio su proveedor para la WAN: DHCP, o una dirección, una puerta de enlace y servidores DNS, o
+- Decida el plan de direcciones de su LAN. La LAN por defecto es `192.168.1.0/24`; si choca con una red existente, puede
+  cambiarla después del primer acceso.
+- Reúna lo que le dio su proveedor para la WAN: DHCP, o una dirección, una puerta de enlace y servidores DNS, o las
   credenciales PPPoE.
-- Tenga listos un equipo y un cable para conectar a la interfaz LAN.
+- Tenga a mano un equipo y un cable para conectar a la interfaz LAN.
+- Tenga una memoria USB de 2 GB o más, o una forma de conectar la ISO a su máquina virtual.
+- El instalador **borra el disco que usted elija**. Respalde antes lo que necesite de él.
 
-Continúe con [Instalar en una máquina virtual o en hardware](install-vm-and-hardware.md).
+Continúe con [Instalar con la ISO](install-vm-and-hardware.md).

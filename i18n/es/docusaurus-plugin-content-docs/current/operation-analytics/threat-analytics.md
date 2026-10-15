@@ -10,6 +10,8 @@ description: Qué detuvo o detectó el firewall, qué dispositivos están en rie
 detectó, cuándo, de dónde venía, qué dispositivos de la red fueron afectados y por qué. Funciona en el propio firewall,
 sin servicio en la nube.
 
+![Análisis de amenazas](/img/docs/threats-es.png)
+
 Elija **Hoy**, **7 días** o **30 días** arriba a la derecha.
 
 ## La historia de una amenaza

@@ -9,7 +9,7 @@ const t = (id: string, message: string) => translate({ id, message })
 
 const cards = [
   { key: 'start', to: '/docs/getting-started/overview', title: 'Getting started', text: 'What Nexwall Firewall is, how the web interface is organized and how to do the first configuration.' },
-  { key: 'install', to: '/docs/installation/requirements-and-images', title: 'Installation', text: 'Requirements, the disk image, and how to run it on hardware or on a virtual machine.' },
+  { key: 'install', to: '/docs/installation/requirements-and-images', title: 'Installation', text: 'Requirements, the installer ISO, and how to install it on hardware or on a virtual machine.' },
   { key: 'operation', to: '/docs/operation-analytics/dashboard', title: 'Operation & Analytics', text: 'Dashboard, live traffic, connections, performance charts and logs.' },
   { key: 'policy', to: '/docs/policy/firewall-rules', title: 'Policy', text: 'Firewall rules, NAT, port forwarding, zones and reusable objects.' },
   { key: 'security', to: '/docs/security-services/application-control', title: 'Security Services', text: 'Application control, intrusion prevention, DNS filtering and IP or country blocking.' },

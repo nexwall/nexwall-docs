@@ -9,6 +9,8 @@ description: "The overview page of the unit: protection, traffic and the state o
 **Operation & Analytics > Dashboard** is the first page you see after logging in. It shows the state of the firewall on
 the left and what the firewall is protecting and carrying on the right. The data is refreshed every 20 seconds.
 
+![The Dashboard](/img/docs/dashboard-en.png)
+
 ## The left column: the firewall
 
 | Card | Content |

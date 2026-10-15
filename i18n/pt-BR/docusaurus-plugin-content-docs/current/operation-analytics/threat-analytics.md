@@ -10,6 +10,8 @@ description: O que o firewall barrou ou detectou, quais dispositivos estão em r
 detectado, quando, de onde vinha, quais dispositivos da rede foram afetados e por quê. Funciona no próprio firewall,
 sem serviço na nuvem.
 
+![Análise de ameaças](/img/docs/threats-en.png)
+
 Escolha **Hoje**, **7 dias** ou **30 dias** no canto superior direito.
 
 ## A história de uma ameaça

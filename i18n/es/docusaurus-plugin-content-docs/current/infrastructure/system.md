@@ -9,6 +9,8 @@ description: Nombre de host, hora, SSH, actualizaciones, almacenamiento y reinic
 **Administración > Sistema** agrupa los ajustes de la propia unidad en cinco pestañas: General, Sincronización de hora,
 SSH, Actualizaciones y Almacenamiento. Las acciones de energía están en **Administración > Reiniciar y Apagar**.
 
+![La pestaña Actualizaciones de la página Sistema](/img/docs/updates-en.png)
+
 ## General
 
 Establezca el **nombre de host** y una descripción. No se recomienda usar el nombre de host predeterminado `Nexwall`,

@@ -10,6 +10,8 @@ description: "Where the traffic of the firewall goes: how much, when, and which 
 local classification engine and runs on the firewall: nothing leaves the unit. The content of connections is never
 recorded, only which applications and protocols were seen and how many bytes they carried.
 
+![Traffic Analytics](/img/docs/traffic-en.png)
+
 Choose **Today**, **7 days** or **30 days** at the top right. The reports are kept for 35 days.
 
 ## What the page shows

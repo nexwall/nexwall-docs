@@ -6,6 +6,9 @@ description: Flujos en vivo, principales consumidores, los enlaces WAN, VPN y la
 
 # Monitorización y conexiones
 
+
+![La página Monitorización con los flujos en vivo](/img/docs/monitor-es.png)
+
 ## Monitorización
 
 **Operación y Analítica > Monitorización** da una vista en tiempo real de lo que ocurre en la unidad. Se organiza en pestañas.

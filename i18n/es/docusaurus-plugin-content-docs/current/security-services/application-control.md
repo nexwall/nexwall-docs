@@ -11,6 +11,8 @@ las conexiones con inspección profunda de paquetes (DPI). Un motor reconoce el 
 aplicación que lo produjo, por ejemplo un servicio de streaming o una aplicación de mensajería. Después escribe reglas que
 bloquean las que no desea en una red.
 
+![Reglas de Control de aplicaciones](/img/docs/appcontrol-en.png)
+
 ## Cómo funciona
 
 1. El motor observa el tráfico y clasifica cada conexión usando el protocolo y los nombres que lleva, como el nombre del

@@ -6,6 +6,9 @@ description: Configure network devices, addresses, logical interfaces and static
 
 # Interfaces and routing
 
+
+![The Interfaces page](/img/docs/interfaces-en.png)
+
 ## Interfaces and devices
 
 **Network > Interfaces** lists the network **devices** of the unit and the **interfaces** configured on them. A device

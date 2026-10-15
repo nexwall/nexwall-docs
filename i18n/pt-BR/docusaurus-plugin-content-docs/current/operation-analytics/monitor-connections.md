@@ -6,6 +6,9 @@ description: Fluxos ao vivo, maiores consumidores, links WAN, VPN e a tabela de 
 
 # Monitoramento e conexões
 
+
+![A página Monitoramento com os fluxos ao vivo](/img/docs/monitor-en.png)
+
 ## Monitoramento
 
 **Operação e Análises > Monitoramento** dá uma visão em tempo real do que acontece na unidade. É organizado em abas.

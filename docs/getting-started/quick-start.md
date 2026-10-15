@@ -10,6 +10,8 @@ This page takes a newly installed unit to a secured firewall that forwards traff
 written the image to a disk or created a virtual machine; if not, start with
 [Installation](../installation/requirements-and-images.md).
 
+![The setup wizard](/img/docs/wizard-en.png)
+
 ## Before you begin
 
 - A computer connected to the **LAN** network interface of the unit. The unit gives addresses to its LAN

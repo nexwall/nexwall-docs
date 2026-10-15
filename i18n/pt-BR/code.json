@@ -21,7 +21,7 @@
     "message": "Instalação"
   },
   "home.card.install.text": {
-    "message": "Requisitos, a imagem de disco e como executá-la em hardware ou em uma máquina virtual."
+    "message": "Requisitos, a ISO do instalador e como instalá-la em hardware ou em uma máquina virtual."
   },
   "home.card.operation.title": {
     "message": "Operação e Análises"

@@ -9,6 +9,8 @@ description: Regras de encaminhamento, entrada e saída, e como escrevê-las.
 **Políticas > Regras de Firewall** é onde você decide qual tráfego é permitido. As regras são avaliadas do topo da lista
 para baixo e **a primeira regra que corresponde vence**, então a ordem importa.
 
+![As regras de encaminhamento](/img/docs/fwrules-en.png)
+
 ## As três listas
 
 | Aba | Aplica-se a | Uso típico |

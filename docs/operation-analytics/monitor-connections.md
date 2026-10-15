@@ -6,6 +6,9 @@ description: Live flows, top talkers, the WAN uplinks, VPN, and the connection t
 
 # Monitor and connections
 
+
+![The Monitor page with the live flows](/img/docs/monitor-en.png)
+
 ## Monitor
 
 **Operation & Analytics > Monitor** gives a real-time view of what is happening on the unit. It is organized in tabs.

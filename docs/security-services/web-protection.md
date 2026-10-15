@@ -9,6 +9,8 @@ description: Block websites by category, read pages with a content filter, inspe
 **Security Services > Web Protection** controls which websites your users can reach and what they can download. It works in
 layers that you can use separately or together:
 
+![Web Protection rules](/img/docs/webprotection-en.png)
+
 1. **Website categories** (blocking). Websites are sorted into categories such as adult content, gambling, drugs, social
    networks, streaming, games, malware and phishing. A rule blocks the categories you choose for your networks or devices.
    No certificate is needed on the devices for the first layer.

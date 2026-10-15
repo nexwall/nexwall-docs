@@ -64,6 +64,7 @@ const sidebars: SidebarsConfig = {
   ],
   help: [
     'help/troubleshooting',
+    'help/install-from-image',
     'help/command-line-and-faq',
     'help/controller-registration-troubleshooting',
     'help/service-and-log-reference',

@@ -10,6 +10,8 @@ description: What the firewall stopped or detected, which devices are at risk, a
 detected, when, where it came from, which devices inside the network were affected and why. It runs on the firewall
 itself, with no cloud service.
 
+![Threat Analytics](/img/docs/threats-en.png)
+
 Choose **Today**, **7 days** or **30 days** at the top right.
 
 ## The story of a threat

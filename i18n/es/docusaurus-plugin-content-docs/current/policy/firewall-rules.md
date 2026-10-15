@@ -9,6 +9,8 @@ description: Reglas de reenvío, entrada y salida, y cómo escribirlas.
 **Políticas > Reglas de Firewall** es donde decide qué tráfico se permite. Las reglas se evalúan desde la parte superior de
 la lista hacia abajo y **gana la primera regla que coincide**, por lo que el orden importa.
 
+![Las reglas de reenvío](/img/docs/fwrules-en.png)
+
 ## Las tres listas
 
 | Pestaña | Se aplica a | Uso típico |
