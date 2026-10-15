@@ -29,7 +29,7 @@ El Visor de registros tiene estas pestañas:
 |---|---|
 | Tráfico del firewall | Paquetes aceptados o bloqueados por las reglas del firewall, con el motivo |
 | Tráfico y aplicaciones | Las conexiones con la aplicación, el nombre del sitio, el origen y el destino, los bytes en cada sentido y la duración. Solo registra mientras el Visor de registros está abierto y empieza con las conexiones abiertas en ese momento; no se escribe nada en el registro del sistema |
-| Bloqueo de IP y geografía | Direcciones y países bloqueados por Threat Shield IP |
+| Bloqueo de IP y geografía | Direcciones y países bloqueados por el bloqueo de IP y geolocalización |
 | Protección de red (IPS) | Las alertas y bloqueos del motor de prevención de intrusiones |
 | Control de aplicaciones (DPI) | Flujos bloqueados por el Control de aplicaciones |
 | Protección DNS | Dominios bloqueados por el filtro DNS |
@@ -50,7 +50,7 @@ Los informes de tráfico de **Operación y Analítica** guardan los totales por 
 | Paquetes bloqueados | el nombre de la zona, o el prefijo de registro que usa la regla |
 | Problemas de VPN | `openvpn`, `charon` o `wireguard` |
 | Actividad de DHCP | `dnsmasq-dhcp` |
-| Bloqueos de Threat Shield IP | `banIP` |
+| Bloqueos de IP y geolocalización | `banIP` |
 | Problemas de actualización o registro | el nombre del servicio, por ejemplo `ns-plug` |
 
 ## Conservar los registros tras un reinicio

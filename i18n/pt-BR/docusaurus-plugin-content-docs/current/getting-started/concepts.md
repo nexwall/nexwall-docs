@@ -51,10 +51,10 @@ Em vez de portas, o controle de aplicações reconhece o que uma conexão é: um
 mensagens, um protocolo. Você pode então bloqueá-lo. Veja
 [Controle de aplicações](../security-services/application-control.md).
 
-## Threat Shield
+## Proteção por listas de bloqueio
 
-Threat Shield é o nome da proteção baseada em listas de bloqueio. O **Threat Shield DNS** bloqueia domínios
-indesejados na resolução de nomes. O **Threat Shield IP** bloqueia conexões de e para endereços hostis. Veja
+A **filtragem de DNS** bloqueia domínios indesejados na resolução de nomes. O **bloqueio de IP e geolocalização**
+bloqueia conexões de e para endereços e países hostis. Veja
 [Filtragem de DNS](../security-services/dns-filtering.md) e
 [Bloqueio de IP e geolocalização](../security-services/ip-geo-blocking.md).
 

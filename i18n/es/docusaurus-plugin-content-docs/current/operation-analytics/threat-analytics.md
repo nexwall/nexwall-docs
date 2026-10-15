@@ -20,7 +20,7 @@ El primer bloque sigue las capas que encuentra una amenaza, en orden:
 
 | Capa | Qué cuenta |
 |---|---|
-| Bloqueo | Detenido en el borde: Threat Shield, bloqueo de países, filtrado DNS, IPS y la política web (categorías y filtro de contenido) |
+| Bloqueo | Detenido en el borde: bloqueo de IP y geolocalización, filtrado DNS, IPS y la política web (categorías y filtro de contenido) |
 | Antivirus | Archivos infectados encontrados en el tráfico web |
 | Sandbox | Archivos desconocidos abiertos en una máquina segura, vea [Protección web](../security-services/web-protection.md) |
 | Advanced Threat Protection | Veredictos aprendidos de muchos análisis. Aún no disponible: el recuadro muestra **Próximamente** |

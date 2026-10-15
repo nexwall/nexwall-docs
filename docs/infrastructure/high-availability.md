@@ -24,8 +24,8 @@ WAN connections can be static IPv4 or IPv6, or DHCP IPv4, on physical interfaces
 bonds and bridges) and PPPoE (including over VLANs).
 
 The configuration that is synchronized to the backup includes firewall rules and port forwards, DHCP and DNS, the SSH
-server, the VPN services (OpenVPN, IPsec, WireGuard), static routes, QoS, SD-WAN, application control rules, Threat
-Shield, the reverse proxy and certificates, user databases, NAT settings, backup settings, the connection to a
+server, the VPN services (OpenVPN, IPsec, WireGuard), static routes, QoS, SD-WAN, application control rules, DNS filtering,
+IP and geo blocking, the reverse proxy and certificates, user databases, NAT settings, backup settings, the connection to a
 controller, and the captive portal.
 
 The state of active connections is also synchronized, so most sessions survive a switch.

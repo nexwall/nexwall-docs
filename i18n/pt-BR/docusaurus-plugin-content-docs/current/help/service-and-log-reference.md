@@ -22,8 +22,8 @@ Todos os comandos rodam como `root`, por SSH ou pelo console.
 | DNS e DHCP | `dnsmasq` | `/etc/init.d/dnsmasq restart` | `dnsmasq-dhcp` |
 | Controle de aplicações (DPI) | `netifyd`, `dpi` | `/etc/init.d/netifyd restart`, `/etc/init.d/dpi restart` | `netifyd` |
 | Prevenção de intrusão (IPS/IDS) | `snort` | `/etc/init.d/snort restart` | `snort` |
-| Filtragem de DNS (Threat Shield DNS) | `ns-flashstart` | `/etc/init.d/ns-flashstart restart` | `ns-flashstart` |
-| Bloqueio de IP e geolocalização (Threat Shield IP) | `banip` | `/etc/init.d/banip restart` | `banIP` |
+| Filtragem de DNS | `ns-flashstart` | `/etc/init.d/ns-flashstart restart` | `ns-flashstart` |
+| Bloqueio de IP e geolocalização | `banip` | `/etc/init.d/banip restart` | `banIP` |
 | SD-WAN | `mwan3` | `/etc/init.d/mwan3 restart` | `mwan3` |
 | Portal cativo | `dedalo`, `dedalo_users_auth` | `/etc/init.d/dedalo restart` | `dedalo` |
 | OpenVPN (acesso remoto, site a site) | `openvpn` | `/etc/init.d/openvpn restart` | `openvpn` |

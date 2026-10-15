@@ -26,7 +26,7 @@ sobre bonds y puentes) y PPPoE (incluso sobre VLAN).
 
 La configuración que se sincroniza con la unidad de respaldo incluye reglas de firewall y redirecciones de puertos, DHCP y
 DNS, el servidor SSH, los servicios de VPN (OpenVPN, IPsec, WireGuard), rutas estáticas, QoS, SD-WAN, reglas de control de
-aplicaciones, Threat Shield, el proxy inverso y los certificados, bases de datos de usuarios, ajustes de NAT, ajustes de
+aplicaciones, el filtrado de DNS, el bloqueo de IP y geolocalización, el proxy inverso y los certificados, bases de datos de usuarios, ajustes de NAT, ajustes de
 copia de seguridad, la conexión con un controlador y el portal cautivo.
 
 El estado de las conexiones activas también se sincroniza, de modo que la mayoría de las sesiones sobreviven a un cambio.

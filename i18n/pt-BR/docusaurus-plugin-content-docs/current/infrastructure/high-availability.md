@@ -26,7 +26,7 @@ sobre bonds e bridges) e PPPoE (inclusive sobre VLANs).
 
 A configuração que é sincronizada com a unidade de reserva inclui regras de firewall e redirecionamentos de portas, DHCP e
 DNS, o servidor SSH, os serviços de VPN (OpenVPN, IPsec, WireGuard), rotas estáticas, QoS, SD-WAN, regras de controle de
-aplicações, Threat Shield, o proxy reverso e certificados, bancos de dados de usuários, configurações de NAT, configurações
+aplicações, a filtragem de DNS, o bloqueio de IP e geolocalização, o proxy reverso e certificados, bancos de dados de usuários, configurações de NAT, configurações
 de backup, a conexão com um controlador e o portal cativo.
 
 O estado das conexões ativas também é sincronizado, então a maioria das sessões sobrevive a uma troca.

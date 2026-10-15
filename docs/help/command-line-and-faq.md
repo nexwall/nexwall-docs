@@ -78,7 +78,7 @@ Most changes are staged. Use **Apply changes** in the banner. See
 Pending changes that were not applied are lost when the unit restarts. Applied changes are kept.
 
 **Does it work without a subscription?**
-Yes. The firewall, the VPNs, the intrusion prevention system, the free Threat Shield lists and the base application
+Yes. The firewall, the VPNs, the intrusion prevention system, the free DNS filtering and IP blocking lists and the base application
 catalog work without one. A subscription adds the features listed in
 [Licensing and account](../administration/licensing-account.md).
 

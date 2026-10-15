@@ -49,10 +49,10 @@ A **device** is a physical or virtual network card, or a logical one such as a b
 Instead of ports, application control recognizes what a connection is: a streaming service, a messaging app, a
 protocol. You can then block it. See [Application control](../security-services/application-control.md).
 
-## Threat Shield
+## Blocklist protection
 
-Threat Shield is the name of the blocklist based protection. **Threat Shield DNS** blocks unwanted domains at name
-resolution. **Threat Shield IP** blocks connections to and from hostile addresses. See
+**DNS filtering** blocks unwanted domains at name resolution. **IP and geo blocking** blocks connections to and from
+hostile addresses and countries. See
 [DNS filtering](../security-services/dns-filtering.md) and
 [IP and geo blocking](../security-services/ip-geo-blocking.md).
 

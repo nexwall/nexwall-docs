@@ -29,7 +29,7 @@ O Visualizador de logs tem estas abas:
 |---|---|
 | Tráfego do firewall | Pacotes aceitos ou bloqueados pelas regras do firewall, com o motivo |
 | Tráfego e aplicações | As conexões com a aplicação, o nome do site, a origem e o destino, os bytes em cada sentido e a duração. Só registra enquanto o Visualizador de logs está aberto e começa com as conexões abertas naquele momento; nada é escrito no log do sistema |
-| Bloqueio de IP e geografia | Endereços e países bloqueados pelo Threat Shield IP |
+| Bloqueio de IP e geografia | Endereços e países bloqueados pelo bloqueio de IP e geolocalização |
 | Proteção de rede (IPS) | Os alertas e bloqueios do motor de prevenção de intrusões |
 | Controle de aplicações (DPI) | Fluxos bloqueados pelo Controle de aplicações |
 | Proteção DNS | Domínios bloqueados pelo filtro DNS |
@@ -50,7 +50,7 @@ Os relatórios de tráfego de **Operação e Análises** guardam os totais por h
 | Pacotes bloqueados | o nome da zona, ou o prefixo de log que a regra usa |
 | Problemas de VPN | `openvpn`, `charon` ou `wireguard` |
 | Atividade de DHCP | `dnsmasq-dhcp` |
-| Bloqueios do Threat Shield IP | `banIP` |
+| Bloqueios de IP e geolocalização | `banIP` |
 | Problemas de atualização ou registro | o nome do serviço, por exemplo `ns-plug` |
 
 ## Manter os logs após reiniciar

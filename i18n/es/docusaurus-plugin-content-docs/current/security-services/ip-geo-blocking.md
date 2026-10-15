@@ -1,10 +1,10 @@
 ---
-title: Bloqueo de IP y geolocalización (Threat Shield IP)
+title: Bloqueo de IP y geolocalización
 sidebar_position: 4
 description: Bloquee direcciones hostiles, países, intentos de fuerza bruta e inundaciones.
 ---
 
-# Bloqueo de IP y geolocalización (Threat Shield IP)
+# Bloqueo de IP y geolocalización
 
 **Servicios de Seguridad > Bloqueo de IP y Geolocalización** bloquea nuevas conexiones desde y hacia direcciones que se
 sabe que son hostiles. Actúa en la capa de red, antes de que una conexión llegue a ningún servicio, y también puede
@@ -16,7 +16,7 @@ Active el servicio en la pestaña **Configuración**. Después abra la página d
 
 Una **lista de bloqueo** es una lista de direcciones compilada por alguien y agrupada por finalidad. Cada una tiene un
 nombre claro que indica quién la mantiene y a qué apunta. Elija las listas que habilitar y, para cada una, el sentido en
-que se aplica (entrada, salida o ambos). Algunas listas necesitan una suscripción que incluya Threat Shield.
+que se aplica (entrada, salida o ambos). Algunas listas necesitan una suscripción que incluya las listas avanzadas.
 
 Las conexiones bloqueadas se registran con una etiqueta que incluye la dirección, la zona y la acción, para que pueda
 buscarlas en [Registros](../operation-analytics/logs.md).

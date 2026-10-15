@@ -20,7 +20,7 @@ O primeiro bloco acompanha as camadas que uma ameaça encontra, em ordem:
 
 | Camada | O que conta |
 |---|---|
-| Bloqueio | Barrado na borda: Threat Shield, bloqueio de países, filtragem DNS, IPS e a política web (categorias e filtro de conteúdo) |
+| Bloqueio | Barrado na borda: bloqueio de IP e geolocalização, filtragem DNS, IPS e a política web (categorias e filtro de conteúdo) |
 | Antivírus | Arquivos infectados encontrados no tráfego web |
 | Sandbox | Arquivos desconhecidos abertos em uma máquina segura, veja [Proteção web](../security-services/web-protection.md) |
 | Advanced Threat Protection | Vereditos aprendidos de muitas análises. Ainda não disponível: o bloco mostra **Em breve** |

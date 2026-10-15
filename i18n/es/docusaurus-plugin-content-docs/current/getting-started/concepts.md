@@ -50,10 +50,10 @@ Un **dispositivo** es una tarjeta de red física o virtual, o una lógica, como 
 En lugar de puertos, el control de aplicaciones reconoce qué es una conexión: un servicio de streaming, una aplicación de
 mensajería, un protocolo. Después puede bloquearla. Vea [Control de aplicaciones](../security-services/application-control.md).
 
-## Threat Shield
+## Protección por listas de bloqueo
 
-Threat Shield es el nombre de la protección basada en listas de bloqueo. **Threat Shield DNS** bloquea dominios no
-deseados en la resolución de nombres. **Threat Shield IP** bloquea conexiones desde y hacia direcciones hostiles. Vea
+El **filtrado de DNS** bloquea dominios no deseados en la resolución de nombres. El **bloqueo de IP y geolocalización**
+bloquea conexiones desde y hacia direcciones y países hostiles. Vea
 [Filtrado de DNS](../security-services/dns-filtering.md) y
 [Bloqueo de IP y geolocalización](../security-services/ip-geo-blocking.md).
 

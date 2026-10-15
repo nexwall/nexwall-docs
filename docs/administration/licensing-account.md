@@ -16,7 +16,7 @@ The firewall works without a subscription. A subscription adds features that dep
 
 - an extended application catalog for [application control](../security-services/application-control.md), where the
   plan includes one;
-- the advanced lists of [Threat Shield](../security-services/dns-filtering.md);
+- the advanced lists of [DNS filtering](../security-services/dns-filtering.md) and [IP and geo blocking](../security-services/ip-geo-blocking.md);
 - remote (cloud) backups, encrypted, see [Backup and recovery](../infrastructure/backup-recovery.md);
 - the [Intelligent Threat Block](../security-services/web-protection.md) sandbox and the antivirus of [Web Protection](../security-services/web-protection.md), where the plan includes them;
 - management of an unlimited number of units from a controller;

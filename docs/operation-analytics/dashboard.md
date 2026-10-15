@@ -27,7 +27,7 @@ Each card links to the page where you can go deeper.
 - **Four figures.** Addresses blocked in the last hour, IPS alerts in the last 24 hours, files scanned by the antivirus
   (and how many were infected) and how many protection catalogs are current. A protection that is not active, or not in
   your plan, says so instead of showing zero.
-- **Protection layers.** One tile per layer: Threat Shield, country blocks, DNS filter, IPS, Application Control and
+- **Protection layers.** One tile per layer: IP and geo blocking, DNS filter, IPS, Application Control and
   [Web Protection](../security-services/web-protection.md), each with its state (active, inactive, late or not in your plan)
   and its main figure, for example the active rules or the alerts of the day. The Web Protection tile also tells you when
   rules decrypt traffic, when category lists were left out because they are too large, and when the web proxy or the

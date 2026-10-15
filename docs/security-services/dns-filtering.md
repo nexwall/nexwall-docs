@@ -1,10 +1,10 @@
 ---
-title: DNS filtering (Threat Shield DNS)
+title: DNS filtering
 sidebar_position: 3
 description: Block unwanted and malicious domains at name resolution.
 ---
 
-# DNS filtering (Threat Shield DNS)
+# DNS filtering
 
 **Security Services > DNS Filtering** blocks websites by stopping the resolution of their names. When a device asks for
 the address of a blocked domain, the unit does not answer with a usable address, so the site cannot be reached. It is
@@ -16,13 +16,13 @@ trackers.
 A **blocklist** is a list of domains grouped by purpose and maintained by someone. The page lists the available sources
 and lets you enable the ones you want. They cover categories such as malware and phishing, advertising and trackers,
 adult content, gambling, piracy, and services used to bypass filtering. Some lists are available to every unit, others
-only with a subscription that includes Threat Shield. The page says which is which.
+only with a subscription that includes the advanced lists. The page says which is which.
 
 Blocklists are updated automatically.
 
 ## Enabling the filter
 
-1. Open the **Settings** tab and enable Threat Shield DNS.
+1. Open the **Settings** tab and enable DNS filtering.
 2. Choose the **zones** whose traffic is redirected to the filter. Devices in those zones are filtered even if they
    are configured with another DNS server.
 3. Choose the **ports** to redirect. DNS normally uses port 53.

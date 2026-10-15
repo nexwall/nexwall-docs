@@ -79,7 +79,7 @@ La mayoría de los cambios quedan pendientes. Use **Aplicar cambios** en el avis
 Los cambios pendientes que no se aplicaron se pierden cuando la unidad se reinicia. Los cambios aplicados se conservan.
 
 **¿Funciona sin suscripción?**
-Sí. El firewall, las VPN, el sistema de prevención de intrusiones, las listas gratuitas de Threat Shield y el catálogo base
+Sí. El firewall, las VPN, el sistema de prevención de intrusiones, las listas gratuitas de filtrado de DNS y de bloqueo de IP y el catálogo base
 de aplicaciones funcionan sin ella. Una suscripción añade las funciones enumeradas en
 [Licencias y cuenta](../administration/licensing-account.md).
 

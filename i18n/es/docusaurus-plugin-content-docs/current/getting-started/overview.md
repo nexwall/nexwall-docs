@@ -44,7 +44,7 @@ los términos que se usan en el resto de la guía, lea [Conceptos](concepts.md).
 ## Ediciones y funciones
 
 Algunas funciones dependen de una suscripción, por ejemplo el catálogo mayor de aplicaciones, las copias de seguridad
-cifradas en la nube y las listas avanzadas de Threat Shield. Cuando una página describe una función así, lo indica. Vea
+cifradas en la nube y las listas avanzadas de filtrado de DNS y de bloqueo de IP. Cuando una página describe una función así, lo indica. Vea
 [Licencias y cuenta](../administration/licensing-account.md) para saber cómo se activa una suscripción.
 
 ## Notas de la versión

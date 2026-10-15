@@ -20,7 +20,7 @@ The first block follows the layers a threat meets, in order:
 
 | Layer | What it counts |
 |---|---|
-| Block | Stopped at the edge: Threat Shield, country blocks, DNS filtering, IPS and the web policy (categories and the content filter) |
+| Block | Stopped at the edge: IP and geo blocking, DNS filtering, IPS and the web policy (categories and the content filter) |
 | Antivirus | Infected files found in web traffic |
 | Sandbox | Unknown files opened in a safe machine, see [Web Protection](../security-services/web-protection.md) |
 | Advanced Threat Protection | Verdicts learned from many analyses. Not available yet: the tile shows **Coming** |

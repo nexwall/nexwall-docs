@@ -29,7 +29,7 @@ The Log Viewer has these tabs:
 |---|---|
 | Firewall traffic | Packets accepted or blocked by the firewall rules, with the reason |
 | Traffic and applications | The connections with the application, the website name, the source and destination, the bytes in each direction and the duration. It records only while the Log Viewer is open and starts with the connections that are open at that moment; nothing is written to the system log for it |
-| IP & Geo Block | Addresses and countries blocked by Threat Shield IP |
+| IP & Geo Block | Addresses and countries blocked by IP & geo blocking |
 | Network Protection (IPS) | The alerts and blocks of the intrusion prevention engine |
 | Application Control (DPI) | Flows blocked by Application Control |
 | DNS Protection | Domains blocked by the DNS filter |
@@ -50,7 +50,7 @@ The traffic reports of **Operation & Analytics** keep the hourly totals for 35 d
 | Blocked packets | the name of the zone, or the log prefix used by the rule |
 | VPN problems | `openvpn`, `charon` or `wireguard` |
 | DHCP activity | `dnsmasq-dhcp` |
-| Threat Shield IP blocks | `banIP` |
+| IP & geo blocks | `banIP` |
 | Update or registration problems | the name of the service, for example `ns-plug` |
 
 ## Keeping logs across reboots

@@ -43,7 +43,7 @@ entender os termos usados no restante do guia, leia [Conceitos](concepts.md).
 ## Edições e recursos
 
 Alguns recursos dependem de uma assinatura, por exemplo o catálogo maior de aplicações, os backups criptografados na
-nuvem e as listas avançadas do Threat Shield. Quando uma página descreve um recurso assim, ela avisa. Veja
+nuvem e as listas avançadas de filtragem de DNS e de bloqueio de IP. Quando uma página descreve um recurso assim, ela avisa. Veja
 [Licenciamento e conta](../administration/licensing-account.md) para saber como uma assinatura é ativada.
 
 ## Notas de versão

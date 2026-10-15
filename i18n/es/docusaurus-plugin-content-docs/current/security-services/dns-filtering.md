@@ -1,10 +1,10 @@
 ---
-title: Filtrado de DNS (Threat Shield DNS)
+title: Filtrado de DNS
 sidebar_position: 3
 description: Bloquee dominios no deseados y maliciosos en la resolución de nombres.
 ---
 
-# Filtrado de DNS (Threat Shield DNS)
+# Filtrado de DNS
 
 **Servicios de Seguridad > Filtrado de DNS** bloquea sitios web impidiendo la resolución de sus nombres. Cuando un
 dispositivo pide la dirección de un dominio bloqueado, la unidad no responde con una dirección utilizable, así que el sitio
@@ -16,14 +16,14 @@ publicidad y rastreadores.
 Una **lista de bloqueo** es una lista de dominios agrupados por finalidad y mantenida por alguien. La página lista las
 fuentes disponibles y le permite habilitar las que quiera. Cubren categorías como malware y phishing, publicidad y
 rastreadores, contenido para adultos, juegos de azar, piratería y servicios usados para eludir el filtrado. Algunas listas
-están disponibles para todas las unidades, otras solo con una suscripción que incluya Threat Shield. La página indica cuál
+están disponibles para todas las unidades, otras solo con una suscripción que incluya las listas avanzadas. La página indica cuál
 es cuál.
 
 Las listas de bloqueo se actualizan automáticamente.
 
 ## Activar el filtro
 
-1. Abra la pestaña **Configuración** y habilite Threat Shield DNS.
+1. Abra la pestaña **Configuración** y habilite el filtrado de DNS.
 2. Elija las **zonas** cuyo tráfico se redirige al filtro. Los dispositivos de esas zonas se filtran aunque estén
    configurados con otro servidor DNS.
 3. Elija los **puertos** que se redirigen. El DNS normalmente usa el puerto 53.

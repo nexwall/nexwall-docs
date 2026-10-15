@@ -1,10 +1,10 @@
 ---
-title: IP and geo blocking (Threat Shield IP)
+title: IP and geo blocking
 sidebar_position: 4
 description: Block hostile addresses, countries, brute force attempts and floods.
 ---
 
-# IP and geo blocking (Threat Shield IP)
+# IP and geo blocking
 
 **Security Services > IP & Geo Blocking** blocks new connections to and from addresses that are known to be hostile. It
 works at the network layer, before a connection reaches any service, and it can also block whole countries.
@@ -15,7 +15,7 @@ Turn the service on in the **Settings** tab. Then open the blocklist page.
 
 A **blocklist** is a list of addresses compiled by someone and grouped by purpose. Each one has a clear name that tells
 you who maintains it and what it targets. Choose the lists to enable, and for each one the direction it is applied
-to (inbound, outbound or both). Some lists need a subscription that includes Threat Shield.
+to (inbound, outbound or both). Some lists need a subscription that includes the advanced lists.
 
 Blocked connections are logged with a tag that includes the direction, the zone and the action, so you can search for
 them in [Logs](../operation-analytics/logs.md).

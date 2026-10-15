@@ -27,7 +27,7 @@ Cada cartão leva à página onde você pode se aprofundar.
 - **Quatro números.** Endereços bloqueados na última hora, alertas do IPS nas últimas 24 horas, arquivos analisados pelo
   antivírus (e quantos estavam infectados) e quantos catálogos de proteção estão em dia. Uma proteção que não está
   ativa, ou que não está no seu plano, diz isso em vez de mostrar zero.
-- **Camadas de proteção.** Um bloco por camada: Threat Shield, bloqueio de países, filtro DNS, IPS, Controle de aplicações e
+- **Camadas de proteção.** Um bloco por camada: bloqueio de IP e geolocalização, filtro DNS, IPS, Controle de aplicações e
   [Proteção web](../security-services/web-protection.md), cada um com seu estado (ativa, inativa, atrasada ou não incluída no seu plano)
   e seu número principal, por exemplo as regras ativas ou os alertas do dia. O bloco de Proteção web também avisa quando
   há regras que descriptografam tráfego, quando listas de categorias ficaram de fora por serem grandes demais e quando o proxy web ou o

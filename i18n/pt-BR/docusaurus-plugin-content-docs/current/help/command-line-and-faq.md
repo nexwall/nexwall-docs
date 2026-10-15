@@ -78,7 +78,7 @@ As alterações pendentes que não foram aplicadas são perdidas quando a unidad
 mantidas.
 
 **Funciona sem assinatura?**
-Sim. O firewall, as VPNs, o sistema de prevenção de intrusões, as listas gratuitas do Threat Shield e o catálogo base de
+Sim. O firewall, as VPNs, o sistema de prevenção de intrusões, as listas gratuitas de filtragem de DNS e de bloqueio de IP e o catálogo base de
 aplicações funcionam sem uma. Uma assinatura adiciona os recursos listados em
 [Licenciamento e conta](../administration/licensing-account.md).
 

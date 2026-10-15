@@ -27,7 +27,7 @@ Cada tarjeta enlaza con la página donde puede profundizar.
 - **Cuatro cifras.** Direcciones bloqueadas en la última hora, alertas del IPS en las últimas 24 horas, archivos analizados por el
   antivirus (y cuántos estaban infectados) y cuántos catálogos de protección están al día. Una protección que no está
   activa, o que no está en su plan, lo dice en lugar de mostrar cero.
-- **Capas de protección.** Un recuadro por capa: Threat Shield, bloqueo de países, filtro DNS, IPS, Control de aplicaciones y
+- **Capas de protección.** Un recuadro por capa: bloqueo de IP y geolocalización, filtro DNS, IPS, Control de aplicaciones y
   [Protección web](../security-services/web-protection.md), cada uno con su estado (activa, inactiva, atrasada o no incluida en su plan)
   y su cifra principal, por ejemplo las reglas activas o las alertas del día. El recuadro de Protección web también avisa cuando
   hay reglas que descifran tráfico, cuando se dejaron fuera listas de categorías por ser demasiado grandes y cuando el proxy web o el
