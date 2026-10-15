@@ -36,8 +36,7 @@ const config: Config = {
       {
         docs: {
           routeBasePath: 'docs',
-          sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/nexwall/nexwall-docs/tree/main/'
+          sidebarPath: './sidebars.ts'
         },
         blog: false,
         theme: { customCss: './src/css/custom.css' }
@@ -53,6 +52,7 @@ const config: Config = {
         { type: 'docSidebar', sidebarId: 'manual', position: 'left', label: 'Administration guide' },
         { type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help' },
         { type: 'localeDropdown', position: 'right' },
+        { href: 'https://releasenotes.nexwall.com.br/', label: 'Release notes', position: 'right' },
         { href: 'https://releasenotes.nexwall.com.br/download/', label: 'Download', position: 'right', className: 'navbar-download', 'aria-label': 'Download Nexwall Firewall' },
         { href: 'https://github.com/nexwall/nexwall-docs', label: 'GitHub', position: 'right' }
       ]
@@ -72,6 +72,7 @@ const config: Config = {
           title: 'Nexwall',
           items: [
             { label: 'Website', href: 'https://nexwall.com.br' },
+            { label: 'Release notes', href: 'https://releasenotes.nexwall.com.br/' },
             { label: 'Support', href: 'https://support.nexwall.com.br' }
           ]
         }

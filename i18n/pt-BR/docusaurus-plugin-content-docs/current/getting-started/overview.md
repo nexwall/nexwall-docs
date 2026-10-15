@@ -45,3 +45,7 @@ entender os termos usados no restante do guia, leia [Conceitos](concepts.md).
 Alguns recursos dependem de uma assinatura, por exemplo o catálogo maior de aplicações, os backups criptografados na
 nuvem e as listas avançadas do Threat Shield. Quando uma página descreve um recurso assim, ela avisa. Veja
 [Licenciamento e conta](../administration/licensing-account.md) para saber como uma assinatura é ativada.
+
+## Notas de versão
+
+Cada versão tem as suas notas, com as novidades, as correções, os problemas conhecidos e os resultados dos testes de laboratório: [Notas de versão do Nexwall Firewall](https://releasenotes.nexwall.com.br/pt-BR/).

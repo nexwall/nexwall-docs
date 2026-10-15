@@ -13,5 +13,8 @@
   },
   "item.label.Download": {
     "message": "Baixar"
+  },
+  "item.label.Release notes": {
+    "message": "Notas de versão"
   }
 }

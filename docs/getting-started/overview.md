@@ -45,3 +45,7 @@ terms used everywhere else, read [Concepts](concepts.md).
 Some features depend on a subscription, for example the larger application catalog, encrypted cloud backups and the
 advanced Threat Shield lists. Where a page describes such a feature, it says so. See
 [Licensing and account](../administration/licensing-account.md) for how a subscription is activated.
+
+## Release notes
+
+Every release has its notes, with what is new, what was fixed, the known issues and the lab test results: [Nexwall Firewall release notes](https://releasenotes.nexwall.com.br/en/).

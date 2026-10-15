@@ -59,22 +59,61 @@
   "home.card.identity.text": {
     "message": "Bases de datos de usuarios y el portal cautivo para redes de invitados."
   },
-  "home.card.infrastructure.title": {
-    "message": "Infraestructura"
-  },
-  "home.card.infrastructure.text": {
-    "message": "Copia de seguridad y recuperación, ajustes del sistema y actualizaciones, certificados y alta disponibilidad."
-  },
   "home.card.administration.title": {
     "message": "Administración"
   },
   "home.card.administration.text": {
-    "message": "Gestión central de varios firewalls, licencias y su cuenta."
+    "message": "Gestión central, licencias y su cuenta, copia de seguridad y recuperación, ajustes del sistema y actualizaciones, certificados y alta disponibilidad."
   },
   "home.card.help.title": {
     "message": "Ayuda"
   },
   "home.card.help.text": {
     "message": "Solución de problemas por síntoma, referencia de línea de comandos y preguntas frecuentes."
+  },
+  "home.slide.app": {
+    "message": "Todas las funciones, una interfaz limpia"
+  },
+  "home.slide.analytics": {
+    "message": "Visibilidad profunda del tráfico, en tiempo real"
+  },
+  "home.slide.threats": {
+    "message": "Vea qué se bloqueó y por qué"
+  },
+  "home.slide.connections": {
+    "message": "Seguimiento de conexiones en vivo"
+  },
+  "home.slide.rules": {
+    "message": "Reglas de firewall que se leen como lenguaje claro"
+  },
+  "home.slide.policy": {
+    "message": "Política por zonas, por defecto"
+  },
+  "home.slide.appcontrol": {
+    "message": "Controle aplicaciones y categorías"
+  },
+  "home.slide.webprotection": {
+    "message": "Protección web por categoría, con inspección donde importa"
+  },
+  "home.slide.ips": {
+    "message": "Prevención de intrusiones con el estado del motor en vivo"
+  },
+  "home.slide.vpn": {
+    "message": "VPN sitio a sitio y de acceso remoto, integradas"
+  },
+  "home.slide.interfaces": {
+    "message": "LAN, WAN y VPN de un vistazo"
+  },
+  "home.slide.updates": {
+    "message": "Actualizaciones y correcciones desde una sola página"
+  },
+  "home.slide.prev": {
+    "message": "Captura anterior"
+  },
+  "home.slide.next": {
+    "message": "Captura siguiente"
+  },
+  "home.slide.goTo": {
+    "message": "Mostrar captura {n}"
   }
 }

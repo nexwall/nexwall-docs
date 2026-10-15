@@ -16,19 +16,23 @@ const cards = [
   { key: 'network', to: '/docs/network/interfaces-routing', title: 'Network', text: 'Interfaces, routing, SD-WAN, DNS and DHCP, QoS and the reverse proxy.' },
   { key: 'vpn', to: '/docs/vpn/remote-access-openvpn', title: 'VPN', text: 'Remote access, site-to-site tunnels with OpenVPN and IPsec, and WireGuard.' },
   { key: 'identity', to: '/docs/access-identity/users-groups', title: 'Access & Identity', text: 'User databases and the captive portal for guest networks.' },
-  { key: 'infrastructure', to: '/docs/infrastructure/backup-recovery', title: 'Infrastructure', text: 'Backup and recovery, system settings and updates, certificates and high availability.' },
-  { key: 'administration', to: '/docs/administration/central-management', title: 'Administration', text: 'Central management of many firewalls, licensing and your account.' },
+  { key: 'administration', to: '/docs/administration/central-management', title: 'Administration', text: 'Central management, licensing and your account, backup and recovery, system settings and updates, certificates and high availability.' },
   { key: 'help', to: '/docs/help/troubleshooting', title: 'Help', text: 'Troubleshooting by symptom, command line reference and frequently asked questions.' }
 ]
 
 const slides = [
-  { key: 'app', src: '/img/screenshots/complete-app.png', captionId: 'home.slide.app', caption: 'Every feature, one clean interface' },
-  { key: 'analytics', src: '/img/screenshots/analytics-collage.png', captionId: 'home.slide.analytics', caption: 'Deep traffic visibility, in real time' },
-  { key: 'rules', src: '/img/screenshots/firewall-rules.png', captionId: 'home.slide.rules', caption: 'Firewall rules that read like plain language' },
-  { key: 'policy', src: '/img/screenshots/zones-policies.png', captionId: 'home.slide.policy', caption: 'Zone-based policy, by default' },
-  { key: 'vpn', src: '/img/screenshots/vpn-composite.png', captionId: 'home.slide.vpn', caption: 'Site-to-site and remote access VPN, built in' },
-  { key: 'identity', src: '/img/screenshots/access-users-ad.png', captionId: 'home.slide.identity', caption: 'Centralized identity, LDAP/AD-ready' },
-  { key: 'connections', src: '/img/screenshots/operation-connections-content.png', captionId: 'home.slide.connections', caption: 'Live connection tracking' }
+  { key: 'app', src: '/img/screenshots/slider-app.png', captionId: 'home.slide.app', caption: 'Every feature, one clean interface' },
+  { key: 'analytics', src: '/img/screenshots/slider-analytics.png', captionId: 'home.slide.analytics', caption: 'Deep traffic visibility, in real time' },
+  { key: 'threats', src: '/img/screenshots/slider-threats.png', captionId: 'home.slide.threats', caption: 'See what was blocked, and why' },
+  { key: 'connections', src: '/img/screenshots/slider-connections.png', captionId: 'home.slide.connections', caption: 'Live connection tracking' },
+  { key: 'rules', src: '/img/screenshots/slider-rules.png', captionId: 'home.slide.rules', caption: 'Firewall rules that read like plain language' },
+  { key: 'policy', src: '/img/screenshots/slider-policy.png', captionId: 'home.slide.policy', caption: 'Zone-based policy, by default' },
+  { key: 'appcontrol', src: '/img/screenshots/slider-appcontrol.png', captionId: 'home.slide.appcontrol', caption: 'Control applications and categories' },
+  { key: 'webprotection', src: '/img/screenshots/slider-webprotection.png', captionId: 'home.slide.webprotection', caption: 'Web protection by category, with inspection where it matters' },
+  { key: 'ips', src: '/img/screenshots/slider-ips.png', captionId: 'home.slide.ips', caption: 'Intrusion prevention with live engine health' },
+  { key: 'vpn', src: '/img/screenshots/slider-vpn.png', captionId: 'home.slide.vpn', caption: 'Site-to-site and remote access VPN, built in' },
+  { key: 'interfaces', src: '/img/screenshots/slider-interfaces.png', captionId: 'home.slide.interfaces', caption: 'LAN, WAN and VPN at a glance' },
+  { key: 'updates', src: '/img/screenshots/slider-updates.png', captionId: 'home.slide.updates', caption: 'Updates and fixes from one page' }
 ]
 
 const AUTO_ADVANCE_MS = 5000

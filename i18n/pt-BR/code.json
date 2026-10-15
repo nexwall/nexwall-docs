@@ -59,22 +59,61 @@
   "home.card.identity.text": {
     "message": "Bancos de usuários e o portal cativo para redes de convidados."
   },
-  "home.card.infrastructure.title": {
-    "message": "Infraestrutura"
-  },
-  "home.card.infrastructure.text": {
-    "message": "Backup e recuperação, configurações do sistema e atualizações, certificados e alta disponibilidade."
-  },
   "home.card.administration.title": {
     "message": "Administração"
   },
   "home.card.administration.text": {
-    "message": "Gerenciamento central de vários firewalls, licenciamento e sua conta."
+    "message": "Gerenciamento central, licenciamento e sua conta, backup e recuperação, configurações do sistema e atualizações, certificados e alta disponibilidade."
   },
   "home.card.help.title": {
     "message": "Ajuda"
   },
   "home.card.help.text": {
     "message": "Solução de problemas por sintoma, referência de linha de comando e perguntas frequentes."
+  },
+  "home.slide.app": {
+    "message": "Todos os recursos, uma interface limpa"
+  },
+  "home.slide.analytics": {
+    "message": "Visibilidade profunda do tráfego, em tempo real"
+  },
+  "home.slide.threats": {
+    "message": "Veja o que foi bloqueado e por quê"
+  },
+  "home.slide.connections": {
+    "message": "Acompanhamento de conexões ao vivo"
+  },
+  "home.slide.rules": {
+    "message": "Regras de firewall que se leem como linguagem clara"
+  },
+  "home.slide.policy": {
+    "message": "Política por zonas, por padrão"
+  },
+  "home.slide.appcontrol": {
+    "message": "Controle aplicações e categorias"
+  },
+  "home.slide.webprotection": {
+    "message": "Proteção web por categoria, com inspeção onde importa"
+  },
+  "home.slide.ips": {
+    "message": "Prevenção de intrusões com a saúde do motor ao vivo"
+  },
+  "home.slide.vpn": {
+    "message": "VPN site a site e de acesso remoto, integradas"
+  },
+  "home.slide.interfaces": {
+    "message": "LAN, WAN e VPN em um relance"
+  },
+  "home.slide.updates": {
+    "message": "Atualizações e correções em uma só página"
+  },
+  "home.slide.prev": {
+    "message": "Captura anterior"
+  },
+  "home.slide.next": {
+    "message": "Próxima captura"
+  },
+  "home.slide.goTo": {
+    "message": "Mostrar captura {n}"
   }
 }

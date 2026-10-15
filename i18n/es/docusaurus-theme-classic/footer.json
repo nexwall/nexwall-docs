@@ -22,5 +22,8 @@
   },
   "copyright": {
     "message": "Copyright © 2026 Nexwall. Documentación bajo licencia CC BY-NC 4.0."
+  },
+  "link.item.label.Release notes": {
+    "message": "Notas de la versión"
   }
 }
