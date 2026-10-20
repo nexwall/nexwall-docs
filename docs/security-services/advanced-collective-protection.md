@@ -12,7 +12,7 @@ Threat Protection module of your plan (it is included in the trial).
 | Protection | What it does | Blocks? |
 |---|---|---|
 | **Advanced Protection** | Scores every device of your inner networks against a behaviour model that runs on this firewall and raises a warning, with the reason in words, when one acts like an infected machine | No. Warnings are advisory |
-| **Collective Protection** | Uses lists of outside addresses and domain names that several Nexwall firewalls found behind attacks and that Nexwall reviewed, and, if you allow it, sends reports of the same kind | Yes, through IP & Geo Blocking and DNS Filtering, only for entries Nexwall approved |
+| **Collective Protection** | Uses lists of outside addresses and domain names that several Nexwall firewalls found behind attacks and that were confirmed (by three firewalls or by the Nexwall team), and, if you allow it, sends reports of the same kind | Yes, through IP & Geo Blocking and DNS Filtering, only for confirmed entries |
 
 At the top right of the page a badge for each protection shows its state as the firewall really has it, not only the
 switch: **running** (green), **degraded** (amber: it works, but something is wrong, and the notice under the badge says
@@ -36,8 +36,8 @@ reads per minute, how long a scoring cycle takes and how many devices it follows
 
 Collective Protection adds two lists to the Nexwall threat lists: **Collective Defense: addresses** (used by IP & Geo
 Blocking) and **Collective Defense: domains** (used by DNS Filtering). They are switched on once, when your firewall first
-sees them; after that your choice stands. An entry is published to all firewalls only after at least three different
-firewalls reported it and Nexwall reviewed it, and it expires fourteen days after it was last reported. The services that
+sees them; after that your choice stands. An entry is published to all firewalls after at least three different
+firewalls reported it, or earlier when the Nexwall team confirmed a report from a single firewall, and it expires fourteen days after it was last reported. The services that
 apply the lists have to be on; the page says so when one is off.
 
 ### Reports

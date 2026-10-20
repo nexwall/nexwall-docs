@@ -12,7 +12,7 @@ módulo de Proteção Avançada contra Ameaças do seu plano (ele está incluíd
 | Proteção | O que faz | Bloqueia? |
 |---|---|---|
 | **Proteção Avançada** | Pontua cada dispositivo das suas redes internas com um modelo de comportamento que roda neste firewall e gera um aviso, com o motivo em palavras, quando um age como uma máquina infectada | Não. Os avisos são informativos |
-| **Proteção Coletiva** | Usa listas de endereços e nomes de domínio externos que vários firewalls Nexwall encontraram por trás de ataques e que a Nexwall revisou, e, se você permitir, envia relatórios do mesmo tipo | Sim, pelo Bloqueio de IP e Geografia e pela Filtragem de DNS, apenas para as entradas que a Nexwall aprovou |
+| **Proteção Coletiva** | Usa listas de endereços e nomes de domínio externos que vários firewalls Nexwall encontraram por trás de ataques e que foram confirmados (por três firewalls ou pela equipe da Nexwall), e, se você permitir, envia relatórios do mesmo tipo | Sim, pelo Bloqueio de IP e Geografia e pela Filtragem de DNS, apenas para as entradas confirmadas |
 
 No canto superior direito da página, um selo para cada proteção mostra o estado como o firewall realmente o tem, não só a
 chave: **em execução** (verde), **degradada** (âmbar: funciona, mas algo está errado, e o aviso sob o selo diz o quê),
@@ -37,7 +37,7 @@ dura um ciclo de pontuação e quantos dispositivos ele acompanha.
 A Proteção Coletiva acrescenta duas listas às listas de ameaças da Nexwall: **Defesa Coletiva: endereços** (usada pelo
 Bloqueio de IP e Geografia) e **Defesa Coletiva: domínios** (usada pela Filtragem de DNS). Elas são ativadas uma única vez,
 quando o seu firewall as vê pela primeira vez; depois disso a sua escolha vale. Uma entrada só é publicada para todos os
-firewalls depois que pelo menos três firewalls diferentes a informaram e a Nexwall a revisou, e ela expira catorze dias
+firewalls depois que pelo menos três firewalls diferentes a informaram, ou antes se a equipe da Nexwall confirmou o relatório de um único firewall, e ela expira catorze dias
 depois do último relatório. Os serviços que aplicam as listas precisam estar ligados; a página avisa quando um está desligado.
 
 ### Relatórios

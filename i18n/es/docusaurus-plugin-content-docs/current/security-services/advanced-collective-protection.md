@@ -12,7 +12,7 @@ módulo de Protección Avanzada contra Amenazas de su plan (está incluido en la
 | Protección | Qué hace | ¿Bloquea? |
 |---|---|---|
 | **Protección Avanzada** | Puntúa cada dispositivo de sus redes internas con un modelo de comportamiento que se ejecuta en este firewall y genera un aviso, con el motivo en palabras, cuando uno actúa como una máquina infectada | No. Los avisos son informativos |
-| **Protección Colectiva** | Usa listas de direcciones y nombres de dominio externos que varios firewalls Nexwall encontraron detrás de ataques y que Nexwall revisó, y, si usted lo permite, envía informes del mismo tipo | Sí, mediante el Bloqueo de IP y Geografía y el Filtrado DNS, solo para las entradas que Nexwall aprobó |
+| **Protección Colectiva** | Usa listas de direcciones y nombres de dominio externos que varios firewalls Nexwall encontraron detrás de ataques y que fueron confirmados (por tres firewalls o por el equipo de Nexwall), y, si usted lo permite, envía informes del mismo tipo | Sí, mediante el Bloqueo de IP y Geografía y el Filtrado DNS, solo para las entradas confirmadas |
 
 En la parte superior derecha de la página, una insignia para cada protección muestra su estado tal como lo tiene realmente
 el firewall, no solo el interruptor: **en ejecución** (verde), **degradada** (ámbar: funciona, pero algo está mal, y el aviso
@@ -37,7 +37,7 @@ nombres DNS lee por minuto, cuánto dura un ciclo de puntuación y cuántos disp
 La Protección Colectiva añade dos listas a las listas de amenazas de Nexwall: **Defensa Colectiva: direcciones** (usada por
 el Bloqueo de IP y Geografía) y **Defensa Colectiva: dominios** (usada por el Filtrado DNS). Se activan una sola vez, cuando
 su firewall las ve por primera vez; después, su elección se respeta. Una entrada se publica para todos los firewalls solo
-después de que al menos tres firewalls distintos la informaron y Nexwall la revisó, y caduca catorce días después del último
+después de que al menos tres firewalls distintos la informaron, o antes si el equipo de Nexwall confirmó el informe de un solo firewall, y caduca catorce días después del último
 informe. Los servicios que aplican las listas deben estar activados; la página lo indica cuando uno está apagado.
 
 ### Informes
