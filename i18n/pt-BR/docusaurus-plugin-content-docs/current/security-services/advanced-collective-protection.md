@@ -72,7 +72,7 @@ assinatura e o hash antes de usar um arquivo e mantém o modelo anterior se um n
 
 | Aviso | Significado | O que fazer |
 |---|---|---|
-| O serviço de pontuação não está em execução ou parou de informar | A Proteção Avançada está ativada mas o serviço está parado | Aguarde um minuto; se continuar, veja o registro do sistema (`logread | grep nexwall-atp`) e fale com o suporte |
+| O serviço de pontuação não está em execução ou parou de informar | A Proteção Avançada está ativada mas o serviço está parado | Aguarde um minuto; se continuar, veja o registro do sistema (`logread \| grep nexwall-atp`) e fale com o suporte |
 | Ainda não há modelo de comportamento instalado | O modelo não foi baixado | Use **Atualizar agora**; confira se o firewall alcança o servidor de licenças da Nexwall |
 | Os nomes DNS não podem ser lidos | A visão de pacotes das redes internas não pôde ser aberta, por isso faltam os sinais de DNS | Confira se as interfaces internas existem; a visão é tentada de novo a cada dez minutos |
 | O modelo não é verificado há muito tempo | O servidor da Nexwall não é alcançado ou a verificação falha | Confira a conexão com a Internet e o estado da licença |

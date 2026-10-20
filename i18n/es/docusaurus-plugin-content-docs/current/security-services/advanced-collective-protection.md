@@ -72,7 +72,7 @@ firewall comprueba la firma y el hash antes de usar un archivo y conserva el mod
 
 | Aviso | Significado | Qué hacer |
 |---|---|---|
-| El servicio de puntuación no está en ejecución o dejó de informar | La Protección Avanzada está activada pero el servicio está caído | Espere un minuto; si persiste, revise el registro del sistema (`logread | grep nexwall-atp`) y contacte al soporte |
+| El servicio de puntuación no está en ejecución o dejó de informar | La Protección Avanzada está activada pero el servicio está caído | Espere un minuto; si persiste, revise el registro del sistema (`logread \| grep nexwall-atp`) y contacte al soporte |
 | Todavía no hay un modelo de comportamiento instalado | El modelo no se ha descargado | Use **Actualizar ahora**; compruebe que el firewall llega al servidor de licencias de Nexwall |
 | No se pueden leer los nombres DNS | No se pudo abrir la vista de paquetes de las redes internas, por lo que faltan las señales de DNS | Compruebe que existen las interfaces internas; la vista se reintenta cada diez minutos |
 | Hace mucho que no se comprueba el modelo | No se llega al servidor de Nexwall o la comprobación falla | Compruebe la conexión a Internet y el estado de la licencia |

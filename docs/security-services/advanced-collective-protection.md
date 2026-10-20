@@ -71,7 +71,7 @@ hash before it uses a file, and keeps the previous model when a new one is refus
 
 | Notice | Meaning | What to do |
 |---|---|---|
-| The scoring service is not running or has stopped reporting | Advanced Protection is on but the service is down | Wait a minute; if it stays, check the system log (`logread | grep nexwall-atp`) and contact support |
+| The scoring service is not running or has stopped reporting | Advanced Protection is on but the service is down | Wait a minute; if it stays, check the system log (`logread \| grep nexwall-atp`) and contact support |
 | No behaviour model is installed yet | The model has not been downloaded | Use **Update now**; check that the firewall can reach the Nexwall license server |
 | The DNS names cannot be read | The packet view of the inner networks could not be opened, so the DNS signals are missing | Check that the inner interfaces exist; the view is retried every ten minutes |
 | The model has not been checked for a long time | The Nexwall server cannot be reached or the check fails | Check the Internet connection and the license state |
