@@ -65,7 +65,7 @@ hash before it uses a file, and keeps the previous model when a new one is refus
 
 - **Update now** looks for a new model and new lists at once and sends a pending report.
 - **Automatic updates of the model**: choose how often the model is looked for (every 1, 3, 6, 12 or 24 hours). The
-  shared lists follow the schedule of the Threat Shield lists (every 30 minutes). Reports are sent at most once an hour.
+  shared lists follow the schedule of the Nexwall threat lists (every 30 minutes). Reports are sent at most once an hour.
 
 ## When the badge is not green
 

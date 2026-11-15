@@ -65,7 +65,7 @@ assinatura e o hash antes de usar um arquivo e mantém o modelo anterior se um n
 
 - **Atualizar agora** busca um modelo novo e listas novas na hora e envia um relatório pendente.
 - **Atualizações automáticas do modelo**: escolha com que frequência o modelo é buscado (a cada 1, 3, 6, 12 ou 24 horas). As
-  listas compartilhadas seguem o calendário das listas do Threat Shield (a cada 30 minutos). Os relatórios são enviados no
+  listas compartilhadas seguem o calendário das listas de ameaças da Nexwall (a cada 30 minutos). Os relatórios são enviados no
   máximo uma vez por hora.
 
 ## Quando o selo não está verde

@@ -65,7 +65,7 @@ firewall comprueba la firma y el hash antes de usar un archivo y conserva el mod
 
 - **Actualizar ahora** busca un modelo nuevo y listas nuevas de inmediato y envía un informe pendiente.
 - **Actualizaciones automáticas del modelo**: elija con qué frecuencia se busca el modelo (cada 1, 3, 6, 12 o 24 horas).
-  Las listas compartidas siguen el calendario de las listas de Threat Shield (cada 30 minutos). Los informes se envían como
+  Las listas compartidas siguen el calendario de las listas de amenazas de Nexwall (cada 30 minutos). Los informes se envían como
   máximo una vez por hora.
 
 ## Cuando la insignia no es verde
