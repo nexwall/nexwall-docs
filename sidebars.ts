@@ -68,6 +68,7 @@ const sidebars: SidebarsConfig = {
     'help/install-from-image',
     'help/command-line-and-faq',
     'help/controller-registration-troubleshooting',
+    'help/teams-microsoft-365-signin',
     'help/service-and-log-reference',
     'help/understanding-uci',
     'help/network-troubleshooting-tools',
