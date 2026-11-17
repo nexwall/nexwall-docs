@@ -102,53 +102,21 @@ If one computer needs unfiltered DNS for a different reason, use the **Filter by
 ## Step 4: Check whether Windows thinks it is offline
 
 In the real case, after the three names were allowed, they resolved and Teams' own connections worked, but Teams still
-failed. The Windows network icon showed **no internet**. This matters: the Teams sign-in service asks Windows whether
-the network is usable, and it refuses to send any request when Windows says "offline". A capture on the firewall confirmed
-that while Teams was reopened, the computer sent no DNS query for `login.microsoftonline.com` and no Windows connectivity
-check at all. The sign-in was failing on the computer before it sent a packet.
+failed and the Windows network icon showed **no internet**. The Teams sign-in service asks Windows whether the network is
+usable, and sends nothing when Windows says "offline". A capture on the firewall confirmed that while Teams was reopened the
+computer sent no query for `login.microsoftonline.com` at first and no Windows connectivity check at all.
 
-The computer in the case is a Windows host that reaches the firewall through a VMware network adapter, while a Wi-Fi adapter
-without a gateway is also connected. Windows runs its connectivity check on the adapter it considers best, and with two
-adapters it can pick the one that cannot reach the internet. Check on the Windows computer, in an administrator PowerShell:
-
-```powershell
-Get-NetIPConfiguration | Format-List InterfaceAlias,IPv4Address,IPv4DefaultGateway,DNSServer
-Get-NetIPInterface -AddressFamily IPv4 | Sort InterfaceMetric | Format-Table InterfaceAlias,InterfaceMetric,ConnectionState
-netsh winhttp show proxy
-```
-
-What to look for:
-
-- The adapter facing the firewall should have the firewall as **gateway** and **DNS server**, and the **lowest interface
-  metric**.
-- Other adapters, such as an unused Wi-Fi, should not have a default gateway, and should have a higher metric.
-- `netsh winhttp show proxy` should say `Direct access`. A proxy left behind by a VPN client breaks the sign-in the same way.
-- A VPN client that was disconnected can leave a virtual adapter, a route or a proxy setting. Quit the client completely.
-
-After correcting, restart the network location service and reopen Teams:
-
-```powershell
-Restart-Service NlaSvc
-```
-
-The Windows icon must show the network as connected before Teams can sign in.
+The cause was on the Windows side, not on the firewall. See
+[Windows shows "no internet" and Microsoft sign-in fails](windows-offline-icon-sign-in.md) for the checks, what was ruled out
+and the workaround that worked.
 
 ## Outcome in the real case
 
-After adding **8.8.8.8 as a secondary DNS server** on the Windows computer, which until then had only the firewall
-(`192.168.1.1`) as DNS, Teams signed in and the Windows icon recovered.
-
-What the capture shows around that change:
-
-- The computer was repeating queries for `dns.google` (type `A` and `HTTPS`) many times per second, and the firewall answered
-  `NXDomain` each time, because `dns.google` is in the DoH/VPN bypass block list.
-- The firewall redirects all DNS from the LAN to its own resolver, so a query sent to `8.8.8.8` is still answered by the
-  firewall. The secondary server therefore does not bypass the filter, and the change did not need to.
-
-The exact mechanism is not proven. The likely one is Windows' automatic DNS-over-HTTPS upgrade for well-known servers such as
-`8.8.8.8`, which makes Windows look for `dns.google`. Whatever the exact reason, when a Windows client fails with only the
-firewall as DNS, a second DNS server on the client is a quick workaround. If you want the client to use the firewall only,
-allow `dns.google` under **Allowed domains** and test again.
+- The three Microsoft names were blocked by the DNS lists. Allowing them was a real fix for those names.
+- Teams still failed because Windows reported the network as offline. Adding **8.8.8.8 as a secondary DNS server** on the
+  computer made the icon and Teams recover.
+- The computer was also repeating queries for `dns.google`, which is in the DoH/VPN bypass list. Allowing it, and removing
+  8.8.8.8 again, did **not** fix the problem, so `dns.google` was not the cause.
 
 ## Quick checklist
 
@@ -157,7 +125,7 @@ allow `dns.google` under **Allowed domains** and test again.
 3. Capture the computer's DNS while reproducing, and look for `NXDomain` on Microsoft names.
 4. Find the list that holds the name, then add only that name to **Allowed domains** and apply.
 5. Confirm the name resolves on the unit.
-6. If Teams still fails, check that Windows reports the network as online, and check adapters, metrics and proxy.
+6. If Teams still fails, check that Windows reports the network as online (see the second article).
 
 ## Related pages
 

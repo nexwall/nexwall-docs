@@ -101,56 +101,23 @@ Si un equipo necesita DNS sin filtrar por otro motivo, use la pestaña **Bypass 
 
 ## Paso 4: Compruebe si Windows cree que no tiene conexión
 
-En el caso real, después de permitir los tres nombres, estos se resolvieron y las conexiones propias de Teams funcionaron,
-pero Teams siguió fallando. El icono de red de Windows mostraba **sin internet**. Esto importa: el servicio de inicio de
-sesión de Teams pregunta a Windows si la red es utilizable, y no envía ninguna solicitud cuando Windows dice "sin conexión".
-Una captura en el firewall confirmó que, mientras se volvía a abrir Teams, el equipo no envió ninguna consulta DNS para
-`login.microsoftonline.com` ni ninguna comprobación de conectividad de Windows. El inicio de sesión fallaba en el equipo
-antes de enviar un solo paquete.
+En el caso real, tras permitir los tres nombres, estos se resolvieron y las conexiones propias de Teams funcionaron, pero Teams
+siguió fallando y el icono de red de Windows mostraba **sin internet**. El servicio de inicio de sesión de Teams pregunta a
+Windows si la red es utilizable, y no envía nada cuando Windows dice "sin conexión". Una captura en el firewall confirmó que,
+mientras se volvía a abrir Teams, el equipo no envió al principio ninguna consulta de `login.microsoftonline.com` ni ninguna
+comprobación de conectividad de Windows.
 
-El equipo del caso es un host Windows que llega al firewall por un adaptador de red VMware, mientras también hay un
-adaptador Wi-Fi conectado sin puerta de enlace. Windows hace su comprobación de conectividad en el adaptador que considera
-mejor, y con dos adaptadores puede elegir el que no llega a internet. Compruebe en el equipo Windows, en PowerShell como
-administrador:
-
-```powershell
-Get-NetIPConfiguration | Format-List InterfaceAlias,IPv4Address,IPv4DefaultGateway,DNSServer
-Get-NetIPInterface -AddressFamily IPv4 | Sort InterfaceMetric | Format-Table InterfaceAlias,InterfaceMetric,ConnectionState
-netsh winhttp show proxy
-```
-
-Qué buscar:
-
-- El adaptador que mira al firewall debe tener el firewall como **puerta de enlace** y **servidor DNS**, y la **métrica de
-  interfaz más baja**.
-- Los demás adaptadores, como un Wi-Fi sin uso, no deben tener puerta de enlace predeterminada y deben tener una métrica más alta.
-- `netsh winhttp show proxy` debe decir `Direct access`. Un proxy que dejó una VPN rompe el inicio de sesión igual.
-- Un cliente VPN desconectado puede dejar un adaptador virtual, una ruta o un proxy. Cierre el cliente por completo.
-
-Tras corregir, reinicie el servicio de ubicación de red y abra Teams de nuevo:
-
-```powershell
-Restart-Service NlaSvc
-```
-
-El icono de Windows debe mostrar la red como conectada antes de que Teams pueda iniciar sesión.
+La causa estaba en Windows, no en el firewall. Vea
+[Windows muestra "sin internet" y falla el inicio de sesión de Microsoft](windows-offline-icon-sign-in.md) para las
+comprobaciones, lo que se descartó y la solución provisional que funcionó.
 
 ## Resultado en el caso real
 
-Tras agregar **8.8.8.8 como servidor DNS secundario** en el equipo Windows, que hasta entonces solo tenía el firewall
-(`192.168.1.1`) como DNS, Teams inició sesión y el icono de Windows se recuperó.
-
-Lo que muestra la captura alrededor de ese cambio:
-
-- El equipo repetía consultas de `dns.google` (tipo `A` y `HTTPS`) muchas veces por segundo, y el firewall respondía
-  `NXDomain` cada vez, porque `dns.google` está en la lista de bloqueo de DoH/VPN.
-- El firewall redirige todo el DNS de la LAN a su propio resolvedor, así que una consulta enviada a `8.8.8.8` también la
-  responde el firewall. Por tanto, el servidor secundario no evita el filtro, y el cambio no lo necesitaba.
-
-El mecanismo exacto no está probado. El probable es la actualización automática de Windows a DNS sobre HTTPS para servidores
-conocidos como `8.8.8.8`, que hace que Windows busque `dns.google`. Sea cual sea la razón, cuando un cliente Windows falla
-con solo el firewall como DNS, un segundo servidor DNS en el cliente es una solución rápida. Si desea que el cliente use solo
-el firewall, permita `dns.google` en **Dominios permitidos** y pruebe de nuevo.
+- Los tres nombres de Microsoft estaban bloqueados por las listas DNS. Permitirlos fue una solución real para esos nombres.
+- Teams siguió fallando porque Windows informaba la red como sin conexión. Agregar **8.8.8.8 como servidor DNS secundario** en
+  el equipo hizo que el icono y Teams se recuperaran.
+- El equipo también repetía consultas de `dns.google`, que está en la lista de bloqueo de DoH/VPN. Permitirlo, y quitar de nuevo
+  el 8.8.8.8, **no** resolvió el problema, así que `dns.google` no era la causa.
 
 ## Lista rápida
 
@@ -159,7 +126,7 @@ el firewall, permita `dns.google` en **Dominios permitidos** y pruebe de nuevo.
 3. Capture el DNS del equipo al reproducir y busque `NXDomain` en nombres de Microsoft.
 4. Encuentre la lista que contiene el nombre, agregue solo ese nombre a **Dominios permitidos** y aplique.
 5. Confirme que el nombre se resuelve en la unidad.
-6. Si Teams sigue fallando, compruebe que Windows informa la red como conectada, y revise adaptadores, métricas y proxy.
+6. Si Teams sigue fallando, compruebe que Windows informa la red como conectada (vea el segundo artículo).
 
 ## Páginas relacionadas
 

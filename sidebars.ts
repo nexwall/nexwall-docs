@@ -69,6 +69,7 @@ const sidebars: SidebarsConfig = {
     'help/command-line-and-faq',
     'help/controller-registration-troubleshooting',
     'help/teams-microsoft-365-signin',
+    'help/windows-offline-icon-sign-in',
     'help/service-and-log-reference',
     'help/understanding-uci',
     'help/network-troubleshooting-tools',
