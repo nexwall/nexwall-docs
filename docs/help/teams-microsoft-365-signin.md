@@ -133,6 +133,23 @@ Restart-Service NlaSvc
 
 The Windows icon must show the network as connected before Teams can sign in.
 
+## Outcome in the real case
+
+After adding **8.8.8.8 as a secondary DNS server** on the Windows computer, which until then had only the firewall
+(`192.168.1.1`) as DNS, Teams signed in and the Windows icon recovered.
+
+What the capture shows around that change:
+
+- The computer was repeating queries for `dns.google` (type `A` and `HTTPS`) many times per second, and the firewall answered
+  `NXDomain` each time, because `dns.google` is in the DoH/VPN bypass block list.
+- The firewall redirects all DNS from the LAN to its own resolver, so a query sent to `8.8.8.8` is still answered by the
+  firewall. The secondary server therefore does not bypass the filter, and the change did not need to.
+
+The exact mechanism is not proven. The likely one is Windows' automatic DNS-over-HTTPS upgrade for well-known servers such as
+`8.8.8.8`, which makes Windows look for `dns.google`. Whatever the exact reason, when a Windows client fails with only the
+firewall as DNS, a second DNS server on the client is a quick workaround. If you want the client to use the firewall only,
+allow `dns.google` under **Allowed domains** and test again.
+
 ## Quick checklist
 
 1. Does Teams work on a direct connection? If yes, continue.

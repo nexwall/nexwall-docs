@@ -135,6 +135,23 @@ Restart-Service NlaSvc
 
 O ícone do Windows deve mostrar a rede como conectada antes de o Teams conseguir fazer login.
 
+## Resultado no caso real
+
+Depois de adicionar **8.8.8.8 como servidor DNS secundário** no computador Windows, que até então tinha só o firewall
+(`192.168.1.1`) como DNS, o Teams fez login e o ícone do Windows se recuperou.
+
+O que a captura mostra em torno dessa mudança:
+
+- O computador repetia consultas de `dns.google` (tipo `A` e `HTTPS`) muitas vezes por segundo, e o firewall respondia
+  `NXDomain` todas as vezes, porque `dns.google` está na lista de bloqueio de DoH/VPN.
+- O firewall redireciona todo o DNS da LAN para o próprio resolvedor, então uma consulta enviada ao `8.8.8.8` também é
+  respondida pelo firewall. Portanto, o servidor secundário não contorna o filtro, e a mudança não precisava disso.
+
+O mecanismo exato não está provado. O provável é a atualização automática do Windows para DNS sobre HTTPS em servidores
+conhecidos como `8.8.8.8`, que faz o Windows procurar `dns.google`. Seja qual for o motivo, quando um cliente Windows falha
+com só o firewall como DNS, um segundo servidor DNS no cliente é um contorno rápido. Se quiser que o cliente use só o
+firewall, permita `dns.google` em **Domínios permitidos** e teste de novo.
+
 ## Lista rápida
 
 1. O Teams funciona com conexão direta? Se sim, continue.
