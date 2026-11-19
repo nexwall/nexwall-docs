@@ -65,12 +65,12 @@ unit was already added and re-added on the controller since it was generated.
 |---|---|
 | Restart the client | `/etc/init.d/ns-plug restart` |
 | Current configuration | `uci show ns-plug` |
-| Client logs | `logread \| grep -i ns-plug` |
+| Client logs | `grep -i ns-plug /var/log/messages \| tail -20` |
 | Generated OpenVPN config | `cat /usr/share/ns-plug/client.conf` (only exists after a successful registration) |
 | Tunnel interface | `ip -4 addr show tun-nsplug` (only appears once the tunnel is up) |
 
 `ns-plug` is supervised by `procd` and restarts on its own if it crashes, so a unit stuck in `pending` is usually
-retrying quietly rather than stopped. `logread` shows each attempt and its result.
+retrying quietly rather than stopped. The log shows each attempt and its result.
 
 ### Reading the exit behavior
 

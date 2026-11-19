@@ -64,4 +64,4 @@ When a unit is connected to a controller, logs are also transmitted to it, see
 
 ## From the command line
 
-The same log is available over SSH with `logread`. See [Command line and FAQ](../help/command-line-and-faq.md).
+The same log is available over SSH in `/var/log/messages`. See [Command line and FAQ](../help/command-line-and-faq.md).

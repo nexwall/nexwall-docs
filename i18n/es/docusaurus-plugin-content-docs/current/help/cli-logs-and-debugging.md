@@ -60,7 +60,7 @@ Esto busca directamente en `/var/log/messages` (en efecto `grep <búsqueda> /var
 
 ## VictoriaLogs: para qué sirve, y no sirve, aquí
 
-[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) es un paquete opcional (`opkg install
+[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) es un paquete opcional (`apk add
 victoria-logs`), que no forma parte de la imagen por defecto. Instalarlo configura todo lo necesario de una vez: el
 paquete también registra una regla de reenvío de `rsyslogd`, así que en cuanto se instala, cada mensaje de registro
 se envía a `127.0.0.1:5514` por TCP (con framing por conteo de octetos) a medida que `rsyslogd` lo procesa. Lo que
@@ -70,7 +70,7 @@ archivo de texto plano. Si instala VictoriaLogs, obtiene todo lo que `rsyslogd` 
 consultable usted mismo con su propio lenguaje de consulta, LogsQL, por HTTP en el puerto 9428:
 
 ```bash
-opkg update && opkg install victoria-logs
+apk update && apk add victoria-logs
 /etc/init.d/victoria-logs start
 
 curl -s 'http://127.0.0.1:9428/select/logsql/query' \

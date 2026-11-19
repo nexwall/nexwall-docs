@@ -32,7 +32,7 @@ guardarse con `uci commit <configuración>`, y el servicio afectado debe recarga
 
 | Objetivo | Comando |
 |---|---|
-| Leer el registro | `logread`, y `logread -f` para seguirlo |
+| Leer el registro | `tail /var/log/messages`, y `tail -f /var/log/messages` para seguirlo |
 | Reiniciar un servicio | `/etc/init.d/<servicio> restart` |
 | Listar los servicios | `ls /etc/init.d` |
 | Direcciones de las interfaces | `ip -4 addr`, `ip -6 addr` |
@@ -59,7 +59,7 @@ que la interfaz web, la API y la línea de comandos siempre coincidan — vea
 | Scripts de arranque | `/etc/init.d/` |
 | Certificados del servidor web | se gestionan en **Administración > Certificados** |
 | Datos de clasificación de tráfico | `/etc/netifyd/` |
-| Registro del sistema | en memoria, se lee con `logread` |
+| Registro del sistema | en memoria, en `/var/log/messages` |
 
 ## Preguntas frecuentes
 

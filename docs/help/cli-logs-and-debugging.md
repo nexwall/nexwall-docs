@@ -59,7 +59,7 @@ is not backed by a separate log database.
 
 ## VictoriaLogs: what it is, and is not, used for here
 
-[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) is an optional package (`opkg install
+[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) is an optional package (`apk add
 victoria-logs`), not part of the default image. Installing it sets up everything needed in one step: the package
 also registers an `rsyslogd` forwarding rule, so once it's installed, every log message is sent on to it at
 `127.0.0.1:5514` over TCP (octet-counted framing) as `rsyslogd` processes it. What VictoriaLogs is **not**,
@@ -69,7 +69,7 @@ everything `rsyslogd` sees from that point on, queryable yourself with its own q
 port 9428:
 
 ```bash
-opkg update && opkg install victoria-logs
+apk update && apk add victoria-logs
 /etc/init.d/victoria-logs start
 
 curl -s 'http://127.0.0.1:9428/select/logsql/query' \

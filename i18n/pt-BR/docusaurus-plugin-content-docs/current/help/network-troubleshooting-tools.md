@@ -113,7 +113,7 @@ conntrack (o que geralmente aponta para um bloqueio anterior, não um problema d
 
 | Tarefa | Comando |
 |---|---|
-| O que está escutando, e em qual interface | `ss -tlnp`, `ss -ulnp` |
+| O que está escutando, e em qual interface | `netstat -tlnp`, `netstat -ulnp` |
 | Qual processo está segurando uma porta ou arquivo | `lsof -i :<porta>` |
 | Qual processo matar para liberar uma porta | `fuser -k <porta>/tcp` |
 | Testar manualmente se uma porta TCP ou UDP está aberta a partir daqui | `nc -zv <host> <porta>` |
@@ -126,11 +126,11 @@ caminho de rede está bloqueado" — uma conexão recusada é o primeiro caso, u
 | Tarefa | Comando |
 |---|---|
 | Visão ao vivo do throughput da interface | `bwm-ng` |
-| Teste de velocidade da WAN pela linha de comando | `speedtestcpp` |
+| Teste de velocidade da WAN pela linha de comando | `speedtestcpp` (optional, `apk add speedtestcpp`) |
 | Teste de throughput controlado entre esta unidade e outro host | `iperf3` |
 
 `iperf3` e `nmap` são pacotes opcionais, não fazem parte da imagem padrão — instale primeiro com
-`opkg update && opkg install iperf3` (ou `nmap`). Rode `iperf3 -s` de um lado e `iperf3 -c <servidor>` do outro
+`apk update && apk add iperf3` (ou `nmap`). Rode `iperf3 -s` de um lado e `iperf3 -c <servidor>` do outro
 para medir o throughput real alcançável entre dois pontos específicos, o que separa um problema genuíno de banda ou
 link de algo específico da aplicação.
 

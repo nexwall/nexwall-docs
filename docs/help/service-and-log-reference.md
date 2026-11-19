@@ -47,7 +47,7 @@ These read the live state of a service instead of, or in addition to, its log.
 | Task | Command |
 |---|---|
 | SD-WAN link and policy state | `mwan3 status`, `mwan3 interfaces` |
-| IPsec tunnel state | `ipsec statusall` |
+| IPsec tunnel state | `swanctl --list-sas` |
 | WireGuard peer state and handshakes | `wg show` |
 | IPS: service status, memory use, active rule counters | `snort-mgr status` |
 | IPS: validate the rendered configuration without applying it | `snort-mgr check` |

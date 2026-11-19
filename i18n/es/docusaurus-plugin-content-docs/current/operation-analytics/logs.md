@@ -64,4 +64,4 @@ Cuando una unidad está conectada a un controlador, los registros también se tr
 
 ## Desde la línea de comandos
 
-El mismo registro está disponible por SSH con `logread`. Vea [Línea de comandos y preguntas frecuentes](../help/command-line-and-faq.md).
+El mismo registro está disponible por SSH en `/var/log/messages`. Vea [Línea de comandos y preguntas frecuentes](../help/command-line-and-faq.md).

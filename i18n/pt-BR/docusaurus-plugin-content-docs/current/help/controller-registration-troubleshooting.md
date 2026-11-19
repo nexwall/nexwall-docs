@@ -65,12 +65,12 @@ foi removida e adicionada de novo no controlador desde que ele foi gerado.
 |---|---|
 | Reiniciar o cliente | `/etc/init.d/ns-plug restart` |
 | Configuração atual | `uci show ns-plug` |
-| Logs do cliente | `logread \| grep -i ns-plug` |
+| Logs do cliente | `grep -i ns-plug /var/log/messages \| tail -20` |
 | Configuração OpenVPN gerada | `cat /usr/share/ns-plug/client.conf` (só existe após um registro bem-sucedido) |
 | Interface do túnel | `ip -4 addr show tun-nsplug` (só aparece depois que o túnel sobe) |
 
 O `ns-plug` é supervisionado pelo `procd` e reinicia sozinho se travar, então uma unidade parada em `pending`
-geralmente está tentando de novo em silêncio, não parada. O `logread` mostra cada tentativa e o resultado dela.
+geralmente está tentando de novo em silêncio, não parada. O log mostra cada tentativa e o resultado dela.
 
 ### Entendendo o comportamento de saída
 

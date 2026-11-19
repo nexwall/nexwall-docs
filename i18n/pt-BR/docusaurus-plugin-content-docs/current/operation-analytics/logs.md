@@ -64,4 +64,4 @@ Quando uma unidade está conectada a um controlador, os logs também são enviad
 
 ## Pela linha de comando
 
-O mesmo log está disponível por SSH com `logread`. Veja [Linha de comando e perguntas frequentes](../help/command-line-and-faq.md).
+O mesmo log está disponível por SSH em `/var/log/messages`. Veja [Linha de comando e perguntas frequentes](../help/command-line-and-faq.md).

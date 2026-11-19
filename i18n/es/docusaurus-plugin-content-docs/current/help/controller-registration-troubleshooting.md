@@ -66,12 +66,12 @@ la unidad ya fue eliminada y vuelta a agregar en el controlador desde que se gen
 |---|---|
 | Reiniciar el cliente | `/etc/init.d/ns-plug restart` |
 | Configuración actual | `uci show ns-plug` |
-| Registros del cliente | `logread \| grep -i ns-plug` |
+| Registros del cliente | `grep -i ns-plug /var/log/messages \| tail -20` |
 | Configuración OpenVPN generada | `cat /usr/share/ns-plug/client.conf` (solo existe tras un registro exitoso) |
 | Interfaz del túnel | `ip -4 addr show tun-nsplug` (solo aparece una vez que el túnel está activo) |
 
 `ns-plug` está supervisado por `procd` y se reinicia solo si falla, así que una unidad detenida en `pending`
-normalmente está reintentando en silencio, no detenida. `logread` muestra cada intento y su resultado.
+normalmente está reintentando en silencio, no detenida. El registro muestra cada intento y su resultado.
 
 ### Entendiendo el comportamiento de salida
 

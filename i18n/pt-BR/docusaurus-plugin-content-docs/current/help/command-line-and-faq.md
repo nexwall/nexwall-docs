@@ -31,7 +31,7 @@ com `uci commit <configuração>`, e o serviço afetado deve ser recarregado.
 
 | Objetivo | Comando |
 |---|---|
-| Ler o log | `logread`, e `logread -f` para acompanhá-lo |
+| Ler o log | `tail /var/log/messages`, e `tail -f /var/log/messages` para acompanhá-lo |
 | Reiniciar um serviço | `/etc/init.d/<serviço> restart` |
 | Listar os serviços | `ls /etc/init.d` |
 | Endereços das interfaces | `ip -4 addr`, `ip -6 addr` |
@@ -58,7 +58,7 @@ interface web, a API e a linha de comando sempre concordarem — veja
 | Scripts de inicialização | `/etc/init.d/` |
 | Certificados do servidor web | gerenciados em **Administração > Certificados** |
 | Dados de classificação de tráfego | `/etc/netifyd/` |
-| Log do sistema | na memória, lido com `logread` |
+| Log do sistema | na memória, em `/var/log/messages` |
 
 ## Perguntas frequentes
 

@@ -31,7 +31,7 @@ The web interface writes to the same files. Changes you make from the command li
 
 | Goal | Command |
 |---|---|
-| Read the log | `logread`, and `logread -f` to follow it |
+| Read the log | `tail /var/log/messages`, and `tail -f /var/log/messages` to follow it |
 | Restart a service | `/etc/init.d/<service> restart` |
 | List services | `ls /etc/init.d` |
 | Interface addresses | `ip -4 addr`, `ip -6 addr` |
@@ -59,7 +59,7 @@ line](cli-logs-and-debugging.md).
 | Startup scripts | `/etc/init.d/` |
 | Certificates for the web server | managed from **Administration > Certificates** |
 | Traffic classification data | `/etc/netifyd/` |
-| System log | in memory, read with `logread` |
+| System log | in memory, in `/var/log/messages` |
 
 ## Frequently asked questions
 

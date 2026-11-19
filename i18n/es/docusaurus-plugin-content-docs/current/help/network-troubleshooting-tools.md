@@ -115,7 +115,7 @@ generalmente apunta a un bloqueo anterior, no a un problema de NAT).
 
 | Tarea | Comando |
 |---|---|
-| Qué está escuchando, y en qué interfaz | `ss -tlnp`, `ss -ulnp` |
+| Qué está escuchando, y en qué interfaz | `netstat -tlnp`, `netstat -ulnp` |
 | Qué proceso tiene ocupado un puerto o archivo | `lsof -i :<puerto>` |
 | Qué proceso matar para liberar un puerto | `fuser -k <puerto>/tcp` |
 | Probar manualmente si un puerto TCP o UDP está abierto desde aquí | `nc -zv <host> <puerto>` |
@@ -128,11 +128,11 @@ en sí está bloqueada" — una conexión rechazada es el primer caso, un tiempo
 | Tarea | Comando |
 |---|---|
 | Vista en vivo del throughput de la interfaz | `bwm-ng` |
-| Prueba de velocidad de la WAN desde la línea de comandos | `speedtestcpp` |
+| Prueba de velocidad de la WAN desde la línea de comandos | `speedtestcpp` (optional, `apk add speedtestcpp`) |
 | Prueba de throughput controlada entre esta unidad y otro host | `iperf3` |
 
 `iperf3` y `nmap` son paquetes opcionales, no forman parte de la imagen por defecto — instálelos primero con
-`opkg update && opkg install iperf3` (o `nmap`). Ejecute `iperf3 -s` en un lado y `iperf3 -c <servidor>` en el otro
+`apk update && apk add iperf3` (o `nmap`). Ejecute `iperf3 -s` en un lado y `iperf3 -c <servidor>` en el otro
 para medir el throughput real alcanzable entre dos puntos específicos, lo cual separa un problema genuino de ancho
 de banda o de enlace de algo específico de la aplicación.
 

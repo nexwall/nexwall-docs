@@ -110,7 +110,7 @@ it never reached conntrack at all (which usually points at an earlier drop, not 
 
 | Task | Command |
 |---|---|
-| What is listening, and on which interface | `ss -tlnp`, `ss -ulnp` |
+| What is listening, and on which interface | `netstat -tlnp`, `netstat -ulnp` |
 | Which process holds a given port or file | `lsof -i :<port>` |
 | Which process to kill to free up a port | `fuser -k <port>/tcp` |
 | Manually probe whether a TCP or UDP port is open from here | `nc -zv <host> <port>` |
@@ -123,11 +123,11 @@ path itself is blocked" — a connection refused is the former, a timeout is the
 | Task | Command |
 |---|---|
 | Live view of interface throughput | `bwm-ng` |
-| WAN speed test from the command line | `speedtestcpp` |
+| WAN speed test from the command line | `speedtestcpp` (optional, `apk add speedtestcpp`) |
 | Controlled throughput test between this unit and another host | `iperf3` |
 
 `iperf3` and `nmap` are optional packages, not part of the default image — install them first with
-`opkg update && opkg install iperf3` (or `nmap`). Run `iperf3 -s` on one side and `iperf3 -c <server>` on the other
+`apk update && apk add iperf3` (or `nmap`). Run `iperf3 -s` on one side and `iperf3 -c <server>` on the other
 to measure real achievable throughput between two specific points, which separates a genuine bandwidth or link
 problem from something application-specific.
 

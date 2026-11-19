@@ -47,7 +47,7 @@ Estes leem o estado ao vivo de um serviço, em vez de (ou além de) seu log.
 | Tarefa | Comando |
 |---|---|
 | Estado dos links e políticas de SD-WAN | `mwan3 status`, `mwan3 interfaces` |
-| Estado dos túneis IPsec | `ipsec statusall` |
+| Estado dos túneis IPsec | `swanctl --list-sas` |
 | Estado dos pares WireGuard e handshakes | `wg show` |
 | IPS: status do serviço, uso de memória, contadores de regras ativas | `snort-mgr status` |
 | IPS: validar a configuração gerada sem aplicá-la | `snort-mgr check` |
