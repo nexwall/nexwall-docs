@@ -1,0 +1,90 @@
+[
+ "howto/index",
+ {
+  "type": "category",
+  "label": "Policy",
+  "collapsed": true,
+  "items": [
+   "howto/policy/firewall-rule",
+   "howto/policy/port-forward",
+   "howto/policy/nat-rule",
+   "howto/policy/zone",
+   "howto/policy/object"
+  ]
+ },
+ {
+  "type": "category",
+  "label": "Network",
+  "collapsed": true,
+  "items": [
+   "howto/network/interface",
+   "howto/network/route",
+   "howto/network/dhcp-server",
+   "howto/network/dhcp-reservation",
+   "howto/network/dns-record",
+   "howto/network/sd-wan",
+   "howto/network/qos",
+   "howto/network/reverse-proxy"
+  ]
+ },
+ {
+  "type": "category",
+  "label": "Security services",
+  "collapsed": true,
+  "items": [
+   "howto/security/app-control",
+   "howto/security/web-protection",
+   "howto/security/ips",
+   "howto/security/dns-filtering",
+   "howto/security/ip-geo-blocking",
+   "howto/security/atp"
+  ]
+ },
+ {
+  "type": "category",
+  "label": "VPN",
+  "collapsed": true,
+  "items": [
+   "howto/vpn/openvpn-remote-access",
+   "howto/vpn/openvpn-site-to-site",
+   "howto/vpn/ipsec-site-to-site",
+   "howto/vpn/wireguard"
+  ]
+ },
+ {
+  "type": "category",
+  "label": "Access and identity",
+  "collapsed": true,
+  "items": [
+   "howto/access/user",
+   "howto/access/captive-portal"
+  ]
+ },
+ {
+  "type": "category",
+  "label": "Administration",
+  "collapsed": true,
+  "items": [
+   "howto/admin/system-settings",
+   "howto/admin/ssh",
+   "howto/admin/update",
+   "howto/admin/backup-restore",
+   "howto/admin/certificate",
+   "howto/admin/central-management",
+   "howto/admin/licensing",
+   "howto/admin/reboot-shutdown"
+  ]
+ },
+ {
+  "type": "category",
+  "label": "Monitoring and logs",
+  "collapsed": true,
+  "items": [
+   "howto/monitor/dashboard",
+   "howto/monitor/logs",
+   "howto/monitor/connections",
+   "howto/monitor/traffic-analytics",
+   "howto/monitor/threat-analytics"
+  ]
+ }
+]

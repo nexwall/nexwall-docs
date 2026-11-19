@@ -57,5 +57,33 @@
   "sidebar.help.category.Threat Shield": {
     "message": "Threat Shield",
     "description": "The label for category Threat Shield in sidebar help"
+  },
+  "sidebar.howto.category.Policy": {
+    "message": "Políticas",
+    "description": "howto group"
+  },
+  "sidebar.howto.category.Network": {
+    "message": "Red",
+    "description": "howto group"
+  },
+  "sidebar.howto.category.Security services": {
+    "message": "Servicios de seguridad",
+    "description": "howto group"
+  },
+  "sidebar.howto.category.VPN": {
+    "message": "VPN",
+    "description": "howto group"
+  },
+  "sidebar.howto.category.Access and identity": {
+    "message": "Acceso e identidad",
+    "description": "howto group"
+  },
+  "sidebar.howto.category.Administration": {
+    "message": "Administración",
+    "description": "howto group"
+  },
+  "sidebar.howto.category.Monitoring and logs": {
+    "message": "Monitorización y registros",
+    "description": "howto group"
   }
 }

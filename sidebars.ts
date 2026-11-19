@@ -1,4 +1,5 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
+import howtoItems from './howto-sidebar.json'
 
 const category = (label: string, items: string[]) => ({
   type: 'category' as const,
@@ -63,6 +64,7 @@ const sidebars: SidebarsConfig = {
       'infrastructure/high-availability'
     ])
   ],
+  howto: howtoItems as any,
   help: [
     'help/troubleshooting',
     'help/kba-01-health-check',

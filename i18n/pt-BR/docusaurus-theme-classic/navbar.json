@@ -16,5 +16,8 @@
   },
   "item.label.Release notes": {
     "message": "Notas de versão"
+  },
+  "item.label.How-To guides": {
+    "message": "Guias práticas"
   }
 }

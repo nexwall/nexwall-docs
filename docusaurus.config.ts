@@ -50,6 +50,7 @@ const config: Config = {
       title: 'NEXWALL',
       items: [
         { type: 'docSidebar', sidebarId: 'manual', position: 'left', label: 'Administration guide' },
+        { type: 'docSidebar', sidebarId: 'howto', position: 'left', label: 'How-To guides' },
         { type: 'docSidebar', sidebarId: 'help', position: 'left', label: 'Help & KBAs' },
         { type: 'localeDropdown', position: 'right' },
         { href: 'https://releasenotes.nexwall.com.br/', label: 'Release notes', position: 'right' },
