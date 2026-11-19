@@ -8,6 +8,16 @@ description: Active una suscripción y gestione su propia cuenta.
 
 ## Licencias
 
+![Licencias: número de serie, plan, caducidad y suscripciones incluidas.](/img/screenshots/fw/es/licensing.png)
+
+*Licencias: número de serie, plan, caducidad y suscripciones incluidas.*
+
+**En esta pantalla**
+
+- El **número de serie** identifica la unidad ante el servidor de licencias; el firewall se registra solo.
+- **Licencia**, **Plan** y **Caducidad** muestran el estado del contrato.
+- **Suscripciones** lista lo que está activo (control de aplicaciones, protección de red, filtrado DNS, bloqueo de IP y geográfico). Las **suscripciones adicionales** se añaden a través de su revendedor.
+
 **Administración > Licencias** muestra el estado de la suscripción de la unidad y le permite activar una suscripción.
 
 ### Qué desbloquea una suscripción

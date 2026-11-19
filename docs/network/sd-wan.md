@@ -9,6 +9,16 @@ description: Use several internet links with failover, balancing and policy base
 **Network > SD-WAN** manages several WAN links. It monitors each link, switches traffic away from one that fails,
 and can spread or steer traffic according to policy.
 
+![SD-WAN manager: policies at the top, rules below.](/img/screenshots/fw/en/sd-wan.png)
+
+*SD-WAN manager: policies at the top, rules below.*
+
+**On this screen**
+
+- A **policy** decides which link carries traffic and how failover and load balancing work.
+- With several WANs the default policy is mandatory; create it first with **Create default policy**.
+- **Rules** send selected hosts through a different policy; put them above the default rule.
+
 ## Concepts
 
 - **Gateway:** a WAN interface taking part in SD-WAN.

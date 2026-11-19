@@ -10,6 +10,16 @@ description: Publique aplicaciones web internas a través del firewall mediante 
 mediante HTTPS, y el firewall reenvía sus peticiones al servidor interno. Esto le permite publicar varios sitios detrás de
 una sola dirección pública y terminar el cifrado en un solo lugar.
 
+![Proxy inverso: lista vacía con el botón Añadir proxy inverso.](/img/screenshots/fw/es/reverse-proxy.png)
+
+*Proxy inverso: lista vacía con el botón Añadir proxy inverso.*
+
+**En esta pantalla**
+
+- La lista muestra cada sitio publicado. Un firewall nuevo no tiene ninguno.
+- **Añadir proxy inverso** publica un servidor web interno a través del firewall.
+- La función solo trabaja en el puerto 443 (HTTPS), por lo que necesita un certificado (vea Certificados).
+
 El proxy inverso funciona **únicamente en el puerto TCP 443 (HTTPS)**.
 
 ## Requisitos

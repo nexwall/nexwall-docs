@@ -9,6 +9,16 @@ description: Use vários links de internet com failover, balanceamento e roteame
 **Rede > SD-WAN** gerencia vários links WAN. Ele monitora cada link, desvia o tráfego de um que falha e pode distribuir ou
 direcionar o tráfego conforme a política.
 
+![Gerenciador de SD-WAN: políticas no alto, regras abaixo.](/img/screenshots/fw/pt-BR/sd-wan.png)
+
+*Gerenciador de SD-WAN: políticas no alto, regras abaixo.*
+
+**Nesta tela**
+
+- Uma **política** decide qual link leva o tráfego e como funcionam o failover e o balanceamento.
+- Com várias WANs a política padrão é obrigatória; crie-a primeiro com **Criar política padrão**.
+- As **regras** mandam certos hosts por outra política; posicione-as acima da regra padrão.
+
 ## Conceitos
 
 - **Gateway:** uma interface WAN que participa do SD-WAN.

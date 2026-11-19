@@ -8,6 +8,16 @@ description: Gráficos históricos, alertas y monitorización de latencia.
 
 **Operación y Analítica > Rendimiento** muestra cómo se comporta la unidad a lo largo del tiempo. Tiene tres pestañas.
 
+![Rendimiento: CPU, carga del sistema, E/S de disco y uso de disco en la ventana de tiempo elegida.](/img/screenshots/fw/es/performance.png)
+
+*Rendimiento: CPU, carga del sistema, E/S de disco y uso de disco en la ventana de tiempo elegida.*
+
+**En esta pantalla**
+
+- Elija la **ventana de tiempo** (de 5 minutos a 30 días) y el intervalo de **actualización automática** en la parte superior.
+- Cada gráfico muestra el valor actual y el **máximo** y el **promedio** de la ventana.
+- Las pestañas **Alertas** y **Configuración** definen umbrales y qué se recopila.
+
 ## Gráficos
 
 Gráficos históricos de métricas del sistema: uso del procesador y carga, memoria, uso del disco y entrada y salida, procesos en

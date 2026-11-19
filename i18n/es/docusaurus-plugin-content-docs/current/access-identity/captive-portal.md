@@ -11,6 +11,15 @@ sesión. Los dispositivos que se conectan son interceptados hasta que el usuario
 cupón o un inicio de sesión social, según lo que ofrezca el gestor de hotspot. Está pensado para hoteles, cafeterías, salas
 de espera y oficinas con visitantes.
 
+![Portal cautivo: la pestaña Estado antes de configurarlo.](/img/screenshots/fw/es/captive-portal.png)
+
+*Portal cautivo: la pestaña Estado antes de configurarlo.*
+
+**En esta pantalla**
+
+- **Estado** muestra si hay un portal cautivo activo y quién está conectado.
+- Abra **Configuración** para elegir la red, el método de inicio de sesión y la página que ven los invitados.
+
 ## Cómo funciona
 
 La unidad ejecuta la parte del portal cautivo que intercepta las conexiones. La gestión de la experiencia del invitado

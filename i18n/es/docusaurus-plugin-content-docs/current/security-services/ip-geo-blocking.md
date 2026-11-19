@@ -10,6 +10,16 @@ description: Bloquee direcciones hostiles, países, intentos de fuerza bruta e i
 sabe que son hostiles. Actúa en la capa de red, antes de que una conexión llegue a ningún servicio, y también puede
 bloquear países enteros.
 
+![Bloqueo de IP y Geolocalización: feeds de listas de bloqueo y el resto de pestañas.](/img/screenshots/fw/es/ip-geo.png)
+
+*Bloqueo de IP y Geolocalización: feeds de listas de bloqueo y el resto de pestañas.*
+
+**En esta pantalla**
+
+- Los **feeds de listas de bloqueo** son listas de direcciones de atacantes conocidos que mantiene Nexwall; cada una muestra dirección, entradas y confianza.
+- **Bloqueo geográfico** bloquea países enteros; **Lista de permitidos local** y **Lista de bloqueo local** guardan sus propias direcciones; **IP bloqueadas** muestra los bloqueos actuales.
+- **Buscar IP en las listas de bloqueo** indica qué lista contiene una dirección, útil cuando un cliente informa de un sitio bloqueado.
+
 ## Estado y listas de bloqueo
 
 Active el servicio en la pestaña **Configuración**. Después abra la página de listas de bloqueo.

@@ -9,6 +9,16 @@ description: Certificados para a interface web e o proxy reverso.
 **Administração > Certificados** gerencia os certificados X.509 que o servidor web da unidade usa. Isso cobre a interface
 web e o [proxy reverso](../network/reverse-proxy.md).
 
+![Certificados: o certificado da máquina e os botões para importar ou solicitar um.](/img/screenshots/fw/pt-BR/certificates.png)
+
+*Certificados: o certificado da máquina e os botões para importar ou solicitar um.*
+
+**Nesta tela**
+
+- A lista mostra cada certificado com seus domínios, tipo e data de expiração. **Não utilizado** significa que nenhum serviço o usa ainda.
+- **Importar certificado** envia o seu; **Adicionar certificado Let's Encrypt** solicita um gratuito para um nome público.
+- A primeira linha é o certificado autoassinado que o firewall cria para si.
+
 ## O certificado padrão
 
 Uma unidade nova usa um certificado autoassinado, no qual os navegadores não confiam. Você pode continuar usando-o dentro

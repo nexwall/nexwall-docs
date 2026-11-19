@@ -10,6 +10,16 @@ description: Reparta el ancho de banda de forma equitativa y combata el bufferbl
 disponible de forma equitativa entre las conexiones, ajusta los límites según las condiciones de la red y reduce el
 **bufferbloat**: el retardo que aparece cuando un enlace saturado pone en cola demasiados paquetes.
 
+![QoS: elija las interfaces a gestionar y el ancho de banda real de cada una.](/img/screenshots/fw/es/qos.png)
+
+*QoS: elija las interfaces a gestionar y el ancho de banda real de cada una.*
+
+**En esta pantalla**
+
+- Cada fila es una interfaz (normalmente una WAN) con su velocidad de **descarga** y **subida** en Mbps.
+- Introduzca la velocidad que su proveedor entrega de verdad; un poco por debajo del contrato es lo más seguro.
+- **Añadir interfaz de QoS** agrega otro enlace; **Editar** activa o desactiva QoS en una fila.
+
 ## Configurar una interfaz
 
 El QoS se configura para cada interfaz WAN.

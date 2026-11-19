@@ -58,6 +58,15 @@ segmento.
 **Rede > Roteamento** mostra a tabela de roteamento e permite adicionar **rotas estáticas**. Uma rota diz por qual
 interface e gateway um host ou rede é alcançado.
 
+![Roteamento: rotas estáticas no alto, rotas ativas da tabela principal abaixo.](/img/screenshots/fw/pt-BR/routing.png)
+
+*Roteamento: rotas estáticas no alto, rotas ativas da tabela principal abaixo.*
+
+**Nesta tela**
+
+- **Rotas IPv4** e **Rotas IPv6** são abas separadas; **Adicionar rota** cria uma rota estática.
+- A tabela inferior é somente leitura e mostra o que o kernel usa de fato: gateway padrão, redes diretamente conectadas e rotas de VPN.
+
 | Campo | Significado |
 |---|---|
 | Rede | O destino em notação CIDR. Use `0.0.0.0/0` (ou `::/0` para IPv6) para a rota padrão |

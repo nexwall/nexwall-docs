@@ -8,6 +8,16 @@ description: Historical charts, alerts and latency monitoring.
 
 **Operation & Analytics > Performance** shows how the unit behaves over time. It has three tabs.
 
+![Performance: CPU, system load, disk I/O and disk usage over a time window you choose.](/img/screenshots/fw/en/performance.png)
+
+*Performance: CPU, system load, disk I/O and disk usage over a time window you choose.*
+
+**On this screen**
+
+- Pick the **time window** (5 minutes to 30 days) and the **auto-refresh** interval at the top.
+- Each chart shows the current value and the **peak** and **average** for the window.
+- The **Alerts** and **Settings** tabs define thresholds and what is collected.
+
 ## Charts
 
 Historical charts of system metrics: processor use and load, memory, disk use and input and output, running

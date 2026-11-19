@@ -54,6 +54,15 @@ An **alias** adds another address to an existing interface, for example to serve
 **Network > Routing** shows the routing table and lets you add **static routes**. A route says through which interface
 and gateway a host or network is reached.
 
+![Routing: static routes on top, active routes of the main table below.](/img/screenshots/fw/en/routing.png)
+
+*Routing: static routes on top, active routes of the main table below.*
+
+**On this screen**
+
+- **IPv4 routes** and **IPv6 routes** are separate tabs; **Add route** creates a static route.
+- The lower table is read-only and shows what the kernel is really using: default gateway, directly connected networks and VPN routes.
+
 | Field | Meaning |
 |---|---|
 | Network | The destination in CIDR notation. Use `0.0.0.0/0` (or `::/0` for IPv6) for the default route |

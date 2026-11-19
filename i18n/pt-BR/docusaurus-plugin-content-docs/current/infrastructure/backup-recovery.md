@@ -9,6 +9,16 @@ description: Faça backup, restaure, migre e restaure de fábrica uma unidade.
 **Administração > Backup e Recuperação** protege a sua configuração. Ele tem quatro abas: Backup, Restauração, Migração
 e Restauração de fábrica.
 
+![Backup e Recuperação: defina primeiro uma frase secreta; depois os backups criptografados ficam guardados na unidade.](/img/screenshots/fw/pt-BR/backup.png)
+
+*Backup e Recuperação: defina primeiro uma frase secreta; depois os backups criptografados ficam guardados na unidade.*
+
+**Nesta tela**
+
+- As três abas são **Backup**, **Restaurar** e **Restauração de fábrica**.
+- Enquanto não houver uma **frase secreta**, a tela avisa que os backups não podem ser armazenados. O sistema mantém até 10 backups criptografados.
+- **Baixar sem criptografia** exporta a configuração sem criptografia; mantenha esse arquivo em sigilo.
+
 ## Backup
 
 Um backup contém as configurações e os dados da unidade. Ele é a sua salvaguarda contra um disco com falha, um erro ou

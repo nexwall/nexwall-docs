@@ -9,6 +9,16 @@ description: Serve addresses, resolve names, and manage leases and local records
 **Network > DNS & DHCP** configures the DHCP server that gives addresses to your devices and the DNS service that
 resolves names for them.
 
+![DNS & DHCP: one card per interface, with tabs for leases, DNS and records.](/img/screenshots/fw/en/dns-dhcp.png)
+
+*DNS & DHCP: one card per interface, with tabs for leases, DNS and records.*
+
+**On this screen**
+
+- Each interface card shows whether **MAC binding** and **DHCP** are on, the address range and the lease time.
+- Use **Edit** on a card to change the range or lease time.
+- The tabs list **static leases**, **dynamic leases**, **DNS** settings and local **DNS records**, and **Scan network** finds devices.
+
 ## DHCP
 
 Each interface with a static address can serve DHCP. For each one you set:

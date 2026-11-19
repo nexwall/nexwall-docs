@@ -8,6 +8,16 @@ description: Gráficos históricos, alertas e monitoramento de latência.
 
 **Operação e Análises > Desempenho** mostra como a unidade se comporta ao longo do tempo. Tem três abas.
 
+![Desempenho: CPU, carga do sistema, E/S de disco e uso de disco na janela de tempo escolhida.](/img/screenshots/fw/pt-BR/performance.png)
+
+*Desempenho: CPU, carga do sistema, E/S de disco e uso de disco na janela de tempo escolhida.*
+
+**Nesta tela**
+
+- Escolha a **janela de tempo** (de 5 minutos a 30 dias) e o intervalo de **atualização automática** no alto.
+- Cada gráfico mostra o valor atual e o **pico** e a **média** da janela.
+- As abas **Alertas** e **Configurações** definem limites e o que é coletado.
+
 ## Gráficos
 
 Gráficos históricos de métricas do sistema: uso do processador e carga, memória, uso do disco e entrada e saída, processos em

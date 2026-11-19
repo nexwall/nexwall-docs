@@ -9,6 +9,16 @@ description: Haga copias de seguridad, restaure, migre y restablezca de fábrica
 **Administración > Copia de Seguridad y Recuperación** protege su configuración. Tiene cuatro pestañas: Copia de
 seguridad, Restauración, Migración y Restablecimiento de fábrica.
 
+![Copia de Seguridad y Recuperación: primero defina una frase de contraseña; después las copias cifradas se guardan en la unidad.](/img/screenshots/fw/es/backup.png)
+
+*Copia de Seguridad y Recuperación: primero defina una frase de contraseña; después las copias cifradas se guardan en la unidad.*
+
+**En esta pantalla**
+
+- Las tres pestañas son **Copia de seguridad**, **Restaurar** y **Restablecimiento de fábrica**.
+- Mientras no haya una **frase de contraseña**, la pantalla avisa de que no se pueden guardar copias. El sistema conserva hasta 10 copias cifradas.
+- **Descargar sin cifrar** exporta la configuración sin cifrado; mantenga ese archivo en privado.
+
 ## Copia de seguridad
 
 Una copia de seguridad contiene los ajustes y los datos de la unidad. Es su salvaguarda frente a un disco averiado, un

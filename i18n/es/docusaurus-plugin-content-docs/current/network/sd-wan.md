@@ -9,6 +9,16 @@ description: Use varios enlaces de internet con conmutación por error, balanceo
 **Red > SD-WAN** gestiona varios enlaces WAN. Supervisa cada enlace, desvía el tráfico de uno que falla y puede repartir o
 dirigir el tráfico según la política.
 
+![Administrador de SD-WAN: políticas arriba, reglas debajo.](/img/screenshots/fw/es/sd-wan.png)
+
+*Administrador de SD-WAN: políticas arriba, reglas debajo.*
+
+**En esta pantalla**
+
+- Una **política** decide qué enlace lleva el tráfico y cómo funcionan la conmutación por fallo y el balanceo.
+- Con varias WAN la política predeterminada es obligatoria; créela primero con **Crear política predeterminada**.
+- Las **reglas** envían ciertos equipos por otra política; colóquelas encima de la regla predeterminada.
+
 ## Conceptos
 
 - **Puerta de enlace:** una interfaz WAN que participa en SD-WAN.

@@ -9,6 +9,16 @@ description: Fast, modern tunnels for sites and users.
 **VPN > WireGuard** creates tunnels with the WireGuard protocol: lightweight, modern and widely available on many
 platforms. It suits both connecting sites and giving individual devices access.
 
+![WireGuard: server tunnels and peer tunnels in two tabs.](/img/screenshots/fw/en/wireguard.png)
+
+*WireGuard: server tunnels and peer tunnels in two tabs.*
+
+**On this screen**
+
+- **Server tunnel** creates a WireGuard server that remote peers connect to; use **Add server**.
+- **Peer tunnel** connects this firewall to another WireGuard server.
+- The data refreshes every 10 seconds, so a new handshake shows up without reloading.
+
 ## Server tunnels
 
 A server tunnel accepts connections from **peers**.

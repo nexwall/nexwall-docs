@@ -10,6 +10,16 @@ description: Publish internal web applications through the firewall over HTTPS.
 firewall over HTTPS, and the firewall forwards their requests to the internal server. This lets you publish several
 sites behind one public address and terminate encryption in one place.
 
+![Reverse proxy: empty list with the Add reverse proxy button.](/img/screenshots/fw/en/reverse-proxy.png)
+
+*Reverse proxy: empty list with the Add reverse proxy button.*
+
+**On this screen**
+
+- The list shows every published site. A new firewall has none.
+- **Add reverse proxy** publishes an internal web server through the firewall.
+- The feature works only on port 443 (HTTPS), so it needs a certificate (see Certificates).
+
 The reverse proxy works **only on TCP port 443 (HTTPS)**.
 
 ## Requirements

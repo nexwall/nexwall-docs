@@ -9,6 +9,16 @@ description: Back up, restore, migrate and reset a unit.
 **Administration > Backup & Recovery** protects your configuration. It has four tabs: Backup, Restore, Migration and
 Factory reset.
 
+![Backup & Recovery: set a passphrase first, then encrypted backups are stored on the unit.](/img/screenshots/fw/en/backup.png)
+
+*Backup & Recovery: set a passphrase first, then encrypted backups are stored on the unit.*
+
+**On this screen**
+
+- The three tabs are **Backup**, **Restore** and **Factory reset**.
+- Until a **passphrase** is set, the screen warns that backups cannot be stored. The system keeps up to 10 encrypted backups.
+- **Download unencrypted** exports the configuration without encryption, keep that file private.
+
 ## Backup
 
 A backup contains the settings and data of the unit. It is your safeguard against a failed disk, a mistake, or a

@@ -58,6 +58,15 @@ segmento.
 **Red > Enrutamiento** muestra la tabla de enrutamiento y le permite añadir **rutas estáticas**. Una ruta indica por qué
 interfaz y puerta de enlace se llega a un host o a una red.
 
+![Enrutamiento: rutas estáticas arriba, rutas activas de la tabla principal debajo.](/img/screenshots/fw/es/routing.png)
+
+*Enrutamiento: rutas estáticas arriba, rutas activas de la tabla principal debajo.*
+
+**En esta pantalla**
+
+- **Rutas IPv4** y **Rutas IPv6** son pestañas separadas; **Añadir ruta** crea una ruta estática.
+- La tabla inferior es de solo lectura y muestra lo que el núcleo usa realmente: puerta de enlace predeterminada, redes conectadas y rutas de VPN.
+
 | Campo | Significado |
 |---|---|
 | Red | El destino en notación CIDR. Use `0.0.0.0/0` (o `::/0` para IPv6) para la ruta predeterminada |

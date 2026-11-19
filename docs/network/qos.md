@@ -10,6 +10,16 @@ description: Share bandwidth fairly and fight bufferbloat.
 fairly among connections, adjusts limits according to network conditions, and reduces **bufferbloat**: the delay that
 appears when a saturated link queues too many packets.
 
+![QoS: choose the interfaces to manage and the real bandwidth of each.](/img/screenshots/fw/en/qos.png)
+
+*QoS: choose the interfaces to manage and the real bandwidth of each.*
+
+**On this screen**
+
+- Each row is one interface (normally a WAN) with its **download** and **upload** speed in Mbps.
+- Enter the speed your provider really delivers, a little below the contract is safest.
+- **Add QoS interface** adds another link; **Edit** turns QoS on or off for a row.
+
 ## Configuring an interface
 
 QoS is configured for each WAN interface.

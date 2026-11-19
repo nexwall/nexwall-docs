@@ -9,6 +9,16 @@ description: Block hostile addresses, countries, brute force attempts and floods
 **Security Services > IP & Geo Blocking** blocks new connections to and from addresses that are known to be hostile. It
 works at the network layer, before a connection reaches any service, and it can also block whole countries.
 
+![IP & Geo Blocking: blocklist feeds and the other tabs.](/img/screenshots/fw/en/ip-geo.png)
+
+*IP & Geo Blocking: blocklist feeds and the other tabs.*
+
+**On this screen**
+
+- **Blocklist feeds** are lists of known attacker addresses maintained by Nexwall; each shows direction, entries and confidence.
+- **Geoblocking** blocks whole countries; **Local allowlist** and **Local blocklist** hold your own addresses; **Banned IPs** lists the current bans.
+- **Search IP in blocklists** tells you which list contains an address, useful when a customer reports a blocked site.
+
 ## Status and blocklists
 
 Turn the service on in the **Settings** tab. Then open the blocklist page.

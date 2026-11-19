@@ -11,6 +11,17 @@ the address of a blocked domain, the unit does not answer with a usable address,
 light, it works for every device on the network without installing anything, and it also blocks advertising and
 trackers.
 
+![DNS filtering: blocklist sources with category, entries, confidence and status.](/img/screenshots/fw/en/dns-filtering.png)
+
+*DNS filtering: blocklist sources with category, entries, confidence and status.*
+
+**On this screen**
+
+- Each row is a blocklist by category. The switch on the right turns it on; **Enable all** switches every list.
+- **Confidence** (1 to 10) shows how reliable a list is, a higher number means fewer false positives.
+- The note on top shows the memory the active lists need, check it before enabling large lists on small machines.
+- Other tabs: **Filter bypass**, **Local allowlist**, **Local blocklist** and **Settings**.
+
 ## Blocklists
 
 A **blocklist** is a list of domains grouped by purpose and maintained by someone. The page lists the available sources

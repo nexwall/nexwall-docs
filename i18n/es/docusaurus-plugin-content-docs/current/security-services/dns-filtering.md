@@ -11,6 +11,17 @@ dispositivo pide la dirección de un dominio bloqueado, la unidad no responde co
 no se puede alcanzar. Es ligero, funciona para todos los dispositivos de la red sin instalar nada y también bloquea
 publicidad y rastreadores.
 
+![Filtrado de DNS: fuentes de listas de bloqueo con categoría, entradas, confianza y estado.](/img/screenshots/fw/es/dns-filtering.png)
+
+*Filtrado de DNS: fuentes de listas de bloqueo con categoría, entradas, confianza y estado.*
+
+**En esta pantalla**
+
+- Cada fila es una lista de bloqueo por categoría. El interruptor de la derecha la activa; **Activar todas** cambia todas las listas.
+- La **confianza** (1 a 10) indica lo fiable que es una lista; un número mayor significa menos falsos positivos.
+- La nota superior muestra la memoria que necesitan las listas activas; revísela antes de activar listas grandes en equipos pequeños.
+- Otras pestañas: **Excepciones de filtro**, **Lista de permitidos local**, **Lista de bloqueo local** y **Configuración**.
+
 ## Listas de bloqueo
 
 Una **lista de bloqueo** es una lista de dominios agrupados por finalidad y mantenida por alguien. La página lista las

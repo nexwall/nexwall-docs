@@ -9,6 +9,16 @@ description: Túneles rápidos y modernos para sedes y usuarios.
 **VPN > WireGuard** crea túneles con el protocolo WireGuard: ligero, moderno y ampliamente disponible en muchas
 plataformas. Sirve tanto para conectar sedes como para dar acceso a dispositivos individuales.
 
+![WireGuard: túneles de servidor y de par en dos pestañas.](/img/screenshots/fw/es/wireguard.png)
+
+*WireGuard: túneles de servidor y de par en dos pestañas.*
+
+**En esta pantalla**
+
+- **Túnel de servidor** crea un servidor WireGuard al que se conectan pares remotos; use **Añadir servidor**.
+- **Túnel de par** conecta este firewall con otro servidor WireGuard.
+- Los datos se actualizan cada 10 segundos, así que un nuevo handshake aparece sin recargar.
+
 ## Túneles de servidor
 
 Un túnel de servidor acepta conexiones de **pares (peers)**.

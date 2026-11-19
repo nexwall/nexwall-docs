@@ -10,6 +10,16 @@ A **controller** is a server that many units connect to. From it, an administrat
 interface, see its metrics and logs and manage it, without having a direct network path to each site. This is what makes
 it practical for a service provider to look after many customers.
 
+![Central Management: unit name, ID, controller URL, VPN address and connection status.](/img/screenshots/fw/en/central-management.png)
+
+*Central Management: unit name, ID, controller URL, VPN address and connection status.*
+
+**On this screen**
+
+- **Unit name** and **Description** identify this firewall in the controller.
+- **Unit ID**, **Controller URL** and **VPN IP address** are filled in when you join with the code from the controller.
+- **Status** should read **Connected**. **Restart connection** redials the VPN; **Disconnect unit** removes the link to the controller.
+
 ## Connecting a unit
 
 1. In the controller, add a new unit. The controller generates a **join code**.

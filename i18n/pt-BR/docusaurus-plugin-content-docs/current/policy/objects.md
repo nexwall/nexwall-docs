@@ -9,6 +9,16 @@ description: Grupos nomeados de endereços e domínios que você reutiliza em to
 **Políticas > Objetos** permite dar um nome a um conjunto de endereços ou domínios e usar esse nome sempre que a interface
 pedir por eles. Quando você altera o objeto, todas as regras que o usam acompanham automaticamente.
 
+![Objetos: conjuntos de hosts e de domínios com o uso de cada um.](/img/screenshots/fw/pt-BR/objects.png)
+
+*Objetos: conjuntos de hosts e de domínios com o uso de cada um.*
+
+**Nesta tela**
+
+- A aba **Conjuntos de hosts** lista grupos nomeados de endereços, faixas, redes, usuários de VPN e registros DNS.
+- A aba **Conjuntos de domínios** faz o mesmo para domínios.
+- A etiqueta ao lado do nome mostra se o objeto está **em uso**; um objeto sem uso pode ser removido com segurança.
+
 ## Conjuntos de hosts
 
 Um conjunto de hosts é um host ou um grupo de hosts. Cada entrada nele pode ser:

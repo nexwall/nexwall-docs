@@ -9,6 +9,16 @@ description: Entregue direcciones, resuelva nombres y gestione concesiones y reg
 **Red > DNS y DHCP** configura el servidor DHCP que da direcciones a sus dispositivos y el servicio DNS que resuelve
 nombres para ellos.
 
+![DNS y DHCP: una tarjeta por interfaz, con pestañas para concesiones, DNS y registros.](/img/screenshots/fw/es/dns-dhcp.png)
+
+*DNS y DHCP: una tarjeta por interfaz, con pestañas para concesiones, DNS y registros.*
+
+**En esta pantalla**
+
+- Cada tarjeta de interfaz indica si la **vinculación de MAC** y el **DHCP** están activos, el rango de direcciones y el tiempo de concesión.
+- Use **Editar** en la tarjeta para cambiar el rango o el tiempo de concesión.
+- Las pestañas muestran las **concesiones estáticas**, las **concesiones dinámicas**, la configuración de **DNS** y los **registros DNS** locales; **Escanear red** busca dispositivos.
+
 ## DHCP
 
 Cada interfaz con dirección estática puede servir DHCP. Para cada una establece:

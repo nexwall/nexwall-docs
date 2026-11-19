@@ -10,6 +10,15 @@ description: Require guests to authenticate before they use the network.
 connect are intercepted until the user authenticates, for example with a code, a voucher or a social login, depending on
 what the hotspot manager offers. It is meant for hotels, cafes, waiting rooms and offices with visitors.
 
+![Captive portal: the Status tab before it is configured.](/img/screenshots/fw/en/captive-portal.png)
+
+*Captive portal: the Status tab before it is configured.*
+
+**On this screen**
+
+- **Status** shows whether a captive portal is active and who is connected.
+- Open **Settings** to choose the network, the login method and the page guests see.
+
 ## How it works
 
 The unit runs the part of the captive portal that intercepts connections. The management of the guest experience

@@ -8,6 +8,16 @@ description: Ative uma assinatura e gerencie a sua própria conta.
 
 ## Licenciamento
 
+![Licenciamento: número de série, plano, validade e as assinaturas incluídas.](/img/screenshots/fw/pt-BR/licensing.png)
+
+*Licenciamento: número de série, plano, validade e as assinaturas incluídas.*
+
+**Nesta tela**
+
+- O **número de série** identifica a unidade no servidor de licenças; o firewall se registra sozinho.
+- **Licença**, **Plano** e **Expiração** mostram o estado do contrato.
+- **Assinaturas** lista o que está ativo (controle de aplicativos, proteção de rede, filtro de DNS, bloqueio de IP e por país). As **assinaturas adicionais** são incluídas pelo seu revendedor.
+
 **Administração > Licenciamento** mostra o estado da assinatura da unidade e permite ativar uma assinatura.
 
 ### O que uma assinatura libera

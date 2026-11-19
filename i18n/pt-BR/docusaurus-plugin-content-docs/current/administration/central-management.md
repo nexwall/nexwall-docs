@@ -10,6 +10,16 @@ Um **controlador** é um servidor ao qual muitas unidades se conectam. A partir 
 qualquer unidade, abrir sua interface web, ver suas métricas e logs e gerenciá-la, sem ter um caminho de rede direto até
 cada local. É isso que torna prático para um provedor de serviços cuidar de muitos clientes.
 
+![Gerenciamento Central: nome da unidade, ID, URL do controller, endereço VPN e status da conexão.](/img/screenshots/fw/pt-BR/central-management.png)
+
+*Gerenciamento Central: nome da unidade, ID, URL do controller, endereço VPN e status da conexão.*
+
+**Nesta tela**
+
+- **Nome da unidade** e **Descrição** identificam este firewall no controller.
+- **ID da unidade**, **URL do controller** e **Endereço IP da VPN** são preenchidos ao entrar com o código do controller.
+- **Status** deve mostrar **Conectado**. **Reiniciar conexão** rediscar a VPN; **Desconectar unidade** remove o vínculo com o controller.
+
 ## Conectando uma unidade
 
 1. No controlador, adicione uma nova unidade. O controlador gera um **código de adesão**.

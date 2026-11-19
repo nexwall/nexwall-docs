@@ -9,6 +9,16 @@ description: Avisos sobre dispositivos que se comportan como infectados y las li
 **Servicios de seguridad > Protección Avanzada y Colectiva (IA)** reúne dos protecciones en una página. Ambas necesitan el
 módulo de Protección Avanzada contra Amenazas de su plan (está incluido en la prueba).
 
+![Protección Avanzada y Colectiva: los dos interruptores y la nota de privacidad.](/img/screenshots/fw/es/atp.png)
+
+*Protección Avanzada y Colectiva: los dos interruptores y la nota de privacidad.*
+
+**En esta pantalla**
+
+- **Protección Avanzada** puntúa cada dispositivo de sus redes según su comportamiento. Los avisos son informativos y aparecen en Análisis de amenazas.
+- **Protección Colectiva** añade al Bloqueo de IP y al Filtrado de DNS las direcciones y dominios que otros firewalls Nexwall encontraron detrás de ataques.
+- **Enviar informes a Nexwall** es opcional. Solo se envía la dirección o el nombre externo, nunca archivos, tráfico ni datos de usuarios.
+
 | Protección | Qué hace | ¿Bloquea? |
 |---|---|---|
 | **Protección Avanzada** | Puntúa cada dispositivo de sus redes internas con un modelo de comportamiento que se ejecuta en este firewall y genera un aviso, con el motivo en palabras, cuando uno actúa como una máquina infectada | No. Los avisos son informativos |

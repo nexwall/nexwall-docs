@@ -11,6 +11,15 @@ login. Os dispositivos que se conectam são interceptados até que o usuário se
 voucher ou um login social, conforme o que o gerenciador de hotspot oferecer. Ele se destina a hotéis, cafés, salas de
 espera e escritórios com visitantes.
 
+![Portal cativo: a aba Status antes de ser configurado.](/img/screenshots/fw/pt-BR/captive-portal.png)
+
+*Portal cativo: a aba Status antes de ser configurado.*
+
+**Nesta tela**
+
+- **Status** mostra se há um portal cativo ativo e quem está conectado.
+- Abra **Configurações** para escolher a rede, o método de login e a página que os convidados veem.
+
 ## Como funciona
 
 A unidade executa a parte do portal cativo que intercepta as conexões. O gerenciamento da experiência do convidado

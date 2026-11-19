@@ -8,6 +8,16 @@ description: Activate a subscription and manage your own account.
 
 ## Licensing
 
+![Licensing: serial number, plan, expiry and the subscriptions included.](/img/screenshots/fw/en/licensing.png)
+
+*Licensing: serial number, plan, expiry and the subscriptions included.*
+
+**On this screen**
+
+- The **serial number** identifies the unit with the license server; the firewall registers itself.
+- **License**, **Plan** and **Expiration** show the state of the contract.
+- **Subscriptions** lists what is active (application control, network protection, DNS filtering, IP & Geo blocking). **Additional subscriptions** are added through your reseller.
+
 **Administration > Licensing** shows the subscription state of the unit and lets you activate a subscription.
 
 ### What a subscription unlocks

@@ -10,6 +10,16 @@ description: Divida a banda de forma justa e combata o bufferbloat.
 forma justa entre as conexões, ajusta os limites de acordo com as condições da rede e reduz o **bufferbloat**: o atraso
 que aparece quando um link saturado enfileira pacotes demais.
 
+![QoS: escolha as interfaces a gerenciar e a banda real de cada uma.](/img/screenshots/fw/pt-BR/qos.png)
+
+*QoS: escolha as interfaces a gerenciar e a banda real de cada uma.*
+
+**Nesta tela**
+
+- Cada linha é uma interface (normalmente uma WAN) com a velocidade de **download** e **upload** em Mbps.
+- Informe a velocidade que o provedor realmente entrega; um pouco abaixo do contratado é o mais seguro.
+- **Adicionar interface de QoS** inclui outro link; **Editar** liga ou desliga o QoS em uma linha.
+
 ## Configurando uma interface
 
 O QoS é configurado para cada interface WAN.

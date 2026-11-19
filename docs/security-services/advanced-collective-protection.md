@@ -9,6 +9,16 @@ description: Warnings about devices that behave like infected ones, and the shar
 **Security Services > Advanced and Collective Protection (AI)** has two protections on one page. Both need the Advanced
 Threat Protection module of your plan (it is included in the trial).
 
+![Advanced & Collective Protection: the two switches and the privacy note.](/img/screenshots/fw/en/atp.png)
+
+*Advanced & Collective Protection: the two switches and the privacy note.*
+
+**On this screen**
+
+- **Advanced Protection** scores each device on your networks by behavior. Warnings are advisory and appear in Threat Analytics.
+- **Collective Protection** adds addresses and domains that other Nexwall firewalls found behind attacks to IP & Geo Blocking and DNS Filtering.
+- **Send reports to Nexwall** is optional. Only the outside address or name is sent, never files, traffic or user data.
+
 | Protection | What it does | Blocks? |
 |---|---|---|
 | **Advanced Protection** | Scores every device of your inner networks against a behaviour model that runs on this firewall and raises a warning, with the reason in words, when one acts like an infected machine | No. Warnings are advisory |

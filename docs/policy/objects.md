@@ -9,6 +9,16 @@ description: Named groups of addresses and domains that you reuse across the con
 **Policy > Objects** lets you give a name to a set of addresses or domains and use that name wherever the interface asks
 for them. When you change the object, every rule that uses it follows automatically.
 
+![Objects: host sets and domain sets with their usage.](/img/screenshots/fw/en/objects.png)
+
+*Objects: host sets and domain sets with their usage.*
+
+**On this screen**
+
+- The **Host sets** tab lists named groups of addresses, ranges, networks, VPN users and DNS records.
+- The **Domain sets** tab does the same for domains.
+- The badge next to a name shows whether the object is **in use**; an unused object can be removed safely.
+
 ## Host sets
 
 A host set is one host or a group of hosts. Each entry in it can be:
