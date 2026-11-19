@@ -90,6 +90,21 @@ const sidebars: SidebarsConfig = {
       'help/kba-16-services',
       'help/kba-17-support-package'
     ]),
+    category('Inspection and performance', [
+      'help/kba-18-fast-path',
+      'help/kba-19-inspection-settings',
+      'help/kba-20-throughput-sizing',
+      'help/kba-21-dpi-engine-stall',
+      'help/kba-22-unknown-applications'
+    ]),
+    category('Threat Shield', [
+      'help/kba-23-threat-shield-troubleshooting',
+      'help/kba-24-threat-shield-lists'
+    ]),
+    category('Web certificate and licensing', [
+      'help/kba-25-web-certificate',
+      'help/kba-26-licensing'
+    ]),
     category('Reference', [
       'help/command-line-and-faq',
       'help/cli-logs-and-debugging',

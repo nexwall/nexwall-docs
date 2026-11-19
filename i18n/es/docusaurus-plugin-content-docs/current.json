@@ -45,5 +45,17 @@
   "sidebar.help.category.Reference": {
     "message": "Referencia",
     "description": "The label for category Reference in sidebar help"
+  },
+  "sidebar.help.category.Inspection and performance": {
+    "message": "Inspección y rendimiento",
+    "description": "The label for category Inspection and performance in sidebar help"
+  },
+  "sidebar.help.category.Web certificate and licensing": {
+    "message": "Certificado web y licencias",
+    "description": "The label for category Web certificate and licensing in sidebar help"
+  },
+  "sidebar.help.category.Threat Shield": {
+    "message": "Threat Shield",
+    "description": "The label for category Threat Shield in sidebar help"
   }
 }

@@ -27,6 +27,12 @@ Com pressa? Escolha a linha que corresponde ao que você vê. Cada KBA é curta,
 | Preciso de DNS em profundidade (dig, upstreams) | [KBA-15: DNS em profundidade](kba-15-dns-deep-dive.md) |
 | Um serviço está parado ou falhando; ler seu log | [KBA-16: Serviços](kba-16-services.md) |
 | O suporte pediu logs ou diagnóstico | [KBA-17: Pacote de suporte](kba-17-support-package.md) |
+| Vazão ou CPU alta; ajustar inspeção | [KBA-18](kba-18-fast-path.md), [KBA-19](kba-19-inspection-settings.md), [KBA-20](kba-20-throughput-sizing.md) |
+| Motor de inspeção parado, conexões novas travam | [KBA-21](kba-21-dpi-engine-stall.md) |
+| Tráfego aparece como Desconhecido; aplicação não bloqueada | [KBA-22](kba-22-unknown-applications.md) |
+| Listas de bloqueio não atualizam, ou site bloqueado por engano | [KBA-23](kba-23-threat-shield-troubleshooting.md), [KBA-24](kba-24-threat-shield-lists.md) |
+| Aviso de certificado na interface web; qual endereço usar | [KBA-25](kba-25-web-certificate.md) |
+| Licenciamento, trial, assinatura, erros 401 | [KBA-26](kba-26-licensing.md) |
 
 Comandos, locais de arquivos e contexto estão no grupo **Referência** da barra lateral.
 

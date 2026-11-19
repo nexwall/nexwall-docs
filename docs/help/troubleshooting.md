@@ -27,6 +27,12 @@ Under pressure? Pick the line that matches what you see. Each KBA is short, orde
 | Need DNS in depth (dig, upstreams) | [KBA-15: DNS in depth](kba-15-dns-deep-dive.md) |
 | A service is stopped or crashing; read its log | [KBA-16: Services](kba-16-services.md) |
 | Support asked for logs or diagnostics | [KBA-17: Support package](kba-17-support-package.md) |
+| Throughput or CPU too high; tune inspection | [KBA-18](kba-18-fast-path.md), [KBA-19](kba-19-inspection-settings.md), [KBA-20](kba-20-throughput-sizing.md) |
+| Inspection engine stalled, new connections hang | [KBA-21](kba-21-dpi-engine-stall.md) |
+| Traffic shows as Unknown; application not blocked | [KBA-22](kba-22-unknown-applications.md) |
+| Block lists not updating, or a site wrongly blocked | [KBA-23](kba-23-threat-shield-troubleshooting.md), [KBA-24](kba-24-threat-shield-lists.md) |
+| Certificate warning on the web interface; which address to use | [KBA-25](kba-25-web-certificate.md) |
+| Licensing, trial, subscription, 401 errors | [KBA-26](kba-26-licensing.md) |
 
 Commands, file locations and background are in the **Reference** group of the sidebar.
 
