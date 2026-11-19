@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import { translate } from '@docusaurus/Translate'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 
 const t = (id: string, message: string) => translate({ id, message })
@@ -21,23 +22,39 @@ const cards = [
 ]
 
 const slides = [
-  { key: 'app', src: '/img/screenshots/slider-app.png', captionId: 'home.slide.app', caption: 'Every feature, one clean interface' },
-  { key: 'analytics', src: '/img/screenshots/slider-analytics.png', captionId: 'home.slide.analytics', caption: 'Deep traffic visibility, in real time' },
-  { key: 'threats', src: '/img/screenshots/slider-threats.png', captionId: 'home.slide.threats', caption: 'See what was blocked, and why' },
-  { key: 'connections', src: '/img/screenshots/slider-connections.png', captionId: 'home.slide.connections', caption: 'Live connection tracking' },
-  { key: 'rules', src: '/img/screenshots/slider-rules.png', captionId: 'home.slide.rules', caption: 'Firewall rules that read like plain language' },
-  { key: 'policy', src: '/img/screenshots/slider-policy.png', captionId: 'home.slide.policy', caption: 'Zone-based policy, by default' },
-  { key: 'appcontrol', src: '/img/screenshots/slider-appcontrol.png', captionId: 'home.slide.appcontrol', caption: 'Control applications and categories' },
-  { key: 'webprotection', src: '/img/screenshots/slider-webprotection.png', captionId: 'home.slide.webprotection', caption: 'Web protection by category, with inspection where it matters' },
-  { key: 'ips', src: '/img/screenshots/slider-ips.png', captionId: 'home.slide.ips', caption: 'Intrusion prevention with live engine health' },
-  { key: 'vpn', src: '/img/screenshots/slider-vpn.png', captionId: 'home.slide.vpn', caption: 'Site-to-site and remote access VPN, built in' },
-  { key: 'interfaces', src: '/img/screenshots/slider-interfaces.png', captionId: 'home.slide.interfaces', caption: 'LAN, WAN and VPN at a glance' },
-  { key: 'updates', src: '/img/screenshots/slider-updates.png', captionId: 'home.slide.updates', caption: 'Updates and fixes from one page' }
+  { key: 'dashboard', captionId: 'home.slide.fw.dashboard', caption: 'Your whole firewall on one dashboard' },
+  { key: 'traffic-analytics', captionId: 'home.slide.fw.traffic-analytics', caption: 'Who uses the network, when and for what' },
+  { key: 'connections', captionId: 'home.slide.fw.connections', caption: 'Live connection tracking' },
+  { key: 'firewall-rules', captionId: 'home.slide.fw.firewall-rules', caption: 'Firewall rules that read like plain language' },
+  { key: 'zones-policies', captionId: 'home.slide.fw.zones-policies', caption: 'Zone-based policy, by default' },
+  { key: 'app-control', captionId: 'home.slide.fw.app-control', caption: 'Control applications and categories' },
+  { key: 'web-protection', captionId: 'home.slide.fw.web-protection', caption: 'Web protection by category, with inspection where it matters' },
+  { key: 'ips', captionId: 'home.slide.fw.ips', caption: 'Intrusion prevention with live engine health' },
+  { key: 'interfaces', captionId: 'home.slide.fw.interfaces', caption: 'LAN, WAN and VPN at a glance' },
+  { key: 'performance', captionId: 'home.slide.fw.performance', caption: 'Live performance of the whole unit' },
+  { key: 'routing', captionId: 'home.slide.fw.routing', caption: 'Routes and gateways, clear and editable' },
+  { key: 'dns-dhcp', captionId: 'home.slide.fw.dns-dhcp', caption: 'DNS and DHCP for every network' },
+  { key: 'dns-filtering', captionId: 'home.slide.fw.dns-filtering', caption: 'DNS filtering by category' },
+  { key: 'objects', captionId: 'home.slide.fw.objects', caption: 'Reusable objects for rules and policies' },
+  { key: 'ip-geo', captionId: 'home.slide.fw.ip-geo', caption: 'Block IPs and whole countries' },
+  { key: 'atp', captionId: 'home.slide.fw.atp', caption: 'Advanced threat protection with collective intelligence' },
+  { key: 'sd-wan', captionId: 'home.slide.fw.sd-wan', caption: 'SD-WAN with several internet links' },
+  { key: 'qos', captionId: 'home.slide.fw.qos', caption: 'Traffic priority with QoS' },
+  { key: 'reverse-proxy', captionId: 'home.slide.fw.reverse-proxy', caption: 'Publish internal sites with the reverse proxy' },
+  { key: 'wireguard', captionId: 'home.slide.fw.wireguard', caption: 'WireGuard tunnels, built in' },
+  { key: 'captive-portal', captionId: 'home.slide.fw.captive-portal', caption: 'Captive portal for guest networks' },
+  { key: 'central-management', captionId: 'home.slide.fw.central-management', caption: 'Central management from the cloud controller' },
+  { key: 'licensing', captionId: 'home.slide.fw.licensing', caption: 'Licensing and subscription at a glance' },
+  { key: 'backup', captionId: 'home.slide.fw.backup', caption: 'Backup and restore in one page' },
+  { key: 'certificates', captionId: 'home.slide.fw.certificates', caption: 'Certificates, ready to use' },
+  { key: 'remote-access', captionId: 'home.slide.fw.remote-access', caption: 'Remote access VPN, built in' }
 ]
 
 const AUTO_ADVANCE_MS = 5000
 
 function HeroSlider(): ReactNode {
+  const { i18n } = useDocusaurusContext()
+  const locale = i18n.currentLocale
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
   const reducedMotionRef = useRef(false)
@@ -70,7 +87,8 @@ function HeroSlider(): ReactNode {
             key={slide.key}
             className={styles.sliderImage}
             data-active={i === index}
-            src={slide.src}
+            src={`/img/screenshots/fw/${locale}/${slide.key}.png`}
+            loading={i === 0 ? 'eager' : 'lazy'}
             alt={t(slide.captionId, slide.caption)}
             aria-hidden={i === index ? undefined : true}
           />

@@ -69,7 +69,7 @@
 
 .sliderFrame {
   position: relative;
-  aspect-ratio: 16 / 9.2;
+  aspect-ratio: 16 / 10;
   border-radius: 0.6rem;
   overflow: hidden;
   border: none;

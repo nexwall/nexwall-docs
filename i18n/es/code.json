@@ -115,5 +115,83 @@
   },
   "home.slide.goTo": {
     "message": "Mostrar captura {n}"
+  },
+  "home.slide.fw.performance": {
+    "message": "Rendimiento en vivo de toda la unidad"
+  },
+  "home.slide.fw.routing": {
+    "message": "Rutas y puertas de enlace, claras y editables"
+  },
+  "home.slide.fw.dns-dhcp": {
+    "message": "DNS y DHCP para cada red"
+  },
+  "home.slide.fw.dns-filtering": {
+    "message": "Filtrado de DNS por categoría"
+  },
+  "home.slide.fw.objects": {
+    "message": "Objetos reutilizables para reglas y políticas"
+  },
+  "home.slide.fw.ip-geo": {
+    "message": "Bloquee IP y países enteros"
+  },
+  "home.slide.fw.atp": {
+    "message": "Protección avanzada contra amenazas con inteligencia colectiva"
+  },
+  "home.slide.fw.sd-wan": {
+    "message": "SD-WAN con varios enlaces de internet"
+  },
+  "home.slide.fw.qos": {
+    "message": "Prioridad de tráfico con QoS"
+  },
+  "home.slide.fw.reverse-proxy": {
+    "message": "Publique sitios internos con el proxy inverso"
+  },
+  "home.slide.fw.wireguard": {
+    "message": "Túneles WireGuard integrados"
+  },
+  "home.slide.fw.captive-portal": {
+    "message": "Portal cautivo para redes de invitados"
+  },
+  "home.slide.fw.central-management": {
+    "message": "Gestión central desde el controller en la nube"
+  },
+  "home.slide.fw.licensing": {
+    "message": "Licencias y suscripción de un vistazo"
+  },
+  "home.slide.fw.backup": {
+    "message": "Copia de seguridad y restauración en una página"
+  },
+  "home.slide.fw.certificates": {
+    "message": "Certificados, listos para usar"
+  },
+  "home.slide.fw.dashboard": {
+    "message": "Todo su firewall en un solo panel"
+  },
+  "home.slide.fw.traffic-analytics": {
+    "message": "Quién usa la red, cuándo y para qué"
+  },
+  "home.slide.fw.connections": {
+    "message": "Seguimiento de conexiones en vivo"
+  },
+  "home.slide.fw.firewall-rules": {
+    "message": "Reglas de firewall que se leen como lenguaje natural"
+  },
+  "home.slide.fw.zones-policies": {
+    "message": "Política basada en zonas, por defecto"
+  },
+  "home.slide.fw.app-control": {
+    "message": "Control de aplicaciones y categorías"
+  },
+  "home.slide.fw.web-protection": {
+    "message": "Protección web por categoría, con inspección donde importa"
+  },
+  "home.slide.fw.ips": {
+    "message": "Prevención de intrusiones con el estado del motor en vivo"
+  },
+  "home.slide.fw.interfaces": {
+    "message": "LAN, WAN y VPN de un vistazo"
+  },
+  "home.slide.fw.remote-access": {
+    "message": "VPN de acceso remoto integrada"
   }
 }
