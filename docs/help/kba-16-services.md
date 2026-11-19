@@ -1,10 +1,10 @@
 ---
-title: "KBA: Verify and troubleshoot services from the command line"
-sidebar_position: 10
+title: "KBA-16: Verify and troubleshoot services from the command line"
+sidebar_position: 23
 description: How to tell whether a service is really running, why some services say "not running" and are fine, how to read its log and configuration, restart it safely and use the feature-specific status commands.
 ---
 
-# KBA: Verify and troubleshoot services from the command line
+# KBA-16: Verify and troubleshoot services from the command line
 
 **Symptom.** A feature of the firewall (DNS, VPN, IPS, web protection, the controller link) does not behave, and the
 web interface does not say why.
@@ -102,7 +102,7 @@ tcp   192.168.1.1:53     LISTEN   103916/dnsmasq
 ```
 
 Then test the service from the network, as a client would: `nc -zv -w3 <ip> <port>` or `dig @<ip> <name>`. See the
-[connectivity KBA](kba-cli-connectivity.md).
+[connectivity KBA](kba-14-connectivity.md).
 
 ## 5. Read its log
 
@@ -212,7 +212,7 @@ need. The DNS filtering page shows how much memory the active lists need.
 
 ## Related pages
 
-- [KBA: Troubleshoot DNS from the command line](kba-cli-dns.md)
-- [KBA: Test connectivity, ports and traffic from the command line](kba-cli-connectivity.md)
+- [KBA: Troubleshoot DNS from the command line](kba-15-dns-deep-dive.md)
+- [KBA: Test connectivity, ports and traffic from the command line](kba-14-connectivity.md)
 - [Service and log command reference](service-and-log-reference.md)
 - [Logs and debugging from the command line](cli-logs-and-debugging.md)

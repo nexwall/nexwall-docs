@@ -1,10 +1,10 @@
 ---
-title: "KBA: Test connectivity, ports and traffic from the command line"
-sidebar_position: 9
+title: "KBA-14: Test connectivity, ports and traffic from the command line"
+sidebar_position: 21
 description: Ping, MTU, traceroute, port tests without telnet, listening ports, packet capture and connection tracking, layer by layer, with the tools this unit really ships.
 ---
 
-# KBA: Test connectivity, ports and traffic from the command line
+# KBA-14: Test connectivity, ports and traffic from the command line
 
 **Symptom.** A user cannot reach a server, a published service does not answer, or a VPN is slow or drops large
 packets.
@@ -20,7 +20,7 @@ This image is small on purpose. Some familiar tools are missing; use the replace
 |---|---|
 | `telnet` | `nc -zv <host> <port>` to test a port, or `nc <host> <port>` to open a raw connection and talk to it |
 | `ss` | `netstat -tulnp` (listening ports and the process behind each) |
-| `host` | `dig` or `nslookup` (see the [DNS KBA](kba-cli-dns.md)) |
+| `host` | `dig` or `nslookup` (see the [DNS KBA](kba-15-dns-deep-dive.md)) |
 | `mtr` | `traceroute -n <host>` |
 
 Installed and ready: `ping` (the full version, with `-M do -s`), `traceroute`, `nc`, `curl`, `wget`, `openssl`,
@@ -238,7 +238,7 @@ If the connection does not appear at all, it was dropped before tracking: check 
 
 ## Related pages
 
-- [KBA: Troubleshoot DNS from the command line](kba-cli-dns.md)
-- [KBA: Verify and troubleshoot services from the command line](kba-cli-services.md)
+- [KBA: Troubleshoot DNS from the command line](kba-15-dns-deep-dive.md)
+- [KBA: Verify and troubleshoot services from the command line](kba-16-services.md)
 - [Network troubleshooting tools](network-troubleshooting-tools.md)
 - [Monitor connections](../operation-analytics/monitor-connections.md)

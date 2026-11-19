@@ -1,10 +1,10 @@
 ---
-title: Windows muestra "sin internet" y falla el inicio de sesión de Microsoft
-sidebar_position: 5
+title: 'KBA-13: Windows muestra "sin internet" y falla el inicio de sesión de Microsoft'
+sidebar_position: 27
 description: Un equipo Windows que llega al firewall por un adaptador virtual puede mostrar el icono sin conexión, y Teams no inicia sesión, aunque la navegación funcione. Qué se revisó, qué se descartó y una solución provisional.
 ---
 
-# Windows muestra "sin internet" y falla el inicio de sesión de Microsoft
+# KBA-13: Windows muestra "sin internet" y falla el inicio de sesión de Microsoft
 
 **Aplica a:** equipos Windows 10 y 11 detrás del firewall · **Audiencia:** administradores y soporte
 

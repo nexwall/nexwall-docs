@@ -1,10 +1,10 @@
 ---
-title: Solución de problemas de registro en el controlador
-sidebar_position: 3
+title: "KBA-11: Solución de problemas de registro en el controlador"
+sidebar_position: 25
 description: Diagnostique problemas de vinculación y conexión entre una unidad y un controlador, en ambos lados, desde la línea de comandos.
 ---
 
-# Solución de problemas de registro en el controlador
+# KBA-11: Solución de problemas de registro en el controlador
 
 Esto va más allá de la [comprobación básica](troubleshooting.md) y requiere acceso SSH a la unidad y al host del
 controlador. Úselo cuando una unidad no logra vincularse a un controlador, la conexión se cae repetidamente, o se

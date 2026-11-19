@@ -1,10 +1,10 @@
 ---
-title: "KBA: Solucionar problemas de DNS desde la línea de comandos"
-sidebar_position: 8
+title: "KBA-15: Solucionar problemas de DNS desde la línea de comandos"
+sidebar_position: 22
 description: Paso a paso con dig y nslookup, cómo distinguir un resolutor roto de un nombre que no existe y qué revisar en dnsmasq, el filtrado de DNS y los servidores de salida.
 ---
 
-# KBA: Solucionar problemas de DNS desde la línea de comandos
+# KBA-15: Solucionar problemas de DNS desde la línea de comandos
 
 **Síntoma.** Un sitio o servicio "no abre", pero hacer ping a su dirección IP funciona. O un nombre se resuelve desde
 su portátil y no desde la LAN.
@@ -14,7 +14,7 @@ su portátil y no desde la LAN.
 
 :::note Qué está instalado
 `dig` y `nslookup` están instalados y funcionan de fábrica. **`host` no está instalado**, ni tampoco `telnet`
-(vea en la [KBA de conectividad](kba-cli-connectivity.md) los sustitutos). Si un comando responde `not found`,
+(vea en la [KBA de conectividad](kba-14-connectivity.md) los sustitutos). Si un comando responde `not found`,
 revise la ortografía y use `command -v <nombre>` antes de suponer una falla.
 :::
 
@@ -49,7 +49,7 @@ dig +short nexwall.com.br
 
 | `status` | Significado | Siguiente paso |
 |---|---|---|
-| `NOERROR` con respuesta | El nombre se resuelve | El problema no es DNS, pase a la [KBA de conectividad](kba-cli-connectivity.md) |
+| `NOERROR` con respuesta | El nombre se resuelve | El problema no es DNS, pase a la [KBA de conectividad](kba-14-connectivity.md) |
 | `NOERROR` **sin** respuesta | El nombre existe pero no tiene registro de ese tipo (por ejemplo, sin `AAAA`) | Pruebe `dig A <nombre>` y `dig AAAA <nombre>` |
 | `NXDOMAIN` | El nombre no existe | Revise la ortografía y compare con un resolutor público (paso 2) |
 | `SERVFAIL` | El servidor de salida no pudo responder | Pruebe los servidores de salida (paso 3) |
@@ -184,8 +184,8 @@ línea, que da la respuesta final y de dónde vino.
 
 ## Páginas relacionadas
 
-- [KBA: Probar conectividad, puertos y tráfico desde la línea de comandos](kba-cli-connectivity.md)
-- [KBA: Verificar y solucionar problemas de servicios desde la línea de comandos](kba-cli-services.md)
+- [KBA: Probar conectividad, puertos y tráfico desde la línea de comandos](kba-14-connectivity.md)
+- [KBA: Verificar y solucionar problemas de servicios desde la línea de comandos](kba-16-services.md)
 - [DNS y DHCP](../network/dns-dhcp.md)
 - [Filtrado de DNS](../security-services/dns-filtering.md)
 - [Herramientas de solución de problemas de red](network-troubleshooting-tools.md)

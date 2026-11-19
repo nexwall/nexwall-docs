@@ -1,10 +1,10 @@
 ---
-title: "KBA: Verificar y solucionar problemas de servicios desde la línea de comandos"
-sidebar_position: 10
+title: "KBA-16: Verificar y solucionar problemas de servicios desde la línea de comandos"
+sidebar_position: 23
 description: Cómo saber si un servicio realmente está en ejecución, por qué algunos dicen "not running" y están bien, cómo leer su registro y su configuración, reiniciarlo con seguridad y usar los comandos de estado de cada función.
 ---
 
-# KBA: Verificar y solucionar problemas de servicios desde la línea de comandos
+# KBA-16: Verificar y solucionar problemas de servicios desde la línea de comandos
 
 **Síntoma.** Una función del firewall (DNS, VPN, IPS, protección web, el enlace con el controller) no se comporta
 bien y la interfaz web no dice por qué.
@@ -102,7 +102,7 @@ tcp   192.168.1.1:53     LISTEN   103916/dnsmasq
 ```
 
 Luego pruebe el servicio desde la red, como lo haría un cliente: `nc -zv -w3 <ip> <puerto>` o `dig @<ip> <nombre>`. Vea la
-[KBA de conectividad](kba-cli-connectivity.md).
+[KBA de conectividad](kba-14-connectivity.md).
 
 ## 5. Lea su registro
 
@@ -213,7 +213,7 @@ listas o funciones que no necesite. La página de filtrado de DNS indica cuánta
 
 ## Páginas relacionadas
 
-- [KBA: Solucionar problemas de DNS desde la línea de comandos](kba-cli-dns.md)
-- [KBA: Probar conectividad, puertos y tráfico desde la línea de comandos](kba-cli-connectivity.md)
+- [KBA: Solucionar problemas de DNS desde la línea de comandos](kba-15-dns-deep-dive.md)
+- [KBA: Probar conectividad, puertos y tráfico desde la línea de comandos](kba-14-connectivity.md)
 - [Referencia de comandos de servicios y registros](service-and-log-reference.md)
 - [Registros y depuración desde la línea de comandos](cli-logs-and-debugging.md)

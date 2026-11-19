@@ -18,7 +18,7 @@ const cards = [
   { key: 'vpn', to: '/docs/vpn/remote-access-openvpn', title: 'VPN', text: 'Remote access, site-to-site tunnels with OpenVPN and IPsec, and WireGuard.' },
   { key: 'identity', to: '/docs/access-identity/users-groups', title: 'Access & Identity', text: 'User databases and the captive portal for guest networks.' },
   { key: 'administration', to: '/docs/administration/central-management', title: 'Administration', text: 'Central management, licensing and your account, backup and recovery, system settings and updates, certificates and high availability.' },
-  { key: 'help', to: '/docs/help/troubleshooting', title: 'Help', text: 'Troubleshooting by symptom, command line reference and frequently asked questions.' }
+  { key: 'help', to: '/docs/help/troubleshooting', title: 'Help & KBAs', text: 'Step-by-step KBAs from a 5-minute health check to a support package, plus command line reference and FAQ.' }
 ]
 
 const slides = [

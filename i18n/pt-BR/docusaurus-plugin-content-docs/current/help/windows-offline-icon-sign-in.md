@@ -1,10 +1,10 @@
 ---
-title: O Windows mostra "sem internet" e o login da Microsoft falha
-sidebar_position: 5
+title: 'KBA-13: O Windows mostra "sem internet" e o login da Microsoft falha'
+sidebar_position: 27
 description: Um computador Windows que chega ao firewall por um adaptador virtual pode mostrar o ícone offline, e o Teams não faz login, mesmo com a navegação funcionando. O que foi verificado, o que foi descartado e um contorno.
 ---
 
-# O Windows mostra "sem internet" e o login da Microsoft falha
+# KBA-13: O Windows mostra "sem internet" e o login da Microsoft falha
 
 **Aplica-se a:** computadores Windows 10 e 11 atrás do firewall · **Público:** administradores e suporte
 

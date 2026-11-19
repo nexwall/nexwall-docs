@@ -1,10 +1,10 @@
 ---
-title: Microsoft Teams or Microsoft 365 will not sign in
-sidebar_position: 4
+title: "KBA-12: Microsoft Teams or Microsoft 365 will not sign in"
+sidebar_position: 26
 description: A real case, step by step. Teams shows "Something went wrong" behind the firewall. Find blocked Microsoft names with a DNS capture, add them to Allowed domains, and check the Windows "offline" state.
 ---
 
-# Microsoft Teams or Microsoft 365 will not sign in
+# KBA-12: Microsoft Teams or Microsoft 365 will not sign in
 
 **Applies to:** Nexwall Firewall with DNS filtering enabled · **Audience:** administrators and support
 

@@ -25,5 +25,25 @@
   },
   "sidebar.manual.category.Administration": {
     "message": "Administración"
+  },
+  "sidebar.help.category.Access and internet": {
+    "message": "Acceso e internet",
+    "description": "The label for category Access and internet in sidebar help"
+  },
+  "sidebar.help.category.Features": {
+    "message": "Funciones",
+    "description": "The label for category Features in sidebar help"
+  },
+  "sidebar.help.category.Controller and clients": {
+    "message": "Controlador y clientes",
+    "description": "The label for category Controller and clients in sidebar help"
+  },
+  "sidebar.help.category.Command line in depth": {
+    "message": "Línea de comandos en profundidad",
+    "description": "The label for category Command line in depth in sidebar help"
+  },
+  "sidebar.help.category.Reference": {
+    "message": "Referencia",
+    "description": "The label for category Reference in sidebar help"
   }
 }

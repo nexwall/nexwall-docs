@@ -1,10 +1,10 @@
 ---
-title: "KBA: Probar conectividad, puertos y tráfico desde la línea de comandos"
-sidebar_position: 9
+title: "KBA-14: Probar conectividad, puertos y tráfico desde la línea de comandos"
+sidebar_position: 21
 description: Ping, MTU, traceroute, pruebas de puerto sin telnet, puertos en escucha, captura de paquetes y seguimiento de conexiones, capa por capa, con las herramientas que realmente trae esta unidad.
 ---
 
-# KBA: Probar conectividad, puertos y tráfico desde la línea de comandos
+# KBA-14: Probar conectividad, puertos y tráfico desde la línea de comandos
 
 **Síntoma.** Un usuario no alcanza un servidor, un servicio publicado no responde, o una VPN es lenta o pierde
 paquetes grandes.
@@ -20,7 +20,7 @@ Esta imagen es pequeña a propósito. Faltan algunas herramientas conocidas; use
 |---|---|
 | `telnet` | `nc -zv <host> <puerto>` para probar un puerto, o `nc <host> <puerto>` para abrir una conexión directa y conversar con él |
 | `ss` | `netstat -tulnp` (puertos en escucha y el proceso de cada uno) |
-| `host` | `dig` o `nslookup` (vea la [KBA de DNS](kba-cli-dns.md)) |
+| `host` | `dig` o `nslookup` (vea la [KBA de DNS](kba-15-dns-deep-dive.md)) |
 | `mtr` | `traceroute -n <host>` |
 
 Instaladas y listas: `ping` (la versión completa, con `-M do -s`), `traceroute`, `nc`, `curl`, `wget`, `openssl`,
@@ -238,7 +238,7 @@ firewall. Si la conexión no aparece, se descartó antes del seguimiento: revise
 
 ## Páginas relacionadas
 
-- [KBA: Solucionar problemas de DNS desde la línea de comandos](kba-cli-dns.md)
-- [KBA: Verificar y solucionar problemas de servicios desde la línea de comandos](kba-cli-services.md)
+- [KBA: Solucionar problemas de DNS desde la línea de comandos](kba-15-dns-deep-dive.md)
+- [KBA: Verificar y solucionar problemas de servicios desde la línea de comandos](kba-16-services.md)
 - [Herramientas de solución de problemas de red](network-troubleshooting-tools.md)
 - [Monitoreo de conexiones](../operation-analytics/monitor-connections.md)

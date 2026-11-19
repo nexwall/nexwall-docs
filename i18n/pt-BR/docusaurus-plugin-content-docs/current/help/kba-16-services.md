@@ -1,10 +1,10 @@
 ---
-title: "KBA: Verificar e solucionar problemas de serviços pela linha de comando"
-sidebar_position: 10
+title: "KBA-16: Verificar e solucionar problemas de serviços pela linha de comando"
+sidebar_position: 23
 description: Como saber se um serviço realmente está rodando, por que alguns dizem "not running" e estão bem, como ler o log e a configuração, reiniciar com segurança e usar os comandos de status de cada recurso.
 ---
 
-# KBA: Verificar e solucionar problemas de serviços pela linha de comando
+# KBA-16: Verificar e solucionar problemas de serviços pela linha de comando
 
 **Sintoma.** Um recurso do firewall (DNS, VPN, IPS, proteção web, o link com o controller) não se comporta bem e a
 interface web não diz por quê.
@@ -102,7 +102,7 @@ tcp   192.168.1.1:53     LISTEN   103916/dnsmasq
 ```
 
 Depois teste o serviço pela rede, como um cliente faria: `nc -zv -w3 <ip> <porta>` ou `dig @<ip> <nome>`. Veja a
-[KBA de conectividade](kba-cli-connectivity.md).
+[KBA de conectividade](kba-14-connectivity.md).
 
 ## 5. Leia o log
 
@@ -212,7 +212,7 @@ listas ou recursos de que não precisa. A página de filtragem de DNS mostra qua
 
 ## Páginas relacionadas
 
-- [KBA: Solucionar problemas de DNS pela linha de comando](kba-cli-dns.md)
-- [KBA: Testar conectividade, portas e tráfego pela linha de comando](kba-cli-connectivity.md)
+- [KBA: Solucionar problemas de DNS pela linha de comando](kba-15-dns-deep-dive.md)
+- [KBA: Testar conectividade, portas e tráfego pela linha de comando](kba-14-connectivity.md)
 - [Referência de comandos de serviços e logs](service-and-log-reference.md)
 - [Logs e depuração pela linha de comando](cli-logs-and-debugging.md)

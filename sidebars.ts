@@ -65,15 +65,39 @@ const sidebars: SidebarsConfig = {
   ],
   help: [
     'help/troubleshooting',
-    'help/install-from-image',
-    'help/command-line-and-faq',
-    'help/controller-registration-troubleshooting',
-    'help/teams-microsoft-365-signin',
-    'help/windows-offline-icon-sign-in',
-    'help/service-and-log-reference',
-    'help/understanding-uci',
-    'help/network-troubleshooting-tools',
-    'help/cli-logs-and-debugging'
+    'help/kba-01-health-check',
+    category('Access and internet', [
+      'help/kba-02-web-interface',
+      'help/kba-03-no-internet',
+      'help/kba-04-site-unreachable',
+      'help/kba-05-dns'
+    ]),
+    category('Features', [
+      'help/kba-06-vpn',
+      'help/kba-07-app-control',
+      'help/kba-08-slow',
+      'help/kba-09-charts-db',
+      'help/kba-10-updates'
+    ]),
+    category('Controller and clients', [
+      'help/controller-registration-troubleshooting',
+      'help/teams-microsoft-365-signin',
+      'help/windows-offline-icon-sign-in'
+    ]),
+    category('Command line in depth', [
+      'help/kba-14-connectivity',
+      'help/kba-15-dns-deep-dive',
+      'help/kba-16-services',
+      'help/kba-17-support-package'
+    ]),
+    category('Reference', [
+      'help/command-line-and-faq',
+      'help/cli-logs-and-debugging',
+      'help/network-troubleshooting-tools',
+      'help/service-and-log-reference',
+      'help/understanding-uci',
+      'help/install-from-image'
+    ])
   ]
 }
 

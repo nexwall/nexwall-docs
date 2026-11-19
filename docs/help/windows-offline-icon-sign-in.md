@@ -1,10 +1,10 @@
 ---
-title: Windows shows "no internet" and Microsoft sign-in fails
-sidebar_position: 5
+title: 'KBA-13: Windows shows "no internet" and Microsoft sign-in fails'
+sidebar_position: 27
 description: A Windows PC that reaches the firewall through a virtual adapter can show the offline icon, and Teams cannot sign in, while browsing works. What was checked, what was ruled out, and a workaround.
 ---
 
-# Windows shows "no internet" and Microsoft sign-in fails
+# KBA-13: Windows shows "no internet" and Microsoft sign-in fails
 
 **Applies to:** Windows 10 and 11 computers behind the firewall · **Audience:** administrators and support
 

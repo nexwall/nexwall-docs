@@ -1,10 +1,10 @@
 ---
-title: "KBA: Troubleshoot DNS from the command line"
-sidebar_position: 8
+title: "KBA-15: Troubleshoot DNS from the command line"
+sidebar_position: 22
 description: Step by step with dig and nslookup, how to tell a broken resolver from a name that does not exist, and what to check on dnsmasq, DNS filtering and the upstream servers.
 ---
 
-# KBA: Troubleshoot DNS from the command line
+# KBA-15: Troubleshoot DNS from the command line
 
 **Symptom.** A site or service "does not open", but pinging its IP address works. Or a name resolves from your
 laptop and not from the LAN.
@@ -14,7 +14,7 @@ laptop and not from the LAN.
 
 :::note What is installed
 `dig` and `nslookup` are installed and work out of the box. **`host` is not installed**, and neither is `telnet`
-(see the [connectivity KBA](kba-cli-connectivity.md) for the replacements). If a command says `not found`, check the
+(see the [connectivity KBA](kba-14-connectivity.md) for the replacements). If a command says `not found`, check the
 spelling and use `command -v <name>` before assuming a fault.
 :::
 
@@ -49,7 +49,7 @@ dig +short nexwall.com.br
 
 | `status` | Meaning | Next step |
 |---|---|---|
-| `NOERROR` with an answer | The name resolves | The problem is not DNS, go to the [connectivity KBA](kba-cli-connectivity.md) |
+| `NOERROR` with an answer | The name resolves | The problem is not DNS, go to the [connectivity KBA](kba-14-connectivity.md) |
 | `NOERROR` with **no** answer | The name exists but has no record of that type (for example, no `AAAA`) | Try `dig A <name>` and `dig AAAA <name>` |
 | `NXDOMAIN` | The name does not exist | Check the spelling, then compare with a public resolver (step 2) |
 | `SERVFAIL` | The upstream server could not answer | Test the upstream servers (step 3) |
@@ -184,8 +184,8 @@ line, which gives the final answer and where it came from.
 
 ## Related pages
 
-- [KBA: Test connectivity, ports and traffic from the command line](kba-cli-connectivity.md)
-- [KBA: Verify and troubleshoot services from the command line](kba-cli-services.md)
+- [KBA: Test connectivity, ports and traffic from the command line](kba-14-connectivity.md)
+- [KBA: Verify and troubleshoot services from the command line](kba-16-services.md)
 - [DNS and DHCP](../network/dns-dhcp.md)
 - [DNS filtering](../security-services/dns-filtering.md)
 - [Network troubleshooting tools](network-troubleshooting-tools.md)
