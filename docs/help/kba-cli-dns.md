@@ -179,7 +179,7 @@ line, which gives the final answer and where it came from.
 | Reverse lookup | `dig -x <ip>` |
 | Full path from the root | `dig +trace <name>` |
 | Same with `nslookup` | `nslookup <name>` or `nslookup <name> <server>` |
-| DNS over HTTPS | `dig +https <name>` |
+| DNS over HTTPS | `dig +https @8.8.8.8 <name>` |
 | Capture DNS traffic on the WAN | `tcpdump -i <wan-interface> -n udp port 53` |
 
 ## Related pages

@@ -22,19 +22,11 @@ This image is small on purpose. Some familiar tools are missing; use the replace
 | `ss` | `netstat -tulnp` (listening ports and the process behind each) |
 | `host` | `dig` or `nslookup` (see the [DNS KBA](kba-cli-dns.md)) |
 | `mtr` | `traceroute -n <host>` |
-| `opkg` | `apk` (see below) |
 
 Installed and ready: `ping` (the full version, with `-M do -s`), `traceroute`, `nc`, `curl`, `wget`, `openssl`,
 `tcpdump`, `netstat`, `lsof`, `fuser`, `conntrack`, `arping`, `arp-scan`, `ethtool`, `bwm-ng`, `dig`, `nslookup`.
 
-`iperf3`, `nmap` and `speedtestcpp` are optional packages in the unit's package feed:
-
-```bash
-apk update
-apk add iperf3
-```
-
-`apk update` needs the unit to reach its update server. Remove what you no longer need with `apk del <package>`.
+`speedtest` (SpeedTest++, a WAN speed test: download, upload and latency) is installed as well. `iperf3` and `nmap` are not part of the image, and you do not need to install anything to follow this article.
 
 ![Screenshot: dig, nslookup and nc are installed; telnet, ss and host are not](/img/screenshots/fw/cli/tools-missing.png)
 
@@ -242,7 +234,7 @@ If the connection does not appear at all, it was dropped before tracking: check 
 | What listens here? | `netstat -tulnp` |
 | What do the packets look like? | `tcpdump -i <if> -n host <ip>` |
 | Is it tracked and NATed? | `conntrack -L -d <ip>` |
-| Real throughput between two points | `apk add iperf3`, then `iperf3 -s` and `iperf3 -c <server>` |
+| WAN speed (download, upload, latency) | `speedtest` |
 
 ## Related pages
 

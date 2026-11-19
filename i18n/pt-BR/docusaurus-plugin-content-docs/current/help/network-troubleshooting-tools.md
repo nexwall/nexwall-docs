@@ -69,7 +69,7 @@ cada vez menores até um parar de precisar fragmentar, e essa é a MTU utilizáv
 | Resolver um nome usando o próprio resolvedor da unidade | `dig <nome>` |
 | Resolver usando um servidor específico, ignorando totalmente o resolvedor da unidade | `dig @<servidor> <nome>` |
 | Rastrear a resolução a partir da raiz | `dig +trace <nome>` |
-| Resolver via DNS sobre HTTPS | `dig +https <nome>` |
+| Resolver via DNS sobre HTTPS | `dig +https @8.8.8.8 <nome>` |
 
 Consultar `@1.1.1.1` ou `@8.8.8.8` diretamente diz se um nome realmente não resolve, ou se o problema é específico
 do resolvedor desta unidade — filtragem de DNS, um encaminhador mal configurado, ou o próprio `dnsmasq`. Veja a
@@ -126,13 +126,9 @@ caminho de rede está bloqueado" — uma conexão recusada é o primeiro caso, u
 | Tarefa | Comando |
 |---|---|
 | Visão ao vivo do throughput da interface | `bwm-ng` |
-| Teste de velocidade da WAN pela linha de comando | `speedtestcpp` (optional, `apk add speedtestcpp`) |
-| Teste de throughput controlado entre esta unidade e outro host | `iperf3` |
+| Teste de velocidade da WAN pela linha de comando | `speedtest` (download, upload e latência até o servidor de teste mais próximo) |
 
-`iperf3` e `nmap` são pacotes opcionais, não fazem parte da imagem padrão — instale primeiro com
-`apk update && apk add iperf3` (ou `nmap`). Rode `iperf3 -s` de um lado e `iperf3 -c <servidor>` do outro
-para medir o throughput real alcançável entre dois pontos específicos, o que separa um problema genuíno de banda ou
-link de algo específico da aplicação.
+Use o `speedtest` para a velocidade do link WAN e o `bwm-ng` para ver o que a unidade realmente está transportando. `iperf3` e `nmap` não fazem parte da imagem; para separar um problema do link de um problema da aplicação, compare o `speedtest` com os resultados de `ping` e `traceroute` e com os contadores da interface no `bwm-ng`.
 
 ## Juntando tudo
 
@@ -145,7 +141,7 @@ aplicação que na verdade é um cabo:
 4. **Firewall e NAT**: `nft list ruleset`, `conntrack -L` — o tráfego está permitido, e está sendo rastreado de
    fato?
 5. **DNS**: `dig @<resolvedor público>` — o nome resolve, independente desta unidade?
-6. **Aplicação**: `nc -zv`, `tcpdump`, `iperf3` — o serviço específico está alcançável, e o throughput é o
+6. **Aplicação**: `nc -zv`, `tcpdump` — o serviço específico está alcançável, e o throughput é o
    esperado?
 
 ## Páginas relacionadas

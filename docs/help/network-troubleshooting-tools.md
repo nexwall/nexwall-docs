@@ -67,7 +67,7 @@ sizes until one stops needing fragmentation, and that is the usable MTU for that
 | Resolve a name using the unit's own resolver | `dig <name>` |
 | Resolve using a specific server, bypassing the unit's resolver entirely | `dig @<server> <name>` |
 | Trace the resolution from the root down | `dig +trace <name>` |
-| Resolve over DNS-over-HTTPS | `dig +https <name>` |
+| Resolve over DNS-over-HTTPS | `dig +https @8.8.8.8 <name>` |
 
 Querying `@1.1.1.1` or `@8.8.8.8` directly tells you whether a name genuinely does not resolve, or whether the
 problem is specific to this unit's resolver — DNS filtering, a misconfigured forwarder, or `dnsmasq` itself. See
@@ -123,13 +123,9 @@ path itself is blocked" — a connection refused is the former, a timeout is the
 | Task | Command |
 |---|---|
 | Live view of interface throughput | `bwm-ng` |
-| WAN speed test from the command line | `speedtestcpp` (optional, `apk add speedtestcpp`) |
-| Controlled throughput test between this unit and another host | `iperf3` |
+| WAN speed test from the command line | `speedtest` (download, upload and latency to the nearest test server) |
 
-`iperf3` and `nmap` are optional packages, not part of the default image — install them first with
-`apk update && apk add iperf3` (or `nmap`). Run `iperf3 -s` on one side and `iperf3 -c <server>` on the other
-to measure real achievable throughput between two specific points, which separates a genuine bandwidth or link
-problem from something application-specific.
+Use `speedtest` for the speed of the WAN link and `bwm-ng` to watch what the unit is actually carrying. `iperf3` and `nmap` are not part of the image; to separate a link problem from an application one, compare `speedtest` with `ping` and `traceroute` results and with the interface counters in `bwm-ng`.
 
 ## Putting it together
 
@@ -142,7 +138,7 @@ symptom that is actually a cable:
 4. **Firewall and NAT**: `nft list ruleset`, `conntrack -L` — is the traffic allowed, and is it actually being
    tracked?
 5. **DNS**: `dig @<public resolver>` — does the name resolve at all, independent of this unit?
-6. **Application**: `nc -zv`, `tcpdump`, `iperf3` — is the specific service reachable, and is throughput what it
+6. **Application**: `nc -zv`, `tcpdump` — is the specific service reachable, and is throughput what it
    should be?
 
 ## Related pages

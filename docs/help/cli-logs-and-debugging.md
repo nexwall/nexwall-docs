@@ -59,29 +59,17 @@ is not backed by a separate log database.
 
 ## VictoriaLogs: what it is, and is not, used for here
 
-[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) is an optional package (`apk add
-victoria-logs`), not part of the default image. Installing it sets up everything needed in one step: the package
-also registers an `rsyslogd` forwarding rule, so once it's installed, every log message is sent on to it at
-`127.0.0.1:5514` over TCP (octet-counted framing) as `rsyslogd` processes it. What VictoriaLogs is **not**,
-currently, is wired into anything else: neither the web interface's Logs page nor the API queries it — the Logs
-page still works the way described above, straight off the plain-text file. If you install VictoriaLogs, you get
-everything `rsyslogd` sees from that point on, queryable yourself with its own query language, LogsQL, over HTTP on
-port 9428:
+[VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) is installed and running on the unit. It receives a copy of every log message from `rsyslogd` at `127.0.0.1:5514` over TCP (octet-counted framing) and answers queries over HTTP on port 9428, on the unit itself only. It is not wired into anything else: the web interface's Logs page still reads the plain-text file described above. Use it when you want LogsQL's filtering (time range, field, combined conditions) rather than a plain `grep`:
 
 ```bash
-apk update && apk add victoria-logs
-/etc/init.d/victoria-logs start
+/etc/init.d/victoria-logs status
 
 curl -s 'http://127.0.0.1:9428/select/logsql/query' \
   --data-urlencode 'query=openvpn' \
   --data-urlencode 'limit=20'
 ```
 
-This is worth doing if you want LogsQL's filtering (by time range, by field, combined conditions) rather than a
-plain `grep` — the exact field names available depend on the syslog template `rsyslogd` forwards with, so check a
-raw result first (drop `--data-urlencode 'limit=20'` down to `'limit=1'` to see one) before building a filtered
-query around a specific field. Either way, it is a tool you query yourself — not a second copy the GUI already
-shows.
+The exact field names depend on the syslog template `rsyslogd` forwards with, so check one raw result first (`limit=1`) before building a filtered query around a specific field. It is a tool you query yourself, not a second copy of what the web interface already shows.
 
 ## Turning up verbosity for a specific service
 

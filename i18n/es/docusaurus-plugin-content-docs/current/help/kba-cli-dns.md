@@ -179,7 +179,7 @@ línea, que da la respuesta final y de dónde vino.
 | Búsqueda inversa | `dig -x <ip>` |
 | Camino completo desde la raíz | `dig +trace <nombre>` |
 | Lo mismo con `nslookup` | `nslookup <nombre>` o `nslookup <nombre> <servidor>` |
-| DNS sobre HTTPS | `dig +https <nombre>` |
+| DNS sobre HTTPS | `dig +https @8.8.8.8 <nombre>` |
 | Capturar tráfico DNS en la WAN | `tcpdump -i <interfaz-wan> -n udp port 53` |
 
 ## Páginas relacionadas

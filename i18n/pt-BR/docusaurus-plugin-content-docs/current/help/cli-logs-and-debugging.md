@@ -60,29 +60,17 @@ Isso pesquisa diretamente em `/var/log/messages` (efetivamente `grep <busca> /va
 
 ## VictoriaLogs: para que serve, e não serve, aqui
 
-O [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) é um pacote opcional (`apk add
-victoria-logs`), fora da imagem padrão. Instalá-lo configura tudo que é preciso de uma vez: o pacote também
-registra uma regra de encaminhamento do `rsyslogd`, então assim que ele é instalado, toda mensagem de log passa a
-ser enviada para `127.0.0.1:5514` por TCP (com framing por contagem de octetos) conforme o `rsyslogd` a processa.
-O que o VictoriaLogs **não é**, atualmente, é algo conectado a mais nada: nem a página de Logs da interface web
-nem a API o consultam — a página de Logs continua funcionando do jeito descrito acima, direto do arquivo de texto
-simples. Se você instalar o VictoriaLogs, recebe tudo que o `rsyslogd` vê a partir daquele ponto, consultável por
-você mesmo com sua própria linguagem de consulta, LogsQL, por HTTP na porta 9428:
+O [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) já vem instalado e em execução na unidade. Ele recebe uma cópia de cada mensagem de log do `rsyslogd` em `127.0.0.1:5514` por TCP (com enquadramento por octetos) e responde consultas por HTTP na porta 9428, somente na própria unidade. Ele não está ligado a mais nada: a página de Logs da interface web continua lendo o arquivo de texto simples descrito acima. Use quando quiser a filtragem do LogsQL (intervalo de tempo, campo, condições combinadas) em vez de um simples `grep`:
 
 ```bash
-apk update && apk add victoria-logs
-/etc/init.d/victoria-logs start
+/etc/init.d/victoria-logs status
 
 curl -s 'http://127.0.0.1:9428/select/logsql/query' \
   --data-urlencode 'query=openvpn' \
   --data-urlencode 'limit=20'
 ```
 
-Vale a pena fazer isso se você quer a filtragem do LogsQL (por intervalo de tempo, por campo, condições
-combinadas) em vez de um `grep` simples — os nomes de campo exatos disponíveis dependem do modelo de syslog que o
-`rsyslogd` usa ao encaminhar, então confira um resultado bruto primeiro (baixe `--data-urlencode 'limit=20'` para
-`'limit=1'` para ver um) antes de montar uma consulta filtrada em torno de um campo específico. De qualquer forma,
-é uma ferramenta que você mesmo consulta — não uma segunda cópia que a interface já mostra.
+Os nomes exatos dos campos dependem do modelo de syslog com que o `rsyslogd` encaminha, então confira primeiro um resultado sem filtro (`limit=1`) antes de montar uma consulta filtrada sobre um campo específico. É uma ferramenta que você consulta, não uma segunda cópia do que a interface web já mostra.
 
 ## Aumentando a verbosidade de um serviço específico
 

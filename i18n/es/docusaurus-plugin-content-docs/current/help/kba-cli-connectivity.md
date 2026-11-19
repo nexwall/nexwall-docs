@@ -22,20 +22,11 @@ Esta imagen es pequeña a propósito. Faltan algunas herramientas conocidas; use
 | `ss` | `netstat -tulnp` (puertos en escucha y el proceso de cada uno) |
 | `host` | `dig` o `nslookup` (vea la [KBA de DNS](kba-cli-dns.md)) |
 | `mtr` | `traceroute -n <host>` |
-| `opkg` | `apk` (vea abajo) |
 
 Instaladas y listas: `ping` (la versión completa, con `-M do -s`), `traceroute`, `nc`, `curl`, `wget`, `openssl`,
 `tcpdump`, `netstat`, `lsof`, `fuser`, `conntrack`, `arping`, `arp-scan`, `ethtool`, `bwm-ng`, `dig`, `nslookup`.
 
-`iperf3`, `nmap` y `speedtestcpp` son paquetes opcionales del repositorio de la unidad:
-
-```bash
-apk update
-apk add iperf3
-```
-
-`apk update` requiere que la unidad alcance su servidor de actualizaciones. Quite lo que ya no necesite con
-`apk del <paquete>`.
+`speedtest` (SpeedTest++, una prueba de velocidad de la WAN: descarga, subida y latencia) también viene instalado. `iperf3` y `nmap` no forman parte de la imagen, y no necesita instalar nada para seguir este artículo.
 
 ![Captura: dig, nslookup y nc están instalados; telnet, ss y host no](/img/screenshots/fw/cli/tools-missing.png)
 
@@ -243,7 +234,7 @@ firewall. Si la conexión no aparece, se descartó antes del seguimiento: revise
 | ¿Qué escucha aquí? | `netstat -tulnp` |
 | ¿Cómo se ven los paquetes? | `tcpdump -i <if> -n host <ip>` |
 | ¿Se sigue y se aplica NAT? | `conntrack -L -d <ip>` |
-| Rendimiento real entre dos puntos | `apk add iperf3`, luego `iperf3 -s` y `iperf3 -c <servidor>` |
+| Velocidad de la WAN (descarga, subida, latencia) | `speedtest` |
 
 ## Páginas relacionadas
 

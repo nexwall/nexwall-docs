@@ -35,7 +35,6 @@ All commands run as `root` over SSH or the console.
 | High availability | `keepalived`, managed via `ns-ha-config` | do not restart `keepalived` directly, use `ns-ha-config`, see [High availability](../infrastructure/high-availability.md) | `keepalived` |
 | Web interface | `ns-ui` | `/etc/init.d/ns-ui restart` | `ns-ui` |
 | System log forwarding | `rsyslog` | `/etc/init.d/rsyslog restart` | — |
-| MSP monitoring agent | `check_mk_agent` | `/etc/init.d/check_mk_agent restart` | `check_mk_agent` |
 
 A `restart` interrupts the service briefly; a `reload`, where available, applies configuration without a full restart
 and is worth trying first on a production unit.
