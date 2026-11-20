@@ -11,8 +11,8 @@ description: Qué necesita para ejecutar una unidad y qué es la ISO del instala
 | Elemento | Requisito |
 |---|---|
 | Arquitectura | x86 de 64 bits (x86_64) |
-| Firmware | **UEFI**. El sistema instalado no arranca en BIOS heredado |
-| Memoria | Se recomiendan 4 GB. Los sistemas más pequeños pueden ejecutar el firewall básico, pero funciones como el sistema de prevención de intrusiones, el control de aplicaciones y la base de datos de métricas necesitan memoria |
+| Firmware | Se recomienda **UEFI**. La imagen también arranca en BIOS heredado (SeaBIOS, el valor por defecto de Proxmox y KVM). En hardware físico use UEFI |
+| Memoria | **Se recomiendan 4 GB.** 2 GB es el límite: el firewall básico funciona, pero el sistema ya usa swap y algunas listas de categorías del filtrado web no se pueden cargar, por lo que no use 2 GB en producción. Funciones como el sistema de prevención de intrusiones, el control de aplicaciones y la base de datos de métricas necesitan memoria |
 | Disco | 16 GB o más. 32 GB es un buen punto de partida; agregue más si quiere guardar registros y copias de seguridad localmente |
 | Red | Al menos dos interfaces de red, una para la WAN y otra para la LAN |
 | CPU | Dos núcleos o más. Más núcleos ayudan al inspeccionar tráfico a mayores velocidades |

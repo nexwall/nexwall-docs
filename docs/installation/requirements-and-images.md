@@ -11,8 +11,8 @@ description: What you need to run a unit, and what the installer ISO is.
 | Item | Requirement |
 |---|---|
 | Architecture | 64-bit x86 (x86_64) |
-| Firmware | **UEFI**. The installed system does not boot on legacy BIOS |
-| Memory | 4 GB recommended. Smaller systems can run the basic firewall, but features such as the intrusion prevention system, application control and the metrics database need memory |
+| Firmware | **UEFI** is recommended. The image also starts on legacy BIOS (SeaBIOS, the default of Proxmox and KVM). On physical hardware use UEFI |
+| Memory | **4 GB recommended.** 2 GB is the limit: the basic firewall runs, but the system already uses swap and some web filtering category lists cannot be loaded, so do not use 2 GB in production. Features such as the intrusion prevention system, application control and the metrics database need memory |
 | Disk | 16 GB or more. 32 GB is a comfortable start; add more if you want to keep logs and backups locally |
 | Network | At least two network interfaces, one for the WAN and one for the LAN |
 | CPU | Two cores or more. More cores help when inspecting traffic at higher speeds |

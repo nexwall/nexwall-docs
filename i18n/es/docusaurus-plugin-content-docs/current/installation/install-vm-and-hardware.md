@@ -63,7 +63,7 @@ Si la interfaz web no responde:
 
 ## En una máquina virtual
 
-La ISO funciona igual en todas las plataformas. Cree la máquina con firmware UEFI, **2 CPU o más, 4 GB de memoria, un disco
+La ISO funciona igual en todas las plataformas. Cree la máquina con firmware UEFI (recomendado; el BIOS heredado también funciona), **2 CPU o más, 4 GB de memoria, un disco
 virtual de 16 GB o más (32 GB es cómodo)** y **dos adaptadores de red**: el primero es la LAN, el segundo la WAN. Conecte la
 ISO como CD/DVD, arranque desde ella y siga el Paso 3. Terminada la instalación, desconecte la ISO.
 
@@ -83,11 +83,26 @@ Cambie el tipo de adaptador a E1000E en la configuración de la máquina.
 
 ### KVM, libvirt y Proxmox
 
-1. Cree una VM con firmware **UEFI (OVMF)**, dos o más vCPU, 4 GB de memoria, un disco de 16 GB o más y dos dispositivos de
-   red. En Proxmox use **BIOS: OVMF (UEFI)** y agregue un disco EFI con **Pre-Enroll keys** desactivado, para que Secure Boot
-   quede desactivado.
-2. Conecte la ISO como unidad de CD/DVD y póngala primera en el orden de arranque.
-3. Inicie la VM y siga el Paso 3. Al terminar, quite la ISO de la unidad.
+En Proxmox el mejor resultado se obtiene con una VM totalmente paravirtualizada (VirtIO para el disco y los adaptadores de red). Estos son los ajustes recomendados:
+
+| Ajuste | Valor |
+|---|---|
+| Memoria | **4 GB o más** (2 GB es el límite, vea [Requisitos](requirements-and-images.md)) |
+| Procesadores | 2 núcleos o más, 1 socket; tipo `x86-64-v2-AES` |
+| BIOS | SeaBIOS (por defecto) u OVMF (UEFI). Con OVMF agregue un disco EFI con **Pre-Enroll keys** desactivado, para que Secure Boot quede desactivado |
+| Máquina | i440fx (por defecto) |
+| Controlador SCSI | VirtIO SCSI single |
+| Disco duro | Bus **VirtIO Block**, **32 GB**, **IO thread** activado |
+| Unidad CD/DVD | La ISO de Nexwall, primera en el orden de arranque |
+| Red | Dos dispositivos **VirtIO (paravirtualizados)**: `net0` es la **LAN**, `net1` es la **WAN**. Ponga cada uno en **su propio bridge** |
+
+1. Cree la VM con estos ajustes e arránquela desde la ISO. Siga el Paso 3.
+2. Al terminar la instalación, quite la ISO de la unidad y reinicie.
+3. La LAN responde en `192.168.1.1` para un equipo o VM conectado al bridge de `net0`.
+
+:::warning No ponga los dos adaptadores en el mismo bridge
+El adaptador de la LAN (`net0`) y el de la WAN (`net1`) deben estar en bridges distintos. Use para la LAN un bridge sin puerto físico, o una VLAN, y para la WAN el bridge que llega a su red o a internet. Si ambos están en el mismo bridge, la LAN y la WAN comparten una sola red y `192.168.1.1` no es accesible como espera. Vea [KBA-0027](../help/kba-27-proxmox-kvm-install.md).
+:::
 
 ## Si el instalador informa de un problema
 

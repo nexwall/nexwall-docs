@@ -90,7 +90,8 @@ const sidebars: SidebarsConfig = {
       'help/kba-14-connectivity',
       'help/kba-15-dns-deep-dive',
       'help/kba-16-services',
-      'help/kba-17-support-package'
+      'help/kba-17-support-package',
+      'help/support-packets'
     ]),
     category('Inspection and performance', [
       'help/kba-18-fast-path',
@@ -113,6 +114,7 @@ const sidebars: SidebarsConfig = {
       'help/network-troubleshooting-tools',
       'help/service-and-log-reference',
       'help/understanding-uci',
+      'help/kba-27-proxmox-kvm-install',
       'help/install-from-image'
     ])
   ]

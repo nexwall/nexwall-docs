@@ -64,7 +64,7 @@ If the web interface does not answer:
 
 ## On a virtual machine
 
-The ISO works the same on every platform. Create the machine with UEFI firmware, **2 CPUs or more, 4 GB of memory,
+The ISO works the same on every platform. Create the machine with UEFI firmware (recommended; legacy BIOS also works), **2 CPUs or more, 4 GB of memory,
 a virtual disk of 16 GB or more (32 GB is comfortable)** and **two network adapters**: the first is the LAN, the second is
 the WAN. Attach the ISO as the CD/DVD, boot it, and follow Step 3. After the installation, detach the ISO.
 
@@ -84,11 +84,26 @@ Change the adapter type to E1000E in the machine settings.
 
 ### KVM, libvirt and Proxmox
 
-1. Create a VM with **UEFI (OVMF)** firmware, two or more vCPUs, 4 GB of memory, a disk of 16 GB or more and two network
-   devices. On Proxmox use **BIOS: OVMF (UEFI)** and add an EFI disk with **Pre-Enroll keys** turned off, so that Secure
-   Boot is off.
-2. Attach the ISO as the CD/DVD drive and put it first in the boot order.
-3. Start the VM and follow Step 3. When it finishes, remove the ISO from the drive.
+On Proxmox the best result comes from a fully paravirtualized VM (VirtIO for the disk and the network adapters). These are the recommended settings:
+
+| Setting | Value |
+|---|---|
+| Memory | **4 GB or more** (2 GB is the limit, see [Requirements](requirements-and-images.md)) |
+| Processors | 2 cores or more, 1 socket; type `x86-64-v2-AES` |
+| BIOS | SeaBIOS (the default) or OVMF (UEFI). With OVMF add an EFI disk with **Pre-Enroll keys** turned off, so that Secure Boot is off |
+| Machine | i440fx (the default) |
+| SCSI controller | VirtIO SCSI single |
+| Hard disk | Bus **VirtIO Block**, **32 GB**, **IO thread** on |
+| CD/DVD drive | The Nexwall ISO, first in the boot order |
+| Network | Two **VirtIO (paravirtualized)** devices: `net0` is the **LAN**, `net1` is the **WAN**. Put each one on its **own bridge** |
+
+1. Create the VM with these settings and start it from the ISO. Follow Step 3.
+2. When the installation finishes, remove the ISO from the drive and restart.
+3. The LAN answers on `192.168.1.1` for a computer or VM connected to the bridge of `net0`.
+
+:::warning Do not put both adapters on the same bridge
+The LAN adapter (`net0`) and the WAN adapter (`net1`) must be on different bridges. Use a bridge without a physical port, or a VLAN, for the LAN, and the bridge that reaches your network or the internet for the WAN. If both are on the same bridge the LAN and the WAN share one network, and `192.168.1.1` is not reachable the way you expect. See [KBA-0027](../help/kba-27-proxmox-kvm-install.md).
+:::
 
 ## If the installer reports a problem
 
