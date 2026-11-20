@@ -31,7 +31,7 @@ The page lists every port with its zone, MAC address, traffic counters and link 
 ## Check that it worked
 
 - The row shows **Up** with the new address.
-- Ping the new gateway from a client of the network, or use [KBA-14](../../help/kba-14-connectivity.md).
+- Ping the new gateway from a client of the network, or use [KBA-0014](../../help/kba-14-connectivity.md).
 
 ## If it does not work
 

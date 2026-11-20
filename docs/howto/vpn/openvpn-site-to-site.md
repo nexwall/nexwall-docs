@@ -35,7 +35,7 @@ One firewall acts as the tunnel server and the other as the client. The server e
 
 - Not connected: UDP port not reachable at the server. Test from outside.
 - Connected, no traffic: missing firewall rule, overlapping networks, or a missing route on the hosts.
-- See [KBA-06](../../help/kba-06-vpn.md).
+- See [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Related guides
 

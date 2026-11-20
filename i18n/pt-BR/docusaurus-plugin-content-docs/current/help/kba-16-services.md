@@ -1,10 +1,10 @@
 ---
-title: "KBA-16: Verificar e solucionar problemas de serviços pela linha de comando"
+title: "KBA-0016: Verificar e solucionar problemas de serviços pela linha de comando"
 sidebar_position: 23
 description: Como saber se um serviço realmente está rodando, por que alguns dizem "not running" e estão bem, como ler o log e a configuração, reiniciar com segurança e usar os comandos de status de cada recurso.
 ---
 
-# KBA-16: Verificar e solucionar problemas de serviços pela linha de comando
+# KBA-0016: Verificar e solucionar problemas de serviços pela linha de comando
 
 **Sintoma.** Um recurso do firewall (DNS, VPN, IPS, proteção web, o link com o controller) não se comporta bem e a
 interface web não diz por quê.

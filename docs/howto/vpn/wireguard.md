@@ -30,7 +30,7 @@ WireGuard is fast and simple. A server tunnel serves many peers; a peer tunnel c
 
 - No handshake: the UDP port is not reachable or the keys do not match.
 - Handshake but no traffic: rules or the allowed networks of the peer.
-- See [KBA-06](../../help/kba-06-vpn.md).
+- See [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Related guides
 

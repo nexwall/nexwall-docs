@@ -1,14 +1,14 @@
 ---
-title: 'KBA-19: Ajustes de inspección: Control de aplicaciones (DPI) e IPS'
+title: 'KBA-0019: Ajustes de inspección: Control de aplicaciones (DPI) e IPS'
 sidebar_position: 29
 description: 'Todos los ajustes de las pestañas Ajustes de Control de aplicaciones e IPS: nombre UCI, valor por defecto y efecto.'
 ---
 
-# KBA-19: Ajustes de inspección: Control de aplicaciones (DPI) e IPS
+# KBA-0019: Ajustes de inspección: Control de aplicaciones (DPI) e IPS
 
 Ambos motores leen paquetes de colas del kernel y comparten la CPU con el reenvío. Estos controles deciden cuánta CPU usan, qué pasa cuando no dan abasto y cómo reacciona el IPS ante una coincidencia. Los valores por defecto sirven para la mayoría de los firewalls. Cada ajuste de la interfaz se guarda como cambio pendiente: presione **Aplicar cambios** después.
 
-**Aplica a.** Nexwall Firewall 26.2.1. Para dimensionar y medir vea [KBA-20](kba-20-throughput-sizing.md).
+**Aplica a.** Nexwall Firewall 26.2.1. Para dimensionar y medir vea [KBA-0020](kba-20-throughput-sizing.md).
 
 ## Dónde está cada ajuste
 
@@ -60,7 +60,7 @@ Ambos motores leen paquetes de colas del kernel y comparten la CPU con el reenv�
 ![Control de aplicaciones > Ajustes: opciones de rendimiento](/img/screenshots/kba/es/dpi-performance.png)
 *Control de aplicaciones > Ajustes: opciones de rendimiento*
 
-**Fast path.** Reenvía el resto de las transferencias largas por la tabla de flujos del kernel después de que los motores terminaron con ellas (detalles, comandos y solución de problemas: [KBA-18](kba-18-fast-path.md)). Activo por defecto en instalaciones nuevas (solo toca conexiones que los motores ya terminaron); desactívelo si necesita que cada paquete de las conexiones largas se inspeccione o que un cambio de regla llegue de inmediato a las conexiones existentes.
+**Fast path.** Reenvía el resto de las transferencias largas por la tabla de flujos del kernel después de que los motores terminaron con ellas (detalles, comandos y solución de problemas: [KBA-0018](kba-18-fast-path.md)). Activo por defecto en instalaciones nuevas (solo toca conexiones que los motores ya terminaron); desactívelo si necesita que cada paquete de las conexiones largas se inspeccione o que un cambio de regla llegue de inmediato a las conexiones existentes.
 
 **Repartir el procesamiento de red entre núcleos (packet steering).** Permite que todos los núcleos procesen paquetes de red en vez de casi solo uno. Ayuda a firewalls con varios núcleos y tarjetas de red con **una sola cola de recepción** (tarjetas virtuales, muchas placas pequeñas); las tarjetas de servidor multicola ya reparten la carga. Sin efecto en equipos de un solo núcleo. Compruebe el efecto con `cat /sys/class/net/<wan>/queues/rx-0/rps_cpus` (una máscara con más de un bit) y `top` (carga en varios núcleos).
 

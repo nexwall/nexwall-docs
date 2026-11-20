@@ -1,10 +1,10 @@
 ---
-title: 'KBA-26: Licencias, suscripciones y registro'
+title: 'KBA-0026: Licencias, suscripciones y registro'
 sidebar_position: 36
 description: 'Cómo una unidad obtiene su licencia, la prueba, las suscripciones y cómo resolver los errores comunes.'
 ---
 
-# KBA-26: Licencias, suscripciones y registro
+# KBA-0026: Licencias, suscripciones y registro
 
 **Aplica a.** Nexwall Firewall 26.0.0 y posteriores (comandos verificados en 26.2.1).
 

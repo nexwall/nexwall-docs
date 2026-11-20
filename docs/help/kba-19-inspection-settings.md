@@ -1,16 +1,16 @@
 ---
-title: 'KBA-19: Inspection settings: Application Control (DPI) and IPS'
+title: 'KBA-0019: Inspection settings: Application Control (DPI) and IPS'
 sidebar_position: 29
 description: 'Every setting of the Application Control and IPS Settings tabs, its UCI name, default and effect.'
 ---
 
-# KBA-19: Inspection settings: Application Control (DPI) and IPS
+# KBA-0019: Inspection settings: Application Control (DPI) and IPS
 
 Both engines read packets from kernel queues and share the CPU with forwarding. These are the controls that decide how much
 CPU they use, what happens when they cannot keep up, and how the IPS reacts to a match. The defaults suit most firewalls.
 Every UI setting is saved as a pending change: press **Apply changes** afterwards.
 
-**Applies to.** Nexwall Firewall 26.2.1. To size and measure see [KBA-20](kba-20-throughput-sizing.md).
+**Applies to.** Nexwall Firewall 26.2.1. To size and measure see [KBA-0020](kba-20-throughput-sizing.md).
 
 ## Where each setting is
 
@@ -83,7 +83,7 @@ if Snort rejects it, the previous rules stay. See *IPS > Settings > Signatures* 
 *Application Control > Settings: performance options*
 
 **Fast path.** Forwards the rest of long transfers through the kernel flow table after the engines are done with them
-(details, commands and troubleshooting: [KBA-18](kba-18-fast-path.md)). On by default on new installations (it only touches connections the engines are finished with); turn it off if you need
+(details, commands and troubleshooting: [KBA-0018](kba-18-fast-path.md)). On by default on new installations (it only touches connections the engines are finished with); turn it off if you need
 every packet of long connections to be inspected or a rule change to reach existing connections at once.
 
 **Spread network processing across CPU cores (packet steering).** Lets all cores process network packets instead of mostly

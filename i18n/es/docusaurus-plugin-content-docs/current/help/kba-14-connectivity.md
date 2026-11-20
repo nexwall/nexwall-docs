@@ -1,10 +1,10 @@
 ---
-title: "KBA-14: Probar conectividad, puertos y tráfico desde la línea de comandos"
+title: "KBA-0014: Probar conectividad, puertos y tráfico desde la línea de comandos"
 sidebar_position: 21
 description: Ping, MTU, traceroute, pruebas de puerto sin telnet, puertos en escucha, captura de paquetes y seguimiento de conexiones, capa por capa, con las herramientas que realmente trae esta unidad.
 ---
 
-# KBA-14: Probar conectividad, puertos y tráfico desde la línea de comandos
+# KBA-0014: Probar conectividad, puertos y tráfico desde la línea de comandos
 
 **Síntoma.** Un usuario no alcanza un servidor, un servicio publicado no responde, o una VPN es lenta o pierde
 paquetes grandes.

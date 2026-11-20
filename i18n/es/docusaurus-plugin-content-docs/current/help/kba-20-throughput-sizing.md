@@ -1,12 +1,12 @@
 ---
-title: 'KBA-20: Rendimiento, CPU y memoria: cómo medir y dimensionar'
+title: 'KBA-0020: Rendimiento, CPU y memoria: cómo medir y dimensionar'
 sidebar_position: 30
 description: 'Revise colas, CPU y tabla de conexiones, elija ajustes iniciales según el hardware y lea las mediciones de laboratorio.'
 ---
 
-# KBA-20: Rendimiento, CPU y memoria: cómo medir y dimensionar
+# KBA-0020: Rendimiento, CPU y memoria: cómo medir y dimensionar
 
-Úselo cuando el firewall va lento bajo inspección, pierde paquetes en ráfagas o necesita dimensionar una unidad nueva. Los ajustes se explican en [KBA-19](kba-19-inspection-settings.md).
+Úselo cuando el firewall va lento bajo inspección, pierde paquetes en ráfagas o necesita dimensionar una unidad nueva. Los ajustes se explican en [KBA-0019](kba-19-inspection-settings.md).
 
 **Aplica a.** Nexwall Firewall 26.2.1.
 

@@ -13,7 +13,7 @@ The IPS inspects traffic for attacks. Start with the balanced policy and raise i
 ## Before you start
 
 - An active subscription (the page reports if the license is missing).
-- Enough memory: see [KBA-20](../../help/kba-20-throughput-sizing.md).
+- Enough memory: see [KBA-0020](../../help/kba-20-throughput-sizing.md).
 
 ## Steps
 
@@ -32,7 +32,7 @@ The IPS inspects traffic for attacks. Start with the balanced policy and raise i
 
 ## If it does not work
 
-- Throughput dropped: [KBA-19](../../help/kba-19-inspection-settings.md) and [KBA-20](../../help/kba-20-throughput-sizing.md).
+- Throughput dropped: [KBA-0019](../../help/kba-19-inspection-settings.md) and [KBA-0020](../../help/kba-20-throughput-sizing.md).
 - A legitimate service blocked: find the rule in the event list and use **Disabled rules** or the bypass.
 
 ## Related guides

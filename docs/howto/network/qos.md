@@ -31,7 +31,7 @@ QoS keeps latency low when the link is full. It needs the real speed of the link
 ## If it does not work
 
 - Speed lower than expected: raise the values in small steps.
-- A slow link with fast-path active: see [KBA-18](../../help/kba-18-fast-path.md).
+- A slow link with fast-path active: see [KBA-0018](../../help/kba-18-fast-path.md).
 
 ## Related guides
 

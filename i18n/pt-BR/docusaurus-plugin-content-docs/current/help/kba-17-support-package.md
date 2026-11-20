@@ -1,10 +1,10 @@
 ---
-title: "KBA-17: Coletar um pacote de suporte"
+title: "KBA-0017: Coletar um pacote de suporte"
 sidebar_position: 24
 description: Crie um arquivo com o estado e os logs recentes da unidade, sem senhas nem chaves, para anexar a um pedido de suporte.
 ---
 
-# KBA-17: Coletar um pacote de suporte
+# KBA-0017: Coletar um pacote de suporte
 
 **Sintoma.** O suporte pediu "logs" ou "diagnóstico", ou você quer guardar evidências de um problema antes de alterar algo.
 
@@ -48,4 +48,4 @@ rm -rf /tmp/support-*
 
 ## Relacionado
 
-[KBA-01 verificação de saúde](kba-01-health-check.md), [KBA-16 serviços](kba-16-services.md), [Logs e depuração](cli-logs-and-debugging.md).
+[KBA-0001 verificação de saúde](kba-01-health-check.md), [KBA-0016 serviços](kba-16-services.md), [Logs e depuração](cli-logs-and-debugging.md).

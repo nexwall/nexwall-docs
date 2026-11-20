@@ -1,10 +1,10 @@
 ---
-title: "KBA-14: Test connectivity, ports and traffic from the command line"
+title: "KBA-0014: Test connectivity, ports and traffic from the command line"
 sidebar_position: 21
 description: Ping, MTU, traceroute, port tests without telnet, listening ports, packet capture and connection tracking, layer by layer, with the tools this unit really ships.
 ---
 
-# KBA-14: Test connectivity, ports and traffic from the command line
+# KBA-0014: Test connectivity, ports and traffic from the command line
 
 **Symptom.** A user cannot reach a server, a published service does not answer, or a VPN is slow or drops large
 packets.

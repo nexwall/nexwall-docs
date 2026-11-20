@@ -32,7 +32,7 @@ DNS Filtering stops clients from resolving known malicious domains using blockli
 ## If it does not work
 
 - A good site is blocked: add its domain to the local allowlist.
-- Lists do not load: [KBA-23](../../help/kba-23-threat-shield-troubleshooting.md) and [KBA-24](../../help/kba-24-threat-shield-lists.md).
+- Lists do not load: [KBA-0023](../../help/kba-23-threat-shield-troubleshooting.md) and [KBA-0024](../../help/kba-24-threat-shield-lists.md).
 
 ## Related guides
 

@@ -35,7 +35,7 @@ Um firewall atua como servidor do túnel e o outro como cliente. O servidor expo
 
 - Não conectado: a porta UDP não está acessível no servidor. Teste de fora.
 - Conectado, sem tráfego: falta regra de firewall, redes sobrepostas ou falta rota nos hosts.
-- Veja [KBA-06](../../help/kba-06-vpn.md).
+- Veja [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Guias relacionados
 

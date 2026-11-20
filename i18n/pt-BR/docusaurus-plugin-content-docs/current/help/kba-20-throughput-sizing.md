@@ -1,12 +1,12 @@
 ---
-title: 'KBA-20: Vazão, CPU e memória: como medir e dimensionar'
+title: 'KBA-0020: Vazão, CPU e memória: como medir e dimensionar'
 sidebar_position: 30
 description: 'Verifique filas, CPU e tabela de conexões, escolha configurações iniciais por hardware e leia as medições de laboratório.'
 ---
 
-# KBA-20: Vazão, CPU e memória: como medir e dimensionar
+# KBA-0020: Vazão, CPU e memória: como medir e dimensionar
 
-Use quando o firewall está lento sob inspeção, perde pacotes em rajadas ou você precisa dimensionar uma unidade nova. As configurações são explicadas no [KBA-19](kba-19-inspection-settings.md).
+Use quando o firewall está lento sob inspeção, perde pacotes em rajadas ou você precisa dimensionar uma unidade nova. As configurações são explicadas no [KBA-0019](kba-19-inspection-settings.md).
 
 **Aplica-se a.** Nexwall Firewall 26.2.1.
 

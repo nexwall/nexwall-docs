@@ -29,7 +29,7 @@ El bloqueo de IP y geolocalización descarta el tráfico desde y hacia direccion
 ## Si no funciona
 
 - Un socio no puede conectar: añada su dirección a la lista local de permitidos.
-- Las listas no se actualizan: [KBA-24](../../help/kba-24-threat-shield-lists.md).
+- Las listas no se actualizan: [KBA-0024](../../help/kba-24-threat-shield-lists.md).
 
 ## Guías relacionadas
 

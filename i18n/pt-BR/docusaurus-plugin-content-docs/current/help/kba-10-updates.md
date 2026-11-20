@@ -1,10 +1,10 @@
 ---
-title: 'KBA-10: Atualizações falham'
+title: 'KBA-0010: Atualizações falham'
 sidebar_position: 20
 description: Leia o erro de atualização e verifique assinatura, conectividade e hora.
 ---
 
-# KBA-10: Atualizações falham
+# KBA-0010: Atualizações falham
 
 **Sintoma.** Uma atualização ou download de listas falha.
 
@@ -25,4 +25,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Internet ou DNS falha: [KBA-03](kba-03-no-internet.md) ou [KBA-05](kba-05-dns.md). Nada explica: [KBA-17](kba-17-support-package.md).
+Internet ou DNS falha: [KBA-0003](kba-03-no-internet.md) ou [KBA-0005](kba-05-dns.md). Nada explica: [KBA-0017](kba-17-support-package.md).

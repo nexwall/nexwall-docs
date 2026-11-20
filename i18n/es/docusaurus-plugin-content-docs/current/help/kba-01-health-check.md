@@ -1,10 +1,10 @@
 ---
-title: "KBA-01: Chequeo de salud en 5 minutos"
+title: "KBA-0001: Chequeo de salud en 5 minutos"
 sidebar_position: 11
 description: Un script que muestra disco, memoria, enlaces, internet, DNS, controlador y tabla de conexiones, y cómo leer cada línea. Empiece aquí ante cualquier problema.
 ---
 
-# KBA-01: Chequeo de salud en 5 minutos
+# KBA-0001: Chequeo de salud en 5 minutos
 
 **Síntoma.** Algo falla y no sabe por dónde empezar, o quiere confirmar que la unidad está sana después de un cambio.
 
@@ -37,14 +37,14 @@ Ejemplo de salida de una unidad sana:
 |---|---|---|
 | `DISK` | `/` por debajo de 85% usado | Limpie logs y respaldos antiguos; vea [Logs](../operation-analytics/logs.md). Un disco lleno detiene servicios. |
 | `MEMORY` | `available` es más del 10% de `total` | Fuga o demasiadas funciones en una unidad pequeña. Vea [Rendimiento](../operation-analytics/performance.md). |
-| `LINKS` | WAN y LAN en `UP` con dirección | WAN sin dirección: vaya a [KBA-03](kba-03-no-internet.md). |
-| `DEFAULT ROUTE` | Una línea `default via` por WAN | Ausente: la WAN no recibió gateway. [KBA-03](kba-03-no-internet.md). |
-| `INTERNET` | 0% de pérdida | Pérdida o sin respuesta: [KBA-03](kba-03-no-internet.md). |
-| `DNS` | Se imprime una dirección IP | Vacío: [KBA-05](kba-05-dns.md). |
+| `LINKS` | WAN y LAN en `UP` con dirección | WAN sin dirección: vaya a [KBA-0003](kba-03-no-internet.md). |
+| `DEFAULT ROUTE` | Una línea `default via` por WAN | Ausente: la WAN no recibió gateway. [KBA-0003](kba-03-no-internet.md). |
+| `INTERNET` | 0% de pérdida | Pérdida o sin respuesta: [KBA-0003](kba-03-no-internet.md). |
+| `DNS` | Se imprime una dirección IP | Vacío: [KBA-0005](kba-05-dns.md). |
 | `CONTROLLER` | `"status": "connected"` | Sin conexión: [Registro en el controlador](controller-registration-troubleshooting.md). |
 | `CONNTRACK` | "now" muy por debajo de "max" | Cerca del máximo: un cliente inunda conexiones; ubíquelo en [Conexiones](../operation-analytics/monitor-connections.md). |
 | `CRITICAL ERRORS` | No se imprime nada | Lea las líneas y envíelas con el [paquete de soporte](kba-17-support-package.md). |
 
 ## Siguiente paso
 
-¿Todo sano y el problema continúa? Probablemente es un solo servicio o un solo destino: use [KBA-16](kba-16-services.md). ¿Duda? Recoja el [paquete de soporte (KBA-17)](kba-17-support-package.md).
+¿Todo sano y el problema continúa? Probablemente es un solo servicio o un solo destino: use [KBA-0016](kba-16-services.md). ¿Duda? Recoja el [paquete de soporte (KBA-0017)](kba-17-support-package.md).

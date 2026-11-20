@@ -38,7 +38,7 @@ Una redirección de puertos publica un servicio, como un servidor web, que funci
 
 - Funciona desde fuera pero no desde la LAN: active **Hairpin NAT** para la zona LAN.
 - Sin respuesta: el firewall del servidor o su puerta de enlace. El servidor debe usar el firewall como puerta de enlace.
-- Revise la ruta con [KBA-14](../../help/kba-14-connectivity.md).
+- Revise la ruta con [KBA-0014](../../help/kba-14-connectivity.md).
 
 ## Guías relacionadas
 

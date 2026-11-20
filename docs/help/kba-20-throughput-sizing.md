@@ -1,12 +1,12 @@
 ---
-title: 'KBA-20: Throughput, CPU and memory: how to measure and size'
+title: 'KBA-0020: Throughput, CPU and memory: how to measure and size'
 sidebar_position: 30
 description: 'Check queues, CPU and connection table, pick starting settings by hardware, and read the lab measurements.'
 ---
 
-# KBA-20: Throughput, CPU and memory: how to measure and size
+# KBA-0020: Throughput, CPU and memory: how to measure and size
 
-Use this when the firewall is slow under inspection, drops packets in bursts, or you need to size a new unit. Settings are explained in [KBA-19](kba-19-inspection-settings.md).
+Use this when the firewall is slow under inspection, drops packets in bursts, or you need to size a new unit. Settings are explained in [KBA-0019](kba-19-inspection-settings.md).
 
 **Applies to.** Nexwall Firewall 26.2.1.
 

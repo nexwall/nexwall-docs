@@ -28,7 +28,7 @@ Las actualizaciones conservan su configuración. Haga siempre una copia antes ([
 
 ## Si no funciona
 
-- Falla la actualización: revise espacio y conectividad, vea [KBA-10](../../help/kba-10-updates.md).
+- Falla la actualización: revise espacio y conectividad, vea [KBA-0010](../../help/kba-10-updates.md).
 - Tras la actualización algo falla: restaure la copia ([Cómo hacer copia de seguridad y restaurar la configuración](backup-restore.md)).
 
 ## Guías relacionadas

@@ -27,7 +27,7 @@ La unidad se registra en el servidor de licencias. Una suscripción desbloquea e
 
 ## Si no funciona
 
-- No sincroniza: el firewall necesita HTTPS saliente. Revise [KBA-26](../../help/kba-26-licensing.md).
+- No sincroniza: el firewall necesita HTTPS saliente. Revise [KBA-0026](../../help/kba-26-licensing.md).
 
 ## Guías relacionadas
 

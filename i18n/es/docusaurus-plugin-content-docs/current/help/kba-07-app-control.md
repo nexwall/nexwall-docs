@@ -1,10 +1,10 @@
 ---
-title: 'KBA-07: El control de aplicaciones no hace nada'
+title: 'KBA-0007: El control de aplicaciones no hace nada'
 sidebar_position: 17
 description: Por qué una regla de aplicación no bloquea ni limita el tráfico.
 ---
 
-# KBA-07: El control de aplicaciones no hace nada
+# KBA-0007: El control de aplicaciones no hace nada
 
 **Síntoma.** Una regla de aplicación está activa pero el tráfico sigue pasando.
 
@@ -25,4 +25,4 @@ Comprobaciones de solo lectura salvo que se indique. Los comandos se ejecutan co
 
 ## ¿No se resolvió?
 
-Servicio detenido o poca memoria: [KBA-16](kba-16-services.md) y [KBA-08](kba-08-slow.md).
+Servicio detenido o poca memoria: [KBA-0016](kba-16-services.md) y [KBA-0008](kba-08-slow.md).

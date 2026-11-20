@@ -1,10 +1,10 @@
 ---
-title: 'KBA-06: A VPN does not connect'
+title: 'KBA-0006: A VPN does not connect'
 sidebar_position: 16
 description: Match the VPN symptom to the setting that causes it (IPsec, WireGuard, OpenVPN).
 ---
 
-# KBA-06: A VPN does not connect
+# KBA-0006: A VPN does not connect
 
 **Symptom.** A tunnel does not come up, or comes up and carries nothing.
 
@@ -27,4 +27,4 @@ Read-only checks unless said otherwise. Commands run as `root` over SSH, the con
 
 ## Not solved?
 
-Search the [Logs](../operation-analytics/logs.md) for the VPN service name. Commands per feature: [KBA-16](kba-16-services.md#8-feature-specific-status).
+Search the [Logs](../operation-analytics/logs.md) for the VPN service name. Commands per feature: [KBA-0016](kba-16-services.md#8-feature-specific-status).

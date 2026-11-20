@@ -32,7 +32,7 @@ El certificado de fábrica es autofirmado y los navegadores avisan. Un certifica
 ## Si no funciona
 
 - La validación falla: puerto 80 bloqueado o el nombre no apunta al firewall.
-- Persisten los avisos: [KBA-25](../../help/kba-25-web-certificate.md).
+- Persisten los avisos: [KBA-0025](../../help/kba-25-web-certificate.md).
 
 ## Guías relacionadas
 

@@ -1,14 +1,14 @@
 ---
-title: 'KBA-19: Configurações de inspeção: Controle de aplicações (DPI) e IPS'
+title: 'KBA-0019: Configurações de inspeção: Controle de aplicações (DPI) e IPS'
 sidebar_position: 29
 description: 'Todas as configurações das abas Configurações do Controle de aplicações e do IPS: nome UCI, padrão e efeito.'
 ---
 
-# KBA-19: Configurações de inspeção: Controle de aplicações (DPI) e IPS
+# KBA-0019: Configurações de inspeção: Controle de aplicações (DPI) e IPS
 
 Os dois motores leem pacotes de filas do kernel e dividem a CPU com o encaminhamento. Estes controles decidem quanta CPU usam, o que acontece quando não dão conta e como o IPS reage a uma correspondência. Os padrões servem para a maioria dos firewalls. Cada configuração da interface é salva como alteração pendente: pressione **Aplicar alterações** depois.
 
-**Aplica-se a.** Nexwall Firewall 26.2.1. Para dimensionar e medir veja [KBA-20](kba-20-throughput-sizing.md).
+**Aplica-se a.** Nexwall Firewall 26.2.1. Para dimensionar e medir veja [KBA-0020](kba-20-throughput-sizing.md).
 
 ## Onde fica cada configuração
 
@@ -60,7 +60,7 @@ Os dois motores leem pacotes de filas do kernel e dividem a CPU com o encaminham
 ![Controle de aplicações > Configurações: opções de desempenho](/img/screenshots/kba/pt-BR/dpi-performance.png)
 *Controle de aplicações > Configurações: opções de desempenho*
 
-**Fast path.** Encaminha o resto das transferências longas pela tabela de fluxos do kernel depois que os motores terminam com elas (detalhes, comandos e solução de problemas: [KBA-18](kba-18-fast-path.md)). Ligado por padrão em instalações novas (só toca conexões que os motores já terminaram); desligue se precisar que todo pacote de conexões longas seja inspecionado ou que uma mudança de regra chegue de imediato às conexões existentes.
+**Fast path.** Encaminha o resto das transferências longas pela tabela de fluxos do kernel depois que os motores terminam com elas (detalhes, comandos e solução de problemas: [KBA-0018](kba-18-fast-path.md)). Ligado por padrão em instalações novas (só toca conexões que os motores já terminaram); desligue se precisar que todo pacote de conexões longas seja inspecionado ou que uma mudança de regra chegue de imediato às conexões existentes.
 
 **Distribuir o processamento de rede entre núcleos (packet steering).** Deixa todos os núcleos processarem pacotes de rede em vez de quase só um. Ajuda firewalls com vários núcleos e placas de rede com **uma única fila de recepção** (placas virtuais, muitas placas pequenas); placas de servidor multifila já distribuem a carga. Sem efeito em equipamentos de um núcleo. Verifique o efeito com `cat /sys/class/net/<wan>/queues/rx-0/rps_cpus` (uma máscara com mais de um bit) e `top` (carga em vários núcleos).
 

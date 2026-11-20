@@ -24,7 +24,7 @@ The firewall answers DNS for the LAN. It forwards unknown names to upstream serv
 
 ## If it does not work
 
-- Names do not resolve: [KBA-05](../../help/kba-05-dns.md) and [KBA-15](../../help/kba-15-dns-deep-dive.md).
+- Names do not resolve: [KBA-0005](../../help/kba-05-dns.md) and [KBA-0015](../../help/kba-15-dns-deep-dive.md).
 - A public name must resolve to a private address for internal users only: create the record here.
 
 ## Related guides

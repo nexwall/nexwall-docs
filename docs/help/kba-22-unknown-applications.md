@@ -1,10 +1,10 @@
 ---
-title: 'KBA-22: Traffic shows as "Unknown" or an application is not blocked by Application Control (DPI)'
+title: 'KBA-0022: Traffic shows as "Unknown" or an application is not blocked by Application Control (DPI)'
 sidebar_position: 32
 description: 'Why flows show as Unknown or an application is not blocked, how to check the catalog and what to do.'
 ---
 
-# KBA-22: Traffic shows as "Unknown" or an application is not blocked by Application Control (DPI)
+# KBA-0022: Traffic shows as "Unknown" or an application is not blocked by Application Control (DPI)
 
 **Applies to.** Nexwall Firewall 26.0.0 and later (commands checked on 26.2.1).
 
@@ -67,4 +67,4 @@ always replaced by the built-in list.
 - Changing a DPI rule takes effect within seconds (the engine reloads the rules; no restart). A connection that was already
   blocked stays blocked until it ends, even if the rule is removed.
 - After a firmware upgrade the catalog is reinstalled automatically.
-- Related: [KBA-21](kba-21-dpi-engine-stall.md).
+- Related: [KBA-0021](kba-21-dpi-engine-stall.md).

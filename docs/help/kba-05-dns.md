@@ -1,10 +1,10 @@
 ---
-title: 'KBA-05: Names do not resolve'
+title: 'KBA-0005: Names do not resolve'
 sidebar_position: 15
 description: 'Quick DNS checks: clients, forwarders, DNS filtering and bypass.'
 ---
 
-# KBA-05: Names do not resolve
+# KBA-0005: Names do not resolve
 
 **Symptom.** Sites open by IP address but not by name, or only some names fail.
 
@@ -26,4 +26,4 @@ Read-only checks unless said otherwise. Commands run as `root` over SSH, the con
 
 ## Not solved?
 
-Unit fails, public works: the upstream or the resolver is the problem, see [KBA-15: DNS in depth](kba-15-dns-deep-dive.md).
+Unit fails, public works: the upstream or the resolver is the problem, see [KBA-0015: DNS in depth](kba-15-dns-deep-dive.md).

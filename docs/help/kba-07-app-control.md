@@ -1,10 +1,10 @@
 ---
-title: 'KBA-07: Application control does nothing'
+title: 'KBA-0007: Application control does nothing'
 sidebar_position: 17
 description: Why an application rule does not block or limit the traffic.
 ---
 
-# KBA-07: Application control does nothing
+# KBA-0007: Application control does nothing
 
 **Symptom.** A rule for an application is enabled but the traffic still passes.
 
@@ -25,4 +25,4 @@ Read-only checks unless said otherwise. Commands run as `root` over SSH, the con
 
 ## Not solved?
 
-Service stopped or low memory: [KBA-16](kba-16-services.md) and [KBA-08](kba-08-slow.md).
+Service stopped or low memory: [KBA-0016](kba-16-services.md) and [KBA-0008](kba-08-slow.md).

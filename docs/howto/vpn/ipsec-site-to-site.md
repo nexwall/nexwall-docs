@@ -34,7 +34,7 @@ IPsec (IKEv2) is the standard choice to connect to a router or firewall of anoth
 ## If it does not work
 
 - Never leaves the connecting state: wrong key, identifiers or proposals. Compare both ends, and look at the log: `grep charon /var/log/messages`.
-- Up but no traffic: rules, NAT or routes. See [KBA-06](../../help/kba-06-vpn.md).
+- Up but no traffic: rules, NAT or routes. See [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Related guides
 

@@ -1,12 +1,12 @@
 ---
-title: 'KBA-23: Listas de Threat Shield: revisar y resolver problemas'
+title: 'KBA-0023: Listas de Threat Shield: revisar y resolver problemas'
 sidebar_position: 33
 description: 'Listas de bloqueo no descargadas, dominio o IP sin bloquear, un sitio bloqueado por error, banIP lento y pausas de DNS.'
 ---
 
-# KBA-23: Listas de Threat Shield: revisar y resolver problemas
+# KBA-0023: Listas de Threat Shield: revisar y resolver problemas
 
-**Aplica a.** Nexwall Firewall 26.2.1. Cómo funcionan las listas y su costo de memoria: [KBA-24](kba-24-threat-shield-lists.md).
+**Aplica a.** Nexwall Firewall 26.2.1. Cómo funcionan las listas y su costo de memoria: [KBA-0024](kba-24-threat-shield-lists.md).
 
 ## Solución de problemas
 

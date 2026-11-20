@@ -30,7 +30,7 @@ O WireGuard é rápido e simples. Um túnel servidor atende muitos peers; um tú
 
 - Sem handshake: a porta UDP não está acessível ou as chaves não coincidem.
 - Handshake mas sem tráfego: regras ou as redes permitidas do peer.
-- Veja [KBA-06](../../help/kba-06-vpn.md).
+- Veja [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Guias relacionados
 

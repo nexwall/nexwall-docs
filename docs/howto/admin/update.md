@@ -28,7 +28,7 @@ Updates keep your configuration. Always take a backup first ([How to back up and
 
 ## If it does not work
 
-- Update fails: check space and connectivity, see [KBA-10](../../help/kba-10-updates.md).
+- Update fails: check space and connectivity, see [KBA-0010](../../help/kba-10-updates.md).
 - After the update something is wrong: restore the backup ([How to back up and restore the configuration](backup-restore.md)).
 
 ## Related guides

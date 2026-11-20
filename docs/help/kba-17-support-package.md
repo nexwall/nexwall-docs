@@ -1,10 +1,10 @@
 ---
-title: "KBA-17: Collect a support package"
+title: "KBA-0017: Collect a support package"
 sidebar_position: 24
 description: Create one file with the state and the recent logs of the unit, with passwords and keys filtered out, to attach to a support request.
 ---
 
-# KBA-17: Collect a support package
+# KBA-0017: Collect a support package
 
 **Symptom.** Support asked for "logs" or "diagnostics", or you want to keep evidence of a problem before changing anything.
 
@@ -48,4 +48,4 @@ rm -rf /tmp/support-*
 
 ## Related
 
-[KBA-01 health check](kba-01-health-check.md), [KBA-16 services](kba-16-services.md), [Logs and debugging](cli-logs-and-debugging.md).
+[KBA-0001 health check](kba-01-health-check.md), [KBA-0016 services](kba-16-services.md), [Logs and debugging](cli-logs-and-debugging.md).

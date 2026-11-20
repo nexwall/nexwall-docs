@@ -1,10 +1,10 @@
 ---
-title: 'KBA-02: I cannot open the web interface'
+title: 'KBA-0002: I cannot open the web interface'
 sidebar_position: 12
 description: Fix a unit whose web interface does not load or refuses the login.
 ---
 
-# KBA-02: I cannot open the web interface
+# KBA-0002: I cannot open the web interface
 
 **Symptom.** The page does not load, shows a certificate error or does not accept the password.
 
@@ -26,4 +26,4 @@ Read-only checks unless said otherwise. Commands run as `root` over SSH, the con
 
 ## Not solved?
 
-Run the [health check (KBA-01)](kba-01-health-check.md) from the console. If `nginx` is stopped, see [KBA-16: a service is stopped](kba-16-services.md).
+Run the [health check (KBA-0001)](kba-01-health-check.md) from the console. If `nginx` is stopped, see [KBA-0016: a service is stopped](kba-16-services.md).

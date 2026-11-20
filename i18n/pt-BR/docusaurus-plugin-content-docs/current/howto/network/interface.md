@@ -31,7 +31,7 @@ A página lista cada porta com sua zona, endereço MAC, contadores de tráfego e
 ## Confirme que funcionou
 
 - A linha mostra **Ativa** com o novo endereço.
-- Faça ping no novo gateway a partir de um cliente da rede ou use [KBA-14](../../help/kba-14-connectivity.md).
+- Faça ping no novo gateway a partir de um cliente da rede ou use [KBA-0014](../../help/kba-14-connectivity.md).
 
 ## Se não funcionar
 

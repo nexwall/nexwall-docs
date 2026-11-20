@@ -40,7 +40,7 @@ Firewall rules decide which traffic is accepted, dropped or rejected. Rules are 
 
 - The rule shows as **Inactive**: it uses a zone that no longer exists, or it was disabled. Edit it and choose a valid zone.
 - Traffic still blocked: a rule above yours matches first. Move yours up.
-- Site unreachable from a client: [KBA-04](../../help/kba-04-site-unreachable.md).
+- Site unreachable from a client: [KBA-0004](../../help/kba-04-site-unreachable.md).
 
 ## Related guides
 

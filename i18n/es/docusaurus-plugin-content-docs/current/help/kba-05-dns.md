@@ -1,10 +1,10 @@
 ---
-title: 'KBA-05: Los nombres no resuelven'
+title: 'KBA-0005: Los nombres no resuelven'
 sidebar_position: 15
 description: 'Comprobaciones rápidas de DNS: clientes, reenviadores, filtro DNS y bypass.'
 ---
 
-# KBA-05: Los nombres no resuelven
+# KBA-0005: Los nombres no resuelven
 
 **Síntoma.** Los sitios abren por IP pero no por nombre, o solo fallan algunos nombres.
 
@@ -26,4 +26,4 @@ Comprobaciones de solo lectura salvo que se indique. Los comandos se ejecutan co
 
 ## ¿No se resolvió?
 
-Falla la unidad y funciona el público: el problema es el upstream o el resolvedor, vea [KBA-15: DNS en profundidad](kba-15-dns-deep-dive.md).
+Falla la unidad y funciona el público: el problema es el upstream o el resolvedor, vea [KBA-0015: DNS en profundidad](kba-15-dns-deep-dive.md).

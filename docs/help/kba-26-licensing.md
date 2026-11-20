@@ -1,10 +1,10 @@
 ---
-title: 'KBA-26: Licensing, subscriptions and registration'
+title: 'KBA-0026: Licensing, subscriptions and registration'
 sidebar_position: 36
 description: 'How a unit gets its license, the trial, subscriptions, and how to fix the common errors.'
 ---
 
-# KBA-26: Licensing, subscriptions and registration
+# KBA-0026: Licensing, subscriptions and registration
 
 **Applies to.** Nexwall Firewall 26.0.0 and later (commands checked on 26.2.1).
 

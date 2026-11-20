@@ -1,10 +1,10 @@
 ---
-title: 'KBA-08: A unidade está lenta ou com pouca memória'
+title: 'KBA-0008: A unidade está lenta ou com pouca memória'
 sidebar_position: 18
 description: Descubra qual recurso custa mais e se disco ou memória são a causa.
 ---
 
-# KBA-08: A unidade está lenta ou com pouca memória
+# KBA-0008: A unidade está lenta ou com pouca memória
 
 **Sintoma.** Interface web lenta, latência alta pelo firewall ou serviços reiniciando.
 
@@ -24,4 +24,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Memória quase esgotada: [KBA-16](kba-16-services.md#9-pouca-memória-é-uma-causa-oculta-frequente). Conntrack perto do máximo: ache o cliente em [Conexões](../operation-analytics/monitor-connections.md).
+Memória quase esgotada: [KBA-0016](kba-16-services.md#9-pouca-memória-é-uma-causa-oculta-frequente). Conntrack perto do máximo: ache o cliente em [Conexões](../operation-analytics/monitor-connections.md).

@@ -1,10 +1,10 @@
 ---
-title: "KBA-12: Microsoft Teams o Microsoft 365 no inicia sesión"
+title: "KBA-0012: Microsoft Teams o Microsoft 365 no inicia sesión"
 sidebar_position: 26
 description: Un caso real, paso a paso. Teams muestra "Algo salió mal" detrás del firewall. Encuentre los nombres de Microsoft bloqueados con una captura de DNS, agréguelos a Dominios permitidos y revise el estado "sin conexión" de Windows.
 ---
 
-# KBA-12: Microsoft Teams o Microsoft 365 no inicia sesión
+# KBA-0012: Microsoft Teams o Microsoft 365 no inicia sesión
 
 **Aplica a:** Nexwall Firewall con filtrado DNS activado · **Audiencia:** administradores y soporte
 

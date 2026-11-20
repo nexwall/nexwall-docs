@@ -27,7 +27,7 @@ A unidade se registra no servidor de licenças. Uma assinatura libera o catálog
 
 ## Se não funcionar
 
-- Não sincroniza: o firewall precisa de HTTPS de saída. Veja [KBA-26](../../help/kba-26-licensing.md).
+- Não sincroniza: o firewall precisa de HTTPS de saída. Veja [KBA-0026](../../help/kba-26-licensing.md).
 
 ## Guias relacionados
 

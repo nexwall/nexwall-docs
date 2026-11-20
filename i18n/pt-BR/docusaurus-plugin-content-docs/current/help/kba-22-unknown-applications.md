@@ -1,10 +1,10 @@
 ---
-title: 'KBA-22: O tráfego aparece como "Desconhecido" ou uma aplicação não é bloqueada pelo Controle de aplicações (DPI)'
+title: 'KBA-0022: O tráfego aparece como "Desconhecido" ou uma aplicação não é bloqueada pelo Controle de aplicações (DPI)'
 sidebar_position: 32
 description: 'Por que fluxos aparecem como Desconhecido ou uma aplicação não é bloqueada, como verificar o catálogo e o que fazer.'
 ---
 
-# KBA-22: O tráfego aparece como "Desconhecido" ou uma aplicação não é bloqueada pelo Controle de aplicações (DPI)
+# KBA-0022: O tráfego aparece como "Desconhecido" ou uma aplicação não é bloqueada pelo Controle de aplicações (DPI)
 
 **Aplica-se a.** Nexwall Firewall 26.0.0 e posteriores (comandos verificados na 26.2.1).
 
@@ -57,4 +57,4 @@ Controle de aplicações (DPI) > Configurações: atualização automática liga
 
 - Mudar uma regra do DPI vale em segundos (o motor recarrega as regras; sem reinício). Uma conexão que já estava bloqueada continua bloqueada até terminar, mesmo que a regra seja removida.
 - Após uma atualização de firmware o catálogo é reinstalado automaticamente.
-- Relacionado: [KBA-21](kba-21-dpi-engine-stall.md).
+- Relacionado: [KBA-0021](kba-21-dpi-engine-stall.md).

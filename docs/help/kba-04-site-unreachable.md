@@ -1,10 +1,10 @@
 ---
-title: 'KBA-04: A site or service is blocked or unreachable'
+title: 'KBA-0004: A site or service is blocked or unreachable'
 sidebar_position: 14
 description: Find the rule, list or inspection feature that blocks one destination or a published service.
 ---
 
-# KBA-04: A site or service is blocked or unreachable
+# KBA-0004: A site or service is blocked or unreachable
 
 **Symptom.** One destination does not open, or a published service is not reachable from outside.
 
@@ -26,4 +26,4 @@ Read-only checks unless said otherwise. Commands run as `root` over SSH, the con
 
 ## Not solved?
 
-Port closed or timeout from the firewall too: [KBA-14](kba-14-connectivity.md) (MTU, packets). Works by IP but not by name: [KBA-05](kba-05-dns.md).
+Port closed or timeout from the firewall too: [KBA-0014](kba-14-connectivity.md) (MTU, packets). Works by IP but not by name: [KBA-0005](kba-05-dns.md).

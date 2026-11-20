@@ -1,10 +1,10 @@
 ---
-title: 'KBA-07: O controle de aplicações não faz nada'
+title: 'KBA-0007: O controle de aplicações não faz nada'
 sidebar_position: 17
 description: Por que uma regra de aplicação não bloqueia nem limita o tráfego.
 ---
 
-# KBA-07: O controle de aplicações não faz nada
+# KBA-0007: O controle de aplicações não faz nada
 
 **Sintoma.** Uma regra de aplicação está ativa mas o tráfego continua passando.
 
@@ -25,4 +25,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Serviço parado ou pouca memória: [KBA-16](kba-16-services.md) e [KBA-08](kba-08-slow.md).
+Serviço parado ou pouca memória: [KBA-0016](kba-16-services.md) e [KBA-0008](kba-08-slow.md).

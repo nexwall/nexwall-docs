@@ -32,7 +32,7 @@ Advanced Protection (AI) warns about devices that behave like infected ones. Col
 ## If it does not work
 
 - "Not included in your plan": check **Licensing**.
-- Service not running: restart it from the console and see [KBA-16](../../help/kba-16-services.md).
+- Service not running: restart it from the console and see [KBA-0016](../../help/kba-16-services.md).
 
 ## Related guides
 

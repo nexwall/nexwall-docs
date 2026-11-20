@@ -1,10 +1,10 @@
 ---
-title: 'KBA-03: A LAN está sem internet'
+title: 'KBA-0003: A LAN está sem internet'
 sidebar_position: 13
 description: Descubra por que os clientes da LAN não chegam à internet, do link WAN ao NAT e à política.
 ---
 
-# KBA-03: A LAN está sem internet
+# KBA-0003: A LAN está sem internet
 
 **Sintoma.** Clientes da LAN não navegam; o próprio firewall pode ou não ter internet.
 
@@ -29,4 +29,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Firewall ok mas um cliente falha: [KBA-04](kba-04-site-unreachable.md). IP funciona mas nomes não: [KBA-05](kba-05-dns.md). Testes de pacotes e MTU: [KBA-14](kba-14-connectivity.md).
+Firewall ok mas um cliente falha: [KBA-0004](kba-04-site-unreachable.md). IP funciona mas nomes não: [KBA-0005](kba-05-dns.md). Testes de pacotes e MTU: [KBA-0014](kba-14-connectivity.md).

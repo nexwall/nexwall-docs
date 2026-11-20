@@ -1,10 +1,10 @@
 ---
-title: 'KBA-21: Conexões novas travam mas o firewall parece saudável (fila DPI / IPS parada)'
+title: 'KBA-0021: Conexões novas travam mas o firewall parece saudável (fila DPI / IPS parada)'
 sidebar_position: 31
 description: 'Reconheça e recupere um motor de inspeção parado (fila do DPI ou do IPS) e ajuste o watchdog e o comportamento de sobrecarga.'
 ---
 
-# KBA-21: Conexões novas travam mas o firewall parece saudável (fila DPI / IPS parada)
+# KBA-0021: Conexões novas travam mas o firewall parece saudável (fila DPI / IPS parada)
 
 **Aplica-se a.** Nexwall Firewall 26.0.0 e posteriores (comandos verificados na 26.2.1). **Gravidade:** alta: conexões novas atrasadas ou falhando por minutos.
 

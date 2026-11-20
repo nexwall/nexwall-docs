@@ -38,7 +38,7 @@ A port forward publishes a service, such as a web server, that runs on an intern
 
 - Works from outside but not from the LAN: enable **Hairpin NAT** for the LAN zone.
 - No answer: the server firewall or its gateway. The server must use the firewall as default gateway.
-- Check the path with [KBA-14](../../help/kba-14-connectivity.md).
+- Check the path with [KBA-0014](../../help/kba-14-connectivity.md).
 
 ## Related guides
 

@@ -27,7 +27,7 @@ The unit registers itself with the license server. A subscription unlocks the ex
 
 ## If it does not work
 
-- Not synchronising: the firewall needs outbound HTTPS. Check [KBA-26](../../help/kba-26-licensing.md).
+- Not synchronising: the firewall needs outbound HTTPS. Check [KBA-0026](../../help/kba-26-licensing.md).
 
 ## Related guides
 

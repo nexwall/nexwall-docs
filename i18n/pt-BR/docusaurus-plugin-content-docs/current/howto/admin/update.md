@@ -28,7 +28,7 @@ As atualizações mantêm sua configuração. Faça sempre um backup antes ([Com
 
 ## Se não funcionar
 
-- A atualização falha: verifique espaço e conectividade, veja [KBA-10](../../help/kba-10-updates.md).
+- A atualização falha: verifique espaço e conectividade, veja [KBA-0010](../../help/kba-10-updates.md).
 - Após a atualização algo está errado: restaure o backup ([Como fazer backup e restaurar a configuração](backup-restore.md)).
 
 ## Guias relacionados

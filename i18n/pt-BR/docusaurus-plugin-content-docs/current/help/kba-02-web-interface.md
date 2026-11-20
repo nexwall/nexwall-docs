@@ -1,10 +1,10 @@
 ---
-title: 'KBA-02: Não consigo abrir a interface web'
+title: 'KBA-0002: Não consigo abrir a interface web'
 sidebar_position: 12
 description: Resolva uma unidade cuja interface web não carrega ou recusa o login.
 ---
 
-# KBA-02: Não consigo abrir a interface web
+# KBA-0002: Não consigo abrir a interface web
 
 **Sintoma.** A página não carrega, mostra erro de certificado ou não aceita a senha.
 
@@ -26,4 +26,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Execute a [verificação de saúde (KBA-01)](kba-01-health-check.md) pelo console. Se o `nginx` estiver parado, veja [KBA-16: um serviço está parado](kba-16-services.md).
+Execute a [verificação de saúde (KBA-0001)](kba-01-health-check.md) pelo console. Se o `nginx` estiver parado, veja [KBA-0016: um serviço está parado](kba-16-services.md).

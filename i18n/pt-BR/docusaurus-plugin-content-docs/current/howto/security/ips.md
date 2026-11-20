@@ -13,7 +13,7 @@ O IPS inspeciona o tráfego em busca de ataques. Comece com a política equilibr
 ## Antes de começar
 
 - Uma assinatura ativa (a página avisa se a licença faltar).
-- Memória suficiente: veja [KBA-20](../../help/kba-20-throughput-sizing.md).
+- Memória suficiente: veja [KBA-0020](../../help/kba-20-throughput-sizing.md).
 
 ## Passos
 
@@ -32,7 +32,7 @@ O IPS inspeciona o tráfego em busca de ataques. Comece com a política equilibr
 
 ## Se não funcionar
 
-- O desempenho caiu: [KBA-19](../../help/kba-19-inspection-settings.md) e [KBA-20](../../help/kba-20-throughput-sizing.md).
+- O desempenho caiu: [KBA-0019](../../help/kba-19-inspection-settings.md) e [KBA-0020](../../help/kba-20-throughput-sizing.md).
 - Um serviço legítimo bloqueado: ache a regra na lista de eventos e use **Regras desativadas** ou o bypass.
 
 ## Guias relacionados

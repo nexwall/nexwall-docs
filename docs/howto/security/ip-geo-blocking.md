@@ -29,7 +29,7 @@ IP & Geo Blocking drops traffic to and from addresses with a bad reputation, by 
 ## If it does not work
 
 - A partner cannot connect: add its address to the local allowlist.
-- Feeds not updating: [KBA-24](../../help/kba-24-threat-shield-lists.md).
+- Feeds not updating: [KBA-0024](../../help/kba-24-threat-shield-lists.md).
 
 ## Related guides
 

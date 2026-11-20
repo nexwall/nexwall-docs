@@ -37,7 +37,7 @@ O acesso remoto (OpenVPN) permite que notebooks e celulares conectem com seguran
 
 - O cliente não conecta: a porta não está aberta na WAN ou um roteador na frente bloqueia. Teste de fora da LAN.
 - Conecta mas não alcança a LAN: adicione a rede em **Enviar rotas de rede** e crie uma [Como permitir ou bloquear tráfego com uma regra de firewall](../policy/firewall-rule.md) a partir da zona VPN.
-- Veja [KBA-06](../../help/kba-06-vpn.md).
+- Veja [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Guias relacionados
 

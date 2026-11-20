@@ -32,8 +32,8 @@ El control de aplicaciones identifica aplicaciones mediante inspección profunda
 
 ## Si no funciona
 
-- Una app no se bloquea: puede usar una versión nueva cifrada. Actualice el catálogo (**Ajustes**) y vea [KBA-22](../../help/kba-22-unknown-applications.md).
-- Lentitud no deseada: [KBA-19](../../help/kba-19-inspection-settings.md) y [KBA-21](../../help/kba-21-dpi-engine-stall.md).
+- Una app no se bloquea: puede usar una versión nueva cifrada. Actualice el catálogo (**Ajustes**) y vea [KBA-0022](../../help/kba-22-unknown-applications.md).
+- Lentitud no deseada: [KBA-0019](../../help/kba-19-inspection-settings.md) y [KBA-0021](../../help/kba-21-dpi-engine-stall.md).
 
 ## Guías relacionadas
 

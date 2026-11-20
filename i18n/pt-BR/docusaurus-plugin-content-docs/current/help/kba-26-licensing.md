@@ -1,10 +1,10 @@
 ---
-title: 'KBA-26: Licenciamento, assinaturas e registro'
+title: 'KBA-0026: Licenciamento, assinaturas e registro'
 sidebar_position: 36
 description: 'Como uma unidade obtém sua licença, o teste, as assinaturas e como resolver os erros comuns.'
 ---
 
-# KBA-26: Licenciamento, assinaturas e registro
+# KBA-0026: Licenciamento, assinaturas e registro
 
 **Aplica-se a.** Nexwall Firewall 26.0.0 e posteriores (comandos verificados na 26.2.1).
 

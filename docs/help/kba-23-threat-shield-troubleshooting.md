@@ -1,12 +1,12 @@
 ---
-title: 'KBA-23: Threat Shield lists: check and troubleshoot'
+title: 'KBA-0023: Threat Shield lists: check and troubleshoot'
 sidebar_position: 33
 description: 'Blocklists not downloaded, domain or IP not blocked, a site wrongly blocked, slow banIP and DNS pauses.'
 ---
 
-# KBA-23: Threat Shield lists: check and troubleshoot
+# KBA-0023: Threat Shield lists: check and troubleshoot
 
-**Applies to.** Nexwall Firewall 26.2.1. How the lists work and their memory cost: [KBA-24](kba-24-threat-shield-lists.md).
+**Applies to.** Nexwall Firewall 26.2.1. How the lists work and their memory cost: [KBA-0024](kba-24-threat-shield-lists.md).
 
 ## Troubleshooting
 
@@ -25,7 +25,7 @@ daily build (the build has its own allowlist of critical domains).
 **banIP shows "processing" for minutes.** banIP downloads the feeds one by one. The Nexwall IP lists are local and take seconds; the slow part is geo-blocking
 (`country` feed, one download per country, from a third party) and any feed of banIP's own list that is switched on. Check `grep banIP /var/log/messages`.
 
-**DNS stops answering for a moment after a change.** dnsmasq restarts to load the lists (see [KBA-24](kba-24-threat-shield-lists.md#memory-and-speed)). If it lasts minutes the lists are too large for the memory: switch off the biggest categories.
+**DNS stops answering for a moment after a change.** dnsmasq restarts to load the lists (see [KBA-0024](kba-24-threat-shield-lists.md#memory-and-speed)). If it lasts minutes the lists are too large for the memory: switch off the biggest categories.
 
 
 ## Commands

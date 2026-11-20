@@ -35,7 +35,7 @@ Un firewall actúa como servidor del túnel y el otro como cliente. El servidor 
 
 - No conectado: el puerto UDP no es accesible en el servidor. Pruebe desde fuera.
 - Conectado, sin tráfico: falta una regla de firewall, redes solapadas o falta una ruta en los hosts.
-- Vea [KBA-06](../../help/kba-06-vpn.md).
+- Vea [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Guías relacionadas
 

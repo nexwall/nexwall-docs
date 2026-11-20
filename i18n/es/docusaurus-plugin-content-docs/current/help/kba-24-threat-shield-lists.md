@@ -1,10 +1,10 @@
 ---
-title: 'KBA-24: Threat Shield: de dónde vienen las listas y cuánto cuestan'
+title: 'KBA-0024: Threat Shield: de dónde vienen las listas y cuánto cuestan'
 sidebar_position: 34
 description: 'Qué son las listas de bloqueo, cómo se entregan y verifican, y cuánta memoria necesita cada categoría.'
 ---
 
-# KBA-24: Threat Shield: de dónde vienen las listas y cuánto cuestan
+# KBA-0024: Threat Shield: de dónde vienen las listas y cuánto cuestan
 
 **Aplica a.** Nexwall Firewall 26.2.1.
 

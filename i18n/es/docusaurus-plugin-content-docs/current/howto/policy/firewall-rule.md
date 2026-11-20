@@ -40,7 +40,7 @@ Las reglas de firewall deciden qué tráfico se acepta, descarta o rechaza. Se e
 
 - La regla aparece como **Inactiva**: usa una zona que ya no existe o está desactivada. Edítela y elija una zona válida.
 - El tráfico sigue bloqueado: una regla anterior coincide primero. Suba la suya.
-- Sitio inaccesible desde un cliente: [KBA-04](../../help/kba-04-site-unreachable.md).
+- Sitio inaccesible desde un cliente: [KBA-0004](../../help/kba-04-site-unreachable.md).
 
 ## Guías relacionadas
 

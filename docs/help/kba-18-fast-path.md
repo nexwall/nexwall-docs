@@ -1,10 +1,10 @@
 ---
-title: 'KBA-18: Fast path (flow offload): commands, status and troubleshooting'
+title: 'KBA-0018: Fast path (flow offload): commands, status and troubleshooting'
 sidebar_position: 28
 description: 'Fast path (flow offload): turn it on or off, read its status and troubleshoot it.'
 ---
 
-# KBA-18: Fast path (flow offload): commands, status and troubleshooting
+# KBA-0018: Fast path (flow offload): commands, status and troubleshooting
 
 **Applies to.** Nexwall Firewall 26.2.1 (commands checked on it).
 
@@ -42,7 +42,7 @@ uci commit nexwall_perf
 /etc/init.d/nexwall-fastpath reload       # applies it now (also happens on the next config reload)
 ```
 
-Related setting handled by the same tool: `nexwall_perf.main.ring_buffers` (`1` raises the NIC rings to their maximum at apply time, independent of the fast path; see [KBA-19](kba-19-inspection-settings.md)).
+Related setting handled by the same tool: `nexwall_perf.main.ring_buffers` (`1` raises the NIC rings to their maximum at apply time, independent of the fast path; see [KBA-0019](kba-19-inspection-settings.md)).
 
 Optional: `uci set nexwall_perf.main.min_bytes=2097152` raises the threshold (default `auto`; values below 262144 are raised to it).
 
@@ -109,7 +109,7 @@ it. A short web page never reaches the fast path.
   statistics and accounting keep working. (Without it the counters would freeze at the offload point.)
 - Tunnels (OpenVPN, WireGuard, IPsec) are not put in the flow table; their traffic is not accelerated.
 - SQM / traffic shaping on the interface still applies (it works at the queue discipline, after forwarding).
-- In lab tests (virtual firewall) the fast path gave about 10% more throughput and about 10% less CPU per Gbit/s; the larger gains came from packet steering and bigger NIC buffers. See [KBA-20](kba-20-throughput-sizing.md). Measure on your hardware.
+- In lab tests (virtual firewall) the fast path gave about 10% more throughput and about 10% less CPU per Gbit/s; the larger gains came from packet steering and bigger NIC buffers. See [KBA-0020](kba-20-throughput-sizing.md). Measure on your hardware.
 
 ## Quick checks when something looks wrong
 

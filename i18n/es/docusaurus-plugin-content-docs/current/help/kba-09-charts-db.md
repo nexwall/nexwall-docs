@@ -1,10 +1,10 @@
 ---
-title: 'KBA-09: Los gráficos indican que la base de datos no responde'
+title: 'KBA-0009: Los gráficos indican que la base de datos no responde'
 sidebar_position: 19
 description: Reinicie el servicio de métricas cuando los gráficos siguen vacíos.
 ---
 
-# KBA-09: Los gráficos indican que la base de datos no responde
+# KBA-0009: Los gráficos indican que la base de datos no responde
 
 **Síntoma.** Los gráficos del panel y analítica muestran que la base de datos no es accesible.
 
@@ -24,4 +24,4 @@ Comprobaciones de solo lectura salvo que se indique. Los comandos se ejecutan co
 
 ## ¿No se resolvió?
 
-Siguen vacíos: revise disco y memoria libres ([KBA-08](kba-08-slow.md)) y lea el log ([Logs y depuración](cli-logs-and-debugging.md)).
+Siguen vacíos: revise disco y memoria libres ([KBA-0008](kba-08-slow.md)) y lea el log ([Logs y depuración](cli-logs-and-debugging.md)).

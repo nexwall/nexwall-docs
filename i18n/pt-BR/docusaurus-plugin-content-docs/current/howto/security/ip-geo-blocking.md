@@ -29,7 +29,7 @@ O bloqueio de IP e geolocalização descarta o tráfego de e para endereços com
 ## Se não funcionar
 
 - Um parceiro não consegue conectar: adicione o endereço à lista local de permitidos.
-- As listas não atualizam: [KBA-24](../../help/kba-24-threat-shield-lists.md).
+- As listas não atualizam: [KBA-0024](../../help/kba-24-threat-shield-lists.md).
 
 ## Guias relacionados
 

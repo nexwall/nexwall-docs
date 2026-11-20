@@ -1,10 +1,10 @@
 ---
-title: 'KBA-02: No puedo abrir la interfaz web'
+title: 'KBA-0002: No puedo abrir la interfaz web'
 sidebar_position: 12
 description: Solucione una unidad cuya interfaz web no carga o rechaza el acceso.
 ---
 
-# KBA-02: No puedo abrir la interfaz web
+# KBA-0002: No puedo abrir la interfaz web
 
 **Síntoma.** La página no carga, muestra error de certificado o no acepta la contraseña.
 
@@ -26,4 +26,4 @@ Comprobaciones de solo lectura salvo que se indique. Los comandos se ejecutan co
 
 ## ¿No se resolvió?
 
-Ejecute el [chequeo de salud (KBA-01)](kba-01-health-check.md) desde la consola. Si `nginx` está detenido, vea [KBA-16: un servicio está detenido](kba-16-services.md).
+Ejecute el [chequeo de salud (KBA-0001)](kba-01-health-check.md) desde la consola. Si `nginx` está detenido, vea [KBA-0016: un servicio está detenido](kba-16-services.md).

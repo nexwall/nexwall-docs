@@ -1,10 +1,10 @@
 ---
-title: 'KBA-21: Las conexiones nuevas se cuelgan aunque el firewall parece sano (cola DPI / IPS detenida)'
+title: 'KBA-0021: Las conexiones nuevas se cuelgan aunque el firewall parece sano (cola DPI / IPS detenida)'
 sidebar_position: 31
 description: 'Reconozca y recupere un motor de inspección detenido (cola DPI o IPS) y ajuste el watchdog y el comportamiento ante sobrecarga.'
 ---
 
-# KBA-21: Las conexiones nuevas se cuelgan aunque el firewall parece sano (cola DPI / IPS detenida)
+# KBA-0021: Las conexiones nuevas se cuelgan aunque el firewall parece sano (cola DPI / IPS detenida)
 
 **Aplica a.** Nexwall Firewall 26.0.0 y posteriores (comandos verificados en 26.2.1). **Gravedad:** alta: conexiones nuevas demoradas o fallando durante minutos.
 

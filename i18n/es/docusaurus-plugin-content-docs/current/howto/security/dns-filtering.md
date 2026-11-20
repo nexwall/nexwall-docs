@@ -32,7 +32,7 @@ El filtrado de DNS impide que los clientes resuelvan dominios maliciosos conocid
 ## Si no funciona
 
 - Un sitio bueno está bloqueado: añada su dominio a la lista local de permitidos.
-- Las listas no cargan: [KBA-23](../../help/kba-23-threat-shield-troubleshooting.md) y [KBA-24](../../help/kba-24-threat-shield-lists.md).
+- Las listas no cargan: [KBA-0023](../../help/kba-23-threat-shield-troubleshooting.md) y [KBA-0024](../../help/kba-24-threat-shield-lists.md).
 
 ## Guías relacionadas
 

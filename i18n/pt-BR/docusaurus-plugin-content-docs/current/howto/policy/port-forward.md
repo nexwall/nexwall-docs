@@ -38,7 +38,7 @@ Um redirecionamento de portas publica um serviço, como um servidor web, que rod
 
 - Funciona de fora mas não da LAN: ative **Hairpin NAT** para a zona LAN.
 - Sem resposta: o firewall do servidor ou seu gateway. O servidor deve usar o firewall como gateway padrão.
-- Verifique o caminho com [KBA-14](../../help/kba-14-connectivity.md).
+- Verifique o caminho com [KBA-0014](../../help/kba-14-connectivity.md).
 
 ## Guias relacionados
 

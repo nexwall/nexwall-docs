@@ -1,10 +1,10 @@
 ---
-title: 'KBA-10: Las actualizaciones fallan'
+title: 'KBA-0010: Las actualizaciones fallan'
 sidebar_position: 20
 description: Lea el error de actualización y revise suscripción, conectividad y hora.
 ---
 
-# KBA-10: Las actualizaciones fallan
+# KBA-0010: Las actualizaciones fallan
 
 **Síntoma.** Una actualización o descarga de listas falla.
 
@@ -25,4 +25,4 @@ Comprobaciones de solo lectura salvo que se indique. Los comandos se ejecutan co
 
 ## ¿No se resolvió?
 
-Falla internet o DNS: [KBA-03](kba-03-no-internet.md) o [KBA-05](kba-05-dns.md). Nada lo explica: [KBA-17](kba-17-support-package.md).
+Falla internet o DNS: [KBA-0003](kba-03-no-internet.md) o [KBA-0005](kba-05-dns.md). Nada lo explica: [KBA-0017](kba-17-support-package.md).

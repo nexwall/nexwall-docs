@@ -32,7 +32,7 @@ La protección avanzada (IA) avisa de dispositivos que se comportan como infecta
 ## Si no funciona
 
 - "No incluido en su plan": revise **Licencias**.
-- Servicio detenido: reinícielo desde la consola y vea [KBA-16](../../help/kba-16-services.md).
+- Servicio detenido: reinícielo desde la consola y vea [KBA-0016](../../help/kba-16-services.md).
 
 ## Guías relacionadas
 

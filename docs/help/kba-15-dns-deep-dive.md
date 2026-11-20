@@ -1,10 +1,10 @@
 ---
-title: "KBA-15: Troubleshoot DNS from the command line"
+title: "KBA-0015: Troubleshoot DNS from the command line"
 sidebar_position: 22
 description: Step by step with dig and nslookup, how to tell a broken resolver from a name that does not exist, and what to check on dnsmasq, DNS filtering and the upstream servers.
 ---
 
-# KBA-15: Troubleshoot DNS from the command line
+# KBA-0015: Troubleshoot DNS from the command line
 
 **Symptom.** A site or service "does not open", but pinging its IP address works. Or a name resolves from your
 laptop and not from the LAN.

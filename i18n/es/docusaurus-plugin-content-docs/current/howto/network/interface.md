@@ -31,7 +31,7 @@ La página lista cada puerto con su zona, dirección MAC, contadores de tráfico
 ## Compruebe que funciona
 
 - La fila muestra **Activa** con la nueva dirección.
-- Haga ping a la nueva puerta de enlace desde un cliente de la red o use [KBA-14](../../help/kba-14-connectivity.md).
+- Haga ping a la nueva puerta de enlace desde un cliente de la red o use [KBA-0014](../../help/kba-14-connectivity.md).
 
 ## Si no funciona
 

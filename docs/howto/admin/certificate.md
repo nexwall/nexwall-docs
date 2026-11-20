@@ -32,7 +32,7 @@ The factory certificate is self-signed, so browsers warn. A trusted certificate 
 ## If it does not work
 
 - Validation fails: port 80 blocked or the name does not point to the firewall.
-- Warnings persist: [KBA-25](../../help/kba-25-web-certificate.md).
+- Warnings persist: [KBA-0025](../../help/kba-25-web-certificate.md).
 
 ## Related guides
 

@@ -30,7 +30,7 @@ WireGuard es rápido y sencillo. Un túnel servidor atiende a muchos pares; un t
 
 - Sin handshake: el puerto UDP no es accesible o las claves no coinciden.
 - Handshake pero sin tráfico: reglas o las redes permitidas del par.
-- Vea [KBA-06](../../help/kba-06-vpn.md).
+- Vea [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Guías relacionadas
 

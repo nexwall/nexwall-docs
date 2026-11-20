@@ -1,10 +1,10 @@
 ---
-title: "KBA-11: Controller registration troubleshooting"
+title: "KBA-0011: Controller registration troubleshooting"
 sidebar_position: 25
 description: Diagnose join and connection problems between a unit and a controller, on both sides, from the command line.
 ---
 
-# KBA-11: Controller registration troubleshooting
+# KBA-0011: Controller registration troubleshooting
 
 This goes deeper than the [basic check](troubleshooting.md) and
 needs SSH access to the unit, and to the controller host. Use it when a unit will not join a controller, drops the

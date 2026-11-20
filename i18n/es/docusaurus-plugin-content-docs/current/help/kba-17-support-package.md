@@ -1,10 +1,10 @@
 ---
-title: "KBA-17: Recoger un paquete de soporte"
+title: "KBA-0017: Recoger un paquete de soporte"
 sidebar_position: 24
 description: Cree un archivo con el estado y los logs recientes de la unidad, sin contraseñas ni claves, para adjuntar a una solicitud de soporte.
 ---
 
-# KBA-17: Recoger un paquete de soporte
+# KBA-0017: Recoger un paquete de soporte
 
 **Síntoma.** Soporte pidió "logs" o "diagnóstico", o quiere guardar evidencia de un problema antes de cambiar algo.
 
@@ -48,4 +48,4 @@ rm -rf /tmp/support-*
 
 ## Relacionado
 
-[KBA-01 chequeo de salud](kba-01-health-check.md), [KBA-16 servicios](kba-16-services.md), [Logs y depuración](cli-logs-and-debugging.md).
+[KBA-0001 chequeo de salud](kba-01-health-check.md), [KBA-0016 servicios](kba-16-services.md), [Logs y depuración](cli-logs-and-debugging.md).

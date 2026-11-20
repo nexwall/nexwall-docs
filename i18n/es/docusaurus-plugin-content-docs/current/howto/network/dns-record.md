@@ -24,7 +24,7 @@ El firewall responde DNS a la LAN. Reenvía los nombres desconocidos a servidore
 
 ## Si no funciona
 
-- Los nombres no resuelven: [KBA-05](../../help/kba-05-dns.md) y [KBA-15](../../help/kba-15-dns-deep-dive.md).
+- Los nombres no resuelven: [KBA-0005](../../help/kba-05-dns.md) y [KBA-0015](../../help/kba-15-dns-deep-dive.md).
 - Un nombre público debe resolver a una dirección privada solo para usuarios internos: cree el registro aquí.
 
 ## Guías relacionadas

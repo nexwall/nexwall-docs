@@ -1,10 +1,10 @@
 ---
-title: 'KBA-03: The LAN has no internet'
+title: 'KBA-0003: The LAN has no internet'
 sidebar_position: 13
 description: Find why LAN clients cannot reach the internet, from the WAN link to NAT and policy.
 ---
 
-# KBA-03: The LAN has no internet
+# KBA-0003: The LAN has no internet
 
 **Symptom.** LAN clients cannot browse, but the firewall itself may or may not.
 
@@ -29,4 +29,4 @@ Read-only checks unless said otherwise. Commands run as `root` over SSH, the con
 
 ## Not solved?
 
-Firewall ok but one client fails: [KBA-04](kba-04-site-unreachable.md). IP works but names do not: [KBA-05](kba-05-dns.md). Need packets and MTU tests: [KBA-14](kba-14-connectivity.md).
+Firewall ok but one client fails: [KBA-0004](kba-04-site-unreachable.md). IP works but names do not: [KBA-0005](kba-05-dns.md). Need packets and MTU tests: [KBA-0014](kba-14-connectivity.md).

@@ -1,10 +1,10 @@
 ---
-title: "KBA-16: Verify and troubleshoot services from the command line"
+title: "KBA-0016: Verify and troubleshoot services from the command line"
 sidebar_position: 23
 description: How to tell whether a service is really running, why some services say "not running" and are fine, how to read its log and configuration, restart it safely and use the feature-specific status commands.
 ---
 
-# KBA-16: Verify and troubleshoot services from the command line
+# KBA-0016: Verify and troubleshoot services from the command line
 
 **Symptom.** A feature of the firewall (DNS, VPN, IPS, web protection, the controller link) does not behave, and the
 web interface does not say why.

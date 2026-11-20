@@ -1,10 +1,10 @@
 ---
-title: 'KBA-18: Fast path (flow offload): comandos, status e solução de problemas'
+title: 'KBA-0018: Fast path (flow offload): comandos, status e solução de problemas'
 sidebar_position: 28
 description: 'Fast path (flow offload): ligar ou desligar, ler seu status e resolver problemas.'
 ---
 
-# KBA-18: Fast path (flow offload): comandos, status e solução de problemas
+# KBA-0018: Fast path (flow offload): comandos, status e solução de problemas
 
 **Aplica-se a.** Nexwall Firewall 26.2.1 (comandos verificados nesta versão).
 
@@ -34,7 +34,7 @@ uci commit nexwall_perf
 /etc/init.d/nexwall-fastpath reload       # aplica agora (também acontece no próximo reload de configuração)
 ```
 
-Configuração relacionada, tratada pela mesma ferramenta: `nexwall_perf.main.ring_buffers` (`1` sobe os anéis da placa de rede ao máximo ao aplicar, independente do fast path; veja [KBA-19](kba-19-inspection-settings.md)).
+Configuração relacionada, tratada pela mesma ferramenta: `nexwall_perf.main.ring_buffers` (`1` sobe os anéis da placa de rede ao máximo ao aplicar, independente do fast path; veja [KBA-0019](kba-19-inspection-settings.md)).
 
 Opcional: `uci set nexwall_perf.main.min_bytes=2097152` sobe o limite (padrão `auto`; valores abaixo de 262144 são elevados a esse valor).
 
@@ -96,7 +96,7 @@ grep nexwall-fastpath /var/log/messages
 - A tabela de fluxos tem a opção `counter`: os contadores de bytes e pacotes das conexões aceleradas continuam atualizados, então estatísticas e contabilização de tráfego seguem funcionando. (Sem ela os contadores congelariam no ponto da descarga.)
 - Túneis (OpenVPN, WireGuard, IPsec) não entram na tabela de fluxos; seu tráfego não é acelerado.
 - O SQM / controle de tráfego na interface continua valendo (atua na disciplina de fila, depois do encaminhamento).
-- Em testes de laboratório (firewall virtual) o fast path deu cerca de 10% a mais de vazão e cerca de 10% menos CPU por Gbit/s; os maiores ganhos vieram da distribuição de pacotes entre núcleos e de buffers de rede maiores. Veja [KBA-20](kba-20-throughput-sizing.md). Meça no seu hardware.
+- Em testes de laboratório (firewall virtual) o fast path deu cerca de 10% a mais de vazão e cerca de 10% menos CPU por Gbit/s; os maiores ganhos vieram da distribuição de pacotes entre núcleos e de buffers de rede maiores. Veja [KBA-0020](kba-20-throughput-sizing.md). Meça no seu hardware.
 
 ## Verificações rápidas quando algo parece errado
 

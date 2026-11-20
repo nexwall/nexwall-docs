@@ -1,10 +1,10 @@
 ---
-title: 'KBA-04: Um site ou serviço está bloqueado ou inacessível'
+title: 'KBA-0004: Um site ou serviço está bloqueado ou inacessível'
 sidebar_position: 14
 description: Encontre a regra, lista ou recurso de inspeção que bloqueia um destino ou serviço publicado.
 ---
 
-# KBA-04: Um site ou serviço está bloqueado ou inacessível
+# KBA-0004: Um site ou serviço está bloqueado ou inacessível
 
 **Sintoma.** Um destino não abre, ou um serviço publicado não é acessível de fora.
 
@@ -26,4 +26,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Porta fechada ou timeout também do firewall: [KBA-14](kba-14-connectivity.md) (MTU, pacotes). Funciona por IP mas não por nome: [KBA-05](kba-05-dns.md).
+Porta fechada ou timeout também do firewall: [KBA-0014](kba-14-connectivity.md) (MTU, pacotes). Funciona por IP mas não por nome: [KBA-0005](kba-05-dns.md).

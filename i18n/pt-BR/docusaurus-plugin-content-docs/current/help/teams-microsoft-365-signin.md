@@ -1,10 +1,10 @@
 ---
-title: "KBA-12: Microsoft Teams ou Microsoft 365 não faz login"
+title: "KBA-0012: Microsoft Teams ou Microsoft 365 não faz login"
 sidebar_position: 26
 description: Um caso real, passo a passo. O Teams mostra "Algo deu errado" atrás do firewall. Encontre os nomes da Microsoft bloqueados com uma captura de DNS, adicione-os em Domínios permitidos e verifique o estado "offline" do Windows.
 ---
 
-# KBA-12: Microsoft Teams ou Microsoft 365 não faz login
+# KBA-0012: Microsoft Teams ou Microsoft 365 não faz login
 
 **Aplica-se a:** Nexwall Firewall com filtragem DNS ativada · **Público:** administradores e suporte
 

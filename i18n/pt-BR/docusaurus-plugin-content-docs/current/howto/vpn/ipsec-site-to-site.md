@@ -34,7 +34,7 @@ IPsec (IKEv2) é a escolha padrão para conectar a um roteador ou firewall de ou
 ## Se não funcionar
 
 - Nunca sai do estado conectando: chave, identificadores ou propostas incorretos. Compare as duas pontas e veja o log: `grep charon /var/log/messages`.
-- Ativo sem tráfego: regras, NAT ou rotas. Veja [KBA-06](../../help/kba-06-vpn.md).
+- Ativo sem tráfego: regras, NAT ou rotas. Veja [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Guias relacionados
 

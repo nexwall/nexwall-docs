@@ -37,7 +37,7 @@ Remote Access (OpenVPN) lets laptops and phones connect securely to your network
 
 - Client cannot connect: the port is not open on the WAN or a router in front blocks it. Test from outside the LAN.
 - Connected but cannot reach the LAN: add the network under **Push network routes** and create a [How to allow or block traffic with a firewall rule](../policy/firewall-rule.md) from the VPN zone.
-- See [KBA-06](../../help/kba-06-vpn.md).
+- See [KBA-0006](../../help/kba-06-vpn.md).
 
 ## Related guides
 

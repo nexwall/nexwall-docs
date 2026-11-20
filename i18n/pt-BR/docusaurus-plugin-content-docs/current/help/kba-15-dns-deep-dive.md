@@ -1,10 +1,10 @@
 ---
-title: "KBA-15: Solucionar problemas de DNS pela linha de comando"
+title: "KBA-0015: Solucionar problemas de DNS pela linha de comando"
 sidebar_position: 22
 description: Passo a passo com dig e nslookup, como distinguir um resolvedor com defeito de um nome que não existe e o que verificar no dnsmasq, na filtragem de DNS e nos servidores de saída.
 ---
 
-# KBA-15: Solucionar problemas de DNS pela linha de comando
+# KBA-0015: Solucionar problemas de DNS pela linha de comando
 
 **Sintoma.** Um site ou serviço "não abre", mas o ping para o endereço IP dele funciona. Ou um nome resolve no seu
 notebook e não resolve na LAN.

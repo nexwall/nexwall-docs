@@ -31,7 +31,7 @@ QoS mantiene baja la latencia cuando el enlace está lleno. Necesita la velocida
 ## Si no funciona
 
 - Velocidad menor de la esperada: suba los valores en pasos pequeños.
-- Enlace lento con fast-path activo: vea [KBA-18](../../help/kba-18-fast-path.md).
+- Enlace lento con fast-path activo: vea [KBA-0018](../../help/kba-18-fast-path.md).
 
 ## Guías relacionadas
 

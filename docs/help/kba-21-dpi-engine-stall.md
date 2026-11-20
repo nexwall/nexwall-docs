@@ -1,10 +1,10 @@
 ---
-title: 'KBA-21: New connections hang while the firewall looks healthy (DPI / IPS packet queue stall)'
+title: 'KBA-0021: New connections hang while the firewall looks healthy (DPI / IPS packet queue stall)'
 sidebar_position: 31
 description: 'Recognize and recover a stalled inspection engine (DPI or IPS queue), and tune the watchdog and overload behavior.'
 ---
 
-# KBA-21: New connections hang while the firewall looks healthy (DPI / IPS packet queue stall)
+# KBA-0021: New connections hang while the firewall looks healthy (DPI / IPS packet queue stall)
 
 **Applies to.** Nexwall Firewall 26.0.0 and later (commands checked on 26.2.1). **Severity:** high: new connections delayed or failing for minutes.
 

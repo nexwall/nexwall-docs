@@ -1,10 +1,10 @@
 ---
-title: 'KBA-08: The unit is slow or low on memory'
+title: 'KBA-0008: The unit is slow or low on memory'
 sidebar_position: 18
 description: Find which feature costs the most and whether disk or memory is the cause.
 ---
 
-# KBA-08: The unit is slow or low on memory
+# KBA-0008: The unit is slow or low on memory
 
 **Symptom.** Slow web interface, high latency through the firewall, or services restarting.
 
@@ -24,4 +24,4 @@ Read-only checks unless said otherwise. Commands run as `root` over SSH, the con
 
 ## Not solved?
 
-Memory almost gone: [KBA-16](kba-16-services.md#9-low-memory-is-a-common-hidden-cause). Conntrack near the maximum: find the client in [Connections](../operation-analytics/monitor-connections.md).
+Memory almost gone: [KBA-0016](kba-16-services.md#9-low-memory-is-a-common-hidden-cause). Conntrack near the maximum: find the client in [Connections](../operation-analytics/monitor-connections.md).

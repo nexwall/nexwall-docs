@@ -1,10 +1,10 @@
 ---
-title: 'KBA-06: A VPN não conecta'
+title: 'KBA-0006: A VPN não conecta'
 sidebar_position: 16
 description: Relacione o sintoma da VPN com a configuração que o causa (IPsec, WireGuard, OpenVPN).
 ---
 
-# KBA-06: A VPN não conecta
+# KBA-0006: A VPN não conecta
 
 **Sintoma.** Um túnel não sobe, ou sobe e não transporta nada.
 
@@ -27,4 +27,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Procure nos [Logs](../operation-analytics/logs.md) o nome do serviço VPN. Comandos por recurso: [KBA-16](kba-16-services.md#8-status-específico-de-cada-recurso).
+Procure nos [Logs](../operation-analytics/logs.md) o nome do serviço VPN. Comandos por recurso: [KBA-0016](kba-16-services.md#8-status-específico-de-cada-recurso).

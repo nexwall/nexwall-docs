@@ -1,10 +1,10 @@
 ---
-title: 'KBA-09: Os gráficos dizem que o banco não está acessível'
+title: 'KBA-0009: Os gráficos dizem que o banco não está acessível'
 sidebar_position: 19
 description: Reinicie o serviço de métricas quando os gráficos continuam vazios.
 ---
 
-# KBA-09: Os gráficos dizem que o banco não está acessível
+# KBA-0009: Os gráficos dizem que o banco não está acessível
 
 **Sintoma.** Os gráficos do painel e da análise mostram que o banco de dados não está acessível.
 
@@ -24,4 +24,4 @@ Verificações somente leitura, salvo indicação. Os comandos rodam como `root`
 
 ## Não resolveu?
 
-Continuam vazios: verifique disco e memória livres ([KBA-08](kba-08-slow.md)) e leia o log ([Logs e depuração](cli-logs-and-debugging.md)).
+Continuam vazios: verifique disco e memória livres ([KBA-0008](kba-08-slow.md)) e leia o log ([Logs e depuração](cli-logs-and-debugging.md)).

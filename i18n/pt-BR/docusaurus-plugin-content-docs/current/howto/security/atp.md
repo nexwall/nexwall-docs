@@ -32,7 +32,7 @@ A proteção avançada (IA) avisa sobre dispositivos que se comportam como infec
 ## Se não funcionar
 
 - "Não incluído no seu plano": verifique **Licenciamento**.
-- Serviço parado: reinicie pelo console e veja [KBA-16](../../help/kba-16-services.md).
+- Serviço parado: reinicie pelo console e veja [KBA-0016](../../help/kba-16-services.md).
 
 ## Guias relacionados
 

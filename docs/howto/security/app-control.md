@@ -32,8 +32,8 @@ Application Control identifies applications by deep packet inspection (DPI) and 
 
 ## If it does not work
 
-- An app is not blocked: it may be encrypted with a new version. Update the catalog (**Settings**) and see [KBA-22](../../help/kba-22-unknown-applications.md).
-- Unwanted slowness: [KBA-19](../../help/kba-19-inspection-settings.md) and [KBA-21](../../help/kba-21-dpi-engine-stall.md).
+- An app is not blocked: it may be encrypted with a new version. Update the catalog (**Settings**) and see [KBA-0022](../../help/kba-22-unknown-applications.md).
+- Unwanted slowness: [KBA-0019](../../help/kba-19-inspection-settings.md) and [KBA-0021](../../help/kba-21-dpi-engine-stall.md).
 
 ## Related guides
 

@@ -1,10 +1,10 @@
 ---
-title: 'KBA-25: Dirección y certificado de la interfaz web'
+title: 'KBA-0025: Dirección y certificado de la interfaz web'
 sidebar_position: 35
 description: 'Qué dirección escribir para la interfaz web, cómo funciona su certificado confiable y cómo resolver advertencias de certificado.'
 ---
 
-# KBA-25: Dirección y certificado de la interfaz web
+# KBA-0025: Dirección y certificado de la interfaz web
 
 Aplica a firmware 26.0.0-rc4 y posteriores. El firmware hasta rc3 usa un certificado compartido para `firewall.nexwall.com.br` (vea la última sección).
 
@@ -47,12 +47,12 @@ Verifique desde un equipo: `nslookup firewall.lan.nexwall.com.br 192.168.1.1` de
 | "No se puede acceder a este sitio" / `ERR_NAME_NOT_RESOLVED` para el nombre confiable | el equipo no usa el firewall como servidor DNS (DNS fijo como 8.8.8.8, una VPN, "DNS seguro" en el navegador, otro router delante) | configure el equipo para recibir DNS del firewall, o apague el DNS seguro del navegador; pruebe con el `nslookup` anterior. Mientras tanto use `http://192.168.1.1`, que muestra el enlace directo |
 | La página del puerto 80 dice que no se pudo alcanzar la dirección segura | misma causa | igual |
 | El nombre confiable abre pero el navegador aún advierte (certificado autofirmado) | aún no hay certificado propio instalado: `nexwall-webui-cert status` muestra `using: self-signed` | espere a la próxima ejecución o ejecute `nexwall-webui-cert sync`; lea las líneas del log; vea las filas siguientes |
-| `could not get the own certificate: ... HTTP 401` o `DEVICE_ALREADY_REGISTERED` | la unidad no está registrada en el servidor de licencias | vea [KBA-26](kba-26-licensing.md): el revendedor hace **Reset device** y luego **Synchronize** en la unidad |
+| `could not get the own certificate: ... HTTP 401` o `DEVICE_ALREADY_REGISTERED` | la unidad no está registrada en el servidor de licencias | vea [KBA-0026](kba-26-licensing.md): el revendedor hace **Reset device** y luego **Synchronize** en la unidad |
 | `could not get the own certificate: request failed` / timeout | sin internet o sin DNS en el firewall | revise la WAN; `nslookup license.nexwall.com.br` en el firewall |
 | `the certificate is still being issued, the next run asks again` | la validación tarda más de 2,5 minutos | nada, la próxima ejecución (30 minutos) la termina |
 | `ISSUE_FAILED` con un texto | Let's Encrypt o la validación fallaron esta vez | el servidor reintenta tras 15 minutos; si se repite por horas, envíe el texto a soporte |
 | `RATE_LIMIT` | esta unidad pidió más de 4 certificados nuevos en una semana (típico tras varios restablecimientos de fábrica: cada uno genera una clave nueva) | espere una semana o consulte a soporte |
-| `NAMES` o `UNIT_SERIAL` | falta el número de serie de la unidad o cambió | `cat /etc/nexwall-license/serial` debe mostrar `NXW-XXXX-XXXX-XXXX`; registre la unidad de nuevo ([KBA-26](kba-26-licensing.md)) |
+| `NAMES` o `UNIT_SERIAL` | falta el número de serie de la unidad o cambió | `cat /etc/nexwall-license/serial` debe mostrar `NXW-XXXX-XXXX-XXXX`; registre la unidad de nuevo ([KBA-0026](kba-26-licensing.md)) |
 | `ERR_CERT_DATE_INVALID` o "certificado aún no válido" | el reloj del equipo o del firewall está mal | ajuste la hora en ambos; en el firewall `date` y los ajustes de NTP |
 | El nombre dejó de funcionar tras cambiar la dirección LAN | las entradas DNS apuntan a la dirección anterior | `nexwall-webui-cert dns` (también ocurre solo en 30 minutos) |
 | Otro servidor DNS delante bloquea el nombre ("DNS rebinding protection") | se descarta una dirección privada en la respuesta de un nombre público | permita `lan.nexwall.com.br` como dominio privado en ese servidor DNS, o haga que los equipos consulten al firewall |

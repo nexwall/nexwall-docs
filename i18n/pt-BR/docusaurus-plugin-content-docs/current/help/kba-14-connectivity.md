@@ -1,10 +1,10 @@
 ---
-title: "KBA-14: Testar conectividade, portas e tráfego pela linha de comando"
+title: "KBA-0014: Testar conectividade, portas e tráfego pela linha de comando"
 sidebar_position: 21
 description: Ping, MTU, traceroute, testes de porta sem telnet, portas em escuta, captura de pacotes e rastreamento de conexões, camada por camada, com as ferramentas que esta unidade realmente traz.
 ---
 
-# KBA-14: Testar conectividade, portas e tráfego pela linha de comando
+# KBA-0014: Testar conectividade, portas e tráfego pela linha de comando
 
 **Sintoma.** Um usuário não alcança um servidor, um serviço publicado não responde, ou uma VPN está lenta ou perde
 pacotes grandes.
